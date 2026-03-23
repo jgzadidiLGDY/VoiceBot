@@ -1,0 +1,35 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks 
+Agent: fine, thank 
+User: for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1972.
+User: Birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I wanted to ask if I can request a refill for my Lisinopril prescription, and what information you need from me to process the refill.
+User: Yes. You can request a refill for your lisinopril. I'll need a few details from you, and I'll ask them one at a time. First, what medication do you need refilled? 
+Agent: I need a refill for Lisinopril.
+User: What's the dosage, and how often do you take lisinopril? 
+Agent: I take 20 mg of Lisinopril once a day.
+User: When did you last have your lisinopril refilled? 
+Agent: I last had my Lisinopril refilled about a month ago.
+User: Which pharmacy do you use? 
+User: Please confirm the location. 
+Agent: I use Walgreens, and the location is on Main Street.
+User: How many days of lisinopril do you have left? 
+Agent: I have about three days of Lisinopril left.
+User: It 
+Agent: Just 
+User: looks like I'm unable to act 
+User: Let 
+Agent: No 
+User: me try again to process. 
+Agent: No 
+User: I'm unable 
+Agent: problem, thank 
+Agent: That's okay, thank you for your help. I'll follow up later if needed. Have a good day!
+User: You're welcome. If you need anything else, just give us a call. Take care. 
+Agent: Thank you, I appreciate your help. Have a great day!

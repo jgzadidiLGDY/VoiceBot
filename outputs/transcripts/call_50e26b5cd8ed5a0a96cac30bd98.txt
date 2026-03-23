@@ -1,0 +1,22 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+Agent: That's fine, 
+User: Thank you. 
+Agent: You're welcome! I’d like to schedule a routine primary care appointment for next week, preferably on a weekday morning. Could you let me know what’s available?
+User: Before we get started, would you like create a demo patient profile? 
+User: I just need your first and last name to set it up. 
+Agent: Sure, my name is Maria Lopez.
+User: Your patient profile is set up, and your date of birth is July fourth two thousand. How may I help you today? 
+Agent: Thank you! I’d like to schedule a routine primary care appointment for next week, preferably on a weekday morning. What’s the next available slot?
+User: At Pivot Point Orthopedics, we offer new patient consultations, follow-up consultations, procedure appointments, and physical therapy sessions. Could you clarify if you're looking for a new patient consultation a follow-up, or something else? 
+User: else? This will help me find the right appointment for you. 
+Agent: I’m looking for a new patient consultation, please.
+User: Thanks for clarifying. I'll check for new patient consultation openings next week on weekday mornings. One moment while I find the next available slot for you. The next available new patient consultation is Thursday, March at ten. Thirty AM with doctor Bricker. There are also openings that morning at eleven fifteen AM with doctor Dudie Hauser, and Friday, March twentieth at nine forty five AM with doctor Bricker. Would you like to book the ten thirty AM slot or hear more about the other options? 
+Agent: The Thursday at 10:30 AM with Dr. Bricker sounds good. Can you please book that for me?
+User: Just to confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at ten thirty AM with doctor Bricker. Is that correct? 
+User: And could you briefly share the reason for your visit? 
+Agent: Yes, that’s correct. I’d just like a routine primary care check-up.
+User: Your new patient consultation is booked for Thursday, March nineteenth at ten thirty AM with doctor Bricker. Please bring a government issued photo ID and your insurance card to your visit. Would you like a text reminder for your appointment? 
+Agent: Yes, a text reminder would be great—thank you!
+User: You'll get a text reminder soon. If you have any other questions or need to make changes, just let me know. 
+Agent: Thank you so much for your help! I appreciate it. Have a great day.

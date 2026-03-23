@@ -1,0 +1,12 @@
+2026-03-15 22:47:09.035 call_fb5a9220f5a469f4694bda9b948 info: Starting call: call_fb5a9220f5a469f4694bda9b948
+2026-03-15 22:47:20.840 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1892
+2026-03-15 22:47:29.221 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1413
+2026-03-15 22:47:38.569 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1001
+2026-03-15 22:47:53.012 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 953
+2026-03-15 22:48:07.841 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1193
+2026-03-15 22:48:32.026 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1387
+2026-03-15 22:48:57.312 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1244
+2026-03-15 22:49:06.525 call_fb5a9220f5a469f4694bda9b948 info: E2E latency for this turn: 1366.993896484375
+2026-03-15 22:49:10.701 call_fb5a9220f5a469f4694bda9b948 info: Calling tool: end_call 
+Arguments: {"execution_message":"Thank you for your help. I'll try calling back later to sort this out. Goodbye."}
+2026-03-15 22:49:10.701 call_fb5a9220f5a469f4694bda9b948 info: Ending call: call_fb5a9220f5a469f4694bda9b948

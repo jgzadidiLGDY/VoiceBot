@@ -1,0 +1,11 @@
+{
+  "summary": "The office agent correctly denies Sunday appointments, maintains factual consistency, and offers a valid alternative. No meaningful bugs present.",
+  "has_meaningful_bug": false,
+  "bugs": [],
+  "strengths": [
+    "Consistent and clear denial of Sunday appointments, even when pressed for exceptions.",
+    "Polite, accurate redirection to weekday availability.",
+    "Appropriate escalation guidance for urgent care needs.",
+    "Workflow proceeds smoothly with accurate information transfer."
+  ]
+}

@@ -1,0 +1,2152 @@
+{
+  "call_id": "call_c4f6765f364aee08eb601c110f3",
+  "scenario": {
+    "scenario_id": "office_hours_weekend",
+    "title": "Ask about weekend office hours",
+    "category": "office_hours",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "polite"
+    },
+    "goal": "Find out whether the office is open on Saturday morning and what the weekday hours are.",
+    "known_facts": {
+      "requested_day": "Saturday",
+      "requested_time": "morning"
+    },
+    "behavior_style": [
+      "polite",
+      "slightly_confused"
+    ],
+    "stress_target": "factual_correctness",
+    "must_try": [
+      "Ask whether the office is open on Saturday morning.",
+      "If needed, ask what the weekday hours are instead."
+    ],
+    "success_condition": "The agent gives a clear answer about office availability and hours.",
+    "good_bug_signals": [
+      "The agent gives contradictory office-hour information.",
+      "The agent avoids answering the direct office-hours question.",
+      "The agent confidently provides incorrect availability."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_c4f6765f364aee08eb601c110f3",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The agent gives a clear answer about office availability and hours.",
+      "age_band": "adult",
+      "goal": "Find out whether the office is open on Saturday morning and what the weekday hours are.",
+      "behavior_style": "polite, slightly_confused",
+      "stress_target": "factual_correctness",
+      "must_try": "Ask whether the office is open on Saturday morning. | If needed, ask what the weekday hours are instead.",
+      "tone": "polite",
+      "title": "Ask about weekend office hours",
+      "scenario_id": "office_hours_weekend",
+      "patient_name": "Maria Lopez",
+      "known_facts": "requested_day=Saturday; requested_time=morning",
+      "category": "office_hours",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_c4f6765f364aee08eb601c110f3",
+      "X-RetellAI-SipTraceId": "call_c4f6765f364aee08eb601c110f3",
+      "Route": "<sip:18.98.16.122;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773593880471,
+    "end_timestamp": 1773593942835,
+    "duration_ms": 62364,
+    "transcript": "User: This \nAgent: Hi, \nUser: call may be recorded for quality and training purposes. \nAgent: That's \nUser: Thanks \nAgent: fine, thank \nUser: for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez. I was hoping to find out if your office is open on Saturday mornings.\nUser: What is your date of birth? \nAgent: Sure, my date of birth is March 12, 1982.\nUser: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? \nAgent: Thank you. I just wanted to check if your office is open on Saturday mornings, and if not, could you tell me what your weekday hours are?\nUser: We're not open on Saturdays. Our weekday hours are nine AM to four PM on Monday, Tuesday, and Thursday, twelve PM to PM on Wednesday, and nine AM to twelve PM on Friday. \nUser: Let me know if you need anything else. \nAgent: Thank you, that's really helpful. I appreciate your time—have a great day!\n",
+    "transcript_object": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.34500000000000003,
+            "end": 0.66499997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.322,
+            "end": 0.722
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.66499997,
+            "end": 0.905
+          },
+          {
+            "word": "may ",
+            "start": 0.905,
+            "end": 1.1449999999999998
+          },
+          {
+            "word": "be ",
+            "start": 1.1449999999999998,
+            "end": 1.305
+          },
+          {
+            "word": "recorded ",
+            "start": 1.305,
+            "end": 1.7049999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.7049999999999998,
+            "end": 2.025
+          },
+          {
+            "word": "quality ",
+            "start": 2.025,
+            "end": 2.4249997999999997
+          },
+          {
+            "word": "and ",
+            "start": 2.4249997999999997,
+            "end": 2.6649998
+          },
+          {
+            "word": "training ",
+            "start": 2.6649998,
+            "end": 3.065
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.065,
+            "end": 3.4649997999999997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.789,
+            "end": 6.189
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.5149998,
+            "end": 6.835
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.189,
+            "end": 6.589
+          },
+          {
+            "word": "thank ",
+            "start": 6.589,
+            "end": 6.989
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "for ",
+            "start": 6.835,
+            "end": 6.995
+          },
+          {
+            "word": "calling ",
+            "start": 6.995,
+            "end": 7.2349995
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.2349995,
+            "end": 7.5549997
+          },
+          {
+            "word": "Point ",
+            "start": 7.5549997,
+            "end": 7.795
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.795,
+            "end": 8.515
+          },
+          {
+            "word": "Part ",
+            "start": 8.815000000000001,
+            "end": 9.215000000000002
+          },
+          {
+            "word": "of ",
+            "start": 9.215000000000002,
+            "end": 9.375001000000001
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.894999,
+            "end": 10.135000000000002
+          },
+          {
+            "word": "Good ",
+            "start": 10.135000000000002,
+            "end": 10.295
+          },
+          {
+            "word": "AI. ",
+            "start": 10.295,
+            "end": 10.934999000000001
+          },
+          {
+            "word": "Am ",
+            "start": 11.095,
+            "end": 11.335
+          },
+          {
+            "word": "I ",
+            "start": 11.335,
+            "end": 11.415000000000001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.415000000000001,
+            "end": 11.735000000000001
+          },
+          {
+            "word": "with ",
+            "start": 11.735000000000001,
+            "end": 11.814999
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.814999,
+            "end": 12.214999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez. I was hoping to find out if your office is open on Saturday mornings.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.429,
+            "end": 13.829
+          },
+          {
+            "word": "this ",
+            "start": 13.829,
+            "end": 14.229
+          },
+          {
+            "word": "is ",
+            "start": 14.229,
+            "end": 14.629
+          },
+          {
+            "word": "Maria ",
+            "start": 14.629,
+            "end": 15.029
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.029,
+            "end": 15.429
+          },
+          {
+            "word": " I ",
+            "start": 15.843875,
+            "end": 16.243875
+          },
+          {
+            "word": "was ",
+            "start": 16.243875,
+            "end": 16.643875
+          },
+          {
+            "word": "hoping ",
+            "start": 16.643875,
+            "end": 17.043875
+          },
+          {
+            "word": "to ",
+            "start": 17.043875,
+            "end": 17.443875
+          },
+          {
+            "word": "find ",
+            "start": 17.443875,
+            "end": 17.843875
+          },
+          {
+            "word": "out ",
+            "start": 17.843875,
+            "end": 18.243875
+          },
+          {
+            "word": "if ",
+            "start": 18.243875,
+            "end": 18.643875
+          },
+          {
+            "word": "your ",
+            "start": 18.643875,
+            "end": 19.043875
+          },
+          {
+            "word": "office ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "is ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "open ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "on ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "Saturday ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "mornings.",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "What is your date of birth? ",
+        "words": [
+          {
+            "word": "What ",
+            "start": 21.604998,
+            "end": 21.845
+          },
+          {
+            "word": "is ",
+            "start": 21.845,
+            "end": 22.005
+          },
+          {
+            "word": "your ",
+            "start": 22.005,
+            "end": 22.165
+          },
+          {
+            "word": "date ",
+            "start": 22.165,
+            "end": 22.325
+          },
+          {
+            "word": "of ",
+            "start": 22.325,
+            "end": 22.485
+          },
+          {
+            "word": "birth? ",
+            "start": 22.485,
+            "end": 22.645
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 23.642,
+            "end": 24.042
+          },
+          {
+            "word": "my ",
+            "start": 24.042,
+            "end": 24.442
+          },
+          {
+            "word": "date ",
+            "start": 24.442,
+            "end": 24.842
+          },
+          {
+            "word": "of ",
+            "start": 24.842,
+            "end": 25.242
+          },
+          {
+            "word": "birth ",
+            "start": 25.242,
+            "end": 25.642
+          },
+          {
+            "word": "is ",
+            "start": 25.642,
+            "end": 26.042
+          },
+          {
+            "word": "March ",
+            "start": 26.042,
+            "end": 26.442
+          },
+          {
+            "word": "12, ",
+            "start": 26.442,
+            "end": 26.842
+          },
+          {
+            "word": "1982.",
+            "start": 26.842,
+            "end": 27.242
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 30.025,
+            "end": 30.345
+          },
+          {
+            "word": "birthday ",
+            "start": 30.345,
+            "end": 30.665
+          },
+          {
+            "word": "doesn't ",
+            "start": 30.665,
+            "end": 30.985001
+          },
+          {
+            "word": "match ",
+            "start": 30.985001,
+            "end": 31.145001
+          },
+          {
+            "word": "our ",
+            "start": 31.145001,
+            "end": 31.385001
+          },
+          {
+            "word": "records, ",
+            "start": 31.385001,
+            "end": 31.785
+          },
+          {
+            "word": "but ",
+            "start": 31.785,
+            "end": 31.945
+          },
+          {
+            "word": "for ",
+            "start": 31.945,
+            "end": 32.105002000000006
+          },
+          {
+            "word": "demo ",
+            "start": 32.105002000000006,
+            "end": 32.345000000000006
+          },
+          {
+            "word": "purposes, ",
+            "start": 32.345000000000006,
+            "end": 32.905
+          },
+          {
+            "word": "I'll ",
+            "start": 32.905,
+            "end": 33.145
+          },
+          {
+            "word": "accept ",
+            "start": 33.145,
+            "end": 33.385000000000005
+          },
+          {
+            "word": "it. ",
+            "start": 33.385000000000005,
+            "end": 33.545
+          },
+          {
+            "word": "How ",
+            "start": 35.084998000000006,
+            "end": 35.325
+          },
+          {
+            "word": "can ",
+            "start": 35.325,
+            "end": 35.485
+          },
+          {
+            "word": "I ",
+            "start": 35.485,
+            "end": 35.645
+          },
+          {
+            "word": "help ",
+            "start": 35.645,
+            "end": 35.725
+          },
+          {
+            "word": "you ",
+            "start": 35.725,
+            "end": 35.805
+          },
+          {
+            "word": "today? ",
+            "start": 35.805,
+            "end": 36.045
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I just wanted to check if your office is open on Saturday mornings, and if not, could you tell me what your weekday hours are?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 36.768,
+            "end": 37.168
+          },
+          {
+            "word": "you.",
+            "start": 37.122666748046875,
+            "end": 37.52266674804687
+          },
+          {
+            "word": " I ",
+            "start": 37.52266674804687,
+            "end": 37.92266674804687
+          },
+          {
+            "word": "just ",
+            "start": 37.92266674804687,
+            "end": 38.32266674804688
+          },
+          {
+            "word": "wanted ",
+            "start": 38.32266674804688,
+            "end": 38.722666748046876
+          },
+          {
+            "word": "to ",
+            "start": 38.722666748046876,
+            "end": 39.122666748046875
+          },
+          {
+            "word": "check ",
+            "start": 39.122666748046875,
+            "end": 39.52266674804687
+          },
+          {
+            "word": "if ",
+            "start": 39.52266674804687,
+            "end": 39.92266674804687
+          },
+          {
+            "word": "your ",
+            "start": 39.92266674804687,
+            "end": 40.32266674804688
+          },
+          {
+            "word": "office ",
+            "start": 40.32266674804688,
+            "end": 40.722666748046876
+          },
+          {
+            "word": "is ",
+            "start": 40.722666748046876,
+            "end": 41.122666748046875
+          },
+          {
+            "word": "open ",
+            "start": 41.122666748046875,
+            "end": 41.52266674804687
+          },
+          {
+            "word": "on ",
+            "start": 41.52266674804687,
+            "end": 41.92266674804687
+          },
+          {
+            "word": "Saturday ",
+            "start": 41.92266674804687,
+            "end": 42.32266674804688
+          },
+          {
+            "word": "mornings, ",
+            "start": 42.32266674804688,
+            "end": 42.722666748046876
+          },
+          {
+            "word": "and ",
+            "start": 42.722666748046876,
+            "end": 43.122666748046875
+          },
+          {
+            "word": "if ",
+            "start": 43.122666748046875,
+            "end": 43.52266674804687
+          },
+          {
+            "word": "not, ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "could ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "you ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "tell ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "me ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "what ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "your ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "weekday ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "hours ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "are?",
+            "start": 43.14825,
+            "end": 43.54825
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "We're not open on Saturdays. Our weekday hours are nine AM to four PM on Monday, Tuesday, and Thursday, twelve PM to PM on Wednesday, and nine AM to twelve PM on Friday. ",
+        "words": [
+          {
+            "word": "We're ",
+            "start": 46.265,
+            "end": 46.584998000000006
+          },
+          {
+            "word": "not ",
+            "start": 46.584998000000006,
+            "end": 46.744998
+          },
+          {
+            "word": "open ",
+            "start": 46.744998,
+            "end": 47.064998
+          },
+          {
+            "word": "on ",
+            "start": 47.064998,
+            "end": 47.225
+          },
+          {
+            "word": "Saturdays. ",
+            "start": 47.225,
+            "end": 47.705000000000005
+          },
+          {
+            "word": "Our ",
+            "start": 48.145,
+            "end": 48.465
+          },
+          {
+            "word": "weekday ",
+            "start": 48.465,
+            "end": 48.785000000000004
+          },
+          {
+            "word": "hours ",
+            "start": 48.785000000000004,
+            "end": 49.105000000000004
+          },
+          {
+            "word": "are ",
+            "start": 49.105000000000004,
+            "end": 49.345000000000006
+          },
+          {
+            "word": "nine ",
+            "start": 49.345000000000006,
+            "end": 49.584998000000006
+          },
+          {
+            "word": "AM ",
+            "start": 49.584998000000006,
+            "end": 49.825
+          },
+          {
+            "word": "to ",
+            "start": 49.825,
+            "end": 50.064998
+          },
+          {
+            "word": "four ",
+            "start": 50.064998,
+            "end": 50.225
+          },
+          {
+            "word": "PM ",
+            "start": 50.225,
+            "end": 50.465
+          },
+          {
+            "word": "on ",
+            "start": 50.465,
+            "end": 50.625
+          },
+          {
+            "word": "Monday, ",
+            "start": 50.625,
+            "end": 51.025000000000006
+          },
+          {
+            "word": "Tuesday, ",
+            "start": 51.025000000000006,
+            "end": 51.345000000000006
+          },
+          {
+            "word": "and ",
+            "start": 51.345000000000006,
+            "end": 51.425000000000004
+          },
+          {
+            "word": "Thursday, ",
+            "start": 51.425000000000004,
+            "end": 51.904998
+          },
+          {
+            "word": "twelve ",
+            "start": 51.904998,
+            "end": 52.145
+          },
+          {
+            "word": "PM ",
+            "start": 52.145,
+            "end": 52.385000000000005
+          },
+          {
+            "word": "to ",
+            "start": 52.385000000000005,
+            "end": 52.545
+          },
+          {
+            "word": "PM ",
+            "start": 52.735003000000006,
+            "end": 53.135000000000005
+          },
+          {
+            "word": "on ",
+            "start": 53.135000000000005,
+            "end": 53.375003
+          },
+          {
+            "word": "Wednesday, ",
+            "start": 53.375003,
+            "end": 53.855002000000006
+          },
+          {
+            "word": "and ",
+            "start": 53.855002000000006,
+            "end": 54.015002
+          },
+          {
+            "word": "nine ",
+            "start": 54.015002,
+            "end": 54.255
+          },
+          {
+            "word": "AM ",
+            "start": 54.255,
+            "end": 54.575
+          },
+          {
+            "word": "to ",
+            "start": 54.575,
+            "end": 54.735003000000006
+          },
+          {
+            "word": "twelve ",
+            "start": 54.735003000000006,
+            "end": 54.895003
+          },
+          {
+            "word": "PM ",
+            "start": 54.895003,
+            "end": 55.295
+          },
+          {
+            "word": "on ",
+            "start": 55.295,
+            "end": 55.455000000000005
+          },
+          {
+            "word": "Friday. ",
+            "start": 55.455000000000005,
+            "end": 55.695002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Let me know if you need anything else. ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 56.345000000000006,
+            "end": 56.585
+          },
+          {
+            "word": "me ",
+            "start": 56.585,
+            "end": 56.745000000000005
+          },
+          {
+            "word": "know ",
+            "start": 56.745000000000005,
+            "end": 56.825
+          },
+          {
+            "word": "if ",
+            "start": 56.825,
+            "end": 56.985
+          },
+          {
+            "word": "you ",
+            "start": 56.985,
+            "end": 57.065000000000005
+          },
+          {
+            "word": "need ",
+            "start": 57.065000000000005,
+            "end": 57.305
+          },
+          {
+            "word": "anything ",
+            "start": 57.305,
+            "end": 57.545
+          },
+          {
+            "word": "else. ",
+            "start": 57.545,
+            "end": 57.705000000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, that's really helpful. I appreciate your time—have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 58.71,
+            "end": 59.11
+          },
+          {
+            "word": "you, ",
+            "start": 59.11,
+            "end": 59.51
+          },
+          {
+            "word": "that's ",
+            "start": 59.51,
+            "end": 59.91
+          },
+          {
+            "word": "really ",
+            "start": 59.91,
+            "end": 60.31
+          },
+          {
+            "word": "helpful. ",
+            "start": 59.958625,
+            "end": 60.358625
+          },
+          {
+            "word": "I ",
+            "start": 60.358625,
+            "end": 60.758625
+          },
+          {
+            "word": "appreciate ",
+            "start": 60.758625,
+            "end": 61.158625
+          },
+          {
+            "word": "your ",
+            "start": 61.158625,
+            "end": 61.558625
+          },
+          {
+            "word": "time—have ",
+            "start": 61.558625,
+            "end": 61.958625
+          },
+          {
+            "word": "a ",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          },
+          {
+            "word": "great ",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          },
+          {
+            "word": "day!",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.34500000000000003,
+            "end": 0.66499997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.322,
+            "end": 0.722
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.66499997,
+            "end": 0.905
+          },
+          {
+            "word": "may ",
+            "start": 0.905,
+            "end": 1.1449999999999998
+          },
+          {
+            "word": "be ",
+            "start": 1.1449999999999998,
+            "end": 1.305
+          },
+          {
+            "word": "recorded ",
+            "start": 1.305,
+            "end": 1.7049999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.7049999999999998,
+            "end": 2.025
+          },
+          {
+            "word": "quality ",
+            "start": 2.025,
+            "end": 2.4249997999999997
+          },
+          {
+            "word": "and ",
+            "start": 2.4249997999999997,
+            "end": 2.6649998
+          },
+          {
+            "word": "training ",
+            "start": 2.6649998,
+            "end": 3.065
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.065,
+            "end": 3.4649997999999997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.789,
+            "end": 6.189
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.5149998,
+            "end": 6.835
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.189,
+            "end": 6.589
+          },
+          {
+            "word": "thank ",
+            "start": 6.589,
+            "end": 6.989
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "for ",
+            "start": 6.835,
+            "end": 6.995
+          },
+          {
+            "word": "calling ",
+            "start": 6.995,
+            "end": 7.2349995
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.2349995,
+            "end": 7.5549997
+          },
+          {
+            "word": "Point ",
+            "start": 7.5549997,
+            "end": 7.795
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.795,
+            "end": 8.515
+          },
+          {
+            "word": "Part ",
+            "start": 8.815000000000001,
+            "end": 9.215000000000002
+          },
+          {
+            "word": "of ",
+            "start": 9.215000000000002,
+            "end": 9.375001000000001
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.894999,
+            "end": 10.135000000000002
+          },
+          {
+            "word": "Good ",
+            "start": 10.135000000000002,
+            "end": 10.295
+          },
+          {
+            "word": "AI. ",
+            "start": 10.295,
+            "end": 10.934999000000001
+          },
+          {
+            "word": "Am ",
+            "start": 11.095,
+            "end": 11.335
+          },
+          {
+            "word": "I ",
+            "start": 11.335,
+            "end": 11.415000000000001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.415000000000001,
+            "end": 11.735000000000001
+          },
+          {
+            "word": "with ",
+            "start": 11.735000000000001,
+            "end": 11.814999
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.814999,
+            "end": 12.214999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez. I was hoping to find out if your office is open on Saturday mornings.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.429,
+            "end": 13.829
+          },
+          {
+            "word": "this ",
+            "start": 13.829,
+            "end": 14.229
+          },
+          {
+            "word": "is ",
+            "start": 14.229,
+            "end": 14.629
+          },
+          {
+            "word": "Maria ",
+            "start": 14.629,
+            "end": 15.029
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.029,
+            "end": 15.429
+          },
+          {
+            "word": " I ",
+            "start": 15.843875,
+            "end": 16.243875
+          },
+          {
+            "word": "was ",
+            "start": 16.243875,
+            "end": 16.643875
+          },
+          {
+            "word": "hoping ",
+            "start": 16.643875,
+            "end": 17.043875
+          },
+          {
+            "word": "to ",
+            "start": 17.043875,
+            "end": 17.443875
+          },
+          {
+            "word": "find ",
+            "start": 17.443875,
+            "end": 17.843875
+          },
+          {
+            "word": "out ",
+            "start": 17.843875,
+            "end": 18.243875
+          },
+          {
+            "word": "if ",
+            "start": 18.243875,
+            "end": 18.643875
+          },
+          {
+            "word": "your ",
+            "start": 18.643875,
+            "end": 19.043875
+          },
+          {
+            "word": "office ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "is ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "open ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "on ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "Saturday ",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          },
+          {
+            "word": "mornings.",
+            "start": 18.961708251953127,
+            "end": 19.361708251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "What is your date of birth? ",
+        "words": [
+          {
+            "word": "What ",
+            "start": 21.604998,
+            "end": 21.845
+          },
+          {
+            "word": "is ",
+            "start": 21.845,
+            "end": 22.005
+          },
+          {
+            "word": "your ",
+            "start": 22.005,
+            "end": 22.165
+          },
+          {
+            "word": "date ",
+            "start": 22.165,
+            "end": 22.325
+          },
+          {
+            "word": "of ",
+            "start": 22.325,
+            "end": 22.485
+          },
+          {
+            "word": "birth? ",
+            "start": 22.485,
+            "end": 22.645
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 23.642,
+            "end": 24.042
+          },
+          {
+            "word": "my ",
+            "start": 24.042,
+            "end": 24.442
+          },
+          {
+            "word": "date ",
+            "start": 24.442,
+            "end": 24.842
+          },
+          {
+            "word": "of ",
+            "start": 24.842,
+            "end": 25.242
+          },
+          {
+            "word": "birth ",
+            "start": 25.242,
+            "end": 25.642
+          },
+          {
+            "word": "is ",
+            "start": 25.642,
+            "end": 26.042
+          },
+          {
+            "word": "March ",
+            "start": 26.042,
+            "end": 26.442
+          },
+          {
+            "word": "12, ",
+            "start": 26.442,
+            "end": 26.842
+          },
+          {
+            "word": "1982.",
+            "start": 26.842,
+            "end": 27.242
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 30.025,
+            "end": 30.345
+          },
+          {
+            "word": "birthday ",
+            "start": 30.345,
+            "end": 30.665
+          },
+          {
+            "word": "doesn't ",
+            "start": 30.665,
+            "end": 30.985001
+          },
+          {
+            "word": "match ",
+            "start": 30.985001,
+            "end": 31.145001
+          },
+          {
+            "word": "our ",
+            "start": 31.145001,
+            "end": 31.385001
+          },
+          {
+            "word": "records, ",
+            "start": 31.385001,
+            "end": 31.785
+          },
+          {
+            "word": "but ",
+            "start": 31.785,
+            "end": 31.945
+          },
+          {
+            "word": "for ",
+            "start": 31.945,
+            "end": 32.105002000000006
+          },
+          {
+            "word": "demo ",
+            "start": 32.105002000000006,
+            "end": 32.345000000000006
+          },
+          {
+            "word": "purposes, ",
+            "start": 32.345000000000006,
+            "end": 32.905
+          },
+          {
+            "word": "I'll ",
+            "start": 32.905,
+            "end": 33.145
+          },
+          {
+            "word": "accept ",
+            "start": 33.145,
+            "end": 33.385000000000005
+          },
+          {
+            "word": "it. ",
+            "start": 33.385000000000005,
+            "end": 33.545
+          },
+          {
+            "word": "How ",
+            "start": 35.084998000000006,
+            "end": 35.325
+          },
+          {
+            "word": "can ",
+            "start": 35.325,
+            "end": 35.485
+          },
+          {
+            "word": "I ",
+            "start": 35.485,
+            "end": 35.645
+          },
+          {
+            "word": "help ",
+            "start": 35.645,
+            "end": 35.725
+          },
+          {
+            "word": "you ",
+            "start": 35.725,
+            "end": 35.805
+          },
+          {
+            "word": "today? ",
+            "start": 35.805,
+            "end": 36.045
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I just wanted to check if your office is open on Saturday mornings, and if not, could you tell me what your weekday hours are?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 36.768,
+            "end": 37.168
+          },
+          {
+            "word": "you.",
+            "start": 37.122666748046875,
+            "end": 37.52266674804687
+          },
+          {
+            "word": " I ",
+            "start": 37.52266674804687,
+            "end": 37.92266674804687
+          },
+          {
+            "word": "just ",
+            "start": 37.92266674804687,
+            "end": 38.32266674804688
+          },
+          {
+            "word": "wanted ",
+            "start": 38.32266674804688,
+            "end": 38.722666748046876
+          },
+          {
+            "word": "to ",
+            "start": 38.722666748046876,
+            "end": 39.122666748046875
+          },
+          {
+            "word": "check ",
+            "start": 39.122666748046875,
+            "end": 39.52266674804687
+          },
+          {
+            "word": "if ",
+            "start": 39.52266674804687,
+            "end": 39.92266674804687
+          },
+          {
+            "word": "your ",
+            "start": 39.92266674804687,
+            "end": 40.32266674804688
+          },
+          {
+            "word": "office ",
+            "start": 40.32266674804688,
+            "end": 40.722666748046876
+          },
+          {
+            "word": "is ",
+            "start": 40.722666748046876,
+            "end": 41.122666748046875
+          },
+          {
+            "word": "open ",
+            "start": 41.122666748046875,
+            "end": 41.52266674804687
+          },
+          {
+            "word": "on ",
+            "start": 41.52266674804687,
+            "end": 41.92266674804687
+          },
+          {
+            "word": "Saturday ",
+            "start": 41.92266674804687,
+            "end": 42.32266674804688
+          },
+          {
+            "word": "mornings, ",
+            "start": 42.32266674804688,
+            "end": 42.722666748046876
+          },
+          {
+            "word": "and ",
+            "start": 42.722666748046876,
+            "end": 43.122666748046875
+          },
+          {
+            "word": "if ",
+            "start": 43.122666748046875,
+            "end": 43.52266674804687
+          },
+          {
+            "word": "not, ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "could ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "you ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "tell ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "me ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "what ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "your ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "weekday ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "hours ",
+            "start": 43.14825,
+            "end": 43.54825
+          },
+          {
+            "word": "are?",
+            "start": 43.14825,
+            "end": 43.54825
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "We're not open on Saturdays. Our weekday hours are nine AM to four PM on Monday, Tuesday, and Thursday, twelve PM to PM on Wednesday, and nine AM to twelve PM on Friday. ",
+        "words": [
+          {
+            "word": "We're ",
+            "start": 46.265,
+            "end": 46.584998000000006
+          },
+          {
+            "word": "not ",
+            "start": 46.584998000000006,
+            "end": 46.744998
+          },
+          {
+            "word": "open ",
+            "start": 46.744998,
+            "end": 47.064998
+          },
+          {
+            "word": "on ",
+            "start": 47.064998,
+            "end": 47.225
+          },
+          {
+            "word": "Saturdays. ",
+            "start": 47.225,
+            "end": 47.705000000000005
+          },
+          {
+            "word": "Our ",
+            "start": 48.145,
+            "end": 48.465
+          },
+          {
+            "word": "weekday ",
+            "start": 48.465,
+            "end": 48.785000000000004
+          },
+          {
+            "word": "hours ",
+            "start": 48.785000000000004,
+            "end": 49.105000000000004
+          },
+          {
+            "word": "are ",
+            "start": 49.105000000000004,
+            "end": 49.345000000000006
+          },
+          {
+            "word": "nine ",
+            "start": 49.345000000000006,
+            "end": 49.584998000000006
+          },
+          {
+            "word": "AM ",
+            "start": 49.584998000000006,
+            "end": 49.825
+          },
+          {
+            "word": "to ",
+            "start": 49.825,
+            "end": 50.064998
+          },
+          {
+            "word": "four ",
+            "start": 50.064998,
+            "end": 50.225
+          },
+          {
+            "word": "PM ",
+            "start": 50.225,
+            "end": 50.465
+          },
+          {
+            "word": "on ",
+            "start": 50.465,
+            "end": 50.625
+          },
+          {
+            "word": "Monday, ",
+            "start": 50.625,
+            "end": 51.025000000000006
+          },
+          {
+            "word": "Tuesday, ",
+            "start": 51.025000000000006,
+            "end": 51.345000000000006
+          },
+          {
+            "word": "and ",
+            "start": 51.345000000000006,
+            "end": 51.425000000000004
+          },
+          {
+            "word": "Thursday, ",
+            "start": 51.425000000000004,
+            "end": 51.904998
+          },
+          {
+            "word": "twelve ",
+            "start": 51.904998,
+            "end": 52.145
+          },
+          {
+            "word": "PM ",
+            "start": 52.145,
+            "end": 52.385000000000005
+          },
+          {
+            "word": "to ",
+            "start": 52.385000000000005,
+            "end": 52.545
+          },
+          {
+            "word": "PM ",
+            "start": 52.735003000000006,
+            "end": 53.135000000000005
+          },
+          {
+            "word": "on ",
+            "start": 53.135000000000005,
+            "end": 53.375003
+          },
+          {
+            "word": "Wednesday, ",
+            "start": 53.375003,
+            "end": 53.855002000000006
+          },
+          {
+            "word": "and ",
+            "start": 53.855002000000006,
+            "end": 54.015002
+          },
+          {
+            "word": "nine ",
+            "start": 54.015002,
+            "end": 54.255
+          },
+          {
+            "word": "AM ",
+            "start": 54.255,
+            "end": 54.575
+          },
+          {
+            "word": "to ",
+            "start": 54.575,
+            "end": 54.735003000000006
+          },
+          {
+            "word": "twelve ",
+            "start": 54.735003000000006,
+            "end": 54.895003
+          },
+          {
+            "word": "PM ",
+            "start": 54.895003,
+            "end": 55.295
+          },
+          {
+            "word": "on ",
+            "start": 55.295,
+            "end": 55.455000000000005
+          },
+          {
+            "word": "Friday. ",
+            "start": 55.455000000000005,
+            "end": 55.695002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Let me know if you need anything else. ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 56.345000000000006,
+            "end": 56.585
+          },
+          {
+            "word": "me ",
+            "start": 56.585,
+            "end": 56.745000000000005
+          },
+          {
+            "word": "know ",
+            "start": 56.745000000000005,
+            "end": 56.825
+          },
+          {
+            "word": "if ",
+            "start": 56.825,
+            "end": 56.985
+          },
+          {
+            "word": "you ",
+            "start": 56.985,
+            "end": 57.065000000000005
+          },
+          {
+            "word": "need ",
+            "start": 57.065000000000005,
+            "end": 57.305
+          },
+          {
+            "word": "anything ",
+            "start": 57.305,
+            "end": 57.545
+          },
+          {
+            "word": "else. ",
+            "start": 57.545,
+            "end": 57.705000000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, that's really helpful. I appreciate your time—have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 58.71,
+            "end": 59.11
+          },
+          {
+            "word": "you, ",
+            "start": 59.11,
+            "end": 59.51
+          },
+          {
+            "word": "that's ",
+            "start": 59.51,
+            "end": 59.91
+          },
+          {
+            "word": "really ",
+            "start": 59.91,
+            "end": 60.31
+          },
+          {
+            "word": "helpful. ",
+            "start": 59.958625,
+            "end": 60.358625
+          },
+          {
+            "word": "I ",
+            "start": 60.358625,
+            "end": 60.758625
+          },
+          {
+            "word": "appreciate ",
+            "start": 60.758625,
+            "end": 61.158625
+          },
+          {
+            "word": "your ",
+            "start": 61.158625,
+            "end": 61.558625
+          },
+          {
+            "word": "time—have ",
+            "start": 61.558625,
+            "end": 61.958625
+          },
+          {
+            "word": "a ",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          },
+          {
+            "word": "great ",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          },
+          {
+            "word": "day!",
+            "start": 61.94395825195313,
+            "end": 62.343958251953126
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "35b918ae4114e33a",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"Thank you, that's really helpful. I appreciate your time—have a great day!\"}",
+        "time_sec": 62.36,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/a44cc759d62791b1be4088c4b0bfbe0884b0e0ca7387b2b1c023bacf1e0d506c/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/a44cc759d62791b1be4088c4b0bfbe0884b0e0ca7387b2b1c023bacf1e0d506c/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/a44cc759d62791b1be4088c4b0bfbe0884b0e0ca7387b2b1c023bacf1e0d506c/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 757.98,
+        "min": 2,
+        "max": 771,
+        "p90": 640.8,
+        "num": 8,
+        "values": [
+          2,
+          558,
+          771,
+          444,
+          566,
+          458,
+          585,
+          528
+        ],
+        "p50": 543,
+        "p95": 705.8999999999999
+      },
+      "e2e": {
+        "p99": 1665.2000390624999,
+        "min": 723,
+        "max": 1684,
+        "p90": 1496.000390625,
+        "num": 5,
+        "values": [
+          1684,
+          1214.0009765625,
+          997,
+          723,
+          1005
+        ],
+        "p50": 1005,
+        "p95": 1590.0001953125
+      },
+      "tts": {
+        "p99": 317.09,
+        "min": 169,
+        "max": 318,
+        "p90": 308.9,
+        "num": 8,
+        "values": [
+          318,
+          233,
+          282,
+          305,
+          290,
+          169,
+          247,
+          269
+        ],
+        "p50": 275.5,
+        "p95": 313.45
+      },
+      "asr": {
+        "p99": 726.4983149999889,
+        "min": 9.99949999999808,
+        "max": 2029.999499999998,
+        "p90": 60.00004999999983,
+        "num": 80,
+        "values": [
+          10.00001999999995,
+          20,
+          20.00003000000015,
+          20,
+          30,
+          20.000000000000455,
+          30,
+          60,
+          29.999900000000252,
+          30.000050000000556,
+          19.9998599999999,
+          39.99969999999939,
+          20,
+          39.99999999999909,
+          29.999799999999595,
+          39.9994999999999,
+          40,
+          40.000599999999395,
+          29.99959999999919,
+          20.00014999999985,
+          39.99999999999818,
+          39.999399999998786,
+          40,
+          39.9994999999999,
+          30,
+          9.99949999999808,
+          10.000000000003638,
+          29.998999999999796,
+          29.999500000001717,
+          10.000000000003638,
+          20.00100000000384,
+          19.999500000001717,
+          50,
+          2029.999499999998,
+          60.00049999999828,
+          50.00100000000384,
+          20.001499999998487,
+          30.002299999996467,
+          79.99950000000536,
+          40.00200000000041,
+          30.000299999999697,
+          29.99899999999616,
+          39.99760000000242,
+          29.99949999999808,
+          19.998200000001816,
+          69.99899999999616,
+          29.99760000000242,
+          30,
+          19.997699999999895,
+          20.000150000007125,
+          30.000900000006368,
+          29.99949999999808,
+          20.000300000006973,
+          39.999000000003434,
+          50.00140000000101,
+          40,
+          39.99860000000626,
+          50.00100000000384,
+          39.99799999999959,
+          70.00050000000192,
+          50.00100000000384,
+          40.000000000007276,
+          29.998500000001513,
+          379.9979999999996,
+          50.00198000000091,
+          40.000599999999395,
+          30.001400000001013,
+          50.00210000000516,
+          50.00080000000162,
+          40.00150000000576,
+          50.002300000000105,
+          60.000999999996566,
+          50.00340000000142,
+          50.00200000000768,
+          60.00100000000384,
+          30.001499999998487,
+          30.00014999999985,
+          30.000899999999092,
+          29.99949999999808,
+          50.0002999999997
+        ],
+        "p50": 30.001899999997477,
+        "p95": 69.99907499999645
+      }
+    },
+    "metadata": {
+      "scenario_title": "Ask about weekend office hours",
+      "started_at_utc": "2026-03-15T16:57:54.465331+00:00",
+      "project_stage": "stage_3",
+      "scenario_id": "office_hours_weekend"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 5.775
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 1.575
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 4.725
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 1.575
+        }
+      ],
+      "combined_cost": 13.65,
+      "total_duration_seconds": 63
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent called Pivot Point Orthopaedics to inquire about office hours, specifically if they are open on Saturday mornings. The user informed the agent that the office is closed on Saturdays and provided detailed weekday hours. The call ended positively with the agent expressing appreciation for the information.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        511,
+        542,
+        577,
+        614,
+        621,
+        698,
+        697,
+        709
+      ],
+      "average": 621.125,
+      "num_requests": 8
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 62.36,
+        "tool_call_id": "35b918ae4114e33a",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA44a17355c78297b030db2758883d7379"
+    }
+  }
+}

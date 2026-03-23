@@ -1,0 +1,26 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks 
+Agent: fine, thank 
+User: for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1987.
+User: Birthday doesn't match our records. But for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I’m a new patient and I’d like to schedule an appointment. Do you have any weekday morning options available?
+User: We have a few appointment types for new patients. Would you like a new patient consultation to discuss a concern or injury, or do you need something else? 
+Agent: I’d like a new patient consultation to discuss a concern. Could you let me know what weekday morning times you have available?
+User: Let me check for new patient consultation openings on weekday mornings. One moment. We have a new patient consultation available. Thursday, March nineteenth at eleven fifteen AM with doctor Judy Hauser. Would you like to book that? 
+User: Or hear about other options? 
+Agent: Actually, I think an afternoon appointment might work better for me. Could you let me know what weekday afternoon times are available instead?
+User: Let me check for weekday afternoon openings for a new patient consultation. One moment. The next available afternoon appointment is Thursday, March nineteenth at twelve PM with doctor Dunty Hauser. Would you like to book this time or hear about other options? 
+Agent: That time sounds good. I’d like to book the Thursday, March nineteenth at twelve PM appointment with Dr. Dunty Hauser, please.
+User: Just to confirm, you'd like to book Thursday, March nineteenth at twelve PM with doctor Judy Hauser for a new patient consult Is that correct? 
+User: And could you briefly share the reason for your visit? 
+Agent: Yes, that’s correct, and the reason for my visit is to discuss a concern I’ve been having with my knee.
+User: Your appointment is set for Thursday, March nineteenth at twelve PM with doctor Dugie Hauser to discuss your knee concern. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for this appointment? 
+Agent: Yes, a text reminder would be great, thank you!
+User: You'll get a text reminder soon. If you have any other questions, or need to make changes, just let me know. 
+Agent: Thank you so much for your help. I appreciate it! Have a great day.

@@ -1,0 +1,22 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+User: Thanks for 
+Agent: That's fine, 
+User: calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1987.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I’d like to schedule a routine primary care appointment for next week, preferably on a weekday morning. Are there any openings available?
+User: Just to clarify, at Pivot Point Orthopaedics, we offer new patient consultations follow-up consultations, procedure appointments, and physical therapy sessions. Are you looking to book a follow-up consultation for your routine care? 
+Agent: Actually, I’m a new patient, so I’d like to book a new patient consultation for routine care. Do you have any weekday morning openings next week?
+User: Let me check for new patient consultation openings next week in the morning. One moment. We have a new patient consultation available on Thursday, March nineteenth. At eleven fifteen AM with doctor Dudeehauser. Would you like to book that or hear about Friday morning options? 
+Agent: Thursday at 11:15 AM sounds good, but could you please let me know what Friday morning options are available as well?
+User: On Friday, March twentieth, we have openings at nine forty five a. M. And ten thirty AM with doctor Adam Bricker. Would you prefer one of those, or should I book you for Thursday at eleven fifteen AM with doctor Hauser? 
+Agent: Thank you for the options. I’d like to book the Friday, March twentieth appointment at 9:45 AM with Dr. Bricker, please.
+User: Just to confirm, you'd like to book a new patient consultation on Friday, March twentieth at nine forty five AM with doctor Adam Bricker. Is that correct? 
+Agent: Yes, that’s correct. Thank you for confirming!
+User: Your new patient consultation is set for Friday, March twentieth at nine forty five AM with doctor Adam Bricker. Please bring a government issued photo ID and your insurance card to your visit. Would you like a text reminder for your appointment? 
+Agent: Yes, a text reminder would be great—thank you!
+User: You'll get a text reminder soon. If you have any other questions or need to make changes, just let me know. 
+Agent: Thank you so much for your help. I appreciate it! Have a great day.

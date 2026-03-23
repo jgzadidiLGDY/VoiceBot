@@ -1,0 +1,15 @@
+2026-03-15 22:32:51.346 call_7c6d21e6e71c2463ffed1ca185e info: Starting call: call_7c6d21e6e71c2463ffed1ca185e
+2026-03-15 22:33:03.299 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 2300
+2026-03-15 22:33:10.485 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1596
+2026-03-15 22:33:18.682 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1423
+2026-03-15 22:33:33.000 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1251
+2026-03-15 22:33:54.104 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 2544.001953125
+2026-03-15 22:34:22.067 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1717.0048828125
+2026-03-15 22:34:43.357 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1798.006103515625
+2026-03-15 22:35:12.587 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 2158
+2026-03-15 22:35:37.000 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1540
+2026-03-15 22:36:03.812 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1523
+2026-03-15 22:36:18.786 call_7c6d21e6e71c2463ffed1ca185e info: E2E latency for this turn: 1516.989990234375
+2026-03-15 22:36:22.162 call_7c6d21e6e71c2463ffed1ca185e info: Calling tool: end_call 
+Arguments: {"execution_message":"Thank you so much for your help. I appreciate it! Have a great day."}
+2026-03-15 22:36:22.163 call_7c6d21e6e71c2463ffed1ca185e info: Ending call: call_7c6d21e6e71c2463ffed1ca185e

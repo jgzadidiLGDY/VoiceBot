@@ -1,0 +1,13 @@
+2026-03-19 14:36:45.278 call_74ca3735233f0cbf42d7c6cb4c3 info: Starting call: call_74ca3735233f0cbf42d7c6cb4c3
+2026-03-19 14:36:56.824 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1693
+2026-03-19 14:37:05.621 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1420
+2026-03-19 14:37:20.230 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1218
+2026-03-19 14:37:34.966 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1045
+2026-03-19 14:38:02.662 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1130
+2026-03-19 14:38:38.104 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1243
+2026-03-19 14:39:01.599 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1518
+2026-03-19 14:39:28.044 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1353
+2026-03-19 14:39:42.062 call_74ca3735233f0cbf42d7c6cb4c3 info: E2E latency for this turn: 1070.989990234375
+2026-03-19 14:39:44.698 call_74ca3735233f0cbf42d7c6cb4c3 info: Calling tool: end_call 
+Arguments: {"execution_message":"Thank you so much! Have a great day as well."}
+2026-03-19 14:39:44.698 call_74ca3735233f0cbf42d7c6cb4c3 info: Ending call: call_74ca3735233f0cbf42d7c6cb4c3

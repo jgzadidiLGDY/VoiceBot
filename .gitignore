@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large / optional local artifacts
+*.log
+
+# Keep outputs in repo, but ignore temporary leftovers if any
+# Uncomment if needed later:
+# outputs/**/*.wav
+# outputs/**/*.mp3

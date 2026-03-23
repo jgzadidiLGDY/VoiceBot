@@ -1,0 +1,6 @@
+2026-03-14 21:48:00.781 call_b539142f7fa191d1e2cfb513b50 info: Starting call: call_b539142f7fa191d1e2cfb513b50
+2026-03-14 21:48:14.494 call_b539142f7fa191d1e2cfb513b50 info: E2E latency for this turn: 2537
+2026-03-14 21:48:17.476 call_b539142f7fa191d1e2cfb513b50 info: E2E latency for this turn: 1749
+2026-03-14 21:48:20.204 call_b539142f7fa191d1e2cfb513b50 info: Calling tool: end_call 
+Arguments: {"execution_message":"You're welcome! Have a great day. Goodbye."}
+2026-03-14 21:48:20.205 call_b539142f7fa191d1e2cfb513b50 info: Ending call: call_b539142f7fa191d1e2cfb513b50

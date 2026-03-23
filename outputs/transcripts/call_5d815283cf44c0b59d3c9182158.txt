@@ -1,0 +1,24 @@
+User: This call may be recorded for quality and training purposes. 
+User: Thanks 
+Agent: That's 
+User: for calling Pivot Point Orthopaedics. Part of Pretty Good AI, Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez. I actually already have an appointment scheduled for this Friday at 2:00 PM, but I need to move it. Could you help me reschedule to a weekday morning next week instead?
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1985.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. 
+Agent: Thank you. Can you 
+User: Thanks, 
+Agent: let me 
+User: Maria. Let me check your upcoming appointment and find available weekday morning slots for next week. One moment. Maria, I see you have two upcoming appointments for a new patient consultation with doctor Bricker one on Thursday, March nineteenth at ten thirty AM, and another on Friday, March twentieth at nine forty five AM. Just to confirm, are you looking to reschedule the Friday appointment at nine forty five AM to a weekday morning next week? 
+Agent: Actually, I wanted to reschedule my Friday appointment, but the one I have is at 2:00 PM, not 9:45 AM. Could you double-check if there’s an appointment for me this Friday afternoon? I’d like to move that one to a weekday morning next week.
+User: I don't see a Friday afternoon appointment. In your records. Only one at nine forty five AM this Friday. Would you like to reschedule the nine forty five AM appointment to a weekday morning week instead? 
+Agent: Oh, I see. Yes, please—let’s reschedule the 9:45 AM appointment this Friday to a weekday morning next week. What options do you have available?
+User: Let me check for available weekday morning slots next week to reschedule your new patient consultation. One moment. 
+User: I'm having trouble accessing the available slots right now. I'll document this issue and let our clinic support team know so they can follow-up with you directly. Please stay on the line while I update your request. 
+Agent: No problem, 
+User: Since I'm unable to access the available slots and live support is open, I'll connect you to our clinic support team so they can help you reschedule your appointment. Please stay on the line while I transfer your call. Connecting you to a representative. 
+User: Please 
+Agent: Thank you for your help. I'll stay on the 
+User: Hello. You've reached 
+Agent: line for the transfer.
+Agent: Hello, I’m still here. It sounds like the transfer didn’t go through—should I wait, or is there another way I can get help rescheduling my appointment?

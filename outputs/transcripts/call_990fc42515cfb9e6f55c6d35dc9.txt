@@ -1,0 +1,21 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks for 
+Agent: fine, thank 
+User: calling Pivot Point Orthopaedics. Part of pretty good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1982.
+User: The birthday doesn't match our record, but for demo purposes, I'll accept it. How can I help you today? 
+User: today? 
+Agent: Thank you. Before I schedule an appointment, I wanted to check if you accept Aetna PPO insurance.
+User: Pivot Point Orthopaedics accepts most insurance plans, including many PPO options. Let me confirm your insurance details on file or help you update them if needed. Would you like to update your insurance information now? 
+Agent: Yes, I’d like to make sure my insurance information is up to date. What do you need from me to verify my Aetna PPO coverage?
+User: Looks like we don't have any insurance on file for you. Can I send you a link via text at your number ending in four three four nine to upload your Aetna PPO insurance card? 
+Agent: Yes, that works for me. Please send the link to my phone so I can upload my Aetna PPO card.
+User: I sent a link to your phone ending in four three four nine. Please open it, take photos of the front and back of your Aetna PPE card, and review the info. The link expires in thirty minutes. Let me know if you have any questions while you fill it out. 
+Agent: Thank you for sending the link. I’ll upload my insurance card right away. If I have any trouble, I’ll call back. Thanks for your help!
+User: You're welcome. I'll stay on the line a bit longer in case have questions while uploading your card. If you need anything else, just let me know. 
+Agent: I appreciate that. I think I’m all set for now—thanks again for your help. Have a great day!

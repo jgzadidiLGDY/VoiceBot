@@ -1,0 +1,17 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+User: Thanks for calling Tibbett Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is May 14, 1982.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I need to cancel my upcoming appointment that’s scheduled for next Tuesday at 10:30 AM. Could you please confirm once it’s canceled?
+User: Let me check your upcoming appointments and start the cancellation process for the one Tuesday at ten thirty AM. You have two upcoming appointments. One on Thursday, March nineteenth, at ten thirty AM and another on Friday, March twentieth at nine. Forty five AM. Both are new patient visits. Just to confirm, do you want to cancel the appointment on Thursday, March nineteenth at ten thirty AM? 
+Agent: Yes, that’s correct—I’d like to cancel the appointment on Thursday, March nineteenth at 10:30 AM. Please let me know once it’s canceled.
+User: Can you share the reason for canceling your appointment? 
+User: For example, illness work conflict, transportation, insurance, or another reason. 
+Agent: I have a work conflict and won’t be able to make it.
+User: Your appointment on Thursday, March nineteenth at ten thirty AM with Abeker has been canceled due to a work conflict. Let me know if you need to reschedule or need help with anything else. 
+Agent: Thank you for confirming the cancellation. That’s all I needed for now. Have a great day!
+User: You're all set. Have a great day. 
+Agent: Thanks again. Goodbye!

@@ -1,0 +1,27 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's fine, thank you 
+User: (inaudible speech)
+User: Part of Pretty Bit AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1972.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I wanted to ask if I can request a refill for my Lisinopril prescription, and what information you need from me to process the refill.
+User: Yes. You can request a refill for your I need a few details to process it. First, what medication do you need refilled? 
+Agent: I need a refill for Lisinopril.
+User: What's the dosage, and how often do you take lisinopril? 
+Agent: I take 20 mg once a day.
+User: When did you last have your lisinopril refilled? 
+Agent: I believe my last refill was about a month ago.
+User: How many days of lisinopril do you have left? 
+Agent: I have about three days left of my Lisinopril.
+User: Which pharmacy do you use? 
+User: Please confirm the location. 
+Agent: I use the CVS pharmacy on Main Street.
+User: Looks like I'm unable to find your medication details in our system. I'll document your refill request and let our clinic support team know. They'll get back to you as soon as they can. 
+Agent: Thank you for letting me know. Is there anything else you need from me to help with the refill process?
+User: Your refill request has been submitted and will be reviewed by the clinic staff. If they need anything else, they'll reach out to you. 
+User: Is there anything else I can help with today? 
+Agent: No, that's all for now. Thank you for your help. Have a great day!

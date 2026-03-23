@@ -1,0 +1,16 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks for calling Pibbett Point Orthopedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is May 14, 1982.
+User: The birthday doesn't match our records, but for demo purposes, all accept it. How can I help you today, Maria? 
+Agent: Thank you. I’m a little confused about which office I should go to, since I’m not sure which location is best. Could you help me figure out which office is closest, and give me the address?
+User: Your main office is Pivot Point Orthopaedics. At two twenty Athens Way, Nashville, If you need another location or more details, just let me know. 
+Agent: Thank you! Is that the only location, or are there other offices as well? I’d like to make sure I’m going to the closest one.
+User: Pivot Point Orthopaedics has just one main at two two zero Athens Way in Nashville. That's the only location for appointments and visits. 
+User: If you need directions or help with parking, let me know. 
+Agent: Thank you, that’s really helpful! I think I’m all set for now. Have a great day!
+User: You're welcome, Maria. If you need anything else, just give us a call. Have a great day. 
+Agent: Thanks again! Goodbye.

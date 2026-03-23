@@ -1,0 +1,20 @@
+User: This call may be recorded for quality and training purposes. 
+User: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 12, 1982.
+User: The birthday doesn't match our records. But for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I wanted to ask if it’s possible to book an appointment for Sunday morning.
+User: We're open Monday through Friday, so we don't have a appointments on Sundays. Would you like to look at available times during the week instead? 
+Agent: Oh, I see. Is there any exception at all, or any Sunday availability, maybe for urgent cases?
+User: We don't offer appointments on Sundays even for urgent cases. If you need urgent orthopedic care outside our hours, it's best to visit an urgent care clinic or call nine one one for emergencies. Would you like to see our next available weekday appointment? 
+Agent: Thank you for clarifying. Yes, please—could you let me know your next available weekday morning appointment?
+User: Let me check the next available weekday morning appointment for you. One moment. Our next available weekday morning appointment is Thursday, March nineteenth at eleven fifteen with doctor Duggehauser. Would you like to book this slot? 
+User: Or hear about other options? 
+Agent: Thursday, March nineteenth at eleven fifteen sounds good. Yes, please go ahead and book that slot for me. Thank you!
+User: Just to confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at eleven fifteen AM? With doctor Doobie Hauser. Is that correct? 
+Agent: Yes, that’s correct—I’d like to book a new patient consultation on Thursday, March nineteenth at eleven fifteen AM with Dr. Doogie Hauser. Thank you for confirming!
+User: Your appointment is set for Thursday, March nineteenth at eleven fifteen AM with doc Dugi Hauser Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment? 
+Agent: Yes, a text reminder would be great—thank you!
+User: You'll get a text reminder soon. If you have any other questions or need to change your appointment, just let me know. 
+Agent: Thank you so much for your help. I appreciate it! Have a great day.

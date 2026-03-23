@@ -1,0 +1,2862 @@
+{
+  "call_id": "call_668220011fa3b3d4be8910252be",
+  "scenario": {
+    "scenario_id": "location_question",
+    "title": "Ask which office location to visit",
+    "category": "location",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "polite"
+    },
+    "goal": "Find out which office location is best and ask for the address.",
+    "known_facts": {
+      "location_uncertainty": "yes",
+      "preference": "closest office if multiple locations exist"
+    },
+    "behavior_style": [
+      "polite",
+      "slightly_confused"
+    ],
+    "stress_target": "disambiguation",
+    "must_try": [
+      "Ask which location you should go to.",
+      "Ask for the address if multiple locations exist."
+    ],
+    "success_condition": "The agent provides location guidance or asks clarifying questions about which office is appropriate.",
+    "good_bug_signals": [
+      "The agent assumes a location without enough information.",
+      "The agent gives conflicting location details.",
+      "The agent fails to provide useful address guidance."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_668220011fa3b3d4be8910252be",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The agent provides location guidance or asks clarifying questions about which office is appropriate.",
+      "age_band": "adult",
+      "goal": "Find out which office location is best and ask for the address.",
+      "behavior_style": "polite, slightly_confused",
+      "stress_target": "disambiguation",
+      "must_try": "Ask which location you should go to. | Ask for the address if multiple locations exist.",
+      "tone": "polite",
+      "title": "Ask which office location to visit",
+      "scenario_id": "location_question",
+      "patient_name": "Maria Lopez",
+      "known_facts": "location_uncertainty=yes; preference=closest office if multiple locations exist",
+      "category": "location",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_668220011fa3b3d4be8910252be",
+      "X-RetellAI-SipTraceId": "call_668220011fa3b3d4be8910252be",
+      "Route": "<sip:18.98.16.121;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773596308651,
+    "end_timestamp": 1773596403900,
+    "duration_ms": 95249,
+    "transcript": "Agent: Hi, \nUser: This call may be recorded for quality and training purposes. \nAgent: That's \nUser: Thanks for calling Pibbett Point Orthopedics. Part of Pretty Good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez.\nUser: For verification, may I have your date of birth? \nAgent: Sure, my date of birth is May 14, 1982.\nUser: The birthday doesn't match our records, but for demo purposes, all accept it. How can I help you today, Maria? \nAgent: Thank you. I’m a little confused about which office I should go to, since I’m not sure which location is best. Could you help me figure out which office is closest, and give me the address?\nUser: Your main office is Pivot Point Orthopaedics. At two twenty Athens Way, Nashville, If you need another location or more details, just let me know. \nAgent: Thank you! Is that the only location, or are there other offices as well? I’d like to make sure I’m going to the closest one.\nUser: Pivot Point Orthopaedics has just one main at two two zero Athens Way in Nashville. That's the only location for appointments and visits. \nUser: If you need directions or help with parking, let me know. \nAgent: Thank you, that’s really helpful! I think I’m all set for now. Have a great day!\nUser: You're welcome, Maria. If you need anything else, just give us a call. Have a great day. \nAgent: Thanks again! Goodbye.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.471,
+            "end": 0.871
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.40599998,
+            "end": 0.646
+          },
+          {
+            "word": "call ",
+            "start": 0.646,
+            "end": 0.966
+          },
+          {
+            "word": "may ",
+            "start": 0.966,
+            "end": 1.2059999
+          },
+          {
+            "word": "be ",
+            "start": 1.2059999,
+            "end": 1.366
+          },
+          {
+            "word": "recorded ",
+            "start": 1.366,
+            "end": 1.686
+          },
+          {
+            "word": "for ",
+            "start": 1.686,
+            "end": 2.006
+          },
+          {
+            "word": "quality ",
+            "start": 2.006,
+            "end": 2.4059999
+          },
+          {
+            "word": "and ",
+            "start": 2.4059999,
+            "end": 2.6459998999999996
+          },
+          {
+            "word": "training ",
+            "start": 2.6459998999999996,
+            "end": 3.046
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.046,
+            "end": 3.4459997999999996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 6.349,
+            "end": 6.749
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Pibbett Point Orthopedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.396,
+            "end": 6.796
+          },
+          {
+            "word": "for ",
+            "start": 6.796,
+            "end": 6.956
+          },
+          {
+            "word": "calling ",
+            "start": 6.956,
+            "end": 7.1959996
+          },
+          {
+            "word": "Pibbett ",
+            "start": 7.1959996,
+            "end": 7.5159998
+          },
+          {
+            "word": "Point ",
+            "start": 7.5159998,
+            "end": 7.756
+          },
+          {
+            "word": "Orthopedics. ",
+            "start": 7.756,
+            "end": 8.315999
+          },
+          {
+            "word": "Part ",
+            "start": 8.866,
+            "end": 9.186
+          },
+          {
+            "word": "of ",
+            "start": 9.186,
+            "end": 9.346
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.346,
+            "end": 9.586
+          },
+          {
+            "word": "Good ",
+            "start": 9.586,
+            "end": 9.826
+          },
+          {
+            "word": "AI. ",
+            "start": 9.826,
+            "end": 10.145999
+          },
+          {
+            "word": "Am ",
+            "start": 10.456,
+            "end": 10.696
+          },
+          {
+            "word": "I ",
+            "start": 10.696,
+            "end": 10.775999500000001
+          },
+          {
+            "word": "speaking ",
+            "start": 10.775999500000001,
+            "end": 11.016
+          },
+          {
+            "word": "with ",
+            "start": 11.016,
+            "end": 11.096
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.096,
+            "end": 11.416
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 12.364,
+            "end": 12.764
+          },
+          {
+            "word": "this ",
+            "start": 12.764,
+            "end": 13.164
+          },
+          {
+            "word": "is ",
+            "start": 13.164,
+            "end": 13.564
+          },
+          {
+            "word": "Maria ",
+            "start": 13.564,
+            "end": 13.964
+          },
+          {
+            "word": "Lopez.",
+            "start": 13.9145,
+            "end": 14.3145
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 17.356,
+            "end": 17.596
+          },
+          {
+            "word": "verification, ",
+            "start": 17.596,
+            "end": 18.316
+          },
+          {
+            "word": "may ",
+            "start": 18.316,
+            "end": 18.476
+          },
+          {
+            "word": "I ",
+            "start": 18.476,
+            "end": 18.556
+          },
+          {
+            "word": "have ",
+            "start": 18.556,
+            "end": 18.716
+          },
+          {
+            "word": "your ",
+            "start": 18.716,
+            "end": 18.875999
+          },
+          {
+            "word": "date ",
+            "start": 18.875999,
+            "end": 18.956
+          },
+          {
+            "word": "of ",
+            "start": 18.956,
+            "end": 19.116
+          },
+          {
+            "word": "birth? ",
+            "start": 19.116,
+            "end": 19.196
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 20.217,
+            "end": 20.617
+          },
+          {
+            "word": "my ",
+            "start": 20.617,
+            "end": 21.017
+          },
+          {
+            "word": "date ",
+            "start": 21.017,
+            "end": 21.417
+          },
+          {
+            "word": "of ",
+            "start": 21.417,
+            "end": 21.817
+          },
+          {
+            "word": "birth ",
+            "start": 21.817,
+            "end": 22.217
+          },
+          {
+            "word": "is ",
+            "start": 22.217,
+            "end": 22.617
+          },
+          {
+            "word": "May ",
+            "start": 22.617,
+            "end": 23.017
+          },
+          {
+            "word": "14, ",
+            "start": 23.017,
+            "end": 23.417
+          },
+          {
+            "word": "1982.",
+            "start": 23.417,
+            "end": 23.817
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, all accept it. How can I help you today, Maria? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 26.365999,
+            "end": 26.605998
+          },
+          {
+            "word": "birthday ",
+            "start": 26.605998,
+            "end": 27.006
+          },
+          {
+            "word": "doesn't ",
+            "start": 27.006,
+            "end": 27.326
+          },
+          {
+            "word": "match ",
+            "start": 27.326,
+            "end": 27.486
+          },
+          {
+            "word": "our ",
+            "start": 27.486,
+            "end": 27.726
+          },
+          {
+            "word": "records, ",
+            "start": 27.726,
+            "end": 28.125999
+          },
+          {
+            "word": "but ",
+            "start": 28.125999,
+            "end": 28.285999
+          },
+          {
+            "word": "for ",
+            "start": 28.285999,
+            "end": 28.445999
+          },
+          {
+            "word": "demo ",
+            "start": 28.445999,
+            "end": 28.765998
+          },
+          {
+            "word": "purposes, ",
+            "start": 28.765998,
+            "end": 29.086
+          },
+          {
+            "word": "all ",
+            "start": 29.396,
+            "end": 29.636
+          },
+          {
+            "word": "accept ",
+            "start": 29.636,
+            "end": 29.875999
+          },
+          {
+            "word": "it. ",
+            "start": 29.875999,
+            "end": 30.115999
+          },
+          {
+            "word": "How ",
+            "start": 31.486001,
+            "end": 31.806001000000002
+          },
+          {
+            "word": "can ",
+            "start": 31.806001000000002,
+            "end": 31.966001
+          },
+          {
+            "word": "I ",
+            "start": 31.966001,
+            "end": 32.046
+          },
+          {
+            "word": "help ",
+            "start": 32.046,
+            "end": 32.206
+          },
+          {
+            "word": "you ",
+            "start": 32.206,
+            "end": 32.286
+          },
+          {
+            "word": "today, ",
+            "start": 32.286,
+            "end": 32.606002000000004
+          },
+          {
+            "word": "Maria? ",
+            "start": 32.606002000000004,
+            "end": 32.846000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I’m a little confused about which office I should go to, since I’m not sure which location is best. Could you help me figure out which office is closest, and give me the address?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 33.805,
+            "end": 34.205
+          },
+          {
+            "word": "you.",
+            "start": 34.159666748046874,
+            "end": 34.55966674804687
+          },
+          {
+            "word": " I’m ",
+            "start": 34.55966674804687,
+            "end": 34.95966674804688
+          },
+          {
+            "word": "a ",
+            "start": 34.95966674804688,
+            "end": 35.35966674804688
+          },
+          {
+            "word": "little ",
+            "start": 35.35966674804688,
+            "end": 35.759666748046875
+          },
+          {
+            "word": "confused ",
+            "start": 35.759666748046875,
+            "end": 36.159666748046874
+          },
+          {
+            "word": "about ",
+            "start": 36.159666748046874,
+            "end": 36.55966674804687
+          },
+          {
+            "word": "which ",
+            "start": 36.55966674804687,
+            "end": 36.95966674804688
+          },
+          {
+            "word": "office ",
+            "start": 36.95966674804688,
+            "end": 37.35966674804688
+          },
+          {
+            "word": "I ",
+            "start": 37.35966674804688,
+            "end": 37.759666748046875
+          },
+          {
+            "word": "should ",
+            "start": 37.759666748046875,
+            "end": 38.159666748046874
+          },
+          {
+            "word": "go ",
+            "start": 38.159666748046874,
+            "end": 38.55966674804687
+          },
+          {
+            "word": "to, ",
+            "start": 38.55966674804687,
+            "end": 38.95966674804688
+          },
+          {
+            "word": "since ",
+            "start": 38.95966674804688,
+            "end": 39.35966674804688
+          },
+          {
+            "word": "I’m ",
+            "start": 39.35966674804688,
+            "end": 39.759666748046875
+          },
+          {
+            "word": "not ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "sure ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "which ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "location ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "is ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "best.",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": " Could ",
+            "start": 39.819,
+            "end": 40.219
+          },
+          {
+            "word": "you ",
+            "start": 40.219,
+            "end": 40.619
+          },
+          {
+            "word": "help ",
+            "start": 40.619,
+            "end": 41.019
+          },
+          {
+            "word": "me ",
+            "start": 41.019,
+            "end": 41.419
+          },
+          {
+            "word": "figure ",
+            "start": 41.419,
+            "end": 41.819
+          },
+          {
+            "word": "out ",
+            "start": 41.819,
+            "end": 42.219
+          },
+          {
+            "word": "which ",
+            "start": 42.219,
+            "end": 42.619
+          },
+          {
+            "word": "office ",
+            "start": 42.619,
+            "end": 43.019
+          },
+          {
+            "word": "is ",
+            "start": 43.019,
+            "end": 43.419
+          },
+          {
+            "word": "closest, ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "and ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "give ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "me ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "the ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "address?",
+            "start": 43.2735,
+            "end": 43.6735
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your main office is Pivot Point Orthopaedics. At two twenty Athens Way, Nashville, If you need another location or more details, just let me know. ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 47.036,
+            "end": 47.356
+          },
+          {
+            "word": "main ",
+            "start": 47.356,
+            "end": 47.596000000000004
+          },
+          {
+            "word": "office ",
+            "start": 47.596000000000004,
+            "end": 47.836
+          },
+          {
+            "word": "is ",
+            "start": 47.836,
+            "end": 48.076
+          },
+          {
+            "word": "Pivot ",
+            "start": 48.076,
+            "end": 48.396
+          },
+          {
+            "word": "Point ",
+            "start": 48.396,
+            "end": 48.716
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 48.716,
+            "end": 49.356
+          },
+          {
+            "word": "At ",
+            "start": 49.546,
+            "end": 50.026
+          },
+          {
+            "word": "two ",
+            "start": 50.026,
+            "end": 50.346000000000004
+          },
+          {
+            "word": "twenty ",
+            "start": 50.346000000000004,
+            "end": 50.986
+          },
+          {
+            "word": "Athens ",
+            "start": 50.986,
+            "end": 51.466
+          },
+          {
+            "word": "Way, ",
+            "start": 51.466,
+            "end": 51.866
+          },
+          {
+            "word": "Nashville, ",
+            "start": 51.866,
+            "end": 52.186
+          },
+          {
+            "word": "If ",
+            "start": 52.706,
+            "end": 52.946002
+          },
+          {
+            "word": "you ",
+            "start": 52.946002,
+            "end": 53.106002000000004
+          },
+          {
+            "word": "need ",
+            "start": 53.106002000000004,
+            "end": 53.266002
+          },
+          {
+            "word": "another ",
+            "start": 53.266002,
+            "end": 53.586
+          },
+          {
+            "word": "location ",
+            "start": 53.586,
+            "end": 54.066
+          },
+          {
+            "word": "or ",
+            "start": 54.066,
+            "end": 54.306
+          },
+          {
+            "word": "more ",
+            "start": 54.306,
+            "end": 54.546
+          },
+          {
+            "word": "details, ",
+            "start": 54.546,
+            "end": 55.106002000000004
+          },
+          {
+            "word": "just ",
+            "start": 55.106002000000004,
+            "end": 55.266002
+          },
+          {
+            "word": "let ",
+            "start": 55.266002,
+            "end": 55.426002
+          },
+          {
+            "word": "me ",
+            "start": 55.426002,
+            "end": 55.586
+          },
+          {
+            "word": "know. ",
+            "start": 55.586,
+            "end": 55.666
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you! Is that the only location, or are there other offices as well? I’d like to make sure I’m going to the closest one.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 57.12,
+            "end": 57.52
+          },
+          {
+            "word": "you!",
+            "start": 57.47466674804687,
+            "end": 57.87466674804688
+          },
+          {
+            "word": " Is ",
+            "start": 57.87466674804688,
+            "end": 58.274666748046876
+          },
+          {
+            "word": "that ",
+            "start": 58.274666748046876,
+            "end": 58.674666748046874
+          },
+          {
+            "word": "the ",
+            "start": 58.674666748046874,
+            "end": 59.07466674804687
+          },
+          {
+            "word": "only ",
+            "start": 59.07466674804687,
+            "end": 59.47466674804687
+          },
+          {
+            "word": "location, ",
+            "start": 59.47466674804687,
+            "end": 59.87466674804688
+          },
+          {
+            "word": "or ",
+            "start": 59.87466674804688,
+            "end": 60.274666748046876
+          },
+          {
+            "word": "are ",
+            "start": 60.274666748046876,
+            "end": 60.674666748046874
+          },
+          {
+            "word": "there ",
+            "start": 60.674666748046874,
+            "end": 61.07466674804687
+          },
+          {
+            "word": "other ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "offices ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "as ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "well?",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": " I’d ",
+            "start": 61.1835,
+            "end": 61.5835
+          },
+          {
+            "word": "like ",
+            "start": 61.5835,
+            "end": 61.9835
+          },
+          {
+            "word": "to ",
+            "start": 61.9835,
+            "end": 62.3835
+          },
+          {
+            "word": "make ",
+            "start": 62.3835,
+            "end": 62.7835
+          },
+          {
+            "word": "sure ",
+            "start": 62.7835,
+            "end": 63.1835
+          },
+          {
+            "word": "I’m ",
+            "start": 63.1835,
+            "end": 63.5835
+          },
+          {
+            "word": "going ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "to ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "the ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "closest ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "one.",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "user",
+        "content": "Pivot Point Orthopaedics has just one main at two two zero Athens Way in Nashville. That's the only location for appointments and visits. ",
+        "words": [
+          {
+            "word": "Pivot ",
+            "start": 67.376,
+            "end": 67.776004
+          },
+          {
+            "word": "Point ",
+            "start": 67.776004,
+            "end": 68.016
+          },
+          {
+            "word": "Orthopaedics ",
+            "start": 68.016,
+            "end": 68.656
+          },
+          {
+            "word": "has ",
+            "start": 68.656,
+            "end": 68.976
+          },
+          {
+            "word": "just ",
+            "start": 68.976,
+            "end": 69.21601
+          },
+          {
+            "word": "one ",
+            "start": 69.21601,
+            "end": 69.456005
+          },
+          {
+            "word": "main ",
+            "start": 69.456005,
+            "end": 69.696
+          },
+          {
+            "word": "at ",
+            "start": 70.265995,
+            "end": 70.585994
+          },
+          {
+            "word": "two ",
+            "start": 70.585994,
+            "end": 70.905994
+          },
+          {
+            "word": "two ",
+            "start": 70.905994,
+            "end": 71.22599
+          },
+          {
+            "word": "zero ",
+            "start": 71.22599,
+            "end": 71.706
+          },
+          {
+            "word": "Athens ",
+            "start": 71.706,
+            "end": 72.265995
+          },
+          {
+            "word": "Way ",
+            "start": 72.265995,
+            "end": 72.585994
+          },
+          {
+            "word": "in ",
+            "start": 72.585994,
+            "end": 72.826
+          },
+          {
+            "word": "Nashville. ",
+            "start": 72.826,
+            "end": 73.22599
+          },
+          {
+            "word": "That's ",
+            "start": 73.756,
+            "end": 74.076
+          },
+          {
+            "word": "the ",
+            "start": 74.076,
+            "end": 74.235996
+          },
+          {
+            "word": "only ",
+            "start": 74.235996,
+            "end": 74.47599
+          },
+          {
+            "word": "location ",
+            "start": 74.47599,
+            "end": 74.956
+          },
+          {
+            "word": "for ",
+            "start": 74.956,
+            "end": 75.11599
+          },
+          {
+            "word": "appointments ",
+            "start": 75.11599,
+            "end": 75.515995
+          },
+          {
+            "word": "and ",
+            "start": 75.515995,
+            "end": 75.676
+          },
+          {
+            "word": "visits. ",
+            "start": 75.676,
+            "end": 75.915996
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "If you need directions or help with parking, let me know. ",
+        "words": [
+          {
+            "word": "If ",
+            "start": 76.546,
+            "end": 76.786
+          },
+          {
+            "word": "you ",
+            "start": 76.786,
+            "end": 76.946
+          },
+          {
+            "word": "need ",
+            "start": 76.946,
+            "end": 77.106
+          },
+          {
+            "word": "directions ",
+            "start": 77.106,
+            "end": 77.506
+          },
+          {
+            "word": "or ",
+            "start": 77.506,
+            "end": 77.746
+          },
+          {
+            "word": "help ",
+            "start": 77.746,
+            "end": 77.906
+          },
+          {
+            "word": "with ",
+            "start": 77.906,
+            "end": 78.066
+          },
+          {
+            "word": "parking, ",
+            "start": 78.066,
+            "end": 78.386
+          },
+          {
+            "word": "let ",
+            "start": 79.036,
+            "end": 79.276
+          },
+          {
+            "word": "me ",
+            "start": 79.276,
+            "end": 79.436
+          },
+          {
+            "word": "know. ",
+            "start": 79.436,
+            "end": 79.516
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, that’s really helpful! I think I’m all set for now. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 80.462,
+            "end": 80.862
+          },
+          {
+            "word": "you, ",
+            "start": 80.862,
+            "end": 81.262
+          },
+          {
+            "word": "that’s ",
+            "start": 81.262,
+            "end": 81.662
+          },
+          {
+            "word": "really ",
+            "start": 81.662,
+            "end": 82.062
+          },
+          {
+            "word": "helpful!",
+            "start": 82.04733325195312,
+            "end": 82.44733325195313
+          },
+          {
+            "word": " I ",
+            "start": 82.44733325195313,
+            "end": 82.84733325195313
+          },
+          {
+            "word": "think ",
+            "start": 82.84733325195313,
+            "end": 83.24733325195312
+          },
+          {
+            "word": "I’m ",
+            "start": 83.24733325195312,
+            "end": 83.64733325195313
+          },
+          {
+            "word": "all ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "set ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "for ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "now.",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": " Have ",
+            "start": 83.88695825195313,
+            "end": 84.28695825195312
+          },
+          {
+            "word": "a ",
+            "start": 84.28695825195312,
+            "end": 84.68695825195313
+          },
+          {
+            "word": "great ",
+            "start": 84.54345825195313,
+            "end": 84.94345825195313
+          },
+          {
+            "word": "day!",
+            "start": 84.54345825195313,
+            "end": 84.94345825195313
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome, Maria. If you need anything else, just give us a call. Have a great day. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 87.596004,
+            "end": 87.916
+          },
+          {
+            "word": "welcome, ",
+            "start": 87.916,
+            "end": 88.316005
+          },
+          {
+            "word": "Maria. ",
+            "start": 88.316005,
+            "end": 88.956005
+          },
+          {
+            "word": "If ",
+            "start": 89.036,
+            "end": 89.276004
+          },
+          {
+            "word": "you ",
+            "start": 89.276004,
+            "end": 89.356
+          },
+          {
+            "word": "need ",
+            "start": 89.356,
+            "end": 89.516
+          },
+          {
+            "word": "anything ",
+            "start": 89.516,
+            "end": 89.836
+          },
+          {
+            "word": "else, ",
+            "start": 89.836,
+            "end": 90.076
+          },
+          {
+            "word": "just ",
+            "start": 90.486,
+            "end": 90.806
+          },
+          {
+            "word": "give ",
+            "start": 90.806,
+            "end": 91.046
+          },
+          {
+            "word": "us ",
+            "start": 91.046,
+            "end": 91.206
+          },
+          {
+            "word": "a ",
+            "start": 91.206,
+            "end": 91.286
+          },
+          {
+            "word": "call. ",
+            "start": 91.286,
+            "end": 91.446
+          },
+          {
+            "word": "Have ",
+            "start": 91.846,
+            "end": 92.085994
+          },
+          {
+            "word": "a ",
+            "start": 92.085994,
+            "end": 92.246
+          },
+          {
+            "word": "great ",
+            "start": 92.246,
+            "end": 92.405994
+          },
+          {
+            "word": "day. ",
+            "start": 92.405994,
+            "end": 92.485996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks again! Goodbye.",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 93.319,
+            "end": 93.719
+          },
+          {
+            "word": "again! ",
+            "start": 93.719,
+            "end": 94.119
+          },
+          {
+            "word": "Goodbye.",
+            "start": 94.201375,
+            "end": 94.601375
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.471,
+            "end": 0.871
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.40599998,
+            "end": 0.646
+          },
+          {
+            "word": "call ",
+            "start": 0.646,
+            "end": 0.966
+          },
+          {
+            "word": "may ",
+            "start": 0.966,
+            "end": 1.2059999
+          },
+          {
+            "word": "be ",
+            "start": 1.2059999,
+            "end": 1.366
+          },
+          {
+            "word": "recorded ",
+            "start": 1.366,
+            "end": 1.686
+          },
+          {
+            "word": "for ",
+            "start": 1.686,
+            "end": 2.006
+          },
+          {
+            "word": "quality ",
+            "start": 2.006,
+            "end": 2.4059999
+          },
+          {
+            "word": "and ",
+            "start": 2.4059999,
+            "end": 2.6459998999999996
+          },
+          {
+            "word": "training ",
+            "start": 2.6459998999999996,
+            "end": 3.046
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.046,
+            "end": 3.4459997999999996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 6.349,
+            "end": 6.749
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Pibbett Point Orthopedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.396,
+            "end": 6.796
+          },
+          {
+            "word": "for ",
+            "start": 6.796,
+            "end": 6.956
+          },
+          {
+            "word": "calling ",
+            "start": 6.956,
+            "end": 7.1959996
+          },
+          {
+            "word": "Pibbett ",
+            "start": 7.1959996,
+            "end": 7.5159998
+          },
+          {
+            "word": "Point ",
+            "start": 7.5159998,
+            "end": 7.756
+          },
+          {
+            "word": "Orthopedics. ",
+            "start": 7.756,
+            "end": 8.315999
+          },
+          {
+            "word": "Part ",
+            "start": 8.866,
+            "end": 9.186
+          },
+          {
+            "word": "of ",
+            "start": 9.186,
+            "end": 9.346
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.346,
+            "end": 9.586
+          },
+          {
+            "word": "Good ",
+            "start": 9.586,
+            "end": 9.826
+          },
+          {
+            "word": "AI. ",
+            "start": 9.826,
+            "end": 10.145999
+          },
+          {
+            "word": "Am ",
+            "start": 10.456,
+            "end": 10.696
+          },
+          {
+            "word": "I ",
+            "start": 10.696,
+            "end": 10.775999500000001
+          },
+          {
+            "word": "speaking ",
+            "start": 10.775999500000001,
+            "end": 11.016
+          },
+          {
+            "word": "with ",
+            "start": 11.016,
+            "end": 11.096
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.096,
+            "end": 11.416
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 12.364,
+            "end": 12.764
+          },
+          {
+            "word": "this ",
+            "start": 12.764,
+            "end": 13.164
+          },
+          {
+            "word": "is ",
+            "start": 13.164,
+            "end": 13.564
+          },
+          {
+            "word": "Maria ",
+            "start": 13.564,
+            "end": 13.964
+          },
+          {
+            "word": "Lopez.",
+            "start": 13.9145,
+            "end": 14.3145
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 17.356,
+            "end": 17.596
+          },
+          {
+            "word": "verification, ",
+            "start": 17.596,
+            "end": 18.316
+          },
+          {
+            "word": "may ",
+            "start": 18.316,
+            "end": 18.476
+          },
+          {
+            "word": "I ",
+            "start": 18.476,
+            "end": 18.556
+          },
+          {
+            "word": "have ",
+            "start": 18.556,
+            "end": 18.716
+          },
+          {
+            "word": "your ",
+            "start": 18.716,
+            "end": 18.875999
+          },
+          {
+            "word": "date ",
+            "start": 18.875999,
+            "end": 18.956
+          },
+          {
+            "word": "of ",
+            "start": 18.956,
+            "end": 19.116
+          },
+          {
+            "word": "birth? ",
+            "start": 19.116,
+            "end": 19.196
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 20.217,
+            "end": 20.617
+          },
+          {
+            "word": "my ",
+            "start": 20.617,
+            "end": 21.017
+          },
+          {
+            "word": "date ",
+            "start": 21.017,
+            "end": 21.417
+          },
+          {
+            "word": "of ",
+            "start": 21.417,
+            "end": 21.817
+          },
+          {
+            "word": "birth ",
+            "start": 21.817,
+            "end": 22.217
+          },
+          {
+            "word": "is ",
+            "start": 22.217,
+            "end": 22.617
+          },
+          {
+            "word": "May ",
+            "start": 22.617,
+            "end": 23.017
+          },
+          {
+            "word": "14, ",
+            "start": 23.017,
+            "end": 23.417
+          },
+          {
+            "word": "1982.",
+            "start": 23.417,
+            "end": 23.817
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, all accept it. How can I help you today, Maria? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 26.365999,
+            "end": 26.605998
+          },
+          {
+            "word": "birthday ",
+            "start": 26.605998,
+            "end": 27.006
+          },
+          {
+            "word": "doesn't ",
+            "start": 27.006,
+            "end": 27.326
+          },
+          {
+            "word": "match ",
+            "start": 27.326,
+            "end": 27.486
+          },
+          {
+            "word": "our ",
+            "start": 27.486,
+            "end": 27.726
+          },
+          {
+            "word": "records, ",
+            "start": 27.726,
+            "end": 28.125999
+          },
+          {
+            "word": "but ",
+            "start": 28.125999,
+            "end": 28.285999
+          },
+          {
+            "word": "for ",
+            "start": 28.285999,
+            "end": 28.445999
+          },
+          {
+            "word": "demo ",
+            "start": 28.445999,
+            "end": 28.765998
+          },
+          {
+            "word": "purposes, ",
+            "start": 28.765998,
+            "end": 29.086
+          },
+          {
+            "word": "all ",
+            "start": 29.396,
+            "end": 29.636
+          },
+          {
+            "word": "accept ",
+            "start": 29.636,
+            "end": 29.875999
+          },
+          {
+            "word": "it. ",
+            "start": 29.875999,
+            "end": 30.115999
+          },
+          {
+            "word": "How ",
+            "start": 31.486001,
+            "end": 31.806001000000002
+          },
+          {
+            "word": "can ",
+            "start": 31.806001000000002,
+            "end": 31.966001
+          },
+          {
+            "word": "I ",
+            "start": 31.966001,
+            "end": 32.046
+          },
+          {
+            "word": "help ",
+            "start": 32.046,
+            "end": 32.206
+          },
+          {
+            "word": "you ",
+            "start": 32.206,
+            "end": 32.286
+          },
+          {
+            "word": "today, ",
+            "start": 32.286,
+            "end": 32.606002000000004
+          },
+          {
+            "word": "Maria? ",
+            "start": 32.606002000000004,
+            "end": 32.846000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I’m a little confused about which office I should go to, since I’m not sure which location is best. Could you help me figure out which office is closest, and give me the address?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 33.805,
+            "end": 34.205
+          },
+          {
+            "word": "you.",
+            "start": 34.159666748046874,
+            "end": 34.55966674804687
+          },
+          {
+            "word": " I’m ",
+            "start": 34.55966674804687,
+            "end": 34.95966674804688
+          },
+          {
+            "word": "a ",
+            "start": 34.95966674804688,
+            "end": 35.35966674804688
+          },
+          {
+            "word": "little ",
+            "start": 35.35966674804688,
+            "end": 35.759666748046875
+          },
+          {
+            "word": "confused ",
+            "start": 35.759666748046875,
+            "end": 36.159666748046874
+          },
+          {
+            "word": "about ",
+            "start": 36.159666748046874,
+            "end": 36.55966674804687
+          },
+          {
+            "word": "which ",
+            "start": 36.55966674804687,
+            "end": 36.95966674804688
+          },
+          {
+            "word": "office ",
+            "start": 36.95966674804688,
+            "end": 37.35966674804688
+          },
+          {
+            "word": "I ",
+            "start": 37.35966674804688,
+            "end": 37.759666748046875
+          },
+          {
+            "word": "should ",
+            "start": 37.759666748046875,
+            "end": 38.159666748046874
+          },
+          {
+            "word": "go ",
+            "start": 38.159666748046874,
+            "end": 38.55966674804687
+          },
+          {
+            "word": "to, ",
+            "start": 38.55966674804687,
+            "end": 38.95966674804688
+          },
+          {
+            "word": "since ",
+            "start": 38.95966674804688,
+            "end": 39.35966674804688
+          },
+          {
+            "word": "I’m ",
+            "start": 39.35966674804688,
+            "end": 39.759666748046875
+          },
+          {
+            "word": "not ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "sure ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "which ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "location ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "is ",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": "best.",
+            "start": 39.419,
+            "end": 39.819
+          },
+          {
+            "word": " Could ",
+            "start": 39.819,
+            "end": 40.219
+          },
+          {
+            "word": "you ",
+            "start": 40.219,
+            "end": 40.619
+          },
+          {
+            "word": "help ",
+            "start": 40.619,
+            "end": 41.019
+          },
+          {
+            "word": "me ",
+            "start": 41.019,
+            "end": 41.419
+          },
+          {
+            "word": "figure ",
+            "start": 41.419,
+            "end": 41.819
+          },
+          {
+            "word": "out ",
+            "start": 41.819,
+            "end": 42.219
+          },
+          {
+            "word": "which ",
+            "start": 42.219,
+            "end": 42.619
+          },
+          {
+            "word": "office ",
+            "start": 42.619,
+            "end": 43.019
+          },
+          {
+            "word": "is ",
+            "start": 43.019,
+            "end": 43.419
+          },
+          {
+            "word": "closest, ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "and ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "give ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "me ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "the ",
+            "start": 43.2735,
+            "end": 43.6735
+          },
+          {
+            "word": "address?",
+            "start": 43.2735,
+            "end": 43.6735
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your main office is Pivot Point Orthopaedics. At two twenty Athens Way, Nashville, If you need another location or more details, just let me know. ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 47.036,
+            "end": 47.356
+          },
+          {
+            "word": "main ",
+            "start": 47.356,
+            "end": 47.596000000000004
+          },
+          {
+            "word": "office ",
+            "start": 47.596000000000004,
+            "end": 47.836
+          },
+          {
+            "word": "is ",
+            "start": 47.836,
+            "end": 48.076
+          },
+          {
+            "word": "Pivot ",
+            "start": 48.076,
+            "end": 48.396
+          },
+          {
+            "word": "Point ",
+            "start": 48.396,
+            "end": 48.716
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 48.716,
+            "end": 49.356
+          },
+          {
+            "word": "At ",
+            "start": 49.546,
+            "end": 50.026
+          },
+          {
+            "word": "two ",
+            "start": 50.026,
+            "end": 50.346000000000004
+          },
+          {
+            "word": "twenty ",
+            "start": 50.346000000000004,
+            "end": 50.986
+          },
+          {
+            "word": "Athens ",
+            "start": 50.986,
+            "end": 51.466
+          },
+          {
+            "word": "Way, ",
+            "start": 51.466,
+            "end": 51.866
+          },
+          {
+            "word": "Nashville, ",
+            "start": 51.866,
+            "end": 52.186
+          },
+          {
+            "word": "If ",
+            "start": 52.706,
+            "end": 52.946002
+          },
+          {
+            "word": "you ",
+            "start": 52.946002,
+            "end": 53.106002000000004
+          },
+          {
+            "word": "need ",
+            "start": 53.106002000000004,
+            "end": 53.266002
+          },
+          {
+            "word": "another ",
+            "start": 53.266002,
+            "end": 53.586
+          },
+          {
+            "word": "location ",
+            "start": 53.586,
+            "end": 54.066
+          },
+          {
+            "word": "or ",
+            "start": 54.066,
+            "end": 54.306
+          },
+          {
+            "word": "more ",
+            "start": 54.306,
+            "end": 54.546
+          },
+          {
+            "word": "details, ",
+            "start": 54.546,
+            "end": 55.106002000000004
+          },
+          {
+            "word": "just ",
+            "start": 55.106002000000004,
+            "end": 55.266002
+          },
+          {
+            "word": "let ",
+            "start": 55.266002,
+            "end": 55.426002
+          },
+          {
+            "word": "me ",
+            "start": 55.426002,
+            "end": 55.586
+          },
+          {
+            "word": "know. ",
+            "start": 55.586,
+            "end": 55.666
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you! Is that the only location, or are there other offices as well? I’d like to make sure I’m going to the closest one.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 57.12,
+            "end": 57.52
+          },
+          {
+            "word": "you!",
+            "start": 57.47466674804687,
+            "end": 57.87466674804688
+          },
+          {
+            "word": " Is ",
+            "start": 57.87466674804688,
+            "end": 58.274666748046876
+          },
+          {
+            "word": "that ",
+            "start": 58.274666748046876,
+            "end": 58.674666748046874
+          },
+          {
+            "word": "the ",
+            "start": 58.674666748046874,
+            "end": 59.07466674804687
+          },
+          {
+            "word": "only ",
+            "start": 59.07466674804687,
+            "end": 59.47466674804687
+          },
+          {
+            "word": "location, ",
+            "start": 59.47466674804687,
+            "end": 59.87466674804688
+          },
+          {
+            "word": "or ",
+            "start": 59.87466674804688,
+            "end": 60.274666748046876
+          },
+          {
+            "word": "are ",
+            "start": 60.274666748046876,
+            "end": 60.674666748046874
+          },
+          {
+            "word": "there ",
+            "start": 60.674666748046874,
+            "end": 61.07466674804687
+          },
+          {
+            "word": "other ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "offices ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "as ",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": "well?",
+            "start": 60.7835,
+            "end": 61.1835
+          },
+          {
+            "word": " I’d ",
+            "start": 61.1835,
+            "end": 61.5835
+          },
+          {
+            "word": "like ",
+            "start": 61.5835,
+            "end": 61.9835
+          },
+          {
+            "word": "to ",
+            "start": 61.9835,
+            "end": 62.3835
+          },
+          {
+            "word": "make ",
+            "start": 62.3835,
+            "end": 62.7835
+          },
+          {
+            "word": "sure ",
+            "start": 62.7835,
+            "end": 63.1835
+          },
+          {
+            "word": "I’m ",
+            "start": 63.1835,
+            "end": 63.5835
+          },
+          {
+            "word": "going ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "to ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "the ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "closest ",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          },
+          {
+            "word": "one.",
+            "start": 63.27966674804688,
+            "end": 63.67966674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "user",
+        "content": "Pivot Point Orthopaedics has just one main at two two zero Athens Way in Nashville. That's the only location for appointments and visits. ",
+        "words": [
+          {
+            "word": "Pivot ",
+            "start": 67.376,
+            "end": 67.776004
+          },
+          {
+            "word": "Point ",
+            "start": 67.776004,
+            "end": 68.016
+          },
+          {
+            "word": "Orthopaedics ",
+            "start": 68.016,
+            "end": 68.656
+          },
+          {
+            "word": "has ",
+            "start": 68.656,
+            "end": 68.976
+          },
+          {
+            "word": "just ",
+            "start": 68.976,
+            "end": 69.21601
+          },
+          {
+            "word": "one ",
+            "start": 69.21601,
+            "end": 69.456005
+          },
+          {
+            "word": "main ",
+            "start": 69.456005,
+            "end": 69.696
+          },
+          {
+            "word": "at ",
+            "start": 70.265995,
+            "end": 70.585994
+          },
+          {
+            "word": "two ",
+            "start": 70.585994,
+            "end": 70.905994
+          },
+          {
+            "word": "two ",
+            "start": 70.905994,
+            "end": 71.22599
+          },
+          {
+            "word": "zero ",
+            "start": 71.22599,
+            "end": 71.706
+          },
+          {
+            "word": "Athens ",
+            "start": 71.706,
+            "end": 72.265995
+          },
+          {
+            "word": "Way ",
+            "start": 72.265995,
+            "end": 72.585994
+          },
+          {
+            "word": "in ",
+            "start": 72.585994,
+            "end": 72.826
+          },
+          {
+            "word": "Nashville. ",
+            "start": 72.826,
+            "end": 73.22599
+          },
+          {
+            "word": "That's ",
+            "start": 73.756,
+            "end": 74.076
+          },
+          {
+            "word": "the ",
+            "start": 74.076,
+            "end": 74.235996
+          },
+          {
+            "word": "only ",
+            "start": 74.235996,
+            "end": 74.47599
+          },
+          {
+            "word": "location ",
+            "start": 74.47599,
+            "end": 74.956
+          },
+          {
+            "word": "for ",
+            "start": 74.956,
+            "end": 75.11599
+          },
+          {
+            "word": "appointments ",
+            "start": 75.11599,
+            "end": 75.515995
+          },
+          {
+            "word": "and ",
+            "start": 75.515995,
+            "end": 75.676
+          },
+          {
+            "word": "visits. ",
+            "start": 75.676,
+            "end": 75.915996
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "If you need directions or help with parking, let me know. ",
+        "words": [
+          {
+            "word": "If ",
+            "start": 76.546,
+            "end": 76.786
+          },
+          {
+            "word": "you ",
+            "start": 76.786,
+            "end": 76.946
+          },
+          {
+            "word": "need ",
+            "start": 76.946,
+            "end": 77.106
+          },
+          {
+            "word": "directions ",
+            "start": 77.106,
+            "end": 77.506
+          },
+          {
+            "word": "or ",
+            "start": 77.506,
+            "end": 77.746
+          },
+          {
+            "word": "help ",
+            "start": 77.746,
+            "end": 77.906
+          },
+          {
+            "word": "with ",
+            "start": 77.906,
+            "end": 78.066
+          },
+          {
+            "word": "parking, ",
+            "start": 78.066,
+            "end": 78.386
+          },
+          {
+            "word": "let ",
+            "start": 79.036,
+            "end": 79.276
+          },
+          {
+            "word": "me ",
+            "start": 79.276,
+            "end": 79.436
+          },
+          {
+            "word": "know. ",
+            "start": 79.436,
+            "end": 79.516
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, that’s really helpful! I think I’m all set for now. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 80.462,
+            "end": 80.862
+          },
+          {
+            "word": "you, ",
+            "start": 80.862,
+            "end": 81.262
+          },
+          {
+            "word": "that’s ",
+            "start": 81.262,
+            "end": 81.662
+          },
+          {
+            "word": "really ",
+            "start": 81.662,
+            "end": 82.062
+          },
+          {
+            "word": "helpful!",
+            "start": 82.04733325195312,
+            "end": 82.44733325195313
+          },
+          {
+            "word": " I ",
+            "start": 82.44733325195313,
+            "end": 82.84733325195313
+          },
+          {
+            "word": "think ",
+            "start": 82.84733325195313,
+            "end": 83.24733325195312
+          },
+          {
+            "word": "I’m ",
+            "start": 83.24733325195312,
+            "end": 83.64733325195313
+          },
+          {
+            "word": "all ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "set ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "for ",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": "now.",
+            "start": 83.48695825195313,
+            "end": 83.88695825195313
+          },
+          {
+            "word": " Have ",
+            "start": 83.88695825195313,
+            "end": 84.28695825195312
+          },
+          {
+            "word": "a ",
+            "start": 84.28695825195312,
+            "end": 84.68695825195313
+          },
+          {
+            "word": "great ",
+            "start": 84.54345825195313,
+            "end": 84.94345825195313
+          },
+          {
+            "word": "day!",
+            "start": 84.54345825195313,
+            "end": 84.94345825195313
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome, Maria. If you need anything else, just give us a call. Have a great day. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 87.596004,
+            "end": 87.916
+          },
+          {
+            "word": "welcome, ",
+            "start": 87.916,
+            "end": 88.316005
+          },
+          {
+            "word": "Maria. ",
+            "start": 88.316005,
+            "end": 88.956005
+          },
+          {
+            "word": "If ",
+            "start": 89.036,
+            "end": 89.276004
+          },
+          {
+            "word": "you ",
+            "start": 89.276004,
+            "end": 89.356
+          },
+          {
+            "word": "need ",
+            "start": 89.356,
+            "end": 89.516
+          },
+          {
+            "word": "anything ",
+            "start": 89.516,
+            "end": 89.836
+          },
+          {
+            "word": "else, ",
+            "start": 89.836,
+            "end": 90.076
+          },
+          {
+            "word": "just ",
+            "start": 90.486,
+            "end": 90.806
+          },
+          {
+            "word": "give ",
+            "start": 90.806,
+            "end": 91.046
+          },
+          {
+            "word": "us ",
+            "start": 91.046,
+            "end": 91.206
+          },
+          {
+            "word": "a ",
+            "start": 91.206,
+            "end": 91.286
+          },
+          {
+            "word": "call. ",
+            "start": 91.286,
+            "end": 91.446
+          },
+          {
+            "word": "Have ",
+            "start": 91.846,
+            "end": 92.085994
+          },
+          {
+            "word": "a ",
+            "start": 92.085994,
+            "end": 92.246
+          },
+          {
+            "word": "great ",
+            "start": 92.246,
+            "end": 92.405994
+          },
+          {
+            "word": "day. ",
+            "start": 92.405994,
+            "end": 92.485996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks again! Goodbye.",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 93.319,
+            "end": 93.719
+          },
+          {
+            "word": "again! ",
+            "start": 93.719,
+            "end": 94.119
+          },
+          {
+            "word": "Goodbye.",
+            "start": 94.201375,
+            "end": 94.601375
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "d754f8e3a131f25c",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"Thanks again! Goodbye.\"}",
+        "time_sec": 95.244,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/83771de015e19ee6ae4adc7e879f9781bc6a28d89be77d49c1e795ac05ac8092/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/83771de015e19ee6ae4adc7e879f9781bc6a28d89be77d49c1e795ac05ac8092/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/83771de015e19ee6ae4adc7e879f9781bc6a28d89be77d49c1e795ac05ac8092/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 760.6600000000001,
+        "min": 3,
+        "max": 782,
+        "p90": 583,
+        "num": 12,
+        "values": [
+          3,
+          538,
+          457,
+          588,
+          497,
+          441,
+          782,
+          406,
+          471,
+          434,
+          536,
+          533
+        ],
+        "p50": 484,
+        "p95": 675.2999999999998
+      },
+      "e2e": {
+        "p99": 2233.2599999999993,
+        "min": 833.00390625,
+        "max": 2283,
+        "p90": 1785.6000000000004,
+        "num": 7,
+        "values": [
+          2283,
+          948,
+          1021,
+          959,
+          1454,
+          946,
+          833.00390625
+        ],
+        "p50": 959,
+        "p95": 2034.2999999999993
+      },
+      "tts": {
+        "p99": 453.69000000000005,
+        "min": 201,
+        "max": 467,
+        "p90": 345,
+        "num": 12,
+        "values": [
+          467,
+          251,
+          336,
+          346,
+          280,
+          333,
+          293,
+          255,
+          201,
+          256,
+          287,
+          273
+        ],
+        "p50": 283.5,
+        "p95": 400.44999999999993
+      },
+      "asr": {
+        "p99": 1836.2010039999943,
+        "min": 0.0010000000038417056,
+        "max": 2009.999499999998,
+        "p90": 50.00092000000004,
+        "num": 119,
+        "values": [
+          30,
+          30,
+          10,
+          10,
+          20,
+          30,
+          30,
+          20,
+          20,
+          20,
+          30,
+          30.000049999999646,
+          19.9998599999999,
+          20,
+          29.999799999999595,
+          30.00000000000091,
+          39.9994999999999,
+          39.99999999999818,
+          19.99959999999919,
+          20.00014999999985,
+          30.00000000000182,
+          39.9994999999999,
+          39.999800000001414,
+          29.99959999999919,
+          30.00014999999985,
+          40,
+          49.999400000000605,
+          40,
+          29.999100000000908,
+          30.000000000003638,
+          20.00040000000081,
+          20.00100000000384,
+          10.001400000001013,
+          20,
+          2000.001400000001,
+          29.998600000002625,
+          49.998999999999796,
+          39.99960000000283,
+          40.00040000000081,
+          19.998999999999796,
+          19.999500000001717,
+          29.998859999999695,
+          39.99959999999919,
+          39.99859999999899,
+          40.0002999999997,
+          69.99900000000343,
+          50.00140000000101,
+          60,
+          20,
+          2009.999499999998,
+          40.00050000000192,
+          19.99899999999616,
+          50.00149999999849,
+          29.998499999994237,
+          30.00100000000384,
+          30.00199999999313,
+          50.00139999999374,
+          30,
+          1089.9991999999984,
+          50.00080000000162,
+          100.00020000000222,
+          30.000900000006368,
+          39.99949999999808,
+          80.00200000000768,
+          30.002700000004552,
+          40,
+          40.00150000000576,
+          40.00014999999985,
+          49.99949999999808,
+          30.000300000006973,
+          30.002700000004552,
+          40.00140000000101,
+          30,
+          60.00239999999758,
+          10.001000000003842,
+          70.00149999999849,
+          10.005999999993946,
+          0.0010000000038417056,
+          30.00340000000142,
+          30.005799999999,
+          30.002699999997276,
+          30.005000000004657,
+          30,
+          39.993900000001304,
+          19.996339999997872,
+          29.99330000001646,
+          39.99570000001404,
+          49.995000000009895,
+          49.99760000000242,
+          30,
+          39.994800000000396,
+          29.993900000001304,
+          29.996339999997872,
+          29.99330000000191,
+          29.995699999999488,
+          39.992700000002515,
+          29.994999999995343,
+          39.99760000000242,
+          30.001499999998487,
+          29.996339999997872,
+          40.00089999999909,
+          39.99569999999949,
+          40.0002999999997,
+          30.002699999997276,
+          49.99760000000242,
+          40.00150000001304,
+          39.996340000012424,
+          30.004300000000512,
+          9.998999999996158,
+          20.001499999998487,
+          19.998500000001513,
+          20.00340000000142,
+          19.998200000001816,
+          30.002699999997276,
+          20.00150000001304,
+          29.996340000012424,
+          30.000899999999092,
+          29.996950000000652,
+          49.993900000001304
+        ],
+        "p50": 30.000900000006368,
+        "p95": 69.99925000000295
+      }
+    },
+    "metadata": {
+      "scenario_title": "Ask which office location to visit",
+      "started_at_utc": "2026-03-15T17:38:21.748391+00:00",
+      "project_stage": "stage_3",
+      "scenario_id": "location_question"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 8.8
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 2.4
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 7.2
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 2.4
+        }
+      ],
+      "combined_cost": 20.8,
+      "total_duration_seconds": 96
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent called Maria Lopez to verify her information and assist her in finding the closest office location. Maria was informed that Pivot Point Orthopaedics has only one main office at 220 Athens Way, Nashville, and was offered additional help if needed. The call ended positively with Maria satisfied and no further assistance required.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        511,
+        541,
+        565,
+        602,
+        611,
+        692,
+        747,
+        756,
+        772,
+        817,
+        822
+      ],
+      "average": 676,
+      "num_requests": 11
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 95.244,
+        "tool_call_id": "d754f8e3a131f25c",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA2905d0f707845842aa90fa8beb474d61"
+    }
+  }
+}

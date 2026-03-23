@@ -1,0 +1,25 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks 
+Agent: fine, thank 
+User: for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez. I’m calling to schedule a new patient appointment, hopefully for next week in the morning if possible.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is March 14, 1987.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. 
+User: Thanks, 
+Agent: Thank you.
+User: Maria. For your first visit, we offer a new patient consultation. Would you like to book that type of appointment? 
+Agent: Yes, that sounds good. Can we look at available times next week in the morning?
+User: Let me check for new patient consultation openings next week in the morning. One moment. We have a morning opening on Thursday, March nineteenth at eleven with doctor Judy Hauser. Would you like to book that or hear about other options later in the week? 
+Agent: Sorry to jump in—do you have anything a little earlier in the morning, maybe closer to 9 or 10? If not, 11 could work.
+User: The earliest available is Monday, March twenty third at nine AM with doctor Bricker. Would you like to book that, or would you prefer the Thursday slot at eleven fifteen? 
+Agent: Let’s go with Monday at 9 AM with Dr. Bricker, please. That works best for me.
+User: Just to confirm, you'd like to book a new patient consultation on Monday, March twenty third at nine AM with doctor Brick Is that correct? 
+Agent: Yes, that's correct—Monday, March 23rd at 9 AM with Dr. Bricker. Thank you for confirming!
+User: You're all set for your new patient consultation with doctor Bricker on Monday, March twenty third at nine AM. Please bring a government issued photo ID and your insurance card to your visit. Would you like a text reminder for your appointment? 
+Agent: Yes, a text reminder would be great, thank you. And just to double-check, the office address is still the same as on your website, right?
+User: A text reminder is on its way to your phone. The office address listed on our website is current. Is there anything else I can help you with today? 
+Agent: No, that's everything. Thanks for your help—have a great day!

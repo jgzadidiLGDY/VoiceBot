@@ -1,0 +1,12 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez. I wanted to ask a quick question before scheduling—do you accept Aetna PPO insurance?
+User: Yes. 
+User: Pivot Point Orthopaedics accepts most insurance plans, including Aetna PPO. Would you like to go ahead and schedule your appointment now? 
+Agent: Thank you for confirming that! Before I schedule, is there anything I need to do on my end to verify my coverage, or will you handle that when I come in?
+User: You don't need to do anything extra right now. Just bring your Aetna PPO insurance card to your appointment. And we'll verify your coverage when you arrive. If you have any changes to your insurance before your visit, let us know. Would you like to schedule your appointment? 
+Agent: That sounds good, thank you for explaining. I’ll check my schedule and call back to book. I appreciate your help!
+User: You're welcome. You have any other questions or need to schedule, just give us a call. Have a great day. 
+Agent: Thank you, you too. Goodbye!

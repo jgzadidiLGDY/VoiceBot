@@ -1,0 +1,25 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+Agent: That's 
+User: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is May 14, 1982.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thanks. I was hoping to schedule an appointment sometime soon, but I’m not exactly sure what kind of visit I need.
+User: No problem, Maria. Can you tell me a bit about what's going on or what you'd like help with? That way, I can suggest the right type of appointment for you. 
+Agent: Honestly, I just know I need to come in, but I’m not sure if it’s for a check-up or something else. I’ve been feeling a bit off, but I can’t really pinpoint it.
+User: Thanks for sharing that. Since you're not sure and wanna get checked out, a new patient consultation is a good place to start. It's a thorough first visit where the provider reviews your symptoms and helps plan next steps. Would you like to book that type of appointment? 
+Agent: Yes, that sounds good. I’d like to book a new patient consultation, please.
+User: We have several providers available for new patient consultations. Would you prefer to see doctor Duttihauser or doctor Adam Bricker? 
+User: Or do you want the soonest available appointment with any provider? 
+Agent: I don’t have a preference, so the soonest available appointment with any provider would be great.
+User: Let me check for the soonest available new patient consultation with any provider. One moment. The soonest available new patient consultation is Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Would you like to book this slot or hear about other times later that morning? 
+Agent: That time works for me, so please go ahead and book the Thursday, March nineteenth at ten thirty with Dr. Bricker.
+User: To confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Is that correct? 
+User: And could you briefly share the reason for your visit even if it's just feeling off? 
+Agent: Yes, that’s correct. And for the reason, you can just put that I’ve been feeling a bit off and want to get checked out.
+User: Your appointment is set for Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment? 
+Agent: Yes, a text reminder would be helpful. Thank you!
+User: You'll get a text reminder soon. If you have any other questions or need to change your appointment, just let me know. 
+Agent: Thank you so much for your help. I appreciate it! Have a great day.

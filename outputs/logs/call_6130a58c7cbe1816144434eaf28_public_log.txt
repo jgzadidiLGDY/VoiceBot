@@ -1,0 +1,10 @@
+2026-03-19 14:44:13.017 call_6130a58c7cbe1816144434eaf28 info: Starting call: call_6130a58c7cbe1816144434eaf28
+2026-03-19 14:44:25.036 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 2357
+2026-03-19 14:44:31.548 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 1119
+2026-03-19 14:44:42.059 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 1340
+2026-03-19 14:44:54.532 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 2343
+2026-03-19 14:45:16.242 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 1203
+2026-03-19 14:45:18.326 call_6130a58c7cbe1816144434eaf28 info: E2E latency for this turn: 1347
+2026-03-19 14:45:23.208 call_6130a58c7cbe1816144434eaf28 info: Calling tool: end_call 
+Arguments: {"execution_message":"Thank you, that answers my questions. I appreciate your help—have a great day!"}
+2026-03-19 14:45:23.208 call_6130a58c7cbe1816144434eaf28 info: Ending call: call_6130a58c7cbe1816144434eaf28

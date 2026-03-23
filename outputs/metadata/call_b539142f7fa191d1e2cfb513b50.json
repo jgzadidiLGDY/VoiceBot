@@ -1,0 +1,486 @@
+{
+  "call_id": "call_b539142f7fa191d1e2cfb513b50",
+  "scenario": {
+    "scenario_id": "stage1_schedule_new_patient",
+    "title": "New patient appointment scheduling",
+    "category": "scheduling",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "polite"
+    },
+    "goal": "Schedule a routine primary care appointment for next week, preferably a weekday morning.",
+    "known_facts": {
+      "preferred_day_window": "next week",
+      "preferred_time": "weekday morning",
+      "is_new_patient": "yes"
+    },
+    "behavior_style": [
+      "polite",
+      "straightforward"
+    ],
+    "stress_target": "basic_flow",
+    "must_try": [
+      "Ask for the next available weekday morning appointment."
+    ],
+    "success_condition": "A natural appointment discussion occurs and the call ends coherently after options or next steps are discussed.",
+    "good_bug_signals": [
+      "The agent becomes incoherent.",
+      "The agent confirms an appointment without enough information.",
+      "The agent fails to handle a basic scheduling flow."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_b539142f7fa191d1e2cfb513b50",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "A natural appointment discussion occurs and the call ends coherently after options or next steps are discussed.",
+      "age_band": "adult",
+      "goal": "Schedule a routine primary care appointment for next week, preferably a weekday morning.",
+      "behavior_style": "polite, straightforward",
+      "stress_target": "basic_flow",
+      "must_try": "Ask for the next available weekday morning appointment.",
+      "tone": "polite",
+      "title": "New patient appointment scheduling",
+      "scenario_id": "stage1_schedule_new_patient",
+      "patient_name": "Maria Lopez",
+      "known_facts": "preferred_day_window=next week; preferred_time=weekday morning; is_new_patient=yes",
+      "category": "scheduling",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_b539142f7fa191d1e2cfb513b50",
+      "X-RetellAI-SipTraceId": "call_b539142f7fa191d1e2cfb513b50",
+      "Route": "<sip:18.98.16.123;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773524887903,
+    "end_timestamp": 1773524900208,
+    "duration_ms": 12305,
+    "transcript": "User: This call may be recorded for quality and training purposes. \nAgent: Thank you \nUser: Thank you. \nAgent: You're welcome! Have a great day. Goodbye.\n",
+    "transcript_object": [
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.333,
+            "end": 0.653
+          },
+          {
+            "word": "call ",
+            "start": 0.653,
+            "end": 0.893
+          },
+          {
+            "word": "may ",
+            "start": 0.893,
+            "end": 1.133
+          },
+          {
+            "word": "be ",
+            "start": 1.133,
+            "end": 1.293
+          },
+          {
+            "word": "recorded ",
+            "start": 1.293,
+            "end": 1.6929999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6929999999999998,
+            "end": 1.9329999999999998
+          },
+          {
+            "word": "quality ",
+            "start": 1.9329999999999998,
+            "end": 2.4129999
+          },
+          {
+            "word": "and ",
+            "start": 2.4129999,
+            "end": 2.6529998999999997
+          },
+          {
+            "word": "training ",
+            "start": 2.6529998999999997,
+            "end": 2.973
+          },
+          {
+            "word": "purposes. ",
+            "start": 2.973,
+            "end": 3.4529997999999997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you ",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 6.59,
+            "end": 6.99
+          },
+          {
+            "word": "you ",
+            "start": 6.99,
+            "end": 7.39
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thank you. ",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 7.343,
+            "end": 7.663
+          },
+          {
+            "word": "you. ",
+            "start": 7.663,
+            "end": 7.8229999999999995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "You're welcome! Have a great day. Goodbye.",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 9.572,
+            "end": 9.972
+          },
+          {
+            "word": "welcome!",
+            "start": 9.972,
+            "end": 10.372
+          },
+          {
+            "word": " Have ",
+            "start": 10.535625,
+            "end": 10.935625
+          },
+          {
+            "word": "a ",
+            "start": 10.935625,
+            "end": 11.335625
+          },
+          {
+            "word": "great ",
+            "start": 11.064416748046876,
+            "end": 11.464416748046874
+          },
+          {
+            "word": "day.",
+            "start": 11.064416748046876,
+            "end": 11.464416748046874
+          },
+          {
+            "word": " Goodbye.",
+            "start": 11.464416748046874,
+            "end": 11.864416748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.333,
+            "end": 0.653
+          },
+          {
+            "word": "call ",
+            "start": 0.653,
+            "end": 0.893
+          },
+          {
+            "word": "may ",
+            "start": 0.893,
+            "end": 1.133
+          },
+          {
+            "word": "be ",
+            "start": 1.133,
+            "end": 1.293
+          },
+          {
+            "word": "recorded ",
+            "start": 1.293,
+            "end": 1.6929999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6929999999999998,
+            "end": 1.9329999999999998
+          },
+          {
+            "word": "quality ",
+            "start": 1.9329999999999998,
+            "end": 2.4129999
+          },
+          {
+            "word": "and ",
+            "start": 2.4129999,
+            "end": 2.6529998999999997
+          },
+          {
+            "word": "training ",
+            "start": 2.6529998999999997,
+            "end": 2.973
+          },
+          {
+            "word": "purposes. ",
+            "start": 2.973,
+            "end": 3.4529997999999997
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you ",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 6.59,
+            "end": 6.99
+          },
+          {
+            "word": "you ",
+            "start": 6.99,
+            "end": 7.39
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thank you. ",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 7.343,
+            "end": 7.663
+          },
+          {
+            "word": "you. ",
+            "start": 7.663,
+            "end": 7.8229999999999995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "You're welcome! Have a great day. Goodbye.",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 9.572,
+            "end": 9.972
+          },
+          {
+            "word": "welcome!",
+            "start": 9.972,
+            "end": 10.372
+          },
+          {
+            "word": " Have ",
+            "start": 10.535625,
+            "end": 10.935625
+          },
+          {
+            "word": "a ",
+            "start": 10.935625,
+            "end": 11.335625
+          },
+          {
+            "word": "great ",
+            "start": 11.064416748046876,
+            "end": 11.464416748046874
+          },
+          {
+            "word": "day.",
+            "start": 11.064416748046876,
+            "end": 11.464416748046874
+          },
+          {
+            "word": " Goodbye.",
+            "start": 11.464416748046874,
+            "end": 11.864416748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "1be8548fa748ba9d",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"You're welcome! Have a great day. Goodbye.\"}",
+        "time_sec": 12.3,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/0ee00d53d0f9a17395537510a3b58bb9d84055aa3264f15ea5f2a88aac54e164/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/0ee00d53d0f9a17395537510a3b58bb9d84055aa3264f15ea5f2a88aac54e164/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/0ee00d53d0f9a17395537510a3b58bb9d84055aa3264f15ea5f2a88aac54e164/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 492.36,
+        "min": 412,
+        "max": 493,
+        "p90": 486.6,
+        "num": 3,
+        "values": [
+          493,
+          461,
+          412
+        ],
+        "p50": 461,
+        "p95": 489.8
+      },
+      "e2e": {
+        "p99": 2529.12,
+        "min": 1749,
+        "max": 2537,
+        "p90": 2458.2,
+        "num": 2,
+        "values": [
+          2537,
+          1749
+        ],
+        "p50": 2143,
+        "p95": 2497.6
+      },
+      "tts": {
+        "p99": 395,
+        "min": 208,
+        "max": 398,
+        "p90": 368,
+        "num": 3,
+        "values": [
+          398,
+          248,
+          208
+        ],
+        "p50": 248,
+        "p95": 383
+      },
+      "asr": {
+        "p99": 68.69999999999999,
+        "min": 0.00014999999984866008,
+        "max": 70,
+        "p90": 53.99995799999999,
+        "num": 14,
+        "values": [
+          30,
+          30,
+          10,
+          20,
+          60,
+          10,
+          20,
+          20,
+          70,
+          30,
+          30.0000500000001,
+          39.9998599999999,
+          0.00014999999984866008,
+          9.999700000000303
+        ],
+        "p50": 25,
+        "p95": 63.5
+      }
+    },
+    "metadata": {
+      "scenario_title": "New patient appointment scheduling",
+      "started_at_utc": "2026-03-14T21:48:00.187261+00:00",
+      "project_stage": "stage_1",
+      "scenario_id": "stage1_schedule_new_patient"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 1.1916667
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 0.325
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 0.975
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 0.325
+        }
+      ],
+      "combined_cost": 2.8166667,
+      "total_duration_seconds": 13
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The call was very brief with a polite exchange of thanks between the user and the agent before the agent ended the call.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        343,
+        341,
+        352
+      ],
+      "average": 345.3333333333333,
+      "num_requests": 3
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 12.3,
+        "tool_call_id": "1be8548fa748ba9d",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA3e85f9d014ffae4e131e79e084eff86a"
+    }
+  }
+}

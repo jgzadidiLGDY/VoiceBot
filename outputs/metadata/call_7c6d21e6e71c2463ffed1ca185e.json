@@ -1,0 +1,5683 @@
+{
+  "call_id": "call_7c6d21e6e71c2463ffed1ca185e",
+  "scenario": {
+    "scenario_id": "ambiguous_appointment_request",
+    "title": "Ambiguous request for an appointment",
+    "category": "ambiguity",
+    "scenario_type": "edge_case",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "uncertain"
+    },
+    "goal": "Ask for an appointment in a vague way and wait for the office to clarify what kind of visit is needed.",
+    "known_facts": {
+      "wants_appointment": "yes",
+      "specific_visit_type_known": "no",
+      "specific_time_known": "no"
+    },
+    "behavior_style": [
+      "polite",
+      "uncertain",
+      "under_specified"
+    ],
+    "stress_target": "clarification_quality",
+    "must_try": [
+      "Say you need to come in sometime soon but are not sure exactly what kind of appointment to ask for.",
+      "Only provide more detail after the office asks clarifying questions."
+    ],
+    "success_condition": "The office asks useful follow-up questions instead of guessing too early.",
+    "good_bug_signals": [
+      "The agent assumes a visit type without enough information.",
+      "The agent gives irrelevant scheduling options before clarifying the request.",
+      "The agent loops without narrowing the request."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_7c6d21e6e71c2463ffed1ca185e",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The office asks useful follow-up questions instead of guessing too early.",
+      "age_band": "adult",
+      "goal": "Ask for an appointment in a vague way and wait for the office to clarify what kind of visit is needed.",
+      "behavior_style": "polite, uncertain, under_specified",
+      "stress_target": "clarification_quality",
+      "must_try": "Say you need to come in sometime soon but are not sure exactly what kind of appointment to ask for. | Only provide more detail after the office asks clarifying questions.",
+      "tone": "uncertain",
+      "title": "Ambiguous request for an appointment",
+      "scenario_id": "ambiguous_appointment_request",
+      "patient_name": "Maria Lopez",
+      "known_facts": "wants_appointment=yes; specific_visit_type_known=no; specific_time_known=no",
+      "category": "ambiguity",
+      "scenario_type": "edge_case"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_7c6d21e6e71c2463ffed1ca185e",
+      "X-RetellAI-SipTraceId": "call_7c6d21e6e71c2463ffed1ca185e",
+      "Route": "<sip:18.98.16.121;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773613976972,
+    "end_timestamp": 1773614182167,
+    "duration_ms": 205195,
+    "transcript": "Agent: Hi, \nUser: This call may be recorded for quality and training purposes. \nAgent: That's \nUser: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez.\nUser: For verification, may I have your date of birth? \nAgent: Sure, my date of birth is May 14, 1982.\nUser: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? \nAgent: Thanks. I was hoping to schedule an appointment sometime soon, but I’m not exactly sure what kind of visit I need.\nUser: No problem, Maria. Can you tell me a bit about what's going on or what you'd like help with? That way, I can suggest the right type of appointment for you. \nAgent: Honestly, I just know I need to come in, but I’m not sure if it’s for a check-up or something else. I’ve been feeling a bit off, but I can’t really pinpoint it.\nUser: Thanks for sharing that. Since you're not sure and wanna get checked out, a new patient consultation is a good place to start. It's a thorough first visit where the provider reviews your symptoms and helps plan next steps. Would you like to book that type of appointment? \nAgent: Yes, that sounds good. I’d like to book a new patient consultation, please.\nUser: We have several providers available for new patient consultations. Would you prefer to see doctor Duttihauser or doctor Adam Bricker? \nUser: Or do you want the soonest available appointment with any provider? \nAgent: I don’t have a preference, so the soonest available appointment with any provider would be great.\nUser: Let me check for the soonest available new patient consultation with any provider. One moment. The soonest available new patient consultation is Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Would you like to book this slot or hear about other times later that morning? \nAgent: That time works for me, so please go ahead and book the Thursday, March nineteenth at ten thirty with Dr. Bricker.\nUser: To confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Is that correct? \nUser: And could you briefly share the reason for your visit even if it's just feeling off? \nAgent: Yes, that’s correct. And for the reason, you can just put that I’ve been feeling a bit off and want to get checked out.\nUser: Your appointment is set for Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment? \nAgent: Yes, a text reminder would be helpful. Thank you!\nUser: You'll get a text reminder soon. If you have any other questions or need to change your appointment, just let me know. \nAgent: Thank you so much for your help. I appreciate it! Have a great day.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.396,
+            "end": 0.796
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.277,
+            "end": 0.59700003
+          },
+          {
+            "word": "call ",
+            "start": 0.59700003,
+            "end": 0.8370000400000001
+          },
+          {
+            "word": "may ",
+            "start": 0.8370000400000001,
+            "end": 1.0769999
+          },
+          {
+            "word": "be ",
+            "start": 1.0769999,
+            "end": 1.2369999999999999
+          },
+          {
+            "word": "recorded ",
+            "start": 1.2369999999999999,
+            "end": 1.6369999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6369999999999998,
+            "end": 1.9569998999999998
+          },
+          {
+            "word": "quality ",
+            "start": 1.9569998999999998,
+            "end": 2.357
+          },
+          {
+            "word": "and ",
+            "start": 2.357,
+            "end": 2.597
+          },
+          {
+            "word": "training ",
+            "start": 2.597,
+            "end": 2.9970000000000003
+          },
+          {
+            "word": "purposes. ",
+            "start": 2.9970000000000003,
+            "end": 3.3969999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 6.327,
+            "end": 6.727
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.356999999999999,
+            "end": 6.757
+          },
+          {
+            "word": "for ",
+            "start": 6.757,
+            "end": 6.917
+          },
+          {
+            "word": "calling ",
+            "start": 6.917,
+            "end": 7.237
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.237,
+            "end": 7.637
+          },
+          {
+            "word": "Point ",
+            "start": 7.637,
+            "end": 7.877
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.877,
+            "end": 8.597
+          },
+          {
+            "word": "Part ",
+            "start": 9.007,
+            "end": 9.407
+          },
+          {
+            "word": "of ",
+            "start": 9.407,
+            "end": 9.567
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.567,
+            "end": 9.807
+          },
+          {
+            "word": "Good ",
+            "start": 9.807,
+            "end": 10.046999999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 10.046999999999999,
+            "end": 10.366999999999999
+          },
+          {
+            "word": "Am ",
+            "start": 10.876999999999999,
+            "end": 11.116999999999999
+          },
+          {
+            "word": "I ",
+            "start": 11.116999999999999,
+            "end": 11.197001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.197001,
+            "end": 11.437
+          },
+          {
+            "word": "with ",
+            "start": 11.437,
+            "end": 11.597
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.597,
+            "end": 11.917
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.513,
+            "end": 13.913
+          },
+          {
+            "word": "this ",
+            "start": 13.913,
+            "end": 14.313
+          },
+          {
+            "word": "is ",
+            "start": 14.313,
+            "end": 14.713
+          },
+          {
+            "word": "Maria ",
+            "start": 14.713,
+            "end": 15.113
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.113,
+            "end": 15.513
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.287000000000003,
+            "end": 18.607000000000003
+          },
+          {
+            "word": "verification, ",
+            "start": 18.607000000000003,
+            "end": 19.327
+          },
+          {
+            "word": "may ",
+            "start": 19.327,
+            "end": 19.487001000000003
+          },
+          {
+            "word": "I ",
+            "start": 19.487001000000003,
+            "end": 19.647001000000003
+          },
+          {
+            "word": "have ",
+            "start": 19.647001000000003,
+            "end": 19.727001
+          },
+          {
+            "word": "your ",
+            "start": 19.727001,
+            "end": 19.887001
+          },
+          {
+            "word": "date ",
+            "start": 19.887001,
+            "end": 20.047
+          },
+          {
+            "word": "of ",
+            "start": 20.047,
+            "end": 20.207
+          },
+          {
+            "word": "birth? ",
+            "start": 20.207,
+            "end": 20.287000000000003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.71,
+            "end": 22.11
+          },
+          {
+            "word": "my ",
+            "start": 22.11,
+            "end": 22.51
+          },
+          {
+            "word": "date ",
+            "start": 22.51,
+            "end": 22.91
+          },
+          {
+            "word": "of ",
+            "start": 22.91,
+            "end": 23.31
+          },
+          {
+            "word": "birth ",
+            "start": 23.31,
+            "end": 23.71
+          },
+          {
+            "word": "is ",
+            "start": 23.71,
+            "end": 24.11
+          },
+          {
+            "word": "May ",
+            "start": 24.11,
+            "end": 24.51
+          },
+          {
+            "word": "14, ",
+            "start": 24.51,
+            "end": 24.91
+          },
+          {
+            "word": "1982.",
+            "start": 24.91,
+            "end": 25.31
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 28.537000000000003,
+            "end": 28.777
+          },
+          {
+            "word": "birthday ",
+            "start": 28.777,
+            "end": 29.097
+          },
+          {
+            "word": "doesn't ",
+            "start": 29.097,
+            "end": 29.337
+          },
+          {
+            "word": "match ",
+            "start": 29.337,
+            "end": 29.577
+          },
+          {
+            "word": "our ",
+            "start": 29.577,
+            "end": 29.737000000000002
+          },
+          {
+            "word": "records, ",
+            "start": 29.737000000000002,
+            "end": 30.217001
+          },
+          {
+            "word": "but ",
+            "start": 30.217001,
+            "end": 30.297
+          },
+          {
+            "word": "for ",
+            "start": 30.447000000000003,
+            "end": 30.687
+          },
+          {
+            "word": "demo ",
+            "start": 30.687,
+            "end": 31.087
+          },
+          {
+            "word": "purposes, ",
+            "start": 31.087,
+            "end": 31.647001000000003
+          },
+          {
+            "word": "I'll ",
+            "start": 31.647001000000003,
+            "end": 31.887001
+          },
+          {
+            "word": "accept ",
+            "start": 31.887001,
+            "end": 32.126999999999995
+          },
+          {
+            "word": "it. ",
+            "start": 32.126999999999995,
+            "end": 32.287
+          },
+          {
+            "word": "How ",
+            "start": 33.817,
+            "end": 34.056999999999995
+          },
+          {
+            "word": "can ",
+            "start": 34.056999999999995,
+            "end": 34.217
+          },
+          {
+            "word": "I ",
+            "start": 34.217,
+            "end": 34.297
+          },
+          {
+            "word": "help ",
+            "start": 34.297,
+            "end": 34.457
+          },
+          {
+            "word": "you ",
+            "start": 34.457,
+            "end": 34.537
+          },
+          {
+            "word": "today? ",
+            "start": 34.537,
+            "end": 34.777
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks. I was hoping to schedule an appointment sometime soon, but I’m not exactly sure what kind of visit I need.",
+        "words": [
+          {
+            "word": "Thanks.",
+            "start": 36.028,
+            "end": 36.428
+          },
+          {
+            "word": " I ",
+            "start": 36.73620825195312,
+            "end": 37.13620825195313
+          },
+          {
+            "word": "was ",
+            "start": 37.13620825195313,
+            "end": 37.53620825195313
+          },
+          {
+            "word": "hoping ",
+            "start": 37.53620825195313,
+            "end": 37.936208251953126
+          },
+          {
+            "word": "to ",
+            "start": 37.936208251953126,
+            "end": 38.336208251953124
+          },
+          {
+            "word": "schedule ",
+            "start": 38.336208251953124,
+            "end": 38.73620825195312
+          },
+          {
+            "word": "an ",
+            "start": 38.73620825195312,
+            "end": 39.13620825195313
+          },
+          {
+            "word": "appointment ",
+            "start": 39.13620825195313,
+            "end": 39.53620825195313
+          },
+          {
+            "word": "sometime ",
+            "start": 39.53620825195313,
+            "end": 39.936208251953126
+          },
+          {
+            "word": "soon, ",
+            "start": 39.936208251953126,
+            "end": 40.336208251953124
+          },
+          {
+            "word": "but ",
+            "start": 40.336208251953124,
+            "end": 40.73620825195312
+          },
+          {
+            "word": "I’m ",
+            "start": 40.73620825195312,
+            "end": 41.13620825195313
+          },
+          {
+            "word": "not ",
+            "start": 41.13620825195313,
+            "end": 41.53620825195313
+          },
+          {
+            "word": "exactly ",
+            "start": 41.53620825195313,
+            "end": 41.936208251953126
+          },
+          {
+            "word": "sure ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "what ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "kind ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "of ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "visit ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "I ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "need.",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "No problem, Maria. Can you tell me a bit about what's going on or what you'd like help with? That way, I can suggest the right type of appointment for you. ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 47.486999999999995,
+            "end": 47.726997
+          },
+          {
+            "word": "problem, ",
+            "start": 47.726997,
+            "end": 48.126999999999995
+          },
+          {
+            "word": "Maria. ",
+            "start": 48.126999999999995,
+            "end": 48.366997
+          },
+          {
+            "word": "Can ",
+            "start": 48.937,
+            "end": 49.257
+          },
+          {
+            "word": "you ",
+            "start": 49.257,
+            "end": 49.336998
+          },
+          {
+            "word": "tell ",
+            "start": 49.336998,
+            "end": 49.496998
+          },
+          {
+            "word": "me ",
+            "start": 49.496998,
+            "end": 49.656997999999994
+          },
+          {
+            "word": "a ",
+            "start": 49.656997999999994,
+            "end": 49.816998
+          },
+          {
+            "word": "bit ",
+            "start": 49.816998,
+            "end": 49.897
+          },
+          {
+            "word": "about ",
+            "start": 49.897,
+            "end": 50.136997
+          },
+          {
+            "word": "what's ",
+            "start": 50.136997,
+            "end": 50.376999999999995
+          },
+          {
+            "word": "going ",
+            "start": 50.376999999999995,
+            "end": 50.537
+          },
+          {
+            "word": "on ",
+            "start": 50.537,
+            "end": 50.696999999999996
+          },
+          {
+            "word": "or ",
+            "start": 50.696999999999996,
+            "end": 50.937
+          },
+          {
+            "word": "what ",
+            "start": 50.937,
+            "end": 51.016999999999996
+          },
+          {
+            "word": "you'd ",
+            "start": 51.016999999999996,
+            "end": 51.257
+          },
+          {
+            "word": "like ",
+            "start": 51.257,
+            "end": 51.416999999999994
+          },
+          {
+            "word": "help ",
+            "start": 51.416999999999994,
+            "end": 51.577
+          },
+          {
+            "word": "with? ",
+            "start": 51.577,
+            "end": 51.736999999999995
+          },
+          {
+            "word": "That ",
+            "start": 52.266999999999996,
+            "end": 52.507
+          },
+          {
+            "word": "way, ",
+            "start": 52.507,
+            "end": 52.746998
+          },
+          {
+            "word": "I ",
+            "start": 52.746998,
+            "end": 52.827
+          },
+          {
+            "word": "can ",
+            "start": 52.827,
+            "end": 52.906997999999994
+          },
+          {
+            "word": "suggest ",
+            "start": 52.906997999999994,
+            "end": 53.226997
+          },
+          {
+            "word": "the ",
+            "start": 53.226997,
+            "end": 53.386997
+          },
+          {
+            "word": "right ",
+            "start": 53.386997,
+            "end": 53.626999999999995
+          },
+          {
+            "word": "type ",
+            "start": 53.626999999999995,
+            "end": 53.787
+          },
+          {
+            "word": "of ",
+            "start": 53.787,
+            "end": 53.866997
+          },
+          {
+            "word": "appointment ",
+            "start": 53.866997,
+            "end": 54.187
+          },
+          {
+            "word": "for ",
+            "start": 54.187,
+            "end": 54.427
+          },
+          {
+            "word": "you. ",
+            "start": 54.427,
+            "end": 54.586998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Honestly, I just know I need to come in, but I’m not sure if it’s for a check-up or something else. I’ve been feeling a bit off, but I can’t really pinpoint it.",
+        "words": [
+          {
+            "word": "Honestly, ",
+            "start": 57.131,
+            "end": 57.531
+          },
+          {
+            "word": "I ",
+            "start": 57.531,
+            "end": 57.931
+          },
+          {
+            "word": "just ",
+            "start": 57.931,
+            "end": 58.331
+          },
+          {
+            "word": "know ",
+            "start": 58.331,
+            "end": 58.731
+          },
+          {
+            "word": "I ",
+            "start": 58.731,
+            "end": 59.131
+          },
+          {
+            "word": "need ",
+            "start": 59.131,
+            "end": 59.531
+          },
+          {
+            "word": "to ",
+            "start": 59.531,
+            "end": 59.931
+          },
+          {
+            "word": "come ",
+            "start": 59.931,
+            "end": 60.331
+          },
+          {
+            "word": "in, ",
+            "start": 60.331,
+            "end": 60.731
+          },
+          {
+            "word": "but ",
+            "start": 60.731,
+            "end": 61.131
+          },
+          {
+            "word": "I’m ",
+            "start": 61.131,
+            "end": 61.531
+          },
+          {
+            "word": "not ",
+            "start": 61.531,
+            "end": 61.931
+          },
+          {
+            "word": "sure ",
+            "start": 61.931,
+            "end": 62.331
+          },
+          {
+            "word": "if ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "it’s ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "for ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "a ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "check-up ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "or ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "something ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "else.",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": " I’ve ",
+            "start": 62.518041748046876,
+            "end": 62.918041748046875
+          },
+          {
+            "word": "been ",
+            "start": 62.918041748046875,
+            "end": 63.31804174804687
+          },
+          {
+            "word": "feeling ",
+            "start": 63.31804174804687,
+            "end": 63.71804174804687
+          },
+          {
+            "word": "a ",
+            "start": 63.71804174804687,
+            "end": 64.11804174804688
+          },
+          {
+            "word": "bit ",
+            "start": 64.11804174804688,
+            "end": 64.51804174804687
+          },
+          {
+            "word": "off, ",
+            "start": 64.51804174804687,
+            "end": 64.91804174804687
+          },
+          {
+            "word": "but ",
+            "start": 64.91804174804687,
+            "end": 65.31804174804688
+          },
+          {
+            "word": "I ",
+            "start": 65.31804174804688,
+            "end": 65.71804174804687
+          },
+          {
+            "word": "can’t ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "really ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "pinpoint ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "it.",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for sharing that. Since you're not sure and wanna get checked out, a new patient consultation is a good place to start. It's a thorough first visit where the provider reviews your symptoms and helps plan next steps. Would you like to book that type of appointment? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 70.097004,
+            "end": 70.337
+          },
+          {
+            "word": "for ",
+            "start": 70.337,
+            "end": 70.577
+          },
+          {
+            "word": "sharing ",
+            "start": 70.577,
+            "end": 70.73700000000001
+          },
+          {
+            "word": "that. ",
+            "start": 70.73700000000001,
+            "end": 70.977
+          },
+          {
+            "word": "Since ",
+            "start": 71.497,
+            "end": 71.81700000000001
+          },
+          {
+            "word": "you're ",
+            "start": 71.81700000000001,
+            "end": 72.056995
+          },
+          {
+            "word": "not ",
+            "start": 72.056995,
+            "end": 72.137
+          },
+          {
+            "word": "sure ",
+            "start": 72.137,
+            "end": 72.29699000000001
+          },
+          {
+            "word": "and ",
+            "start": 72.29699000000001,
+            "end": 72.45700000000001
+          },
+          {
+            "word": "wanna ",
+            "start": 72.45700000000001,
+            "end": 72.696995
+          },
+          {
+            "word": "get ",
+            "start": 72.696995,
+            "end": 72.857
+          },
+          {
+            "word": "checked ",
+            "start": 72.857,
+            "end": 73.09700000000001
+          },
+          {
+            "word": "out, ",
+            "start": 73.09700000000001,
+            "end": 73.257
+          },
+          {
+            "word": "a ",
+            "start": 73.51700000000001,
+            "end": 73.837
+          },
+          {
+            "word": "new ",
+            "start": 73.837,
+            "end": 73.997
+          },
+          {
+            "word": "patient ",
+            "start": 73.997,
+            "end": 74.31700000000001
+          },
+          {
+            "word": "consultation ",
+            "start": 74.31700000000001,
+            "end": 74.95700000000001
+          },
+          {
+            "word": "is ",
+            "start": 74.95700000000001,
+            "end": 75.117
+          },
+          {
+            "word": "a ",
+            "start": 75.117,
+            "end": 75.277
+          },
+          {
+            "word": "good ",
+            "start": 75.277,
+            "end": 75.43700000000001
+          },
+          {
+            "word": "place ",
+            "start": 75.43700000000001,
+            "end": 75.59700000000001
+          },
+          {
+            "word": "to ",
+            "start": 75.59700000000001,
+            "end": 75.757
+          },
+          {
+            "word": "start. ",
+            "start": 75.757,
+            "end": 75.917
+          },
+          {
+            "word": "It's ",
+            "start": 76.467,
+            "end": 76.787
+          },
+          {
+            "word": "a ",
+            "start": 76.787,
+            "end": 76.867
+          },
+          {
+            "word": "thorough ",
+            "start": 76.867,
+            "end": 77.18700000000001
+          },
+          {
+            "word": "first ",
+            "start": 77.18700000000001,
+            "end": 77.507
+          },
+          {
+            "word": "visit ",
+            "start": 77.507,
+            "end": 77.747
+          },
+          {
+            "word": "where ",
+            "start": 77.747,
+            "end": 77.986996
+          },
+          {
+            "word": "the ",
+            "start": 77.986996,
+            "end": 78.147
+          },
+          {
+            "word": "provider ",
+            "start": 78.147,
+            "end": 78.54700000000001
+          },
+          {
+            "word": "reviews ",
+            "start": 78.54700000000001,
+            "end": 78.947
+          },
+          {
+            "word": "your ",
+            "start": 78.947,
+            "end": 79.107
+          },
+          {
+            "word": "symptoms ",
+            "start": 79.107,
+            "end": 79.587
+          },
+          {
+            "word": "and ",
+            "start": 79.587,
+            "end": 79.747
+          },
+          {
+            "word": "helps ",
+            "start": 79.747,
+            "end": 79.986996
+          },
+          {
+            "word": "plan ",
+            "start": 80.12700000000001,
+            "end": 80.527004
+          },
+          {
+            "word": "next ",
+            "start": 80.527004,
+            "end": 80.927006
+          },
+          {
+            "word": "steps. ",
+            "start": 80.927006,
+            "end": 81.167
+          },
+          {
+            "word": "Would ",
+            "start": 81.696995,
+            "end": 81.93700000000001
+          },
+          {
+            "word": "you ",
+            "start": 81.93700000000001,
+            "end": 82.09700000000001
+          },
+          {
+            "word": "like ",
+            "start": 82.09700000000001,
+            "end": 82.177
+          },
+          {
+            "word": "to ",
+            "start": 82.177,
+            "end": 82.336994
+          },
+          {
+            "word": "book ",
+            "start": 82.336994,
+            "end": 82.497
+          },
+          {
+            "word": "that ",
+            "start": 82.497,
+            "end": 82.736996
+          },
+          {
+            "word": "type ",
+            "start": 82.736996,
+            "end": 82.897
+          },
+          {
+            "word": "of ",
+            "start": 82.897,
+            "end": 83.056995
+          },
+          {
+            "word": "appointment? ",
+            "start": 83.056995,
+            "end": 83.37699500000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that sounds good. I’d like to book a new patient consultation, please.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 85.094,
+            "end": 85.494
+          },
+          {
+            "word": "that ",
+            "start": 85.494,
+            "end": 85.894
+          },
+          {
+            "word": "sounds ",
+            "start": 85.894,
+            "end": 86.294
+          },
+          {
+            "word": "good.",
+            "start": 86.294,
+            "end": 86.694
+          },
+          {
+            "word": " I’d ",
+            "start": 86.78908325195313,
+            "end": 87.18908325195312
+          },
+          {
+            "word": "like ",
+            "start": 87.18908325195312,
+            "end": 87.58908325195313
+          },
+          {
+            "word": "to ",
+            "start": 87.58908325195313,
+            "end": 87.98908325195312
+          },
+          {
+            "word": "book ",
+            "start": 87.98908325195312,
+            "end": 88.38908325195312
+          },
+          {
+            "word": "a ",
+            "start": 88.38908325195312,
+            "end": 88.78908325195313
+          },
+          {
+            "word": "new ",
+            "start": 88.78908325195313,
+            "end": 89.18908325195312
+          },
+          {
+            "word": "patient ",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          },
+          {
+            "word": "consultation, ",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          },
+          {
+            "word": "please.",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "We have several providers available for new patient consultations. Would you prefer to see doctor Duttihauser or doctor Adam Bricker? ",
+        "words": [
+          {
+            "word": "We ",
+            "start": 93.48700000000001,
+            "end": 93.807
+          },
+          {
+            "word": "have ",
+            "start": 93.807,
+            "end": 93.967
+          },
+          {
+            "word": "several ",
+            "start": 93.967,
+            "end": 94.367
+          },
+          {
+            "word": "providers ",
+            "start": 94.367,
+            "end": 94.76700000000001
+          },
+          {
+            "word": "available ",
+            "start": 94.76700000000001,
+            "end": 95.247
+          },
+          {
+            "word": "for ",
+            "start": 95.247,
+            "end": 95.48700000000001
+          },
+          {
+            "word": "new ",
+            "start": 95.48700000000001,
+            "end": 95.727
+          },
+          {
+            "word": "patient ",
+            "start": 95.727,
+            "end": 96.04700000000001
+          },
+          {
+            "word": "consultations. ",
+            "start": 96.04700000000001,
+            "end": 96.68700000000001
+          },
+          {
+            "word": "Would ",
+            "start": 97.26699500000001,
+            "end": 97.586994
+          },
+          {
+            "word": "you ",
+            "start": 97.586994,
+            "end": 97.747
+          },
+          {
+            "word": "prefer ",
+            "start": 97.747,
+            "end": 98.06700000000001
+          },
+          {
+            "word": "to ",
+            "start": 98.06700000000001,
+            "end": 98.147
+          },
+          {
+            "word": "see ",
+            "start": 98.147,
+            "end": 98.306995
+          },
+          {
+            "word": "doctor ",
+            "start": 98.306995,
+            "end": 98.62699500000001
+          },
+          {
+            "word": "Duttihauser ",
+            "start": 98.62699500000001,
+            "end": 99.507
+          },
+          {
+            "word": "or ",
+            "start": 99.507,
+            "end": 99.827
+          },
+          {
+            "word": "doctor ",
+            "start": 99.827,
+            "end": 100.147
+          },
+          {
+            "word": "Adam ",
+            "start": 100.147,
+            "end": 100.467
+          },
+          {
+            "word": "Bricker? ",
+            "start": 100.467,
+            "end": 100.86699
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Or do you want the soonest available appointment with any provider? ",
+        "words": [
+          {
+            "word": "Or ",
+            "start": 101.54700000000001,
+            "end": 101.867
+          },
+          {
+            "word": "do ",
+            "start": 101.867,
+            "end": 102.027
+          },
+          {
+            "word": "you ",
+            "start": 102.027,
+            "end": 102.107
+          },
+          {
+            "word": "want ",
+            "start": 102.107,
+            "end": 102.26699500000001
+          },
+          {
+            "word": "the ",
+            "start": 102.26699500000001,
+            "end": 102.427
+          },
+          {
+            "word": "soonest ",
+            "start": 102.427,
+            "end": 102.90699400000001
+          },
+          {
+            "word": "available ",
+            "start": 102.90699400000001,
+            "end": 103.387
+          },
+          {
+            "word": "appointment ",
+            "start": 103.387,
+            "end": 103.867
+          },
+          {
+            "word": "with ",
+            "start": 103.867,
+            "end": 104.027
+          },
+          {
+            "word": "any ",
+            "start": 104.027,
+            "end": 104.26699500000001
+          },
+          {
+            "word": "provider? ",
+            "start": 104.26699500000001,
+            "end": 104.586994
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I don’t have a preference, so the soonest available appointment with any provider would be great.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 106.385,
+            "end": 106.785
+          },
+          {
+            "word": "don’t ",
+            "start": 106.785,
+            "end": 107.185
+          },
+          {
+            "word": "have ",
+            "start": 107.185,
+            "end": 107.585
+          },
+          {
+            "word": "a ",
+            "start": 107.585,
+            "end": 107.985
+          },
+          {
+            "word": "preference, ",
+            "start": 107.985,
+            "end": 108.385
+          },
+          {
+            "word": "so ",
+            "start": 108.385,
+            "end": 108.785
+          },
+          {
+            "word": "the ",
+            "start": 108.785,
+            "end": 109.185
+          },
+          {
+            "word": "soonest ",
+            "start": 109.185,
+            "end": 109.585
+          },
+          {
+            "word": "available ",
+            "start": 109.585,
+            "end": 109.985
+          },
+          {
+            "word": "appointment ",
+            "start": 109.985,
+            "end": 110.385
+          },
+          {
+            "word": "with ",
+            "start": 110.385,
+            "end": 110.785
+          },
+          {
+            "word": "any ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "provider ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "would ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "be ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "great.",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "content": "Let me check for the soonest available new patient consultation with any provider. One moment. The soonest available new patient consultation is Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Would you like to book this slot or hear about other times later that morning? ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 115.40699400000001,
+            "end": 115.647
+          },
+          {
+            "word": "me ",
+            "start": 115.647,
+            "end": 115.806995
+          },
+          {
+            "word": "check ",
+            "start": 115.806995,
+            "end": 116.04699000000001
+          },
+          {
+            "word": "for ",
+            "start": 116.04699000000001,
+            "end": 116.20700000000001
+          },
+          {
+            "word": "the ",
+            "start": 116.20700000000001,
+            "end": 116.287
+          },
+          {
+            "word": "soonest ",
+            "start": 116.287,
+            "end": 116.68699000000001
+          },
+          {
+            "word": "available ",
+            "start": 116.68699000000001,
+            "end": 117.086994
+          },
+          {
+            "word": "new ",
+            "start": 117.086994,
+            "end": 117.486996
+          },
+          {
+            "word": "patient ",
+            "start": 117.486996,
+            "end": 117.806995
+          },
+          {
+            "word": "consultation ",
+            "start": 117.806995,
+            "end": 118.36699
+          },
+          {
+            "word": "with ",
+            "start": 118.36699,
+            "end": 118.607
+          },
+          {
+            "word": "any ",
+            "start": 118.607,
+            "end": 118.84700000000001
+          },
+          {
+            "word": "provider. ",
+            "start": 118.84700000000001,
+            "end": 119.16699600000001
+          },
+          {
+            "word": "One ",
+            "start": 119.73700000000001,
+            "end": 120.057
+          },
+          {
+            "word": "moment. ",
+            "start": 120.057,
+            "end": 120.21701
+          },
+          {
+            "word": "The ",
+            "start": 122.577,
+            "end": 122.81700000000001
+          },
+          {
+            "word": "soonest ",
+            "start": 122.81700000000001,
+            "end": 123.137
+          },
+          {
+            "word": "available ",
+            "start": 123.137,
+            "end": 123.696995
+          },
+          {
+            "word": "new ",
+            "start": 123.696995,
+            "end": 124.01699500000001
+          },
+          {
+            "word": "patient ",
+            "start": 124.01699500000001,
+            "end": 124.336994
+          },
+          {
+            "word": "consultation ",
+            "start": 124.336994,
+            "end": 124.81700000000001
+          },
+          {
+            "word": "is ",
+            "start": 124.81700000000001,
+            "end": 125.056995
+          },
+          {
+            "word": "Thursday, ",
+            "start": 125.167,
+            "end": 125.727
+          },
+          {
+            "word": "March ",
+            "start": 125.727,
+            "end": 125.96701
+          },
+          {
+            "word": "nineteenth ",
+            "start": 125.96701,
+            "end": 126.367
+          },
+          {
+            "word": "at ",
+            "start": 126.367,
+            "end": 126.68700000000001
+          },
+          {
+            "word": "ten ",
+            "start": 126.68700000000001,
+            "end": 126.927006
+          },
+          {
+            "word": "thirty ",
+            "start": 127.486996,
+            "end": 127.887
+          },
+          {
+            "word": "AM ",
+            "start": 127.887,
+            "end": 128.207
+          },
+          {
+            "word": "with ",
+            "start": 128.207,
+            "end": 128.447
+          },
+          {
+            "word": "doctor ",
+            "start": 128.447,
+            "end": 128.687
+          },
+          {
+            "word": "Adam ",
+            "start": 128.687,
+            "end": 129.007
+          },
+          {
+            "word": "Bricker. ",
+            "start": 129.007,
+            "end": 129.407
+          },
+          {
+            "word": "Would ",
+            "start": 129.887,
+            "end": 130.207
+          },
+          {
+            "word": "you ",
+            "start": 130.207,
+            "end": 130.36700000000002
+          },
+          {
+            "word": "like ",
+            "start": 130.36700000000002,
+            "end": 130.52700000000002
+          },
+          {
+            "word": "to ",
+            "start": 130.52700000000002,
+            "end": 130.687
+          },
+          {
+            "word": "book ",
+            "start": 130.687,
+            "end": 130.847
+          },
+          {
+            "word": "this ",
+            "start": 130.847,
+            "end": 131.08700000000002
+          },
+          {
+            "word": "slot ",
+            "start": 131.08700000000002,
+            "end": 131.32699
+          },
+          {
+            "word": "or ",
+            "start": 131.697,
+            "end": 131.937
+          },
+          {
+            "word": "hear ",
+            "start": 131.937,
+            "end": 132.097
+          },
+          {
+            "word": "about ",
+            "start": 132.097,
+            "end": 132.33700000000002
+          },
+          {
+            "word": "other ",
+            "start": 132.33700000000002,
+            "end": 132.57699
+          },
+          {
+            "word": "times ",
+            "start": 132.57699,
+            "end": 132.817
+          },
+          {
+            "word": "later ",
+            "start": 132.817,
+            "end": 133.05700000000002
+          },
+          {
+            "word": "that ",
+            "start": 133.05700000000002,
+            "end": 133.297
+          },
+          {
+            "word": "morning? ",
+            "start": 133.297,
+            "end": 133.457
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That time works for me, so please go ahead and book the Thursday, March nineteenth at ten thirty with Dr. Bricker.",
+        "words": [
+          {
+            "word": "That ",
+            "start": 135.615,
+            "end": 136.015
+          },
+          {
+            "word": "time ",
+            "start": 136.015,
+            "end": 136.415
+          },
+          {
+            "word": "works ",
+            "start": 136.415,
+            "end": 136.815
+          },
+          {
+            "word": "for ",
+            "start": 136.815,
+            "end": 137.215
+          },
+          {
+            "word": "me, ",
+            "start": 137.215,
+            "end": 137.615
+          },
+          {
+            "word": "so ",
+            "start": 137.615,
+            "end": 138.015
+          },
+          {
+            "word": "please ",
+            "start": 138.015,
+            "end": 138.415
+          },
+          {
+            "word": "go ",
+            "start": 138.415,
+            "end": 138.815
+          },
+          {
+            "word": "ahead ",
+            "start": 138.815,
+            "end": 139.215
+          },
+          {
+            "word": "and ",
+            "start": 139.215,
+            "end": 139.615
+          },
+          {
+            "word": "book ",
+            "start": 139.615,
+            "end": 140.015
+          },
+          {
+            "word": "the ",
+            "start": 140.015,
+            "end": 140.415
+          },
+          {
+            "word": "Thursday, ",
+            "start": 140.415,
+            "end": 140.815
+          },
+          {
+            "word": "March ",
+            "start": 140.815,
+            "end": 141.215
+          },
+          {
+            "word": "nineteenth ",
+            "start": 141.215,
+            "end": 141.615
+          },
+          {
+            "word": "at ",
+            "start": 141.615,
+            "end": 142.015
+          },
+          {
+            "word": "ten ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "thirty ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "with ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "Dr. ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "Bricker.",
+            "start": 141.879125,
+            "end": 142.279125
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "user",
+        "content": "To confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Is that correct? ",
+        "words": [
+          {
+            "word": "To ",
+            "start": 146.667,
+            "end": 146.907
+          },
+          {
+            "word": "confirm, ",
+            "start": 146.907,
+            "end": 147.30700000000002
+          },
+          {
+            "word": "you'd ",
+            "start": 147.30700000000002,
+            "end": 147.547
+          },
+          {
+            "word": "like ",
+            "start": 147.547,
+            "end": 147.707
+          },
+          {
+            "word": "to ",
+            "start": 147.707,
+            "end": 147.787
+          },
+          {
+            "word": "book ",
+            "start": 147.787,
+            "end": 147.947
+          },
+          {
+            "word": "a ",
+            "start": 147.947,
+            "end": 148.107
+          },
+          {
+            "word": "new ",
+            "start": 148.107,
+            "end": 148.267
+          },
+          {
+            "word": "patient ",
+            "start": 148.267,
+            "end": 148.58700000000002
+          },
+          {
+            "word": "consultation ",
+            "start": 148.58700000000002,
+            "end": 149.30700000000002
+          },
+          {
+            "word": "on ",
+            "start": 149.30700000000002,
+            "end": 149.547
+          },
+          {
+            "word": "Thursday, ",
+            "start": 149.547,
+            "end": 150.107
+          },
+          {
+            "word": "March ",
+            "start": 150.107,
+            "end": 150.347
+          },
+          {
+            "word": "nineteenth ",
+            "start": 150.347,
+            "end": 150.747
+          },
+          {
+            "word": "at ",
+            "start": 150.937,
+            "end": 151.097
+          },
+          {
+            "word": "ten ",
+            "start": 151.097,
+            "end": 151.41699
+          },
+          {
+            "word": "thirty ",
+            "start": 151.41699,
+            "end": 151.817
+          },
+          {
+            "word": "AM ",
+            "start": 151.817,
+            "end": 152.13699
+          },
+          {
+            "word": "with ",
+            "start": 152.13699,
+            "end": 152.377
+          },
+          {
+            "word": "doctor ",
+            "start": 152.377,
+            "end": 152.61699000000002
+          },
+          {
+            "word": "Adam ",
+            "start": 152.61699000000002,
+            "end": 153.017
+          },
+          {
+            "word": "Bricker. ",
+            "start": 153.017,
+            "end": 153.257
+          },
+          {
+            "word": "Is ",
+            "start": 153.81701,
+            "end": 154.05700000000002
+          },
+          {
+            "word": "that ",
+            "start": 154.05700000000002,
+            "end": 154.217
+          },
+          {
+            "word": "correct? ",
+            "start": 154.217,
+            "end": 154.37701
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "And could you briefly share the reason for your visit even if it's just feeling off? ",
+        "words": [
+          {
+            "word": "And ",
+            "start": 154.967,
+            "end": 155.287
+          },
+          {
+            "word": "could ",
+            "start": 155.287,
+            "end": 155.447
+          },
+          {
+            "word": "you ",
+            "start": 155.447,
+            "end": 155.607
+          },
+          {
+            "word": "briefly ",
+            "start": 155.607,
+            "end": 155.927
+          },
+          {
+            "word": "share ",
+            "start": 155.927,
+            "end": 156.167
+          },
+          {
+            "word": "the ",
+            "start": 156.167,
+            "end": 156.32699
+          },
+          {
+            "word": "reason ",
+            "start": 156.32699,
+            "end": 156.647
+          },
+          {
+            "word": "for ",
+            "start": 156.647,
+            "end": 156.727
+          },
+          {
+            "word": "your ",
+            "start": 156.727,
+            "end": 156.967
+          },
+          {
+            "word": "visit ",
+            "start": 156.967,
+            "end": 157.127
+          },
+          {
+            "word": "even ",
+            "start": 157.127,
+            "end": 157.52700000000002
+          },
+          {
+            "word": "if ",
+            "start": 157.52700000000002,
+            "end": 157.607
+          },
+          {
+            "word": "it's ",
+            "start": 157.607,
+            "end": 157.847
+          },
+          {
+            "word": "just ",
+            "start": 157.847,
+            "end": 158.007
+          },
+          {
+            "word": "feeling ",
+            "start": 158.007,
+            "end": 158.32699
+          },
+          {
+            "word": "off? ",
+            "start": 158.32699,
+            "end": 158.487
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that’s correct. And for the reason, you can just put that I’ve been feeling a bit off and want to get checked out.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 160.027,
+            "end": 160.427
+          },
+          {
+            "word": "that’s ",
+            "start": 160.427,
+            "end": 160.827
+          },
+          {
+            "word": "correct.",
+            "start": 160.827,
+            "end": 161.227
+          },
+          {
+            "word": " And ",
+            "start": 161.33891674804687,
+            "end": 161.73891674804688
+          },
+          {
+            "word": "for ",
+            "start": 161.73891674804688,
+            "end": 162.13891674804688
+          },
+          {
+            "word": "the ",
+            "start": 162.13891674804688,
+            "end": 162.5389167480469
+          },
+          {
+            "word": "reason, ",
+            "start": 162.5389167480469,
+            "end": 162.93891674804686
+          },
+          {
+            "word": "you ",
+            "start": 162.93891674804686,
+            "end": 163.33891674804687
+          },
+          {
+            "word": "can ",
+            "start": 163.33891674804687,
+            "end": 163.73891674804688
+          },
+          {
+            "word": "just ",
+            "start": 163.73891674804688,
+            "end": 164.13891674804688
+          },
+          {
+            "word": "put ",
+            "start": 164.13891674804688,
+            "end": 164.5389167480469
+          },
+          {
+            "word": "that ",
+            "start": 164.5389167480469,
+            "end": 164.93891674804686
+          },
+          {
+            "word": "I’ve ",
+            "start": 164.93891674804686,
+            "end": 165.33891674804687
+          },
+          {
+            "word": "been ",
+            "start": 165.33891674804687,
+            "end": 165.73891674804688
+          },
+          {
+            "word": "feeling ",
+            "start": 165.73891674804688,
+            "end": 166.13891674804688
+          },
+          {
+            "word": "a ",
+            "start": 166.13891674804688,
+            "end": 166.5389167480469
+          },
+          {
+            "word": "bit ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "off ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "and ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "want ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "to ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "get ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "checked ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "out.",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 18
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your appointment is set for Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment? ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 172.357,
+            "end": 172.677
+          },
+          {
+            "word": "appointment ",
+            "start": 172.677,
+            "end": 172.997
+          },
+          {
+            "word": "is ",
+            "start": 172.997,
+            "end": 173.317
+          },
+          {
+            "word": "set ",
+            "start": 173.317,
+            "end": 173.55700000000002
+          },
+          {
+            "word": "for ",
+            "start": 173.55700000000002,
+            "end": 173.717
+          },
+          {
+            "word": "Thursday, ",
+            "start": 173.717,
+            "end": 174.357
+          },
+          {
+            "word": "March ",
+            "start": 174.357,
+            "end": 174.597
+          },
+          {
+            "word": "nineteenth ",
+            "start": 174.597,
+            "end": 175.15701
+          },
+          {
+            "word": "at ",
+            "start": 175.15701,
+            "end": 175.477
+          },
+          {
+            "word": "ten ",
+            "start": 175.58700000000002,
+            "end": 176.30700000000002
+          },
+          {
+            "word": "thirty ",
+            "start": 176.30700000000002,
+            "end": 176.787
+          },
+          {
+            "word": "AM ",
+            "start": 176.787,
+            "end": 177.347
+          },
+          {
+            "word": "with ",
+            "start": 177.347,
+            "end": 177.667
+          },
+          {
+            "word": "doctor ",
+            "start": 177.667,
+            "end": 177.987
+          },
+          {
+            "word": "Adam ",
+            "start": 177.987,
+            "end": 178.387
+          },
+          {
+            "word": "Bricker. ",
+            "start": 178.387,
+            "end": 178.787
+          },
+          {
+            "word": "Please ",
+            "start": 179.31701,
+            "end": 179.717
+          },
+          {
+            "word": "bring ",
+            "start": 179.717,
+            "end": 179.87701
+          },
+          {
+            "word": "a ",
+            "start": 179.87701,
+            "end": 180.037
+          },
+          {
+            "word": "government ",
+            "start": 180.037,
+            "end": 180.43701000000001
+          },
+          {
+            "word": "issued ",
+            "start": 180.43701000000001,
+            "end": 180.757
+          },
+          {
+            "word": "photo ",
+            "start": 180.757,
+            "end": 181.15701
+          },
+          {
+            "word": "ID ",
+            "start": 181.15701,
+            "end": 181.55700000000002
+          },
+          {
+            "word": "and ",
+            "start": 181.55700000000002,
+            "end": 181.79701
+          },
+          {
+            "word": "your ",
+            "start": 181.79701,
+            "end": 181.95701
+          },
+          {
+            "word": "insurance ",
+            "start": 181.95701,
+            "end": 182.27700000000002
+          },
+          {
+            "word": "card. ",
+            "start": 182.27700000000002,
+            "end": 182.59701
+          },
+          {
+            "word": "Would ",
+            "start": 183.15701,
+            "end": 183.397
+          },
+          {
+            "word": "you ",
+            "start": 183.397,
+            "end": 183.55700000000002
+          },
+          {
+            "word": "like ",
+            "start": 183.55700000000002,
+            "end": 183.717
+          },
+          {
+            "word": "a ",
+            "start": 183.717,
+            "end": 183.877
+          },
+          {
+            "word": "text ",
+            "start": 183.877,
+            "end": 184.197
+          },
+          {
+            "word": "reminder ",
+            "start": 184.197,
+            "end": 184.677
+          },
+          {
+            "word": "for ",
+            "start": 184.677,
+            "end": 184.83700000000002
+          },
+          {
+            "word": "your ",
+            "start": 184.83700000000002,
+            "end": 184.997
+          },
+          {
+            "word": "appointment? ",
+            "start": 184.997,
+            "end": 185.317
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, a text reminder would be helpful. Thank you!",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 186.84,
+            "end": 187.24
+          },
+          {
+            "word": "a ",
+            "start": 187.24,
+            "end": 187.64
+          },
+          {
+            "word": "text ",
+            "start": 187.64,
+            "end": 188.04
+          },
+          {
+            "word": "reminder ",
+            "start": 188.04,
+            "end": 188.44
+          },
+          {
+            "word": "would ",
+            "start": 188.44,
+            "end": 188.84
+          },
+          {
+            "word": "be ",
+            "start": 188.55304174804687,
+            "end": 188.95304174804687
+          },
+          {
+            "word": "helpful.",
+            "start": 188.55304174804687,
+            "end": 188.95304174804687
+          },
+          {
+            "word": " Thank ",
+            "start": 188.95304174804687,
+            "end": 189.35304174804688
+          },
+          {
+            "word": "you!",
+            "start": 189.26125,
+            "end": 189.66125
+          }
+        ],
+        "metadata": {
+          "response_id": 19
+        }
+      },
+      {
+        "role": "user",
+        "content": "You'll get a text reminder soon. If you have any other questions or need to change your appointment, just let me know. ",
+        "words": [
+          {
+            "word": "You'll ",
+            "start": 194.647,
+            "end": 195.047
+          },
+          {
+            "word": "get ",
+            "start": 195.047,
+            "end": 195.207
+          },
+          {
+            "word": "a ",
+            "start": 195.207,
+            "end": 195.36700000000002
+          },
+          {
+            "word": "text ",
+            "start": 195.36700000000002,
+            "end": 195.607
+          },
+          {
+            "word": "reminder ",
+            "start": 195.607,
+            "end": 196.007
+          },
+          {
+            "word": "soon. ",
+            "start": 196.007,
+            "end": 196.407
+          },
+          {
+            "word": "If ",
+            "start": 196.767,
+            "end": 197.007
+          },
+          {
+            "word": "you ",
+            "start": 197.007,
+            "end": 197.16699
+          },
+          {
+            "word": "have ",
+            "start": 197.16699,
+            "end": 197.32699
+          },
+          {
+            "word": "any ",
+            "start": 197.32699,
+            "end": 197.487
+          },
+          {
+            "word": "other ",
+            "start": 197.487,
+            "end": 197.647
+          },
+          {
+            "word": "questions ",
+            "start": 197.647,
+            "end": 197.96699
+          },
+          {
+            "word": "or ",
+            "start": 197.96699,
+            "end": 198.207
+          },
+          {
+            "word": "need ",
+            "start": 198.207,
+            "end": 198.36700000000002
+          },
+          {
+            "word": "to ",
+            "start": 198.36700000000002,
+            "end": 198.44699
+          },
+          {
+            "word": "change ",
+            "start": 198.44699,
+            "end": 198.687
+          },
+          {
+            "word": "your ",
+            "start": 198.687,
+            "end": 198.847
+          },
+          {
+            "word": "appointment, ",
+            "start": 198.847,
+            "end": 199.16699
+          },
+          {
+            "word": "just ",
+            "start": 199.65701,
+            "end": 199.897
+          },
+          {
+            "word": "let ",
+            "start": 199.897,
+            "end": 200.05700000000002
+          },
+          {
+            "word": "me ",
+            "start": 200.05700000000002,
+            "end": 200.217
+          },
+          {
+            "word": "know. ",
+            "start": 200.217,
+            "end": 200.29701
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you so much for your help. I appreciate it! Have a great day.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 201.814,
+            "end": 202.214
+          },
+          {
+            "word": "you ",
+            "start": 202.214,
+            "end": 202.614
+          },
+          {
+            "word": "so ",
+            "start": 202.614,
+            "end": 203.014
+          },
+          {
+            "word": "much ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "for ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "your ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "help. ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "I ",
+            "start": 203.12591674804688,
+            "end": 203.52591674804688
+          },
+          {
+            "word": "appreciate ",
+            "start": 203.52591674804688,
+            "end": 203.9259167480469
+          },
+          {
+            "word": "it! ",
+            "start": 203.81725,
+            "end": 204.21725
+          },
+          {
+            "word": "Have ",
+            "start": 204.21725,
+            "end": 204.61725
+          },
+          {
+            "word": "a ",
+            "start": 204.61725,
+            "end": 205.01725
+          },
+          {
+            "word": "great ",
+            "start": 204.780875,
+            "end": 205.180875
+          },
+          {
+            "word": "day.",
+            "start": 204.780875,
+            "end": 205.180875
+          }
+        ],
+        "metadata": {
+          "response_id": 20
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.396,
+            "end": 0.796
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.277,
+            "end": 0.59700003
+          },
+          {
+            "word": "call ",
+            "start": 0.59700003,
+            "end": 0.8370000400000001
+          },
+          {
+            "word": "may ",
+            "start": 0.8370000400000001,
+            "end": 1.0769999
+          },
+          {
+            "word": "be ",
+            "start": 1.0769999,
+            "end": 1.2369999999999999
+          },
+          {
+            "word": "recorded ",
+            "start": 1.2369999999999999,
+            "end": 1.6369999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6369999999999998,
+            "end": 1.9569998999999998
+          },
+          {
+            "word": "quality ",
+            "start": 1.9569998999999998,
+            "end": 2.357
+          },
+          {
+            "word": "and ",
+            "start": 2.357,
+            "end": 2.597
+          },
+          {
+            "word": "training ",
+            "start": 2.597,
+            "end": 2.9970000000000003
+          },
+          {
+            "word": "purposes. ",
+            "start": 2.9970000000000003,
+            "end": 3.3969999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 6.327,
+            "end": 6.727
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.356999999999999,
+            "end": 6.757
+          },
+          {
+            "word": "for ",
+            "start": 6.757,
+            "end": 6.917
+          },
+          {
+            "word": "calling ",
+            "start": 6.917,
+            "end": 7.237
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.237,
+            "end": 7.637
+          },
+          {
+            "word": "Point ",
+            "start": 7.637,
+            "end": 7.877
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.877,
+            "end": 8.597
+          },
+          {
+            "word": "Part ",
+            "start": 9.007,
+            "end": 9.407
+          },
+          {
+            "word": "of ",
+            "start": 9.407,
+            "end": 9.567
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.567,
+            "end": 9.807
+          },
+          {
+            "word": "Good ",
+            "start": 9.807,
+            "end": 10.046999999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 10.046999999999999,
+            "end": 10.366999999999999
+          },
+          {
+            "word": "Am ",
+            "start": 10.876999999999999,
+            "end": 11.116999999999999
+          },
+          {
+            "word": "I ",
+            "start": 11.116999999999999,
+            "end": 11.197001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.197001,
+            "end": 11.437
+          },
+          {
+            "word": "with ",
+            "start": 11.437,
+            "end": 11.597
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.597,
+            "end": 11.917
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.513,
+            "end": 13.913
+          },
+          {
+            "word": "this ",
+            "start": 13.913,
+            "end": 14.313
+          },
+          {
+            "word": "is ",
+            "start": 14.313,
+            "end": 14.713
+          },
+          {
+            "word": "Maria ",
+            "start": 14.713,
+            "end": 15.113
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.113,
+            "end": 15.513
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.287000000000003,
+            "end": 18.607000000000003
+          },
+          {
+            "word": "verification, ",
+            "start": 18.607000000000003,
+            "end": 19.327
+          },
+          {
+            "word": "may ",
+            "start": 19.327,
+            "end": 19.487001000000003
+          },
+          {
+            "word": "I ",
+            "start": 19.487001000000003,
+            "end": 19.647001000000003
+          },
+          {
+            "word": "have ",
+            "start": 19.647001000000003,
+            "end": 19.727001
+          },
+          {
+            "word": "your ",
+            "start": 19.727001,
+            "end": 19.887001
+          },
+          {
+            "word": "date ",
+            "start": 19.887001,
+            "end": 20.047
+          },
+          {
+            "word": "of ",
+            "start": 20.047,
+            "end": 20.207
+          },
+          {
+            "word": "birth? ",
+            "start": 20.207,
+            "end": 20.287000000000003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.71,
+            "end": 22.11
+          },
+          {
+            "word": "my ",
+            "start": 22.11,
+            "end": 22.51
+          },
+          {
+            "word": "date ",
+            "start": 22.51,
+            "end": 22.91
+          },
+          {
+            "word": "of ",
+            "start": 22.91,
+            "end": 23.31
+          },
+          {
+            "word": "birth ",
+            "start": 23.31,
+            "end": 23.71
+          },
+          {
+            "word": "is ",
+            "start": 23.71,
+            "end": 24.11
+          },
+          {
+            "word": "May ",
+            "start": 24.11,
+            "end": 24.51
+          },
+          {
+            "word": "14, ",
+            "start": 24.51,
+            "end": 24.91
+          },
+          {
+            "word": "1982.",
+            "start": 24.91,
+            "end": 25.31
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 28.537000000000003,
+            "end": 28.777
+          },
+          {
+            "word": "birthday ",
+            "start": 28.777,
+            "end": 29.097
+          },
+          {
+            "word": "doesn't ",
+            "start": 29.097,
+            "end": 29.337
+          },
+          {
+            "word": "match ",
+            "start": 29.337,
+            "end": 29.577
+          },
+          {
+            "word": "our ",
+            "start": 29.577,
+            "end": 29.737000000000002
+          },
+          {
+            "word": "records, ",
+            "start": 29.737000000000002,
+            "end": 30.217001
+          },
+          {
+            "word": "but ",
+            "start": 30.217001,
+            "end": 30.297
+          },
+          {
+            "word": "for ",
+            "start": 30.447000000000003,
+            "end": 30.687
+          },
+          {
+            "word": "demo ",
+            "start": 30.687,
+            "end": 31.087
+          },
+          {
+            "word": "purposes, ",
+            "start": 31.087,
+            "end": 31.647001000000003
+          },
+          {
+            "word": "I'll ",
+            "start": 31.647001000000003,
+            "end": 31.887001
+          },
+          {
+            "word": "accept ",
+            "start": 31.887001,
+            "end": 32.126999999999995
+          },
+          {
+            "word": "it. ",
+            "start": 32.126999999999995,
+            "end": 32.287
+          },
+          {
+            "word": "How ",
+            "start": 33.817,
+            "end": 34.056999999999995
+          },
+          {
+            "word": "can ",
+            "start": 34.056999999999995,
+            "end": 34.217
+          },
+          {
+            "word": "I ",
+            "start": 34.217,
+            "end": 34.297
+          },
+          {
+            "word": "help ",
+            "start": 34.297,
+            "end": 34.457
+          },
+          {
+            "word": "you ",
+            "start": 34.457,
+            "end": 34.537
+          },
+          {
+            "word": "today? ",
+            "start": 34.537,
+            "end": 34.777
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks. I was hoping to schedule an appointment sometime soon, but I’m not exactly sure what kind of visit I need.",
+        "words": [
+          {
+            "word": "Thanks.",
+            "start": 36.028,
+            "end": 36.428
+          },
+          {
+            "word": " I ",
+            "start": 36.73620825195312,
+            "end": 37.13620825195313
+          },
+          {
+            "word": "was ",
+            "start": 37.13620825195313,
+            "end": 37.53620825195313
+          },
+          {
+            "word": "hoping ",
+            "start": 37.53620825195313,
+            "end": 37.936208251953126
+          },
+          {
+            "word": "to ",
+            "start": 37.936208251953126,
+            "end": 38.336208251953124
+          },
+          {
+            "word": "schedule ",
+            "start": 38.336208251953124,
+            "end": 38.73620825195312
+          },
+          {
+            "word": "an ",
+            "start": 38.73620825195312,
+            "end": 39.13620825195313
+          },
+          {
+            "word": "appointment ",
+            "start": 39.13620825195313,
+            "end": 39.53620825195313
+          },
+          {
+            "word": "sometime ",
+            "start": 39.53620825195313,
+            "end": 39.936208251953126
+          },
+          {
+            "word": "soon, ",
+            "start": 39.936208251953126,
+            "end": 40.336208251953124
+          },
+          {
+            "word": "but ",
+            "start": 40.336208251953124,
+            "end": 40.73620825195312
+          },
+          {
+            "word": "I’m ",
+            "start": 40.73620825195312,
+            "end": 41.13620825195313
+          },
+          {
+            "word": "not ",
+            "start": 41.13620825195313,
+            "end": 41.53620825195313
+          },
+          {
+            "word": "exactly ",
+            "start": 41.53620825195313,
+            "end": 41.936208251953126
+          },
+          {
+            "word": "sure ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "what ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "kind ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "of ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "visit ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "I ",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          },
+          {
+            "word": "need.",
+            "start": 41.688416748046876,
+            "end": 42.088416748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "No problem, Maria. Can you tell me a bit about what's going on or what you'd like help with? That way, I can suggest the right type of appointment for you. ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 47.486999999999995,
+            "end": 47.726997
+          },
+          {
+            "word": "problem, ",
+            "start": 47.726997,
+            "end": 48.126999999999995
+          },
+          {
+            "word": "Maria. ",
+            "start": 48.126999999999995,
+            "end": 48.366997
+          },
+          {
+            "word": "Can ",
+            "start": 48.937,
+            "end": 49.257
+          },
+          {
+            "word": "you ",
+            "start": 49.257,
+            "end": 49.336998
+          },
+          {
+            "word": "tell ",
+            "start": 49.336998,
+            "end": 49.496998
+          },
+          {
+            "word": "me ",
+            "start": 49.496998,
+            "end": 49.656997999999994
+          },
+          {
+            "word": "a ",
+            "start": 49.656997999999994,
+            "end": 49.816998
+          },
+          {
+            "word": "bit ",
+            "start": 49.816998,
+            "end": 49.897
+          },
+          {
+            "word": "about ",
+            "start": 49.897,
+            "end": 50.136997
+          },
+          {
+            "word": "what's ",
+            "start": 50.136997,
+            "end": 50.376999999999995
+          },
+          {
+            "word": "going ",
+            "start": 50.376999999999995,
+            "end": 50.537
+          },
+          {
+            "word": "on ",
+            "start": 50.537,
+            "end": 50.696999999999996
+          },
+          {
+            "word": "or ",
+            "start": 50.696999999999996,
+            "end": 50.937
+          },
+          {
+            "word": "what ",
+            "start": 50.937,
+            "end": 51.016999999999996
+          },
+          {
+            "word": "you'd ",
+            "start": 51.016999999999996,
+            "end": 51.257
+          },
+          {
+            "word": "like ",
+            "start": 51.257,
+            "end": 51.416999999999994
+          },
+          {
+            "word": "help ",
+            "start": 51.416999999999994,
+            "end": 51.577
+          },
+          {
+            "word": "with? ",
+            "start": 51.577,
+            "end": 51.736999999999995
+          },
+          {
+            "word": "That ",
+            "start": 52.266999999999996,
+            "end": 52.507
+          },
+          {
+            "word": "way, ",
+            "start": 52.507,
+            "end": 52.746998
+          },
+          {
+            "word": "I ",
+            "start": 52.746998,
+            "end": 52.827
+          },
+          {
+            "word": "can ",
+            "start": 52.827,
+            "end": 52.906997999999994
+          },
+          {
+            "word": "suggest ",
+            "start": 52.906997999999994,
+            "end": 53.226997
+          },
+          {
+            "word": "the ",
+            "start": 53.226997,
+            "end": 53.386997
+          },
+          {
+            "word": "right ",
+            "start": 53.386997,
+            "end": 53.626999999999995
+          },
+          {
+            "word": "type ",
+            "start": 53.626999999999995,
+            "end": 53.787
+          },
+          {
+            "word": "of ",
+            "start": 53.787,
+            "end": 53.866997
+          },
+          {
+            "word": "appointment ",
+            "start": 53.866997,
+            "end": 54.187
+          },
+          {
+            "word": "for ",
+            "start": 54.187,
+            "end": 54.427
+          },
+          {
+            "word": "you. ",
+            "start": 54.427,
+            "end": 54.586998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Honestly, I just know I need to come in, but I’m not sure if it’s for a check-up or something else. I’ve been feeling a bit off, but I can’t really pinpoint it.",
+        "words": [
+          {
+            "word": "Honestly, ",
+            "start": 57.131,
+            "end": 57.531
+          },
+          {
+            "word": "I ",
+            "start": 57.531,
+            "end": 57.931
+          },
+          {
+            "word": "just ",
+            "start": 57.931,
+            "end": 58.331
+          },
+          {
+            "word": "know ",
+            "start": 58.331,
+            "end": 58.731
+          },
+          {
+            "word": "I ",
+            "start": 58.731,
+            "end": 59.131
+          },
+          {
+            "word": "need ",
+            "start": 59.131,
+            "end": 59.531
+          },
+          {
+            "word": "to ",
+            "start": 59.531,
+            "end": 59.931
+          },
+          {
+            "word": "come ",
+            "start": 59.931,
+            "end": 60.331
+          },
+          {
+            "word": "in, ",
+            "start": 60.331,
+            "end": 60.731
+          },
+          {
+            "word": "but ",
+            "start": 60.731,
+            "end": 61.131
+          },
+          {
+            "word": "I’m ",
+            "start": 61.131,
+            "end": 61.531
+          },
+          {
+            "word": "not ",
+            "start": 61.531,
+            "end": 61.931
+          },
+          {
+            "word": "sure ",
+            "start": 61.931,
+            "end": 62.331
+          },
+          {
+            "word": "if ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "it’s ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "for ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "a ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "check-up ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "or ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "something ",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": "else.",
+            "start": 62.11804174804688,
+            "end": 62.518041748046876
+          },
+          {
+            "word": " I’ve ",
+            "start": 62.518041748046876,
+            "end": 62.918041748046875
+          },
+          {
+            "word": "been ",
+            "start": 62.918041748046875,
+            "end": 63.31804174804687
+          },
+          {
+            "word": "feeling ",
+            "start": 63.31804174804687,
+            "end": 63.71804174804687
+          },
+          {
+            "word": "a ",
+            "start": 63.71804174804687,
+            "end": 64.11804174804688
+          },
+          {
+            "word": "bit ",
+            "start": 64.11804174804688,
+            "end": 64.51804174804687
+          },
+          {
+            "word": "off, ",
+            "start": 64.51804174804687,
+            "end": 64.91804174804687
+          },
+          {
+            "word": "but ",
+            "start": 64.91804174804687,
+            "end": 65.31804174804688
+          },
+          {
+            "word": "I ",
+            "start": 65.31804174804688,
+            "end": 65.71804174804687
+          },
+          {
+            "word": "can’t ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "really ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "pinpoint ",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          },
+          {
+            "word": "it.",
+            "start": 65.68229174804688,
+            "end": 66.08229174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for sharing that. Since you're not sure and wanna get checked out, a new patient consultation is a good place to start. It's a thorough first visit where the provider reviews your symptoms and helps plan next steps. Would you like to book that type of appointment? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 70.097004,
+            "end": 70.337
+          },
+          {
+            "word": "for ",
+            "start": 70.337,
+            "end": 70.577
+          },
+          {
+            "word": "sharing ",
+            "start": 70.577,
+            "end": 70.73700000000001
+          },
+          {
+            "word": "that. ",
+            "start": 70.73700000000001,
+            "end": 70.977
+          },
+          {
+            "word": "Since ",
+            "start": 71.497,
+            "end": 71.81700000000001
+          },
+          {
+            "word": "you're ",
+            "start": 71.81700000000001,
+            "end": 72.056995
+          },
+          {
+            "word": "not ",
+            "start": 72.056995,
+            "end": 72.137
+          },
+          {
+            "word": "sure ",
+            "start": 72.137,
+            "end": 72.29699000000001
+          },
+          {
+            "word": "and ",
+            "start": 72.29699000000001,
+            "end": 72.45700000000001
+          },
+          {
+            "word": "wanna ",
+            "start": 72.45700000000001,
+            "end": 72.696995
+          },
+          {
+            "word": "get ",
+            "start": 72.696995,
+            "end": 72.857
+          },
+          {
+            "word": "checked ",
+            "start": 72.857,
+            "end": 73.09700000000001
+          },
+          {
+            "word": "out, ",
+            "start": 73.09700000000001,
+            "end": 73.257
+          },
+          {
+            "word": "a ",
+            "start": 73.51700000000001,
+            "end": 73.837
+          },
+          {
+            "word": "new ",
+            "start": 73.837,
+            "end": 73.997
+          },
+          {
+            "word": "patient ",
+            "start": 73.997,
+            "end": 74.31700000000001
+          },
+          {
+            "word": "consultation ",
+            "start": 74.31700000000001,
+            "end": 74.95700000000001
+          },
+          {
+            "word": "is ",
+            "start": 74.95700000000001,
+            "end": 75.117
+          },
+          {
+            "word": "a ",
+            "start": 75.117,
+            "end": 75.277
+          },
+          {
+            "word": "good ",
+            "start": 75.277,
+            "end": 75.43700000000001
+          },
+          {
+            "word": "place ",
+            "start": 75.43700000000001,
+            "end": 75.59700000000001
+          },
+          {
+            "word": "to ",
+            "start": 75.59700000000001,
+            "end": 75.757
+          },
+          {
+            "word": "start. ",
+            "start": 75.757,
+            "end": 75.917
+          },
+          {
+            "word": "It's ",
+            "start": 76.467,
+            "end": 76.787
+          },
+          {
+            "word": "a ",
+            "start": 76.787,
+            "end": 76.867
+          },
+          {
+            "word": "thorough ",
+            "start": 76.867,
+            "end": 77.18700000000001
+          },
+          {
+            "word": "first ",
+            "start": 77.18700000000001,
+            "end": 77.507
+          },
+          {
+            "word": "visit ",
+            "start": 77.507,
+            "end": 77.747
+          },
+          {
+            "word": "where ",
+            "start": 77.747,
+            "end": 77.986996
+          },
+          {
+            "word": "the ",
+            "start": 77.986996,
+            "end": 78.147
+          },
+          {
+            "word": "provider ",
+            "start": 78.147,
+            "end": 78.54700000000001
+          },
+          {
+            "word": "reviews ",
+            "start": 78.54700000000001,
+            "end": 78.947
+          },
+          {
+            "word": "your ",
+            "start": 78.947,
+            "end": 79.107
+          },
+          {
+            "word": "symptoms ",
+            "start": 79.107,
+            "end": 79.587
+          },
+          {
+            "word": "and ",
+            "start": 79.587,
+            "end": 79.747
+          },
+          {
+            "word": "helps ",
+            "start": 79.747,
+            "end": 79.986996
+          },
+          {
+            "word": "plan ",
+            "start": 80.12700000000001,
+            "end": 80.527004
+          },
+          {
+            "word": "next ",
+            "start": 80.527004,
+            "end": 80.927006
+          },
+          {
+            "word": "steps. ",
+            "start": 80.927006,
+            "end": 81.167
+          },
+          {
+            "word": "Would ",
+            "start": 81.696995,
+            "end": 81.93700000000001
+          },
+          {
+            "word": "you ",
+            "start": 81.93700000000001,
+            "end": 82.09700000000001
+          },
+          {
+            "word": "like ",
+            "start": 82.09700000000001,
+            "end": 82.177
+          },
+          {
+            "word": "to ",
+            "start": 82.177,
+            "end": 82.336994
+          },
+          {
+            "word": "book ",
+            "start": 82.336994,
+            "end": 82.497
+          },
+          {
+            "word": "that ",
+            "start": 82.497,
+            "end": 82.736996
+          },
+          {
+            "word": "type ",
+            "start": 82.736996,
+            "end": 82.897
+          },
+          {
+            "word": "of ",
+            "start": 82.897,
+            "end": 83.056995
+          },
+          {
+            "word": "appointment? ",
+            "start": 83.056995,
+            "end": 83.37699500000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that sounds good. I’d like to book a new patient consultation, please.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 85.094,
+            "end": 85.494
+          },
+          {
+            "word": "that ",
+            "start": 85.494,
+            "end": 85.894
+          },
+          {
+            "word": "sounds ",
+            "start": 85.894,
+            "end": 86.294
+          },
+          {
+            "word": "good.",
+            "start": 86.294,
+            "end": 86.694
+          },
+          {
+            "word": " I’d ",
+            "start": 86.78908325195313,
+            "end": 87.18908325195312
+          },
+          {
+            "word": "like ",
+            "start": 87.18908325195312,
+            "end": 87.58908325195313
+          },
+          {
+            "word": "to ",
+            "start": 87.58908325195313,
+            "end": 87.98908325195312
+          },
+          {
+            "word": "book ",
+            "start": 87.98908325195312,
+            "end": 88.38908325195312
+          },
+          {
+            "word": "a ",
+            "start": 88.38908325195312,
+            "end": 88.78908325195313
+          },
+          {
+            "word": "new ",
+            "start": 88.78908325195313,
+            "end": 89.18908325195312
+          },
+          {
+            "word": "patient ",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          },
+          {
+            "word": "consultation, ",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          },
+          {
+            "word": "please.",
+            "start": 89.14066674804687,
+            "end": 89.54066674804687
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "We have several providers available for new patient consultations. Would you prefer to see doctor Duttihauser or doctor Adam Bricker? ",
+        "words": [
+          {
+            "word": "We ",
+            "start": 93.48700000000001,
+            "end": 93.807
+          },
+          {
+            "word": "have ",
+            "start": 93.807,
+            "end": 93.967
+          },
+          {
+            "word": "several ",
+            "start": 93.967,
+            "end": 94.367
+          },
+          {
+            "word": "providers ",
+            "start": 94.367,
+            "end": 94.76700000000001
+          },
+          {
+            "word": "available ",
+            "start": 94.76700000000001,
+            "end": 95.247
+          },
+          {
+            "word": "for ",
+            "start": 95.247,
+            "end": 95.48700000000001
+          },
+          {
+            "word": "new ",
+            "start": 95.48700000000001,
+            "end": 95.727
+          },
+          {
+            "word": "patient ",
+            "start": 95.727,
+            "end": 96.04700000000001
+          },
+          {
+            "word": "consultations. ",
+            "start": 96.04700000000001,
+            "end": 96.68700000000001
+          },
+          {
+            "word": "Would ",
+            "start": 97.26699500000001,
+            "end": 97.586994
+          },
+          {
+            "word": "you ",
+            "start": 97.586994,
+            "end": 97.747
+          },
+          {
+            "word": "prefer ",
+            "start": 97.747,
+            "end": 98.06700000000001
+          },
+          {
+            "word": "to ",
+            "start": 98.06700000000001,
+            "end": 98.147
+          },
+          {
+            "word": "see ",
+            "start": 98.147,
+            "end": 98.306995
+          },
+          {
+            "word": "doctor ",
+            "start": 98.306995,
+            "end": 98.62699500000001
+          },
+          {
+            "word": "Duttihauser ",
+            "start": 98.62699500000001,
+            "end": 99.507
+          },
+          {
+            "word": "or ",
+            "start": 99.507,
+            "end": 99.827
+          },
+          {
+            "word": "doctor ",
+            "start": 99.827,
+            "end": 100.147
+          },
+          {
+            "word": "Adam ",
+            "start": 100.147,
+            "end": 100.467
+          },
+          {
+            "word": "Bricker? ",
+            "start": 100.467,
+            "end": 100.86699
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Or do you want the soonest available appointment with any provider? ",
+        "words": [
+          {
+            "word": "Or ",
+            "start": 101.54700000000001,
+            "end": 101.867
+          },
+          {
+            "word": "do ",
+            "start": 101.867,
+            "end": 102.027
+          },
+          {
+            "word": "you ",
+            "start": 102.027,
+            "end": 102.107
+          },
+          {
+            "word": "want ",
+            "start": 102.107,
+            "end": 102.26699500000001
+          },
+          {
+            "word": "the ",
+            "start": 102.26699500000001,
+            "end": 102.427
+          },
+          {
+            "word": "soonest ",
+            "start": 102.427,
+            "end": 102.90699400000001
+          },
+          {
+            "word": "available ",
+            "start": 102.90699400000001,
+            "end": 103.387
+          },
+          {
+            "word": "appointment ",
+            "start": 103.387,
+            "end": 103.867
+          },
+          {
+            "word": "with ",
+            "start": 103.867,
+            "end": 104.027
+          },
+          {
+            "word": "any ",
+            "start": 104.027,
+            "end": 104.26699500000001
+          },
+          {
+            "word": "provider? ",
+            "start": 104.26699500000001,
+            "end": 104.586994
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I don’t have a preference, so the soonest available appointment with any provider would be great.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 106.385,
+            "end": 106.785
+          },
+          {
+            "word": "don’t ",
+            "start": 106.785,
+            "end": 107.185
+          },
+          {
+            "word": "have ",
+            "start": 107.185,
+            "end": 107.585
+          },
+          {
+            "word": "a ",
+            "start": 107.585,
+            "end": 107.985
+          },
+          {
+            "word": "preference, ",
+            "start": 107.985,
+            "end": 108.385
+          },
+          {
+            "word": "so ",
+            "start": 108.385,
+            "end": 108.785
+          },
+          {
+            "word": "the ",
+            "start": 108.785,
+            "end": 109.185
+          },
+          {
+            "word": "soonest ",
+            "start": 109.185,
+            "end": 109.585
+          },
+          {
+            "word": "available ",
+            "start": 109.585,
+            "end": 109.985
+          },
+          {
+            "word": "appointment ",
+            "start": 109.985,
+            "end": 110.385
+          },
+          {
+            "word": "with ",
+            "start": 110.385,
+            "end": 110.785
+          },
+          {
+            "word": "any ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "provider ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "would ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "be ",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          },
+          {
+            "word": "great.",
+            "start": 110.47808325195312,
+            "end": 110.87808325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "content": "Let me check for the soonest available new patient consultation with any provider. One moment. The soonest available new patient consultation is Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Would you like to book this slot or hear about other times later that morning? ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 115.40699400000001,
+            "end": 115.647
+          },
+          {
+            "word": "me ",
+            "start": 115.647,
+            "end": 115.806995
+          },
+          {
+            "word": "check ",
+            "start": 115.806995,
+            "end": 116.04699000000001
+          },
+          {
+            "word": "for ",
+            "start": 116.04699000000001,
+            "end": 116.20700000000001
+          },
+          {
+            "word": "the ",
+            "start": 116.20700000000001,
+            "end": 116.287
+          },
+          {
+            "word": "soonest ",
+            "start": 116.287,
+            "end": 116.68699000000001
+          },
+          {
+            "word": "available ",
+            "start": 116.68699000000001,
+            "end": 117.086994
+          },
+          {
+            "word": "new ",
+            "start": 117.086994,
+            "end": 117.486996
+          },
+          {
+            "word": "patient ",
+            "start": 117.486996,
+            "end": 117.806995
+          },
+          {
+            "word": "consultation ",
+            "start": 117.806995,
+            "end": 118.36699
+          },
+          {
+            "word": "with ",
+            "start": 118.36699,
+            "end": 118.607
+          },
+          {
+            "word": "any ",
+            "start": 118.607,
+            "end": 118.84700000000001
+          },
+          {
+            "word": "provider. ",
+            "start": 118.84700000000001,
+            "end": 119.16699600000001
+          },
+          {
+            "word": "One ",
+            "start": 119.73700000000001,
+            "end": 120.057
+          },
+          {
+            "word": "moment. ",
+            "start": 120.057,
+            "end": 120.21701
+          },
+          {
+            "word": "The ",
+            "start": 122.577,
+            "end": 122.81700000000001
+          },
+          {
+            "word": "soonest ",
+            "start": 122.81700000000001,
+            "end": 123.137
+          },
+          {
+            "word": "available ",
+            "start": 123.137,
+            "end": 123.696995
+          },
+          {
+            "word": "new ",
+            "start": 123.696995,
+            "end": 124.01699500000001
+          },
+          {
+            "word": "patient ",
+            "start": 124.01699500000001,
+            "end": 124.336994
+          },
+          {
+            "word": "consultation ",
+            "start": 124.336994,
+            "end": 124.81700000000001
+          },
+          {
+            "word": "is ",
+            "start": 124.81700000000001,
+            "end": 125.056995
+          },
+          {
+            "word": "Thursday, ",
+            "start": 125.167,
+            "end": 125.727
+          },
+          {
+            "word": "March ",
+            "start": 125.727,
+            "end": 125.96701
+          },
+          {
+            "word": "nineteenth ",
+            "start": 125.96701,
+            "end": 126.367
+          },
+          {
+            "word": "at ",
+            "start": 126.367,
+            "end": 126.68700000000001
+          },
+          {
+            "word": "ten ",
+            "start": 126.68700000000001,
+            "end": 126.927006
+          },
+          {
+            "word": "thirty ",
+            "start": 127.486996,
+            "end": 127.887
+          },
+          {
+            "word": "AM ",
+            "start": 127.887,
+            "end": 128.207
+          },
+          {
+            "word": "with ",
+            "start": 128.207,
+            "end": 128.447
+          },
+          {
+            "word": "doctor ",
+            "start": 128.447,
+            "end": 128.687
+          },
+          {
+            "word": "Adam ",
+            "start": 128.687,
+            "end": 129.007
+          },
+          {
+            "word": "Bricker. ",
+            "start": 129.007,
+            "end": 129.407
+          },
+          {
+            "word": "Would ",
+            "start": 129.887,
+            "end": 130.207
+          },
+          {
+            "word": "you ",
+            "start": 130.207,
+            "end": 130.36700000000002
+          },
+          {
+            "word": "like ",
+            "start": 130.36700000000002,
+            "end": 130.52700000000002
+          },
+          {
+            "word": "to ",
+            "start": 130.52700000000002,
+            "end": 130.687
+          },
+          {
+            "word": "book ",
+            "start": 130.687,
+            "end": 130.847
+          },
+          {
+            "word": "this ",
+            "start": 130.847,
+            "end": 131.08700000000002
+          },
+          {
+            "word": "slot ",
+            "start": 131.08700000000002,
+            "end": 131.32699
+          },
+          {
+            "word": "or ",
+            "start": 131.697,
+            "end": 131.937
+          },
+          {
+            "word": "hear ",
+            "start": 131.937,
+            "end": 132.097
+          },
+          {
+            "word": "about ",
+            "start": 132.097,
+            "end": 132.33700000000002
+          },
+          {
+            "word": "other ",
+            "start": 132.33700000000002,
+            "end": 132.57699
+          },
+          {
+            "word": "times ",
+            "start": 132.57699,
+            "end": 132.817
+          },
+          {
+            "word": "later ",
+            "start": 132.817,
+            "end": 133.05700000000002
+          },
+          {
+            "word": "that ",
+            "start": 133.05700000000002,
+            "end": 133.297
+          },
+          {
+            "word": "morning? ",
+            "start": 133.297,
+            "end": 133.457
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That time works for me, so please go ahead and book the Thursday, March nineteenth at ten thirty with Dr. Bricker.",
+        "words": [
+          {
+            "word": "That ",
+            "start": 135.615,
+            "end": 136.015
+          },
+          {
+            "word": "time ",
+            "start": 136.015,
+            "end": 136.415
+          },
+          {
+            "word": "works ",
+            "start": 136.415,
+            "end": 136.815
+          },
+          {
+            "word": "for ",
+            "start": 136.815,
+            "end": 137.215
+          },
+          {
+            "word": "me, ",
+            "start": 137.215,
+            "end": 137.615
+          },
+          {
+            "word": "so ",
+            "start": 137.615,
+            "end": 138.015
+          },
+          {
+            "word": "please ",
+            "start": 138.015,
+            "end": 138.415
+          },
+          {
+            "word": "go ",
+            "start": 138.415,
+            "end": 138.815
+          },
+          {
+            "word": "ahead ",
+            "start": 138.815,
+            "end": 139.215
+          },
+          {
+            "word": "and ",
+            "start": 139.215,
+            "end": 139.615
+          },
+          {
+            "word": "book ",
+            "start": 139.615,
+            "end": 140.015
+          },
+          {
+            "word": "the ",
+            "start": 140.015,
+            "end": 140.415
+          },
+          {
+            "word": "Thursday, ",
+            "start": 140.415,
+            "end": 140.815
+          },
+          {
+            "word": "March ",
+            "start": 140.815,
+            "end": 141.215
+          },
+          {
+            "word": "nineteenth ",
+            "start": 141.215,
+            "end": 141.615
+          },
+          {
+            "word": "at ",
+            "start": 141.615,
+            "end": 142.015
+          },
+          {
+            "word": "ten ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "thirty ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "with ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "Dr. ",
+            "start": 141.879125,
+            "end": 142.279125
+          },
+          {
+            "word": "Bricker.",
+            "start": 141.879125,
+            "end": 142.279125
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "user",
+        "content": "To confirm, you'd like to book a new patient consultation on Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Is that correct? ",
+        "words": [
+          {
+            "word": "To ",
+            "start": 146.667,
+            "end": 146.907
+          },
+          {
+            "word": "confirm, ",
+            "start": 146.907,
+            "end": 147.30700000000002
+          },
+          {
+            "word": "you'd ",
+            "start": 147.30700000000002,
+            "end": 147.547
+          },
+          {
+            "word": "like ",
+            "start": 147.547,
+            "end": 147.707
+          },
+          {
+            "word": "to ",
+            "start": 147.707,
+            "end": 147.787
+          },
+          {
+            "word": "book ",
+            "start": 147.787,
+            "end": 147.947
+          },
+          {
+            "word": "a ",
+            "start": 147.947,
+            "end": 148.107
+          },
+          {
+            "word": "new ",
+            "start": 148.107,
+            "end": 148.267
+          },
+          {
+            "word": "patient ",
+            "start": 148.267,
+            "end": 148.58700000000002
+          },
+          {
+            "word": "consultation ",
+            "start": 148.58700000000002,
+            "end": 149.30700000000002
+          },
+          {
+            "word": "on ",
+            "start": 149.30700000000002,
+            "end": 149.547
+          },
+          {
+            "word": "Thursday, ",
+            "start": 149.547,
+            "end": 150.107
+          },
+          {
+            "word": "March ",
+            "start": 150.107,
+            "end": 150.347
+          },
+          {
+            "word": "nineteenth ",
+            "start": 150.347,
+            "end": 150.747
+          },
+          {
+            "word": "at ",
+            "start": 150.937,
+            "end": 151.097
+          },
+          {
+            "word": "ten ",
+            "start": 151.097,
+            "end": 151.41699
+          },
+          {
+            "word": "thirty ",
+            "start": 151.41699,
+            "end": 151.817
+          },
+          {
+            "word": "AM ",
+            "start": 151.817,
+            "end": 152.13699
+          },
+          {
+            "word": "with ",
+            "start": 152.13699,
+            "end": 152.377
+          },
+          {
+            "word": "doctor ",
+            "start": 152.377,
+            "end": 152.61699000000002
+          },
+          {
+            "word": "Adam ",
+            "start": 152.61699000000002,
+            "end": 153.017
+          },
+          {
+            "word": "Bricker. ",
+            "start": 153.017,
+            "end": 153.257
+          },
+          {
+            "word": "Is ",
+            "start": 153.81701,
+            "end": 154.05700000000002
+          },
+          {
+            "word": "that ",
+            "start": 154.05700000000002,
+            "end": 154.217
+          },
+          {
+            "word": "correct? ",
+            "start": 154.217,
+            "end": 154.37701
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "And could you briefly share the reason for your visit even if it's just feeling off? ",
+        "words": [
+          {
+            "word": "And ",
+            "start": 154.967,
+            "end": 155.287
+          },
+          {
+            "word": "could ",
+            "start": 155.287,
+            "end": 155.447
+          },
+          {
+            "word": "you ",
+            "start": 155.447,
+            "end": 155.607
+          },
+          {
+            "word": "briefly ",
+            "start": 155.607,
+            "end": 155.927
+          },
+          {
+            "word": "share ",
+            "start": 155.927,
+            "end": 156.167
+          },
+          {
+            "word": "the ",
+            "start": 156.167,
+            "end": 156.32699
+          },
+          {
+            "word": "reason ",
+            "start": 156.32699,
+            "end": 156.647
+          },
+          {
+            "word": "for ",
+            "start": 156.647,
+            "end": 156.727
+          },
+          {
+            "word": "your ",
+            "start": 156.727,
+            "end": 156.967
+          },
+          {
+            "word": "visit ",
+            "start": 156.967,
+            "end": 157.127
+          },
+          {
+            "word": "even ",
+            "start": 157.127,
+            "end": 157.52700000000002
+          },
+          {
+            "word": "if ",
+            "start": 157.52700000000002,
+            "end": 157.607
+          },
+          {
+            "word": "it's ",
+            "start": 157.607,
+            "end": 157.847
+          },
+          {
+            "word": "just ",
+            "start": 157.847,
+            "end": 158.007
+          },
+          {
+            "word": "feeling ",
+            "start": 158.007,
+            "end": 158.32699
+          },
+          {
+            "word": "off? ",
+            "start": 158.32699,
+            "end": 158.487
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that’s correct. And for the reason, you can just put that I’ve been feeling a bit off and want to get checked out.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 160.027,
+            "end": 160.427
+          },
+          {
+            "word": "that’s ",
+            "start": 160.427,
+            "end": 160.827
+          },
+          {
+            "word": "correct.",
+            "start": 160.827,
+            "end": 161.227
+          },
+          {
+            "word": " And ",
+            "start": 161.33891674804687,
+            "end": 161.73891674804688
+          },
+          {
+            "word": "for ",
+            "start": 161.73891674804688,
+            "end": 162.13891674804688
+          },
+          {
+            "word": "the ",
+            "start": 162.13891674804688,
+            "end": 162.5389167480469
+          },
+          {
+            "word": "reason, ",
+            "start": 162.5389167480469,
+            "end": 162.93891674804686
+          },
+          {
+            "word": "you ",
+            "start": 162.93891674804686,
+            "end": 163.33891674804687
+          },
+          {
+            "word": "can ",
+            "start": 163.33891674804687,
+            "end": 163.73891674804688
+          },
+          {
+            "word": "just ",
+            "start": 163.73891674804688,
+            "end": 164.13891674804688
+          },
+          {
+            "word": "put ",
+            "start": 164.13891674804688,
+            "end": 164.5389167480469
+          },
+          {
+            "word": "that ",
+            "start": 164.5389167480469,
+            "end": 164.93891674804686
+          },
+          {
+            "word": "I’ve ",
+            "start": 164.93891674804686,
+            "end": 165.33891674804687
+          },
+          {
+            "word": "been ",
+            "start": 165.33891674804687,
+            "end": 165.73891674804688
+          },
+          {
+            "word": "feeling ",
+            "start": 165.73891674804688,
+            "end": 166.13891674804688
+          },
+          {
+            "word": "a ",
+            "start": 166.13891674804688,
+            "end": 166.5389167480469
+          },
+          {
+            "word": "bit ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "off ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "and ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "want ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "to ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "get ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "checked ",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          },
+          {
+            "word": "out.",
+            "start": 166.16341674804687,
+            "end": 166.56341674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 18
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your appointment is set for Thursday, March nineteenth at ten thirty AM with doctor Adam Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment? ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 172.357,
+            "end": 172.677
+          },
+          {
+            "word": "appointment ",
+            "start": 172.677,
+            "end": 172.997
+          },
+          {
+            "word": "is ",
+            "start": 172.997,
+            "end": 173.317
+          },
+          {
+            "word": "set ",
+            "start": 173.317,
+            "end": 173.55700000000002
+          },
+          {
+            "word": "for ",
+            "start": 173.55700000000002,
+            "end": 173.717
+          },
+          {
+            "word": "Thursday, ",
+            "start": 173.717,
+            "end": 174.357
+          },
+          {
+            "word": "March ",
+            "start": 174.357,
+            "end": 174.597
+          },
+          {
+            "word": "nineteenth ",
+            "start": 174.597,
+            "end": 175.15701
+          },
+          {
+            "word": "at ",
+            "start": 175.15701,
+            "end": 175.477
+          },
+          {
+            "word": "ten ",
+            "start": 175.58700000000002,
+            "end": 176.30700000000002
+          },
+          {
+            "word": "thirty ",
+            "start": 176.30700000000002,
+            "end": 176.787
+          },
+          {
+            "word": "AM ",
+            "start": 176.787,
+            "end": 177.347
+          },
+          {
+            "word": "with ",
+            "start": 177.347,
+            "end": 177.667
+          },
+          {
+            "word": "doctor ",
+            "start": 177.667,
+            "end": 177.987
+          },
+          {
+            "word": "Adam ",
+            "start": 177.987,
+            "end": 178.387
+          },
+          {
+            "word": "Bricker. ",
+            "start": 178.387,
+            "end": 178.787
+          },
+          {
+            "word": "Please ",
+            "start": 179.31701,
+            "end": 179.717
+          },
+          {
+            "word": "bring ",
+            "start": 179.717,
+            "end": 179.87701
+          },
+          {
+            "word": "a ",
+            "start": 179.87701,
+            "end": 180.037
+          },
+          {
+            "word": "government ",
+            "start": 180.037,
+            "end": 180.43701000000001
+          },
+          {
+            "word": "issued ",
+            "start": 180.43701000000001,
+            "end": 180.757
+          },
+          {
+            "word": "photo ",
+            "start": 180.757,
+            "end": 181.15701
+          },
+          {
+            "word": "ID ",
+            "start": 181.15701,
+            "end": 181.55700000000002
+          },
+          {
+            "word": "and ",
+            "start": 181.55700000000002,
+            "end": 181.79701
+          },
+          {
+            "word": "your ",
+            "start": 181.79701,
+            "end": 181.95701
+          },
+          {
+            "word": "insurance ",
+            "start": 181.95701,
+            "end": 182.27700000000002
+          },
+          {
+            "word": "card. ",
+            "start": 182.27700000000002,
+            "end": 182.59701
+          },
+          {
+            "word": "Would ",
+            "start": 183.15701,
+            "end": 183.397
+          },
+          {
+            "word": "you ",
+            "start": 183.397,
+            "end": 183.55700000000002
+          },
+          {
+            "word": "like ",
+            "start": 183.55700000000002,
+            "end": 183.717
+          },
+          {
+            "word": "a ",
+            "start": 183.717,
+            "end": 183.877
+          },
+          {
+            "word": "text ",
+            "start": 183.877,
+            "end": 184.197
+          },
+          {
+            "word": "reminder ",
+            "start": 184.197,
+            "end": 184.677
+          },
+          {
+            "word": "for ",
+            "start": 184.677,
+            "end": 184.83700000000002
+          },
+          {
+            "word": "your ",
+            "start": 184.83700000000002,
+            "end": 184.997
+          },
+          {
+            "word": "appointment? ",
+            "start": 184.997,
+            "end": 185.317
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, a text reminder would be helpful. Thank you!",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 186.84,
+            "end": 187.24
+          },
+          {
+            "word": "a ",
+            "start": 187.24,
+            "end": 187.64
+          },
+          {
+            "word": "text ",
+            "start": 187.64,
+            "end": 188.04
+          },
+          {
+            "word": "reminder ",
+            "start": 188.04,
+            "end": 188.44
+          },
+          {
+            "word": "would ",
+            "start": 188.44,
+            "end": 188.84
+          },
+          {
+            "word": "be ",
+            "start": 188.55304174804687,
+            "end": 188.95304174804687
+          },
+          {
+            "word": "helpful.",
+            "start": 188.55304174804687,
+            "end": 188.95304174804687
+          },
+          {
+            "word": " Thank ",
+            "start": 188.95304174804687,
+            "end": 189.35304174804688
+          },
+          {
+            "word": "you!",
+            "start": 189.26125,
+            "end": 189.66125
+          }
+        ],
+        "metadata": {
+          "response_id": 19
+        }
+      },
+      {
+        "role": "user",
+        "content": "You'll get a text reminder soon. If you have any other questions or need to change your appointment, just let me know. ",
+        "words": [
+          {
+            "word": "You'll ",
+            "start": 194.647,
+            "end": 195.047
+          },
+          {
+            "word": "get ",
+            "start": 195.047,
+            "end": 195.207
+          },
+          {
+            "word": "a ",
+            "start": 195.207,
+            "end": 195.36700000000002
+          },
+          {
+            "word": "text ",
+            "start": 195.36700000000002,
+            "end": 195.607
+          },
+          {
+            "word": "reminder ",
+            "start": 195.607,
+            "end": 196.007
+          },
+          {
+            "word": "soon. ",
+            "start": 196.007,
+            "end": 196.407
+          },
+          {
+            "word": "If ",
+            "start": 196.767,
+            "end": 197.007
+          },
+          {
+            "word": "you ",
+            "start": 197.007,
+            "end": 197.16699
+          },
+          {
+            "word": "have ",
+            "start": 197.16699,
+            "end": 197.32699
+          },
+          {
+            "word": "any ",
+            "start": 197.32699,
+            "end": 197.487
+          },
+          {
+            "word": "other ",
+            "start": 197.487,
+            "end": 197.647
+          },
+          {
+            "word": "questions ",
+            "start": 197.647,
+            "end": 197.96699
+          },
+          {
+            "word": "or ",
+            "start": 197.96699,
+            "end": 198.207
+          },
+          {
+            "word": "need ",
+            "start": 198.207,
+            "end": 198.36700000000002
+          },
+          {
+            "word": "to ",
+            "start": 198.36700000000002,
+            "end": 198.44699
+          },
+          {
+            "word": "change ",
+            "start": 198.44699,
+            "end": 198.687
+          },
+          {
+            "word": "your ",
+            "start": 198.687,
+            "end": 198.847
+          },
+          {
+            "word": "appointment, ",
+            "start": 198.847,
+            "end": 199.16699
+          },
+          {
+            "word": "just ",
+            "start": 199.65701,
+            "end": 199.897
+          },
+          {
+            "word": "let ",
+            "start": 199.897,
+            "end": 200.05700000000002
+          },
+          {
+            "word": "me ",
+            "start": 200.05700000000002,
+            "end": 200.217
+          },
+          {
+            "word": "know. ",
+            "start": 200.217,
+            "end": 200.29701
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you so much for your help. I appreciate it! Have a great day.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 201.814,
+            "end": 202.214
+          },
+          {
+            "word": "you ",
+            "start": 202.214,
+            "end": 202.614
+          },
+          {
+            "word": "so ",
+            "start": 202.614,
+            "end": 203.014
+          },
+          {
+            "word": "much ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "for ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "your ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "help. ",
+            "start": 202.72591674804687,
+            "end": 203.12591674804688
+          },
+          {
+            "word": "I ",
+            "start": 203.12591674804688,
+            "end": 203.52591674804688
+          },
+          {
+            "word": "appreciate ",
+            "start": 203.52591674804688,
+            "end": 203.9259167480469
+          },
+          {
+            "word": "it! ",
+            "start": 203.81725,
+            "end": 204.21725
+          },
+          {
+            "word": "Have ",
+            "start": 204.21725,
+            "end": 204.61725
+          },
+          {
+            "word": "a ",
+            "start": 204.61725,
+            "end": 205.01725
+          },
+          {
+            "word": "great ",
+            "start": 204.780875,
+            "end": 205.180875
+          },
+          {
+            "word": "day.",
+            "start": 204.780875,
+            "end": 205.180875
+          }
+        ],
+        "metadata": {
+          "response_id": 20
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "64a1cb0e1e906982",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"Thank you so much for your help. I appreciate it! Have a great day.\"}",
+        "time_sec": 205.19,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/b958a6462a042ccc75379c422b936dbf1a057e6182e70e77e8f692216df3595e/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/b958a6462a042ccc75379c422b936dbf1a057e6182e70e77e8f692216df3595e/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/b958a6462a042ccc75379c422b936dbf1a057e6182e70e77e8f692216df3595e/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 1875.2000000000003,
+        "min": 3,
+        "max": 1927,
+        "p90": 1646,
+        "num": 21,
+        "values": [
+          3,
+          724,
+          1077,
+          876,
+          717,
+          755,
+          881,
+          1927,
+          1281,
+          1221,
+          733,
+          899,
+          1351,
+          652,
+          1668,
+          1169,
+          1646,
+          861,
+          698,
+          861,
+          1106
+        ],
+        "p50": 881,
+        "p95": 1668
+      },
+      "e2e": {
+        "p99": 2519.6017578125,
+        "min": 1251,
+        "max": 2544.001953125,
+        "p90": 2300,
+        "num": 11,
+        "values": [
+          2300,
+          1596,
+          1423,
+          1251,
+          2544.001953125,
+          1717.0048828125,
+          1798.006103515625,
+          2158,
+          1540,
+          1523,
+          1516.989990234375
+        ],
+        "p50": 1596,
+        "p95": 2422.0009765625
+      },
+      "tts": {
+        "p99": 383.8,
+        "min": 167,
+        "max": 392,
+        "p90": 349,
+        "num": 21,
+        "values": [
+          392,
+          249,
+          257,
+          351,
+          252,
+          247,
+          344,
+          270,
+          349,
+          167,
+          218,
+          185,
+          223,
+          249,
+          327,
+          213,
+          193,
+          312,
+          203,
+          339,
+          319
+        ],
+        "p50": 252,
+        "p95": 351
+      },
+      "asr": {
+        "p99": 1451.5966840000044,
+        "min": 0,
+        "max": 1989.9956999999995,
+        "p90": 60.00518800000136,
+        "num": 265,
+        "values": [
+          20.000020000000063,
+          20,
+          70.00003000000015,
+          10,
+          30.000100000000202,
+          30,
+          20,
+          30,
+          19.999900000000252,
+          20.000049999999646,
+          29.9998599999999,
+          29.999699999999393,
+          39.99999999999909,
+          29.999799999999595,
+          30,
+          29.99999999999818,
+          29.99959999999919,
+          59.99959999999919,
+          70.00014999999985,
+          50,
+          39.9994999999999,
+          40.000599999999395,
+          40.00014999999985,
+          50,
+          50,
+          10.000499999998283,
+          30,
+          40.00040000000081,
+          29.998999999999796,
+          1859.9989999999998,
+          40.000099999997474,
+          50.00079999999798,
+          40.001000000000204,
+          50.001500000002125,
+          40.00040000000081,
+          10.001000000000204,
+          20.001400000001013,
+          30.000000000003638,
+          20.00100000000384,
+          20.001400000001013,
+          30,
+          1230.0000000000036,
+          59.99989999999889,
+          40.00069999999687,
+          19.999299999999494,
+          50.00109999999768,
+          40.000150000007125,
+          80.00090000000637,
+          39.99949999999808,
+          19.99949999999808,
+          19.998200000001816,
+          30.00014999999985,
+          19.9971000000005,
+          19.99949999999808,
+          30.000299999999697,
+          29.99899999999616,
+          49.99760000000242,
+          60,
+          19.998599999998987,
+          9.997299999995448,
+          29.997699999999895,
+          50.000150000007125,
+          59.9971000000005,
+          69.99949999999808,
+          30.000300000006973,
+          39.999000000003434,
+          59.99760000000242,
+          30,
+          69.99850000000151,
+          20.00100000000384,
+          80.00430000000051,
+          19.996339999997872,
+          29.99330000000191,
+          19.995699999999488,
+          39.992700000002515,
+          39.99499999999534,
+          79.99599999999919,
+          0.0014999999984866008,
+          60.00396999999066,
+          60.00089999998454,
+          30.000299999999697,
+          80.00269999999728,
+          69.99760000000242,
+          50.00100000000384,
+          40.00149999999849,
+          49.99633999999787,
+          50.00089999999909,
+          29.995699999999488,
+          40.0002999999997,
+          50.002699999997276,
+          49.99760000000242,
+          50,
+          50.00239999999758,
+          49.997300000002724,
+          40.001799999998184,
+          39.99659999999858,
+          50.00099999998929,
+          89.99850000000151,
+          1079.9965999999986,
+          60.00340000000142,
+          29.993900000001304,
+          39.99633999999787,
+          39.99330000000191,
+          59.99569999999949,
+          29.994999999995343,
+          10.005000000004657,
+          20,
+          1650.0026999999973,
+          39.997300000002724,
+          19.999700000000303,
+          9.99659999999858,
+          9.998999999996158,
+          10.001499999998487,
+          29.998500000001513,
+          20.00100000000384,
+          30.00340000000142,
+          79.9939000000013,
+          29.996339999997872,
+          79.99330000001646,
+          29.99570000001404,
+          29.995000000009895,
+          39.99760000000242,
+          10,
+          49.994800000000396,
+          49.994200000001,
+          49.99659999999858,
+          49.99633999999787,
+          60.00089999999909,
+          49.99569999999949,
+          60.0002999999997,
+          39.99760000000242,
+          59.994799999985844,
+          59.997300000002724,
+          49.994200000001,
+          9.996339999997872,
+          29.99330000000191,
+          39.99569999999949,
+          19.992700000002515,
+          59.99760000000242,
+          50,
+          19.994799999985844,
+          29.994200000001,
+          29.99659999999858,
+          19.993599999987055,
+          60.00149999999849,
+          30.00397000000521,
+          29.995699999999488,
+          20.000299999999697,
+          19.994999999995343,
+          19.99760000000242,
+          20,
+          119.99730000000272,
+          39.994200000001,
+          29.993599999987055,
+          29.995999999984633,
+          29.998500000001513,
+          1339.993300000002,
+          60.00669999999809,
+          60.00370000000112,
+          30.006099999998696,
+          50.007299999997485,
+          40.009800000014366,
+          40.00670000001264,
+          40.00920000000042,
+          60.0060000000085,
+          50.008499999996275,
+          0,
+          19.996339999997872,
+          39.99329999998736,
+          29.995699999999488,
+          29.992700000002515,
+          59.993900000001304,
+          59.996340000012424,
+          29.99330000000191,
+          29.995699999999488,
+          39.992700000002515,
+          50.00500000000466,
+          29.996950000000652,
+          49.993900000001304,
+          19.996340000012424,
+          49.99330000000191,
+          19.995699999999488,
+          19.992700000002515,
+          39.99499999999534,
+          39.99760000000242,
+          40,
+          40.00239999999758,
+          40.00500000000466,
+          40.00430000000051,
+          40.00099999998929,
+          70.00370000000112,
+          50.005999999993946,
+          620.0072999999975,
+          49.992700000002515,
+          29.989599999971688,
+          29.99210000000312,
+          39.9890000000014,
+          29.991500000003725,
+          49.99399999997695,
+          39.99079999999958,
+          49.98719999997411,
+          20.009159999986878,
+          30.011599999997998,
+          19.993900000001304,
+          39.996340000012424,
+          29.99330000000191,
+          29.995699999999488,
+          29.99270000003162,
+          59.99499999999534,
+          49.99760000000242,
+          40,
+          40.00239999999758,
+          50.00500000003376,
+          80.00179999999818,
+          70.00430000002962,
+          20,
+          1989.9956999999995,
+          20.004300000000512,
+          20.00669999999809,
+          20.00920000000042,
+          10.00600000002305,
+          10.008499999996275,
+          29.998200000001816,
+          30.010400000028312,
+          20,
+          29.998170000006212,
+          19.9945000000007,
+          30.00920000000042,
+          20.005999999993946,
+          30.008499999996275,
+          29.998200000001816,
+          29.99499999996624,
+          20.009159999986878,
+          40.011599999998,
+          30.008499999996275,
+          30.0109999999695,
+          20.00789999999688,
+          20.01039999999921,
+          40.01279999999679,
+          30,
+          30.00239999999758,
+          30.005000000004657,
+          40.00179999996908,
+          30.009159999986878,
+          19.99633999998332,
+          30.008499999996275,
+          29.995699999970384,
+          80.00789999996778,
+          29.99499999996624,
+          60.008499999996275,
+          39.996340000012424,
+          29.99330000000191,
+          9.995699999999488,
+          19.994999999995343,
+          19.99760000000242,
+          19.993900000001304,
+          19.996340000012424,
+          29.99330000000191,
+          29.995699999999488,
+          29.99270000003162,
+          29.994999999995343,
+          29.99760000000242,
+          49.99079999999958,
+          40.00915999998688,
+          39.996340000012424
+        ],
+        "p50": 30.010400000028312,
+        "p95": 79.99992000000493
+      }
+    },
+    "metadata": {
+      "scenario_title": "Ambiguous request for an appointment",
+      "started_at_utc": "2026-03-15T22:32:50.470641+00:00",
+      "project_stage": "stage_4",
+      "scenario_id": "ambiguous_appointment_request"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 18.8833333
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 5.15
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 15.45
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 5.15
+        }
+      ],
+      "combined_cost": 44.6333333,
+      "total_duration_seconds": 206
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent successfully scheduled a new patient consultation appointment for Maria Lopez on Thursday, March 19th at 10:30 AM with Dr. Adam Bricker. The agent confirmed the appointment details, collected the reason for the visit, and arranged for a text reminder to be sent. The call ended positively with the user expressing appreciation.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        581,
+        609,
+        633,
+        670,
+        677,
+        730,
+        744,
+        836,
+        846,
+        896,
+        907,
+        912,
+        956,
+        978,
+        985,
+        994,
+        1056,
+        1076,
+        1153,
+        1196
+      ],
+      "average": 871.75,
+      "num_requests": 20
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 205.19,
+        "tool_call_id": "64a1cb0e1e906982",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA424a51a71b18a0111c31a7683390c72c"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Agent: Hi, 
+User: This call may be recorded for quality and training purposes. 
+User: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez. I was hoping to ask about your office hours, if that’s okay.
+User: What is your date of birth? 
+Agent: Sure, my date of birth is March 14, 1982.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. 
+Agent: Thank you. I wanted to check if your office is open on Saturday mornings, and also what your weekday hours are.
+User: We're closed on Saturdays. Our weekday hours are nine AM to four PM on Monday, Tuesday, and Thursday, twelve PM to seven PM on Wednesday, and nine AM to twelve PM on Friday. 
+User: Let me know if you need anything else. 
+Agent: Thank you, that answers my questions. I appreciate your help—have a great day!

@@ -1,0 +1,4 @@
+User: This call may be recorded for quality and training purposes. 
+Agent: Thank you 
+User: Thank you. 
+Agent: You're welcome! Have a great day. Goodbye.

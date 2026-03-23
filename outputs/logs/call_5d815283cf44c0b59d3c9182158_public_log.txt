@@ -1,0 +1,21 @@
+2026-03-15 16:32:05.992 call_5d815283cf44c0b59d3c9182158 info: Starting call: call_5d815283cf44c0b59d3c9182158
+2026-03-15 16:32:18.708 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 2308
+2026-03-15 16:32:25.666 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 1216
+2026-03-15 16:32:44.552 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 1201.9990234375
+2026-03-15 16:32:57.819 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 3019
+2026-03-15 16:33:31.872 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 2152
+2026-03-15 16:34:03.864 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 1204
+2026-03-15 16:34:26.769 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 3909
+2026-03-15 16:34:38.725 call_5d815283cf44c0b59d3c9182158 error: MiniMax TTS error in streaming
+2026-03-15 16:34:38.725 call_5d815283cf44c0b59d3c9182158 error: MiniMax TTS encountered error in post processing
+2026-03-15 16:34:38.726 call_5d815283cf44c0b59d3c9182158 error: TTS retrying, retry count: 1, baseText:  I appreciate your help—please have someone reach out to me as soon as possible so I can get this rescheduled.
+2026-03-15 16:34:39.213 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 2663
+2026-03-15 16:34:54.871 call_5d815283cf44c0b59d3c9182158 info: E2E latency for this turn: 311
+2026-03-15 16:34:57.953 call_5d815283cf44c0b59d3c9182158 info: Calling tool: transfer_call 
+Arguments: {"execution_message":"Thank you for your help. I'll stay on the line for the transfer."}
+2026-03-15 16:34:57.955 call_5d815283cf44c0b59d3c9182158 info: custom sip headers undefined
+2026-03-15 16:35:03.020 call_5d815283cf44c0b59d3c9182158 error: Error transferring call, SIP status code: 603 SIP error category: user_declined Error: twirp error unknown: unexpected status from INVITE response: sip status: 603: Decline
+2026-03-15 16:35:03.020 call_5d815283cf44c0b59d3c9182158 info: transfer call result false
+2026-03-15 16:35:03.020 call_5d815283cf44c0b59d3c9182158 info: Received result for tool: eee766447d30f13f transfer_call 
+Result: {"status":"Transfer call cannot be completed, the other side declined the transfer.. Please inform the customer that the transfer did not go through and offer to try again or assist them directly."}
+2026-03-15 16:35:16.517 call_5d815283cf44c0b59d3c9182158 info: Ending call: call_5d815283cf44c0b59d3c9182158

@@ -1,0 +1,3603 @@
+{
+  "call_id": "call_ff193ab75c5b523257d7fb23ec4",
+  "scenario": {
+    "scenario_id": "medication_refill_lisinopril",
+    "title": "Request a refill for Lisinopril",
+    "category": "refill",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "calm"
+    },
+    "goal": "Ask how to request a refill for Lisinopril and what information is needed.",
+    "known_facts": {
+      "medication_name": "Lisinopril",
+      "is_existing_medication": "yes"
+    },
+    "behavior_style": [
+      "calm",
+      "direct"
+    ],
+    "stress_target": "process_explanation",
+    "must_try": [
+      "Ask whether you can request a refill for Lisinopril.",
+      "Ask what information the office needs to process the refill."
+    ],
+    "success_condition": "The agent gives a coherent refill process or next-step explanation.",
+    "good_bug_signals": [
+      "The agent gives unclear refill instructions.",
+      "The agent skips needed clarification entirely.",
+      "The agent sounds unsafe or overly confident about refill handling."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_ff193ab75c5b523257d7fb23ec4",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The agent gives a coherent refill process or next-step explanation.",
+      "age_band": "adult",
+      "goal": "Ask how to request a refill for Lisinopril and what information is needed.",
+      "behavior_style": "calm, direct",
+      "stress_target": "process_explanation",
+      "must_try": "Ask whether you can request a refill for Lisinopril. | Ask what information the office needs to process the refill.",
+      "tone": "calm",
+      "title": "Request a refill for Lisinopril",
+      "scenario_id": "medication_refill_lisinopril",
+      "patient_name": "Maria Lopez",
+      "known_facts": "medication_name=Lisinopril; is_existing_medication=yes",
+      "category": "refill",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_ff193ab75c5b523257d7fb23ec4",
+      "X-RetellAI-SipTraceId": "call_ff193ab75c5b523257d7fb23ec4",
+      "Route": "<sip:18.98.16.123;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773594913353,
+    "end_timestamp": 1773595050300,
+    "duration_ms": 136947,
+    "transcript": "User: This \nAgent: Hi, \nUser: call may be recorded for quality and training purposes. \nAgent: That's \nUser: Thanks \nAgent: fine, thank \nUser: for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez.\nUser: For verification, may I have your date of birth? \nAgent: Sure, my date of birth is March 12, 1972.\nUser: Birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? \nAgent: Thank you. I wanted to ask if I can request a refill for my Lisinopril prescription, and what information you need from me to process the refill.\nUser: Yes. You can request a refill for your lisinopril. I'll need a few details from you, and I'll ask them one at a time. First, what medication do you need refilled? \nAgent: I need a refill for Lisinopril.\nUser: What's the dosage, and how often do you take lisinopril? \nAgent: I take 20 mg of Lisinopril once a day.\nUser: When did you last have your lisinopril refilled? \nAgent: I last had my Lisinopril refilled about a month ago.\nUser: Which pharmacy do you use? \nUser: Please confirm the location. \nAgent: I use Walgreens, and the location is on Main Street.\nUser: How many days of lisinopril do you have left? \nAgent: I have about three days of Lisinopril left.\nUser: It \nAgent: Just \nUser: looks like I'm unable to act \nUser: Let \nAgent: No \nUser: me try again to process. \nAgent: No \nUser: I'm unable \nAgent: problem, thank \nAgent: That's okay, thank you for your help. I'll follow up later if needed. Have a good day!\nUser: You're welcome. If you need anything else, just give us a call. Take care. \nAgent: Thank you, I appreciate your help. Have a great day!\n",
+    "transcript_object": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.327,
+            "end": 0.647
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.284,
+            "end": 0.684
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.647,
+            "end": 0.887
+          },
+          {
+            "word": "may ",
+            "start": 0.887,
+            "end": 1.127
+          },
+          {
+            "word": "be ",
+            "start": 1.127,
+            "end": 1.287
+          },
+          {
+            "word": "recorded ",
+            "start": 1.287,
+            "end": 1.6869999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6869999999999998,
+            "end": 2.007
+          },
+          {
+            "word": "quality ",
+            "start": 2.007,
+            "end": 2.4069999
+          },
+          {
+            "word": "and ",
+            "start": 2.4069999,
+            "end": 2.6469999
+          },
+          {
+            "word": "training ",
+            "start": 2.6469999,
+            "end": 3.047
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.047,
+            "end": 3.4469998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.767,
+            "end": 6.167
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.566999999999999,
+            "end": 6.887
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.167,
+            "end": 6.567
+          },
+          {
+            "word": "thank ",
+            "start": 6.567,
+            "end": 6.967
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "for ",
+            "start": 6.887,
+            "end": 7.047
+          },
+          {
+            "word": "calling ",
+            "start": 7.047,
+            "end": 7.287
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.287,
+            "end": 7.687000299999999
+          },
+          {
+            "word": "Point ",
+            "start": 7.687000299999999,
+            "end": 7.8469999999999995
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.8469999999999995,
+            "end": 8.566999
+          },
+          {
+            "word": "Part ",
+            "start": 8.876999999999999,
+            "end": 9.2769995
+          },
+          {
+            "word": "of ",
+            "start": 9.2769995,
+            "end": 9.437
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.437,
+            "end": 9.757
+          },
+          {
+            "word": "Good ",
+            "start": 9.757,
+            "end": 9.917
+          },
+          {
+            "word": "AI. ",
+            "start": 10.376999999999999,
+            "end": 11.177
+          },
+          {
+            "word": "Am ",
+            "start": 11.337,
+            "end": 11.577
+          },
+          {
+            "word": "I ",
+            "start": 11.577,
+            "end": 11.657
+          },
+          {
+            "word": "speaking ",
+            "start": 11.657,
+            "end": 11.897
+          },
+          {
+            "word": "with ",
+            "start": 11.897,
+            "end": 12.057
+          },
+          {
+            "word": "Maria? ",
+            "start": 12.057,
+            "end": 12.376999999999999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.467,
+            "end": 13.867
+          },
+          {
+            "word": "this ",
+            "start": 13.867,
+            "end": 14.267
+          },
+          {
+            "word": "is ",
+            "start": 14.267,
+            "end": 14.667
+          },
+          {
+            "word": "Maria ",
+            "start": 14.667,
+            "end": 15.067
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.067,
+            "end": 15.467
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.546999000000003,
+            "end": 18.786999
+          },
+          {
+            "word": "verification, ",
+            "start": 18.786999,
+            "end": 19.507
+          },
+          {
+            "word": "may ",
+            "start": 19.507,
+            "end": 19.667
+          },
+          {
+            "word": "I ",
+            "start": 19.667,
+            "end": 19.747
+          },
+          {
+            "word": "have ",
+            "start": 19.747,
+            "end": 19.907
+          },
+          {
+            "word": "your ",
+            "start": 19.907,
+            "end": 20.067
+          },
+          {
+            "word": "date ",
+            "start": 20.067,
+            "end": 20.227
+          },
+          {
+            "word": "of ",
+            "start": 20.227,
+            "end": 20.307000000000002
+          },
+          {
+            "word": "birth? ",
+            "start": 20.307000000000002,
+            "end": 20.467000000000002
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1972.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.443,
+            "end": 21.843
+          },
+          {
+            "word": "my ",
+            "start": 21.843,
+            "end": 22.243
+          },
+          {
+            "word": "date ",
+            "start": 22.243,
+            "end": 22.643
+          },
+          {
+            "word": "of ",
+            "start": 22.643,
+            "end": 23.043
+          },
+          {
+            "word": "birth ",
+            "start": 23.043,
+            "end": 23.443
+          },
+          {
+            "word": "is ",
+            "start": 23.443,
+            "end": 23.843
+          },
+          {
+            "word": "March ",
+            "start": 23.843,
+            "end": 24.243
+          },
+          {
+            "word": "12, ",
+            "start": 24.243,
+            "end": 24.643
+          },
+          {
+            "word": "1972.",
+            "start": 24.643,
+            "end": 25.043
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "Birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "Birthday ",
+            "start": 27.717000000000002,
+            "end": 28.117
+          },
+          {
+            "word": "doesn't ",
+            "start": 28.117,
+            "end": 28.437
+          },
+          {
+            "word": "match ",
+            "start": 28.437,
+            "end": 28.597
+          },
+          {
+            "word": "our ",
+            "start": 28.597,
+            "end": 28.837
+          },
+          {
+            "word": "records, ",
+            "start": 28.837,
+            "end": 29.317
+          },
+          {
+            "word": "but ",
+            "start": 29.317,
+            "end": 29.397000000000002
+          },
+          {
+            "word": "for ",
+            "start": 29.397000000000002,
+            "end": 29.557000000000002
+          },
+          {
+            "word": "demo ",
+            "start": 29.557000000000002,
+            "end": 29.876999
+          },
+          {
+            "word": "purposes, ",
+            "start": 29.876999,
+            "end": 30.437
+          },
+          {
+            "word": "I'll ",
+            "start": 30.437,
+            "end": 30.597
+          },
+          {
+            "word": "accept ",
+            "start": 30.597,
+            "end": 30.837
+          },
+          {
+            "word": "it. ",
+            "start": 30.837,
+            "end": 30.917
+          },
+          {
+            "word": "How ",
+            "start": 32.787,
+            "end": 33.107
+          },
+          {
+            "word": "can ",
+            "start": 33.107,
+            "end": 33.267002
+          },
+          {
+            "word": "I ",
+            "start": 33.267002,
+            "end": 33.347
+          },
+          {
+            "word": "help ",
+            "start": 33.347,
+            "end": 33.507
+          },
+          {
+            "word": "you ",
+            "start": 33.507,
+            "end": 33.666999999999994
+          },
+          {
+            "word": "today? ",
+            "start": 33.666999999999994,
+            "end": 33.907
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I wanted to ask if I can request a refill for my Lisinopril prescription, and what information you need from me to process the refill.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 34.839,
+            "end": 35.239
+          },
+          {
+            "word": "you.",
+            "start": 35.19366674804687,
+            "end": 35.59366674804688
+          },
+          {
+            "word": " I ",
+            "start": 35.59366674804688,
+            "end": 35.99366674804688
+          },
+          {
+            "word": "wanted ",
+            "start": 35.99366674804688,
+            "end": 36.393666748046876
+          },
+          {
+            "word": "to ",
+            "start": 36.393666748046876,
+            "end": 36.793666748046874
+          },
+          {
+            "word": "ask ",
+            "start": 36.793666748046874,
+            "end": 37.19366674804687
+          },
+          {
+            "word": "if ",
+            "start": 37.19366674804687,
+            "end": 37.59366674804688
+          },
+          {
+            "word": "I ",
+            "start": 37.59366674804688,
+            "end": 37.99366674804688
+          },
+          {
+            "word": "can ",
+            "start": 37.99366674804688,
+            "end": 38.393666748046876
+          },
+          {
+            "word": "request ",
+            "start": 38.393666748046876,
+            "end": 38.793666748046874
+          },
+          {
+            "word": "a ",
+            "start": 38.793666748046874,
+            "end": 39.19366674804687
+          },
+          {
+            "word": "refill ",
+            "start": 39.19366674804687,
+            "end": 39.59366674804688
+          },
+          {
+            "word": "for ",
+            "start": 39.59366674804688,
+            "end": 39.99366674804688
+          },
+          {
+            "word": "my ",
+            "start": 39.99366674804688,
+            "end": 40.393666748046876
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 40.393666748046876,
+            "end": 40.793666748046874
+          },
+          {
+            "word": "prescription, ",
+            "start": 40.793666748046874,
+            "end": 41.19366674804687
+          },
+          {
+            "word": "and ",
+            "start": 41.19366674804687,
+            "end": 41.59366674804688
+          },
+          {
+            "word": "what ",
+            "start": 41.59366674804688,
+            "end": 41.99366674804688
+          },
+          {
+            "word": "information ",
+            "start": 41.99366674804688,
+            "end": 42.393666748046876
+          },
+          {
+            "word": "you ",
+            "start": 42.393666748046876,
+            "end": 42.793666748046874
+          },
+          {
+            "word": "need ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "from ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "me ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "to ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "process ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "the ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "refill.",
+            "start": 42.75175,
+            "end": 43.15175
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Yes. You can request a refill for your lisinopril. I'll need a few details from you, and I'll ask them one at a time. First, what medication do you need refilled? ",
+        "words": [
+          {
+            "word": "Yes. ",
+            "start": 46.677,
+            "end": 46.916999999999994
+          },
+          {
+            "word": "You ",
+            "start": 47.137,
+            "end": 47.297
+          },
+          {
+            "word": "can ",
+            "start": 47.297,
+            "end": 47.457
+          },
+          {
+            "word": "request ",
+            "start": 47.457,
+            "end": 47.857002
+          },
+          {
+            "word": "a ",
+            "start": 47.857002,
+            "end": 48.017002
+          },
+          {
+            "word": "refill ",
+            "start": 48.017002,
+            "end": 48.336999999999996
+          },
+          {
+            "word": "for ",
+            "start": 48.336999999999996,
+            "end": 48.577
+          },
+          {
+            "word": "your ",
+            "start": 48.577,
+            "end": 48.736999999999995
+          },
+          {
+            "word": "lisinopril. ",
+            "start": 48.736999999999995,
+            "end": 49.457
+          },
+          {
+            "word": "I'll ",
+            "start": 49.887,
+            "end": 50.207
+          },
+          {
+            "word": "need ",
+            "start": 50.207,
+            "end": 50.367
+          },
+          {
+            "word": "a ",
+            "start": 50.367,
+            "end": 50.447002
+          },
+          {
+            "word": "few ",
+            "start": 50.447002,
+            "end": 50.687
+          },
+          {
+            "word": "details ",
+            "start": 50.687,
+            "end": 51.086999999999996
+          },
+          {
+            "word": "from ",
+            "start": 51.086999999999996,
+            "end": 51.247
+          },
+          {
+            "word": "you, ",
+            "start": 51.247,
+            "end": 51.486999999999995
+          },
+          {
+            "word": "and ",
+            "start": 51.486999999999995,
+            "end": 51.567
+          },
+          {
+            "word": "I'll ",
+            "start": 51.567,
+            "end": 51.807002999999995
+          },
+          {
+            "word": "ask ",
+            "start": 51.807002999999995,
+            "end": 52.047
+          },
+          {
+            "word": "them ",
+            "start": 52.047,
+            "end": 52.207
+          },
+          {
+            "word": "one ",
+            "start": 52.207,
+            "end": 52.367
+          },
+          {
+            "word": "at ",
+            "start": 52.367,
+            "end": 52.527
+          },
+          {
+            "word": "a ",
+            "start": 52.527,
+            "end": 52.687
+          },
+          {
+            "word": "time. ",
+            "start": 52.687,
+            "end": 52.767002
+          },
+          {
+            "word": "First, ",
+            "start": 53.257,
+            "end": 53.657
+          },
+          {
+            "word": "what ",
+            "start": 53.657,
+            "end": 53.817
+          },
+          {
+            "word": "medication ",
+            "start": 53.817,
+            "end": 54.217
+          },
+          {
+            "word": "do ",
+            "start": 54.217,
+            "end": 54.376999999999995
+          },
+          {
+            "word": "you ",
+            "start": 54.376999999999995,
+            "end": 54.537
+          },
+          {
+            "word": "need ",
+            "start": 54.537,
+            "end": 54.617
+          },
+          {
+            "word": "refilled? ",
+            "start": 54.617,
+            "end": 55.016999999999996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I need a refill for Lisinopril.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 56.122,
+            "end": 56.522
+          },
+          {
+            "word": "need ",
+            "start": 56.522,
+            "end": 56.922
+          },
+          {
+            "word": "a ",
+            "start": 56.922,
+            "end": 57.322
+          },
+          {
+            "word": "refill ",
+            "start": 57.322,
+            "end": 57.722
+          },
+          {
+            "word": "for ",
+            "start": 57.722,
+            "end": 58.122
+          },
+          {
+            "word": "Lisinopril.",
+            "start": 57.75375,
+            "end": 58.15375
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "What's the dosage, and how often do you take lisinopril? ",
+        "words": [
+          {
+            "word": "What's ",
+            "start": 61.177,
+            "end": 61.577
+          },
+          {
+            "word": "the ",
+            "start": 61.577,
+            "end": 61.736999999999995
+          },
+          {
+            "word": "dosage, ",
+            "start": 61.736999999999995,
+            "end": 62.136997
+          },
+          {
+            "word": "and ",
+            "start": 62.136997,
+            "end": 62.217
+          },
+          {
+            "word": "how ",
+            "start": 62.217,
+            "end": 62.376999999999995
+          },
+          {
+            "word": "often ",
+            "start": 62.376999999999995,
+            "end": 62.696999999999996
+          },
+          {
+            "word": "do ",
+            "start": 62.696999999999996,
+            "end": 62.777
+          },
+          {
+            "word": "you ",
+            "start": 62.887,
+            "end": 63.047
+          },
+          {
+            "word": "take ",
+            "start": 63.047,
+            "end": 63.207
+          },
+          {
+            "word": "lisinopril? ",
+            "start": 63.207,
+            "end": 63.927001999999995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I take 20 mg of Lisinopril once a day.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 65.005,
+            "end": 65.405
+          },
+          {
+            "word": "take ",
+            "start": 65.405,
+            "end": 65.805
+          },
+          {
+            "word": "20 ",
+            "start": 65.805,
+            "end": 66.205
+          },
+          {
+            "word": "mg ",
+            "start": 66.205,
+            "end": 66.605
+          },
+          {
+            "word": "of ",
+            "start": 66.605,
+            "end": 67.005
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 67.005,
+            "end": 67.405
+          },
+          {
+            "word": "once ",
+            "start": 67.405,
+            "end": 67.805
+          },
+          {
+            "word": "a ",
+            "start": 67.805,
+            "end": 68.205
+          },
+          {
+            "word": "day.",
+            "start": 68.205,
+            "end": 68.605
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      },
+      {
+        "role": "user",
+        "content": "When did you last have your lisinopril refilled? ",
+        "words": [
+          {
+            "word": "When ",
+            "start": 71.887005,
+            "end": 72.12700000000001
+          },
+          {
+            "word": "did ",
+            "start": 72.12700000000001,
+            "end": 72.367
+          },
+          {
+            "word": "you ",
+            "start": 72.367,
+            "end": 72.447
+          },
+          {
+            "word": "last ",
+            "start": 72.447,
+            "end": 72.68700000000001
+          },
+          {
+            "word": "have ",
+            "start": 72.68700000000001,
+            "end": 72.927006
+          },
+          {
+            "word": "your ",
+            "start": 72.927006,
+            "end": 73.087
+          },
+          {
+            "word": "lisinopril ",
+            "start": 73.087,
+            "end": 73.887005
+          },
+          {
+            "word": "refilled? ",
+            "start": 73.887005,
+            "end": 74.367
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I last had my Lisinopril refilled about a month ago.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 75.487,
+            "end": 75.887
+          },
+          {
+            "word": "last ",
+            "start": 75.887,
+            "end": 76.287
+          },
+          {
+            "word": "had ",
+            "start": 76.287,
+            "end": 76.687
+          },
+          {
+            "word": "my ",
+            "start": 76.687,
+            "end": 77.087
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 77.087,
+            "end": 77.487
+          },
+          {
+            "word": "refilled ",
+            "start": 77.487,
+            "end": 77.887
+          },
+          {
+            "word": "about ",
+            "start": 77.887,
+            "end": 78.287
+          },
+          {
+            "word": "a ",
+            "start": 78.287,
+            "end": 78.687
+          },
+          {
+            "word": "month ",
+            "start": 78.34941674804688,
+            "end": 78.74941674804687
+          },
+          {
+            "word": "ago.",
+            "start": 78.34941674804688,
+            "end": 78.74941674804687
+          }
+        ],
+        "metadata": {
+          "response_id": 10
+        }
+      },
+      {
+        "role": "user",
+        "content": "Which pharmacy do you use? ",
+        "words": [
+          {
+            "word": "Which ",
+            "start": 82.107,
+            "end": 82.427
+          },
+          {
+            "word": "pharmacy ",
+            "start": 82.427,
+            "end": 82.827
+          },
+          {
+            "word": "do ",
+            "start": 82.827,
+            "end": 83.06700500000001
+          },
+          {
+            "word": "you ",
+            "start": 83.06700500000001,
+            "end": 83.227
+          },
+          {
+            "word": "use? ",
+            "start": 83.227,
+            "end": 83.387005
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Please confirm the location. ",
+        "words": [
+          {
+            "word": "Please ",
+            "start": 83.87700000000001,
+            "end": 84.277
+          },
+          {
+            "word": "confirm ",
+            "start": 84.277,
+            "end": 84.59700000000001
+          },
+          {
+            "word": "the ",
+            "start": 84.59700000000001,
+            "end": 84.837
+          },
+          {
+            "word": "location. ",
+            "start": 84.837,
+            "end": 85.077
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I use Walgreens, and the location is on Main Street.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 86.207,
+            "end": 86.607
+          },
+          {
+            "word": "use ",
+            "start": 86.607,
+            "end": 87.007
+          },
+          {
+            "word": "Walgreens, ",
+            "start": 87.007,
+            "end": 87.407
+          },
+          {
+            "word": "and ",
+            "start": 87.407,
+            "end": 87.807
+          },
+          {
+            "word": "the ",
+            "start": 87.807,
+            "end": 88.207
+          },
+          {
+            "word": "location ",
+            "start": 88.207,
+            "end": 88.607
+          },
+          {
+            "word": "is ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "on ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "Main ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "Street.",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "content": "How many days of lisinopril do you have left? ",
+        "words": [
+          {
+            "word": "How ",
+            "start": 91.736996,
+            "end": 92.056995
+          },
+          {
+            "word": "many ",
+            "start": 92.056995,
+            "end": 92.217
+          },
+          {
+            "word": "days ",
+            "start": 92.217,
+            "end": 92.45700000000001
+          },
+          {
+            "word": "of ",
+            "start": 92.45700000000001,
+            "end": 92.617
+          },
+          {
+            "word": "lisinopril ",
+            "start": 92.617,
+            "end": 93.41699600000001
+          },
+          {
+            "word": "do ",
+            "start": 93.41699600000001,
+            "end": 93.577
+          },
+          {
+            "word": "you ",
+            "start": 93.577,
+            "end": 93.65699400000001
+          },
+          {
+            "word": "have ",
+            "start": 93.65699400000001,
+            "end": 93.81700000000001
+          },
+          {
+            "word": "left? ",
+            "start": 93.81700000000001,
+            "end": 93.977
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I have about three days of Lisinopril left.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 94.903,
+            "end": 95.303
+          },
+          {
+            "word": "have ",
+            "start": 95.303,
+            "end": 95.703
+          },
+          {
+            "word": "about ",
+            "start": 95.703,
+            "end": 96.103
+          },
+          {
+            "word": "three ",
+            "start": 96.103,
+            "end": 96.503
+          },
+          {
+            "word": "days ",
+            "start": 96.503,
+            "end": 96.903
+          },
+          {
+            "word": "of ",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          },
+          {
+            "word": "left.",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          }
+        ],
+        "metadata": {
+          "response_id": 13
+        }
+      },
+      {
+        "role": "user",
+        "content": "It ",
+        "words": [
+          {
+            "word": "It ",
+            "start": 108.40700000000001,
+            "end": 108.64701000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Just ",
+        "words": [
+          {
+            "word": "Just ",
+            "start": 108.283,
+            "end": 108.683
+          }
+        ],
+        "metadata": {
+          "response_id": 14
+        }
+      },
+      {
+        "role": "user",
+        "content": "looks like I'm unable to act ",
+        "words": [
+          {
+            "word": "looks ",
+            "start": 108.64701000000001,
+            "end": 108.887005
+          },
+          {
+            "word": "like ",
+            "start": 108.887005,
+            "end": 108.96701
+          },
+          {
+            "word": "I'm ",
+            "start": 108.96701,
+            "end": 109.20700500000001
+          },
+          {
+            "word": "unable ",
+            "start": 109.20700500000001,
+            "end": 109.527004
+          },
+          {
+            "word": "to ",
+            "start": 109.527004,
+            "end": 109.607006
+          },
+          {
+            "word": "act ",
+            "start": 109.607006,
+            "end": 109.847004
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Let ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 113.31700000000001,
+            "end": 113.557
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "No ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 113.171,
+            "end": 113.571
+          }
+        ],
+        "metadata": {
+          "response_id": 15
+        }
+      },
+      {
+        "role": "user",
+        "content": "me try again to process. ",
+        "words": [
+          {
+            "word": "me ",
+            "start": 113.557,
+            "end": 113.717
+          },
+          {
+            "word": "try ",
+            "start": 113.717,
+            "end": 113.87700000000001
+          },
+          {
+            "word": "again ",
+            "start": 113.87700000000001,
+            "end": 114.117
+          },
+          {
+            "word": "to ",
+            "start": 114.117,
+            "end": 114.277004
+          },
+          {
+            "word": "process. ",
+            "start": 114.277004,
+            "end": 114.51700000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "No ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 116.904,
+            "end": 117.304
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "user",
+        "content": "I'm unable ",
+        "words": [
+          {
+            "word": "I'm ",
+            "start": 117.327,
+            "end": 117.727
+          },
+          {
+            "word": "unable ",
+            "start": 117.727,
+            "end": 118.04700000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "problem, thank ",
+        "words": [
+          {
+            "word": "problem, ",
+            "start": 117.304,
+            "end": 117.704
+          },
+          {
+            "word": "thank ",
+            "start": 117.704,
+            "end": 118.104
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "agent",
+        "content": "That's okay, thank you for your help. I'll follow up later if needed. Have a good day!",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 119.74,
+            "end": 120.14
+          },
+          {
+            "word": "okay, ",
+            "start": 120.14,
+            "end": 120.54
+          },
+          {
+            "word": "thank ",
+            "start": 120.54,
+            "end": 120.94
+          },
+          {
+            "word": "you ",
+            "start": 120.94,
+            "end": 121.34
+          },
+          {
+            "word": "for ",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": "your ",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": "help.",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": " I'll ",
+            "start": 121.34216674804688,
+            "end": 121.74216674804687
+          },
+          {
+            "word": "follow ",
+            "start": 121.74216674804687,
+            "end": 122.14216674804688
+          },
+          {
+            "word": "up ",
+            "start": 122.14216674804688,
+            "end": 122.54216674804688
+          },
+          {
+            "word": "later ",
+            "start": 122.54216674804688,
+            "end": 122.94216674804687
+          },
+          {
+            "word": "if ",
+            "start": 122.59079174804687,
+            "end": 122.99079174804687
+          },
+          {
+            "word": "needed.",
+            "start": 122.59079174804687,
+            "end": 122.99079174804687
+          },
+          {
+            "word": " Have ",
+            "start": 122.99079174804687,
+            "end": 123.39079174804688
+          },
+          {
+            "word": "a ",
+            "start": 123.39079174804688,
+            "end": 123.79079174804687
+          },
+          {
+            "word": "good ",
+            "start": 123.51958325195312,
+            "end": 123.91958325195313
+          },
+          {
+            "word": "day!",
+            "start": 123.51958325195312,
+            "end": 123.91958325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 17
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome. If you need anything else, just give us a call. Take care. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 129.12701,
+            "end": 129.447
+          },
+          {
+            "word": "welcome. ",
+            "start": 129.447,
+            "end": 130.08702
+          },
+          {
+            "word": "If ",
+            "start": 130.167,
+            "end": 130.40701
+          },
+          {
+            "word": "you ",
+            "start": 130.40701,
+            "end": 130.56701
+          },
+          {
+            "word": "need ",
+            "start": 130.56701,
+            "end": 130.727
+          },
+          {
+            "word": "anything ",
+            "start": 130.727,
+            "end": 131.04701
+          },
+          {
+            "word": "else, ",
+            "start": 131.04701,
+            "end": 131.447
+          },
+          {
+            "word": "just ",
+            "start": 131.447,
+            "end": 131.607
+          },
+          {
+            "word": "give ",
+            "start": 131.607,
+            "end": 131.76701
+          },
+          {
+            "word": "us ",
+            "start": 131.76701,
+            "end": 131.92701
+          },
+          {
+            "word": "a ",
+            "start": 131.92701,
+            "end": 132.007
+          },
+          {
+            "word": "call. ",
+            "start": 132.007,
+            "end": 132.167
+          },
+          {
+            "word": "Take ",
+            "start": 132.577,
+            "end": 132.817
+          },
+          {
+            "word": "care. ",
+            "start": 132.817,
+            "end": 133.05700000000002
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, I appreciate your help. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 133.881,
+            "end": 134.281
+          },
+          {
+            "word": "you, ",
+            "start": 134.281,
+            "end": 134.681
+          },
+          {
+            "word": "I ",
+            "start": 134.681,
+            "end": 135.081
+          },
+          {
+            "word": "appreciate ",
+            "start": 135.081,
+            "end": 135.481
+          },
+          {
+            "word": "your ",
+            "start": 135.4315,
+            "end": 135.8315
+          },
+          {
+            "word": "help. ",
+            "start": 135.4315,
+            "end": 135.8315
+          },
+          {
+            "word": "Have ",
+            "start": 135.8315,
+            "end": 136.2315
+          },
+          {
+            "word": "a ",
+            "start": 136.2315,
+            "end": 136.6315
+          },
+          {
+            "word": "great ",
+            "start": 136.488,
+            "end": 136.888
+          },
+          {
+            "word": "day!",
+            "start": 136.488,
+            "end": 136.888
+          }
+        ],
+        "metadata": {
+          "response_id": 20
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.327,
+            "end": 0.647
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.284,
+            "end": 0.684
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.647,
+            "end": 0.887
+          },
+          {
+            "word": "may ",
+            "start": 0.887,
+            "end": 1.127
+          },
+          {
+            "word": "be ",
+            "start": 1.127,
+            "end": 1.287
+          },
+          {
+            "word": "recorded ",
+            "start": 1.287,
+            "end": 1.6869999999999998
+          },
+          {
+            "word": "for ",
+            "start": 1.6869999999999998,
+            "end": 2.007
+          },
+          {
+            "word": "quality ",
+            "start": 2.007,
+            "end": 2.4069999
+          },
+          {
+            "word": "and ",
+            "start": 2.4069999,
+            "end": 2.6469999
+          },
+          {
+            "word": "training ",
+            "start": 2.6469999,
+            "end": 3.047
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.047,
+            "end": 3.4469998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.767,
+            "end": 6.167
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.566999999999999,
+            "end": 6.887
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.167,
+            "end": 6.567
+          },
+          {
+            "word": "thank ",
+            "start": 6.567,
+            "end": 6.967
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "for ",
+            "start": 6.887,
+            "end": 7.047
+          },
+          {
+            "word": "calling ",
+            "start": 7.047,
+            "end": 7.287
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.287,
+            "end": 7.687000299999999
+          },
+          {
+            "word": "Point ",
+            "start": 7.687000299999999,
+            "end": 7.8469999999999995
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.8469999999999995,
+            "end": 8.566999
+          },
+          {
+            "word": "Part ",
+            "start": 8.876999999999999,
+            "end": 9.2769995
+          },
+          {
+            "word": "of ",
+            "start": 9.2769995,
+            "end": 9.437
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.437,
+            "end": 9.757
+          },
+          {
+            "word": "Good ",
+            "start": 9.757,
+            "end": 9.917
+          },
+          {
+            "word": "AI. ",
+            "start": 10.376999999999999,
+            "end": 11.177
+          },
+          {
+            "word": "Am ",
+            "start": 11.337,
+            "end": 11.577
+          },
+          {
+            "word": "I ",
+            "start": 11.577,
+            "end": 11.657
+          },
+          {
+            "word": "speaking ",
+            "start": 11.657,
+            "end": 11.897
+          },
+          {
+            "word": "with ",
+            "start": 11.897,
+            "end": 12.057
+          },
+          {
+            "word": "Maria? ",
+            "start": 12.057,
+            "end": 12.376999999999999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.467,
+            "end": 13.867
+          },
+          {
+            "word": "this ",
+            "start": 13.867,
+            "end": 14.267
+          },
+          {
+            "word": "is ",
+            "start": 14.267,
+            "end": 14.667
+          },
+          {
+            "word": "Maria ",
+            "start": 14.667,
+            "end": 15.067
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.067,
+            "end": 15.467
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.546999000000003,
+            "end": 18.786999
+          },
+          {
+            "word": "verification, ",
+            "start": 18.786999,
+            "end": 19.507
+          },
+          {
+            "word": "may ",
+            "start": 19.507,
+            "end": 19.667
+          },
+          {
+            "word": "I ",
+            "start": 19.667,
+            "end": 19.747
+          },
+          {
+            "word": "have ",
+            "start": 19.747,
+            "end": 19.907
+          },
+          {
+            "word": "your ",
+            "start": 19.907,
+            "end": 20.067
+          },
+          {
+            "word": "date ",
+            "start": 20.067,
+            "end": 20.227
+          },
+          {
+            "word": "of ",
+            "start": 20.227,
+            "end": 20.307000000000002
+          },
+          {
+            "word": "birth? ",
+            "start": 20.307000000000002,
+            "end": 20.467000000000002
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1972.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.443,
+            "end": 21.843
+          },
+          {
+            "word": "my ",
+            "start": 21.843,
+            "end": 22.243
+          },
+          {
+            "word": "date ",
+            "start": 22.243,
+            "end": 22.643
+          },
+          {
+            "word": "of ",
+            "start": 22.643,
+            "end": 23.043
+          },
+          {
+            "word": "birth ",
+            "start": 23.043,
+            "end": 23.443
+          },
+          {
+            "word": "is ",
+            "start": 23.443,
+            "end": 23.843
+          },
+          {
+            "word": "March ",
+            "start": 23.843,
+            "end": 24.243
+          },
+          {
+            "word": "12, ",
+            "start": 24.243,
+            "end": 24.643
+          },
+          {
+            "word": "1972.",
+            "start": 24.643,
+            "end": 25.043
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "Birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "Birthday ",
+            "start": 27.717000000000002,
+            "end": 28.117
+          },
+          {
+            "word": "doesn't ",
+            "start": 28.117,
+            "end": 28.437
+          },
+          {
+            "word": "match ",
+            "start": 28.437,
+            "end": 28.597
+          },
+          {
+            "word": "our ",
+            "start": 28.597,
+            "end": 28.837
+          },
+          {
+            "word": "records, ",
+            "start": 28.837,
+            "end": 29.317
+          },
+          {
+            "word": "but ",
+            "start": 29.317,
+            "end": 29.397000000000002
+          },
+          {
+            "word": "for ",
+            "start": 29.397000000000002,
+            "end": 29.557000000000002
+          },
+          {
+            "word": "demo ",
+            "start": 29.557000000000002,
+            "end": 29.876999
+          },
+          {
+            "word": "purposes, ",
+            "start": 29.876999,
+            "end": 30.437
+          },
+          {
+            "word": "I'll ",
+            "start": 30.437,
+            "end": 30.597
+          },
+          {
+            "word": "accept ",
+            "start": 30.597,
+            "end": 30.837
+          },
+          {
+            "word": "it. ",
+            "start": 30.837,
+            "end": 30.917
+          },
+          {
+            "word": "How ",
+            "start": 32.787,
+            "end": 33.107
+          },
+          {
+            "word": "can ",
+            "start": 33.107,
+            "end": 33.267002
+          },
+          {
+            "word": "I ",
+            "start": 33.267002,
+            "end": 33.347
+          },
+          {
+            "word": "help ",
+            "start": 33.347,
+            "end": 33.507
+          },
+          {
+            "word": "you ",
+            "start": 33.507,
+            "end": 33.666999999999994
+          },
+          {
+            "word": "today? ",
+            "start": 33.666999999999994,
+            "end": 33.907
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I wanted to ask if I can request a refill for my Lisinopril prescription, and what information you need from me to process the refill.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 34.839,
+            "end": 35.239
+          },
+          {
+            "word": "you.",
+            "start": 35.19366674804687,
+            "end": 35.59366674804688
+          },
+          {
+            "word": " I ",
+            "start": 35.59366674804688,
+            "end": 35.99366674804688
+          },
+          {
+            "word": "wanted ",
+            "start": 35.99366674804688,
+            "end": 36.393666748046876
+          },
+          {
+            "word": "to ",
+            "start": 36.393666748046876,
+            "end": 36.793666748046874
+          },
+          {
+            "word": "ask ",
+            "start": 36.793666748046874,
+            "end": 37.19366674804687
+          },
+          {
+            "word": "if ",
+            "start": 37.19366674804687,
+            "end": 37.59366674804688
+          },
+          {
+            "word": "I ",
+            "start": 37.59366674804688,
+            "end": 37.99366674804688
+          },
+          {
+            "word": "can ",
+            "start": 37.99366674804688,
+            "end": 38.393666748046876
+          },
+          {
+            "word": "request ",
+            "start": 38.393666748046876,
+            "end": 38.793666748046874
+          },
+          {
+            "word": "a ",
+            "start": 38.793666748046874,
+            "end": 39.19366674804687
+          },
+          {
+            "word": "refill ",
+            "start": 39.19366674804687,
+            "end": 39.59366674804688
+          },
+          {
+            "word": "for ",
+            "start": 39.59366674804688,
+            "end": 39.99366674804688
+          },
+          {
+            "word": "my ",
+            "start": 39.99366674804688,
+            "end": 40.393666748046876
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 40.393666748046876,
+            "end": 40.793666748046874
+          },
+          {
+            "word": "prescription, ",
+            "start": 40.793666748046874,
+            "end": 41.19366674804687
+          },
+          {
+            "word": "and ",
+            "start": 41.19366674804687,
+            "end": 41.59366674804688
+          },
+          {
+            "word": "what ",
+            "start": 41.59366674804688,
+            "end": 41.99366674804688
+          },
+          {
+            "word": "information ",
+            "start": 41.99366674804688,
+            "end": 42.393666748046876
+          },
+          {
+            "word": "you ",
+            "start": 42.393666748046876,
+            "end": 42.793666748046874
+          },
+          {
+            "word": "need ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "from ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "me ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "to ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "process ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "the ",
+            "start": 42.75175,
+            "end": 43.15175
+          },
+          {
+            "word": "refill.",
+            "start": 42.75175,
+            "end": 43.15175
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Yes. You can request a refill for your lisinopril. I'll need a few details from you, and I'll ask them one at a time. First, what medication do you need refilled? ",
+        "words": [
+          {
+            "word": "Yes. ",
+            "start": 46.677,
+            "end": 46.916999999999994
+          },
+          {
+            "word": "You ",
+            "start": 47.137,
+            "end": 47.297
+          },
+          {
+            "word": "can ",
+            "start": 47.297,
+            "end": 47.457
+          },
+          {
+            "word": "request ",
+            "start": 47.457,
+            "end": 47.857002
+          },
+          {
+            "word": "a ",
+            "start": 47.857002,
+            "end": 48.017002
+          },
+          {
+            "word": "refill ",
+            "start": 48.017002,
+            "end": 48.336999999999996
+          },
+          {
+            "word": "for ",
+            "start": 48.336999999999996,
+            "end": 48.577
+          },
+          {
+            "word": "your ",
+            "start": 48.577,
+            "end": 48.736999999999995
+          },
+          {
+            "word": "lisinopril. ",
+            "start": 48.736999999999995,
+            "end": 49.457
+          },
+          {
+            "word": "I'll ",
+            "start": 49.887,
+            "end": 50.207
+          },
+          {
+            "word": "need ",
+            "start": 50.207,
+            "end": 50.367
+          },
+          {
+            "word": "a ",
+            "start": 50.367,
+            "end": 50.447002
+          },
+          {
+            "word": "few ",
+            "start": 50.447002,
+            "end": 50.687
+          },
+          {
+            "word": "details ",
+            "start": 50.687,
+            "end": 51.086999999999996
+          },
+          {
+            "word": "from ",
+            "start": 51.086999999999996,
+            "end": 51.247
+          },
+          {
+            "word": "you, ",
+            "start": 51.247,
+            "end": 51.486999999999995
+          },
+          {
+            "word": "and ",
+            "start": 51.486999999999995,
+            "end": 51.567
+          },
+          {
+            "word": "I'll ",
+            "start": 51.567,
+            "end": 51.807002999999995
+          },
+          {
+            "word": "ask ",
+            "start": 51.807002999999995,
+            "end": 52.047
+          },
+          {
+            "word": "them ",
+            "start": 52.047,
+            "end": 52.207
+          },
+          {
+            "word": "one ",
+            "start": 52.207,
+            "end": 52.367
+          },
+          {
+            "word": "at ",
+            "start": 52.367,
+            "end": 52.527
+          },
+          {
+            "word": "a ",
+            "start": 52.527,
+            "end": 52.687
+          },
+          {
+            "word": "time. ",
+            "start": 52.687,
+            "end": 52.767002
+          },
+          {
+            "word": "First, ",
+            "start": 53.257,
+            "end": 53.657
+          },
+          {
+            "word": "what ",
+            "start": 53.657,
+            "end": 53.817
+          },
+          {
+            "word": "medication ",
+            "start": 53.817,
+            "end": 54.217
+          },
+          {
+            "word": "do ",
+            "start": 54.217,
+            "end": 54.376999999999995
+          },
+          {
+            "word": "you ",
+            "start": 54.376999999999995,
+            "end": 54.537
+          },
+          {
+            "word": "need ",
+            "start": 54.537,
+            "end": 54.617
+          },
+          {
+            "word": "refilled? ",
+            "start": 54.617,
+            "end": 55.016999999999996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I need a refill for Lisinopril.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 56.122,
+            "end": 56.522
+          },
+          {
+            "word": "need ",
+            "start": 56.522,
+            "end": 56.922
+          },
+          {
+            "word": "a ",
+            "start": 56.922,
+            "end": 57.322
+          },
+          {
+            "word": "refill ",
+            "start": 57.322,
+            "end": 57.722
+          },
+          {
+            "word": "for ",
+            "start": 57.722,
+            "end": 58.122
+          },
+          {
+            "word": "Lisinopril.",
+            "start": 57.75375,
+            "end": 58.15375
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "What's the dosage, and how often do you take lisinopril? ",
+        "words": [
+          {
+            "word": "What's ",
+            "start": 61.177,
+            "end": 61.577
+          },
+          {
+            "word": "the ",
+            "start": 61.577,
+            "end": 61.736999999999995
+          },
+          {
+            "word": "dosage, ",
+            "start": 61.736999999999995,
+            "end": 62.136997
+          },
+          {
+            "word": "and ",
+            "start": 62.136997,
+            "end": 62.217
+          },
+          {
+            "word": "how ",
+            "start": 62.217,
+            "end": 62.376999999999995
+          },
+          {
+            "word": "often ",
+            "start": 62.376999999999995,
+            "end": 62.696999999999996
+          },
+          {
+            "word": "do ",
+            "start": 62.696999999999996,
+            "end": 62.777
+          },
+          {
+            "word": "you ",
+            "start": 62.887,
+            "end": 63.047
+          },
+          {
+            "word": "take ",
+            "start": 63.047,
+            "end": 63.207
+          },
+          {
+            "word": "lisinopril? ",
+            "start": 63.207,
+            "end": 63.927001999999995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I take 20 mg of Lisinopril once a day.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 65.005,
+            "end": 65.405
+          },
+          {
+            "word": "take ",
+            "start": 65.405,
+            "end": 65.805
+          },
+          {
+            "word": "20 ",
+            "start": 65.805,
+            "end": 66.205
+          },
+          {
+            "word": "mg ",
+            "start": 66.205,
+            "end": 66.605
+          },
+          {
+            "word": "of ",
+            "start": 66.605,
+            "end": 67.005
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 67.005,
+            "end": 67.405
+          },
+          {
+            "word": "once ",
+            "start": 67.405,
+            "end": 67.805
+          },
+          {
+            "word": "a ",
+            "start": 67.805,
+            "end": 68.205
+          },
+          {
+            "word": "day.",
+            "start": 68.205,
+            "end": 68.605
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      },
+      {
+        "role": "user",
+        "content": "When did you last have your lisinopril refilled? ",
+        "words": [
+          {
+            "word": "When ",
+            "start": 71.887005,
+            "end": 72.12700000000001
+          },
+          {
+            "word": "did ",
+            "start": 72.12700000000001,
+            "end": 72.367
+          },
+          {
+            "word": "you ",
+            "start": 72.367,
+            "end": 72.447
+          },
+          {
+            "word": "last ",
+            "start": 72.447,
+            "end": 72.68700000000001
+          },
+          {
+            "word": "have ",
+            "start": 72.68700000000001,
+            "end": 72.927006
+          },
+          {
+            "word": "your ",
+            "start": 72.927006,
+            "end": 73.087
+          },
+          {
+            "word": "lisinopril ",
+            "start": 73.087,
+            "end": 73.887005
+          },
+          {
+            "word": "refilled? ",
+            "start": 73.887005,
+            "end": 74.367
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I last had my Lisinopril refilled about a month ago.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 75.487,
+            "end": 75.887
+          },
+          {
+            "word": "last ",
+            "start": 75.887,
+            "end": 76.287
+          },
+          {
+            "word": "had ",
+            "start": 76.287,
+            "end": 76.687
+          },
+          {
+            "word": "my ",
+            "start": 76.687,
+            "end": 77.087
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 77.087,
+            "end": 77.487
+          },
+          {
+            "word": "refilled ",
+            "start": 77.487,
+            "end": 77.887
+          },
+          {
+            "word": "about ",
+            "start": 77.887,
+            "end": 78.287
+          },
+          {
+            "word": "a ",
+            "start": 78.287,
+            "end": 78.687
+          },
+          {
+            "word": "month ",
+            "start": 78.34941674804688,
+            "end": 78.74941674804687
+          },
+          {
+            "word": "ago.",
+            "start": 78.34941674804688,
+            "end": 78.74941674804687
+          }
+        ],
+        "metadata": {
+          "response_id": 10
+        }
+      },
+      {
+        "role": "user",
+        "content": "Which pharmacy do you use? ",
+        "words": [
+          {
+            "word": "Which ",
+            "start": 82.107,
+            "end": 82.427
+          },
+          {
+            "word": "pharmacy ",
+            "start": 82.427,
+            "end": 82.827
+          },
+          {
+            "word": "do ",
+            "start": 82.827,
+            "end": 83.06700500000001
+          },
+          {
+            "word": "you ",
+            "start": 83.06700500000001,
+            "end": 83.227
+          },
+          {
+            "word": "use? ",
+            "start": 83.227,
+            "end": 83.387005
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Please confirm the location. ",
+        "words": [
+          {
+            "word": "Please ",
+            "start": 83.87700000000001,
+            "end": 84.277
+          },
+          {
+            "word": "confirm ",
+            "start": 84.277,
+            "end": 84.59700000000001
+          },
+          {
+            "word": "the ",
+            "start": 84.59700000000001,
+            "end": 84.837
+          },
+          {
+            "word": "location. ",
+            "start": 84.837,
+            "end": 85.077
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I use Walgreens, and the location is on Main Street.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 86.207,
+            "end": 86.607
+          },
+          {
+            "word": "use ",
+            "start": 86.607,
+            "end": 87.007
+          },
+          {
+            "word": "Walgreens, ",
+            "start": 87.007,
+            "end": 87.407
+          },
+          {
+            "word": "and ",
+            "start": 87.407,
+            "end": 87.807
+          },
+          {
+            "word": "the ",
+            "start": 87.807,
+            "end": 88.207
+          },
+          {
+            "word": "location ",
+            "start": 88.207,
+            "end": 88.607
+          },
+          {
+            "word": "is ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "on ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "Main ",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          },
+          {
+            "word": "Street.",
+            "start": 88.55858325195312,
+            "end": 88.95858325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 12
+        }
+      },
+      {
+        "role": "user",
+        "content": "How many days of lisinopril do you have left? ",
+        "words": [
+          {
+            "word": "How ",
+            "start": 91.736996,
+            "end": 92.056995
+          },
+          {
+            "word": "many ",
+            "start": 92.056995,
+            "end": 92.217
+          },
+          {
+            "word": "days ",
+            "start": 92.217,
+            "end": 92.45700000000001
+          },
+          {
+            "word": "of ",
+            "start": 92.45700000000001,
+            "end": 92.617
+          },
+          {
+            "word": "lisinopril ",
+            "start": 92.617,
+            "end": 93.41699600000001
+          },
+          {
+            "word": "do ",
+            "start": 93.41699600000001,
+            "end": 93.577
+          },
+          {
+            "word": "you ",
+            "start": 93.577,
+            "end": 93.65699400000001
+          },
+          {
+            "word": "have ",
+            "start": 93.65699400000001,
+            "end": 93.81700000000001
+          },
+          {
+            "word": "left? ",
+            "start": 93.81700000000001,
+            "end": 93.977
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I have about three days of Lisinopril left.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 94.903,
+            "end": 95.303
+          },
+          {
+            "word": "have ",
+            "start": 95.303,
+            "end": 95.703
+          },
+          {
+            "word": "about ",
+            "start": 95.703,
+            "end": 96.103
+          },
+          {
+            "word": "three ",
+            "start": 96.103,
+            "end": 96.503
+          },
+          {
+            "word": "days ",
+            "start": 96.503,
+            "end": 96.903
+          },
+          {
+            "word": "of ",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          },
+          {
+            "word": "Lisinopril ",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          },
+          {
+            "word": "left.",
+            "start": 96.87145825195313,
+            "end": 97.27145825195312
+          }
+        ],
+        "metadata": {
+          "response_id": 13
+        }
+      },
+      {
+        "role": "user",
+        "content": "It ",
+        "words": [
+          {
+            "word": "It ",
+            "start": 108.40700000000001,
+            "end": 108.64701000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Just ",
+        "words": [
+          {
+            "word": "Just ",
+            "start": 108.283,
+            "end": 108.683
+          }
+        ],
+        "metadata": {
+          "response_id": 14
+        }
+      },
+      {
+        "role": "user",
+        "content": "looks like I'm unable to act ",
+        "words": [
+          {
+            "word": "looks ",
+            "start": 108.64701000000001,
+            "end": 108.887005
+          },
+          {
+            "word": "like ",
+            "start": 108.887005,
+            "end": 108.96701
+          },
+          {
+            "word": "I'm ",
+            "start": 108.96701,
+            "end": 109.20700500000001
+          },
+          {
+            "word": "unable ",
+            "start": 109.20700500000001,
+            "end": 109.527004
+          },
+          {
+            "word": "to ",
+            "start": 109.527004,
+            "end": 109.607006
+          },
+          {
+            "word": "act ",
+            "start": 109.607006,
+            "end": 109.847004
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Let ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 113.31700000000001,
+            "end": 113.557
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "No ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 113.171,
+            "end": 113.571
+          }
+        ],
+        "metadata": {
+          "response_id": 15
+        }
+      },
+      {
+        "role": "user",
+        "content": "me try again to process. ",
+        "words": [
+          {
+            "word": "me ",
+            "start": 113.557,
+            "end": 113.717
+          },
+          {
+            "word": "try ",
+            "start": 113.717,
+            "end": 113.87700000000001
+          },
+          {
+            "word": "again ",
+            "start": 113.87700000000001,
+            "end": 114.117
+          },
+          {
+            "word": "to ",
+            "start": 114.117,
+            "end": 114.277004
+          },
+          {
+            "word": "process. ",
+            "start": 114.277004,
+            "end": 114.51700000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "No ",
+        "words": [
+          {
+            "word": "No ",
+            "start": 116.904,
+            "end": 117.304
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "user",
+        "content": "I'm unable ",
+        "words": [
+          {
+            "word": "I'm ",
+            "start": 117.327,
+            "end": 117.727
+          },
+          {
+            "word": "unable ",
+            "start": 117.727,
+            "end": 118.04700000000001
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "problem, thank ",
+        "words": [
+          {
+            "word": "problem, ",
+            "start": 117.304,
+            "end": 117.704
+          },
+          {
+            "word": "thank ",
+            "start": 117.704,
+            "end": 118.104
+          }
+        ],
+        "metadata": {
+          "response_id": 16
+        }
+      },
+      {
+        "role": "agent",
+        "content": "That's okay, thank you for your help. I'll follow up later if needed. Have a good day!",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 119.74,
+            "end": 120.14
+          },
+          {
+            "word": "okay, ",
+            "start": 120.14,
+            "end": 120.54
+          },
+          {
+            "word": "thank ",
+            "start": 120.54,
+            "end": 120.94
+          },
+          {
+            "word": "you ",
+            "start": 120.94,
+            "end": 121.34
+          },
+          {
+            "word": "for ",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": "your ",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": "help.",
+            "start": 120.94216674804687,
+            "end": 121.34216674804688
+          },
+          {
+            "word": " I'll ",
+            "start": 121.34216674804688,
+            "end": 121.74216674804687
+          },
+          {
+            "word": "follow ",
+            "start": 121.74216674804687,
+            "end": 122.14216674804688
+          },
+          {
+            "word": "up ",
+            "start": 122.14216674804688,
+            "end": 122.54216674804688
+          },
+          {
+            "word": "later ",
+            "start": 122.54216674804688,
+            "end": 122.94216674804687
+          },
+          {
+            "word": "if ",
+            "start": 122.59079174804687,
+            "end": 122.99079174804687
+          },
+          {
+            "word": "needed.",
+            "start": 122.59079174804687,
+            "end": 122.99079174804687
+          },
+          {
+            "word": " Have ",
+            "start": 122.99079174804687,
+            "end": 123.39079174804688
+          },
+          {
+            "word": "a ",
+            "start": 123.39079174804688,
+            "end": 123.79079174804687
+          },
+          {
+            "word": "good ",
+            "start": 123.51958325195312,
+            "end": 123.91958325195313
+          },
+          {
+            "word": "day!",
+            "start": 123.51958325195312,
+            "end": 123.91958325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 17
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome. If you need anything else, just give us a call. Take care. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 129.12701,
+            "end": 129.447
+          },
+          {
+            "word": "welcome. ",
+            "start": 129.447,
+            "end": 130.08702
+          },
+          {
+            "word": "If ",
+            "start": 130.167,
+            "end": 130.40701
+          },
+          {
+            "word": "you ",
+            "start": 130.40701,
+            "end": 130.56701
+          },
+          {
+            "word": "need ",
+            "start": 130.56701,
+            "end": 130.727
+          },
+          {
+            "word": "anything ",
+            "start": 130.727,
+            "end": 131.04701
+          },
+          {
+            "word": "else, ",
+            "start": 131.04701,
+            "end": 131.447
+          },
+          {
+            "word": "just ",
+            "start": 131.447,
+            "end": 131.607
+          },
+          {
+            "word": "give ",
+            "start": 131.607,
+            "end": 131.76701
+          },
+          {
+            "word": "us ",
+            "start": 131.76701,
+            "end": 131.92701
+          },
+          {
+            "word": "a ",
+            "start": 131.92701,
+            "end": 132.007
+          },
+          {
+            "word": "call. ",
+            "start": 132.007,
+            "end": 132.167
+          },
+          {
+            "word": "Take ",
+            "start": 132.577,
+            "end": 132.817
+          },
+          {
+            "word": "care. ",
+            "start": 132.817,
+            "end": 133.05700000000002
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you, I appreciate your help. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 133.881,
+            "end": 134.281
+          },
+          {
+            "word": "you, ",
+            "start": 134.281,
+            "end": 134.681
+          },
+          {
+            "word": "I ",
+            "start": 134.681,
+            "end": 135.081
+          },
+          {
+            "word": "appreciate ",
+            "start": 135.081,
+            "end": 135.481
+          },
+          {
+            "word": "your ",
+            "start": 135.4315,
+            "end": 135.8315
+          },
+          {
+            "word": "help. ",
+            "start": 135.4315,
+            "end": 135.8315
+          },
+          {
+            "word": "Have ",
+            "start": 135.8315,
+            "end": 136.2315
+          },
+          {
+            "word": "a ",
+            "start": 136.2315,
+            "end": 136.6315
+          },
+          {
+            "word": "great ",
+            "start": 136.488,
+            "end": 136.888
+          },
+          {
+            "word": "day!",
+            "start": 136.488,
+            "end": 136.888
+          }
+        ],
+        "metadata": {
+          "response_id": 20
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "7dd060709f71aac5",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"Thank you, I appreciate your help. Have a great day!\"}",
+        "time_sec": 136.914,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/c2f892bfcbb3b0bea4abcaf29603e6945a2977a4b6223010dd1c2edc91fb1b14/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/c2f892bfcbb3b0bea4abcaf29603e6945a2977a4b6223010dd1c2edc91fb1b14/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/c2f892bfcbb3b0bea4abcaf29603e6945a2977a4b6223010dd1c2edc91fb1b14/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 884.4200000000001,
+        "min": 4,
+        "max": 908,
+        "p90": 715.4,
+        "num": 19,
+        "values": [
+          4,
+          399,
+          516,
+          470,
+          385,
+          379,
+          457,
+          485,
+          570,
+          636,
+          700,
+          396,
+          518,
+          908,
+          465,
+          777,
+          508,
+          606,
+          510
+        ],
+        "p50": 508,
+        "p95": 790.0999999999997
+      },
+      "e2e": {
+        "p99": 3211.556562499999,
+        "min": 824,
+        "max": 3323.99609375,
+        "p90": 2248.2000000000007,
+        "num": 13,
+        "values": [
+          1690,
+          1090,
+          976,
+          932,
+          1105,
+          1077.998046875,
+          1120,
+          1130,
+          926,
+          3323.99609375,
+          2387,
+          1693,
+          824
+        ],
+        "p50": 1105,
+        "p95": 2761.7984374999987
+      },
+      "tts": {
+        "p99": 383.8,
+        "min": 186,
+        "max": 391,
+        "p90": 348.6,
+        "num": 19,
+        "values": [
+          280,
+          218,
+          309,
+          247,
+          276,
+          186,
+          391,
+          348,
+          298,
+          351,
+          220,
+          343,
+          293,
+          255,
+          297,
+          202,
+          290,
+          267,
+          295
+        ],
+        "p50": 290,
+        "p95": 354.9999999999999
+      },
+      "asr": {
+        "p99": 2007.1984359999985,
+        "min": 9.998999999996158,
+        "max": 2020.0034000000014,
+        "p90": 70.00054000000091,
+        "num": 129,
+        "values": [
+          10,
+          40,
+          50,
+          10,
+          10,
+          20,
+          20,
+          20,
+          20,
+          39.999799999999595,
+          30.000099999999293,
+          20.00014999999985,
+          30,
+          30.00000000000091,
+          20.000299999999697,
+          19.99999999999909,
+          20,
+          59.99959999999919,
+          50.00014999999985,
+          60.00000000000182,
+          40.000599999999395,
+          70.0005000000001,
+          30.000299999999697,
+          39.99999999999818,
+          50.00039999999899,
+          19.99899999999616,
+          79.99950000000172,
+          49.998999999999796,
+          49.99949999999808,
+          30,
+          70.00069999999687,
+          19.999500000001717,
+          30,
+          2009.999499999998,
+          40.00050000000192,
+          20.000999999996566,
+          49.99959999999919,
+          20.00039999999717,
+          30.001000000000204,
+          19.99949999999808,
+          20,
+          40.001000000000204,
+          79.9997000000003,
+          50.00080000000162,
+          49.99949999999808,
+          60.00200000000041,
+          70.00050000000192,
+          19.997000000003027,
+          19.99949999999808,
+          19.999000000003434,
+          29.99760000000242,
+          20,
+          1769.9979000000021,
+          40.00209999999788,
+          60.00079999999434,
+          60.00149999999849,
+          70.00014999999985,
+          60.00089999999909,
+          50.0002999999997,
+          50.002699999997276,
+          50.00139999999374,
+          50,
+          50.00239999999758,
+          60.000999999996566,
+          70.00050000000192,
+          80.00099999999657,
+          79.99999999999272,
+          70.0023000000001,
+          1540.0011999999988,
+          69.99880000000121,
+          60.00119999999879,
+          49.99979999999778,
+          29.99949999999808,
+          29.998200000001816,
+          29.99899999999616,
+          29.99760000000242,
+          30,
+          369.9979999999923,
+          50.00198000000091,
+          59.999199999991106,
+          40.00429999998596,
+          9.998999999996158,
+          10.001499999998487,
+          20.005999999993946,
+          30.00340000000142,
+          30.005799999999,
+          40.002699999997276,
+          40.00200000000768,
+          20,
+          1989.9956999999995,
+          20.004300000000512,
+          19.99899999999616,
+          30.001499999998487,
+          19.998500000001513,
+          30.00150000001304,
+          29.996340000012424,
+          20.000899999999092,
+          29.99570000001404,
+          19.998200000001816,
+          20.002699999997276,
+          29.99760000000242,
+          30,
+          2020.0034000000014,
+          49.99659999999858,
+          39.99899999999616,
+          50.00150000001304,
+          10.001499999998487,
+          20.005999999993946,
+          30.00100000000384,
+          60.00340000000142,
+          20.005799999999,
+          20.001800000012736,
+          20.004300000000512,
+          30.00100000000384,
+          30.003700000001118,
+          49.99850000000151,
+          50.00239999999758,
+          50.004999999990105,
+          10.010399999999208,
+          29.99759999998787,
+          1999.9956999999995,
+          30.004300000015064,
+          40.00670000001264,
+          30.00920000000042,
+          20.00600000002305,
+          30.008499999996275,
+          50.0109999999986,
+          30.01339999999618,
+          40.00915999998688
+        ],
+        "p50": 30.008499999996275,
+        "p95": 253.99919999999236
+      }
+    },
+    "metadata": {
+      "scenario_title": "Request a refill for Lisinopril",
+      "started_at_utc": "2026-03-15T17:15:07.138031+00:00",
+      "project_stage": "stage_3",
+      "scenario_id": "medication_refill_lisinopril"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 12.5583333
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 3.425
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 10.275
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 3.425
+        }
+      ],
+      "combined_cost": 29.6833333,
+      "total_duration_seconds": 137
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent verified the user's identity and attempted to process a refill request for Lisinopril. Despite collecting all necessary information, the agent was unable to complete the refill but assured the user they would follow up later if needed. The call ended on a positive note with both parties expressing appreciation.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        514,
+        545,
+        569,
+        605,
+        612,
+        691,
+        692,
+        723,
+        755,
+        756,
+        783,
+        791,
+        822,
+        855,
+        851,
+        865,
+        877,
+        907,
+        919,
+        922
+      ],
+      "average": 752.7,
+      "num_requests": 20
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 136.914,
+        "tool_call_id": "7dd060709f71aac5",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA82df50f731d42963a63425ef857e91ce"
+    }
+  }
+}

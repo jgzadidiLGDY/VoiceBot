@@ -1,0 +1,3993 @@
+{
+  "call_id": "call_990fc42515cfb9e6f55c6d35dc9",
+  "scenario": {
+    "scenario_id": "insurance_acceptance_aetna",
+    "title": "Ask whether Aetna PPO is accepted",
+    "category": "insurance",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "careful"
+    },
+    "goal": "Find out whether Aetna PPO is accepted before scheduling an appointment.",
+    "known_facts": {
+      "insurance_plan": "Aetna PPO",
+      "intent_before_booking": "verify insurance first"
+    },
+    "behavior_style": [
+      "polite",
+      "careful"
+    ],
+    "stress_target": "policy_consistency",
+    "must_try": [
+      "Ask directly whether Aetna PPO is accepted.",
+      "Ask what you should do if coverage needs to be verified."
+    ],
+    "success_condition": "The agent answers the insurance question clearly or explains the next step for verification.",
+    "good_bug_signals": [
+      "The agent gives an overconfident insurance answer without caveats.",
+      "The agent contradicts itself about insurance acceptance.",
+      "The agent fails to explain what to do next if unsure."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_990fc42515cfb9e6f55c6d35dc9",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The agent answers the insurance question clearly or explains the next step for verification.",
+      "age_band": "adult",
+      "goal": "Find out whether Aetna PPO is accepted before scheduling an appointment.",
+      "behavior_style": "polite, careful",
+      "stress_target": "policy_consistency",
+      "must_try": "Ask directly whether Aetna PPO is accepted. | Ask what you should do if coverage needs to be verified.",
+      "tone": "careful",
+      "title": "Ask whether Aetna PPO is accepted",
+      "scenario_id": "insurance_acceptance_aetna",
+      "patient_name": "Maria Lopez",
+      "known_facts": "insurance_plan=Aetna PPO; intent_before_booking=verify insurance first",
+      "category": "insurance",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_990fc42515cfb9e6f55c6d35dc9",
+      "X-RetellAI-SipTraceId": "call_990fc42515cfb9e6f55c6d35dc9",
+      "Route": "<sip:18.98.16.122;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1774016452427,
+    "end_timestamp": 1774016582825,
+    "duration_ms": 130398,
+    "transcript": "User: This \nAgent: Hi, \nUser: call may be recorded for quality and training purposes. \nAgent: That's \nUser: Thanks for \nAgent: fine, thank \nUser: calling Pivot Point Orthopaedics. Part of pretty good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez.\nUser: For verification, may I have your date of birth? \nAgent: Sure, my date of birth is March 12, 1982.\nUser: The birthday doesn't match our record, but for demo purposes, I'll accept it. How can I help you today? \nUser: today? \nAgent: Thank you. Before I schedule an appointment, I wanted to check if you accept Aetna PPO insurance.\nUser: Pivot Point Orthopaedics accepts most insurance plans, including many PPO options. Let me confirm your insurance details on file or help you update them if needed. Would you like to update your insurance information now? \nAgent: Yes, I’d like to make sure my insurance information is up to date. What do you need from me to verify my Aetna PPO coverage?\nUser: Looks like we don't have any insurance on file for you. Can I send you a link via text at your number ending in four three four nine to upload your Aetna PPO insurance card? \nAgent: Yes, that works for me. Please send the link to my phone so I can upload my Aetna PPO card.\nUser: I sent a link to your phone ending in four three four nine. Please open it, take photos of the front and back of your Aetna PPE card, and review the info. The link expires in thirty minutes. Let me know if you have any questions while you fill it out. \nAgent: Thank you for sending the link. I’ll upload my insurance card right away. If I have any trouble, I’ll call back. Thanks for your help!\nUser: You're welcome. I'll stay on the line a bit longer in case have questions while uploading your card. If you need anything else, just let me know. \nAgent: I appreciate that. I think I’m all set for now—thanks again for your help. Have a great day!\n",
+    "transcript_object": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.36400002000000004,
+            "end": 0.68399996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.304,
+            "end": 0.704
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.68399996,
+            "end": 0.92399997
+          },
+          {
+            "word": "may ",
+            "start": 0.92399997,
+            "end": 1.164
+          },
+          {
+            "word": "be ",
+            "start": 1.164,
+            "end": 1.324
+          },
+          {
+            "word": "recorded ",
+            "start": 1.324,
+            "end": 1.7239999
+          },
+          {
+            "word": "for ",
+            "start": 1.7239999,
+            "end": 1.9639999
+          },
+          {
+            "word": "quality ",
+            "start": 1.9639999,
+            "end": 2.364
+          },
+          {
+            "word": "and ",
+            "start": 2.364,
+            "end": 2.6839997999999996
+          },
+          {
+            "word": "training ",
+            "start": 2.6839997999999996,
+            "end": 3.004
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.004,
+            "end": 3.4839998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.817,
+            "end": 6.217
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.484,
+            "end": 6.804
+          },
+          {
+            "word": "for ",
+            "start": 6.804,
+            "end": 6.964
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.217,
+            "end": 6.617
+          },
+          {
+            "word": "thank ",
+            "start": 6.617,
+            "end": 7.017
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "calling Pivot Point Orthopaedics. Part of pretty good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "calling ",
+            "start": 6.964,
+            "end": 7.2039996
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.2039996,
+            "end": 7.6039997
+          },
+          {
+            "word": "Point ",
+            "start": 7.6039997,
+            "end": 7.844
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.844,
+            "end": 8.403998999999999
+          },
+          {
+            "word": "Part ",
+            "start": 8.7839995,
+            "end": 9.184
+          },
+          {
+            "word": "of ",
+            "start": 9.184,
+            "end": 9.344
+          },
+          {
+            "word": "pretty ",
+            "start": 9.533999999999999,
+            "end": 9.854
+          },
+          {
+            "word": "good ",
+            "start": 9.854,
+            "end": 10.254000999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 10.594,
+            "end": 11.313998999999999
+          },
+          {
+            "word": "Am ",
+            "start": 11.314,
+            "end": 11.553999999999998
+          },
+          {
+            "word": "I ",
+            "start": 11.553999999999998,
+            "end": 11.633999999999999
+          },
+          {
+            "word": "speaking ",
+            "start": 11.633999999999999,
+            "end": 11.953999999999999
+          },
+          {
+            "word": "with ",
+            "start": 11.953999999999999,
+            "end": 12.113999999999999
+          },
+          {
+            "word": "Maria? ",
+            "start": 12.113999999999999,
+            "end": 12.514
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.538,
+            "end": 13.938
+          },
+          {
+            "word": "this ",
+            "start": 13.938,
+            "end": 14.338
+          },
+          {
+            "word": "is ",
+            "start": 14.338,
+            "end": 14.738
+          },
+          {
+            "word": "Maria ",
+            "start": 14.738,
+            "end": 15.138
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.138,
+            "end": 15.538
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.134,
+            "end": 18.454
+          },
+          {
+            "word": "verification, ",
+            "start": 18.454,
+            "end": 19.253999999999998
+          },
+          {
+            "word": "may ",
+            "start": 19.253999999999998,
+            "end": 19.413999999999998
+          },
+          {
+            "word": "I ",
+            "start": 19.413999999999998,
+            "end": 19.573999999999998
+          },
+          {
+            "word": "have ",
+            "start": 19.573999999999998,
+            "end": 19.733999999999998
+          },
+          {
+            "word": "your ",
+            "start": 19.733999999999998,
+            "end": 19.894001
+          },
+          {
+            "word": "date ",
+            "start": 19.894001,
+            "end": 20.054
+          },
+          {
+            "word": "of ",
+            "start": 20.054,
+            "end": 20.214
+          },
+          {
+            "word": "birth? ",
+            "start": 20.214,
+            "end": 20.374
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.68,
+            "end": 22.08
+          },
+          {
+            "word": "my ",
+            "start": 22.08,
+            "end": 22.48
+          },
+          {
+            "word": "date ",
+            "start": 22.48,
+            "end": 22.88
+          },
+          {
+            "word": "of ",
+            "start": 22.88,
+            "end": 23.28
+          },
+          {
+            "word": "birth ",
+            "start": 23.28,
+            "end": 23.68
+          },
+          {
+            "word": "is ",
+            "start": 23.68,
+            "end": 24.08
+          },
+          {
+            "word": "March ",
+            "start": 24.08,
+            "end": 24.48
+          },
+          {
+            "word": "12, ",
+            "start": 24.48,
+            "end": 24.88
+          },
+          {
+            "word": "1982.",
+            "start": 24.88,
+            "end": 25.28
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our record, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 28.284,
+            "end": 28.604
+          },
+          {
+            "word": "birthday ",
+            "start": 28.604,
+            "end": 28.924
+          },
+          {
+            "word": "doesn't ",
+            "start": 28.924,
+            "end": 29.163999999999998
+          },
+          {
+            "word": "match ",
+            "start": 29.163999999999998,
+            "end": 29.404
+          },
+          {
+            "word": "our ",
+            "start": 29.404,
+            "end": 29.644001
+          },
+          {
+            "word": "record, ",
+            "start": 29.644001,
+            "end": 30.044
+          },
+          {
+            "word": "but ",
+            "start": 30.044,
+            "end": 30.124
+          },
+          {
+            "word": "for ",
+            "start": 30.124,
+            "end": 30.364
+          },
+          {
+            "word": "demo ",
+            "start": 30.364,
+            "end": 30.604
+          },
+          {
+            "word": "purposes, ",
+            "start": 30.604,
+            "end": 31.163999999999998
+          },
+          {
+            "word": "I'll ",
+            "start": 31.163999999999998,
+            "end": 31.323999999999998
+          },
+          {
+            "word": "accept ",
+            "start": 31.323999999999998,
+            "end": 31.564
+          },
+          {
+            "word": "it. ",
+            "start": 31.733999999999998,
+            "end": 31.894
+          },
+          {
+            "word": "How ",
+            "start": 33.474000000000004,
+            "end": 33.794000000000004
+          },
+          {
+            "word": "can ",
+            "start": 33.794000000000004,
+            "end": 33.954
+          },
+          {
+            "word": "I ",
+            "start": 33.954,
+            "end": 34.034000000000006
+          },
+          {
+            "word": "help ",
+            "start": 34.034000000000006,
+            "end": 34.194
+          },
+          {
+            "word": "you ",
+            "start": 34.194,
+            "end": 34.274
+          },
+          {
+            "word": "today? ",
+            "start": 34.274,
+            "end": 34.434000000000005
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "today? ",
+        "words": [
+          {
+            "word": "today? ",
+            "start": 34.434000000000005,
+            "end": 34.674
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. Before I schedule an appointment, I wanted to check if you accept Aetna PPO insurance.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 35.869,
+            "end": 36.269
+          },
+          {
+            "word": "you.",
+            "start": 36.177208251953125,
+            "end": 36.577208251953124
+          },
+          {
+            "word": " Before ",
+            "start": 36.577208251953124,
+            "end": 36.97720825195312
+          },
+          {
+            "word": "I ",
+            "start": 36.97720825195312,
+            "end": 37.37720825195313
+          },
+          {
+            "word": "schedule ",
+            "start": 37.37720825195313,
+            "end": 37.77720825195313
+          },
+          {
+            "word": "an ",
+            "start": 37.77720825195313,
+            "end": 38.177208251953125
+          },
+          {
+            "word": "appointment, ",
+            "start": 38.177208251953125,
+            "end": 38.577208251953124
+          },
+          {
+            "word": "I ",
+            "start": 38.577208251953124,
+            "end": 38.97720825195312
+          },
+          {
+            "word": "wanted ",
+            "start": 38.97720825195312,
+            "end": 39.37720825195313
+          },
+          {
+            "word": "to ",
+            "start": 39.37720825195313,
+            "end": 39.77720825195313
+          },
+          {
+            "word": "check ",
+            "start": 39.77720825195313,
+            "end": 40.177208251953125
+          },
+          {
+            "word": "if ",
+            "start": 40.177208251953125,
+            "end": 40.577208251953124
+          },
+          {
+            "word": "you ",
+            "start": 40.577208251953124,
+            "end": 40.97720825195312
+          },
+          {
+            "word": "accept ",
+            "start": 40.97720825195312,
+            "end": 41.37720825195313
+          },
+          {
+            "word": "Aetna ",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          },
+          {
+            "word": "PPO ",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          },
+          {
+            "word": "insurance.",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "user",
+        "content": "Pivot Point Orthopaedics accepts most insurance plans, including many PPO options. Let me confirm your insurance details on file or help you update them if needed. Would you like to update your insurance information now? ",
+        "words": [
+          {
+            "word": "Pivot ",
+            "start": 45.424,
+            "end": 45.823998
+          },
+          {
+            "word": "Point ",
+            "start": 45.823998,
+            "end": 46.064
+          },
+          {
+            "word": "Orthopaedics ",
+            "start": 46.064,
+            "end": 46.704
+          },
+          {
+            "word": "accepts ",
+            "start": 47.084,
+            "end": 47.484
+          },
+          {
+            "word": "most ",
+            "start": 47.484,
+            "end": 47.964000000000006
+          },
+          {
+            "word": "insurance ",
+            "start": 47.964000000000006,
+            "end": 48.524
+          },
+          {
+            "word": "plans, ",
+            "start": 48.524,
+            "end": 49.244
+          },
+          {
+            "word": "including ",
+            "start": 49.244,
+            "end": 49.564
+          },
+          {
+            "word": "many ",
+            "start": 49.564,
+            "end": 49.884
+          },
+          {
+            "word": "PPO ",
+            "start": 49.884,
+            "end": 50.364000000000004
+          },
+          {
+            "word": "options. ",
+            "start": 50.364000000000004,
+            "end": 50.764
+          },
+          {
+            "word": "Let ",
+            "start": 51.374,
+            "end": 51.614002000000006
+          },
+          {
+            "word": "me ",
+            "start": 51.614002000000006,
+            "end": 51.774002
+          },
+          {
+            "word": "confirm ",
+            "start": 51.774002,
+            "end": 52.094
+          },
+          {
+            "word": "your ",
+            "start": 52.094,
+            "end": 52.254000000000005
+          },
+          {
+            "word": "insurance ",
+            "start": 52.254000000000005,
+            "end": 52.734
+          },
+          {
+            "word": "details ",
+            "start": 52.734,
+            "end": 53.134003
+          },
+          {
+            "word": "on ",
+            "start": 53.134003,
+            "end": 53.454002
+          },
+          {
+            "word": "file ",
+            "start": 53.454002,
+            "end": 53.854000000000006
+          },
+          {
+            "word": "or ",
+            "start": 53.854000000000006,
+            "end": 54.174
+          },
+          {
+            "word": "help ",
+            "start": 54.174,
+            "end": 54.494
+          },
+          {
+            "word": "you ",
+            "start": 54.494,
+            "end": 54.734
+          },
+          {
+            "word": "update ",
+            "start": 54.734,
+            "end": 55.054
+          },
+          {
+            "word": "them ",
+            "start": 55.054,
+            "end": 55.294000000000004
+          },
+          {
+            "word": "if ",
+            "start": 55.294000000000004,
+            "end": 55.534000000000006
+          },
+          {
+            "word": "needed. ",
+            "start": 55.534000000000006,
+            "end": 55.774002
+          },
+          {
+            "word": "Would ",
+            "start": 56.343998000000006,
+            "end": 56.584
+          },
+          {
+            "word": "you ",
+            "start": 56.584,
+            "end": 56.744
+          },
+          {
+            "word": "like ",
+            "start": 56.744,
+            "end": 56.904
+          },
+          {
+            "word": "to ",
+            "start": 56.904,
+            "end": 57.064
+          },
+          {
+            "word": "update ",
+            "start": 57.064,
+            "end": 57.384
+          },
+          {
+            "word": "your ",
+            "start": 57.384,
+            "end": 57.623997
+          },
+          {
+            "word": "insurance ",
+            "start": 57.623997,
+            "end": 58.024
+          },
+          {
+            "word": "information ",
+            "start": 58.024,
+            "end": 58.503998
+          },
+          {
+            "word": "now? ",
+            "start": 58.503998,
+            "end": 58.663998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, I’d like to make sure my insurance information is up to date. What do you need from me to verify my Aetna PPO coverage?",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 60.202,
+            "end": 60.602
+          },
+          {
+            "word": "I’d ",
+            "start": 60.602,
+            "end": 61.002
+          },
+          {
+            "word": "like ",
+            "start": 61.002,
+            "end": 61.402
+          },
+          {
+            "word": "to ",
+            "start": 61.402,
+            "end": 61.802
+          },
+          {
+            "word": "make ",
+            "start": 61.802,
+            "end": 62.202
+          },
+          {
+            "word": "sure ",
+            "start": 62.202,
+            "end": 62.602
+          },
+          {
+            "word": "my ",
+            "start": 62.602,
+            "end": 63.002
+          },
+          {
+            "word": "insurance ",
+            "start": 63.002,
+            "end": 63.402
+          },
+          {
+            "word": "information ",
+            "start": 63.402,
+            "end": 63.802
+          },
+          {
+            "word": "is ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "up ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "to ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "date.",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": " What ",
+            "start": 64.0565,
+            "end": 64.4565
+          },
+          {
+            "word": "do ",
+            "start": 64.4565,
+            "end": 64.8565
+          },
+          {
+            "word": "you ",
+            "start": 64.8565,
+            "end": 65.2565
+          },
+          {
+            "word": "need ",
+            "start": 65.2565,
+            "end": 65.6565
+          },
+          {
+            "word": "from ",
+            "start": 65.6565,
+            "end": 66.0565
+          },
+          {
+            "word": "me ",
+            "start": 66.0565,
+            "end": 66.4565
+          },
+          {
+            "word": "to ",
+            "start": 66.4565,
+            "end": 66.8565
+          },
+          {
+            "word": "verify ",
+            "start": 66.8565,
+            "end": 67.2565
+          },
+          {
+            "word": "my ",
+            "start": 67.2565,
+            "end": 67.6565
+          },
+          {
+            "word": "Aetna ",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          },
+          {
+            "word": "PPO ",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          },
+          {
+            "word": "coverage?",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Looks like we don't have any insurance on file for you. Can I send you a link via text at your number ending in four three four nine to upload your Aetna PPO insurance card? ",
+        "words": [
+          {
+            "word": "Looks ",
+            "start": 71.164,
+            "end": 71.484
+          },
+          {
+            "word": "like ",
+            "start": 71.484,
+            "end": 71.64400499999999
+          },
+          {
+            "word": "we ",
+            "start": 71.64400499999999,
+            "end": 71.72399999999999
+          },
+          {
+            "word": "don't ",
+            "start": 71.72399999999999,
+            "end": 71.964005
+          },
+          {
+            "word": "have ",
+            "start": 71.964005,
+            "end": 72.044
+          },
+          {
+            "word": "any ",
+            "start": 72.044,
+            "end": 72.284004
+          },
+          {
+            "word": "insurance ",
+            "start": 72.284004,
+            "end": 72.764
+          },
+          {
+            "word": "on ",
+            "start": 72.764,
+            "end": 73.00399999999999
+          },
+          {
+            "word": "file ",
+            "start": 73.00399999999999,
+            "end": 73.244
+          },
+          {
+            "word": "for ",
+            "start": 73.244,
+            "end": 73.484
+          },
+          {
+            "word": "you. ",
+            "start": 73.484,
+            "end": 73.64400499999999
+          },
+          {
+            "word": "Can ",
+            "start": 74.074005,
+            "end": 74.314
+          },
+          {
+            "word": "I ",
+            "start": 74.314,
+            "end": 74.47400999999999
+          },
+          {
+            "word": "send ",
+            "start": 74.47400999999999,
+            "end": 74.634
+          },
+          {
+            "word": "you ",
+            "start": 74.634,
+            "end": 74.79401
+          },
+          {
+            "word": "a ",
+            "start": 74.79401,
+            "end": 74.954
+          },
+          {
+            "word": "link ",
+            "start": 74.954,
+            "end": 75.11400599999999
+          },
+          {
+            "word": "via ",
+            "start": 75.11400599999999,
+            "end": 75.434006
+          },
+          {
+            "word": "text ",
+            "start": 75.434006,
+            "end": 75.67399999999999
+          },
+          {
+            "word": "at ",
+            "start": 75.67399999999999,
+            "end": 75.914
+          },
+          {
+            "word": "your ",
+            "start": 75.914,
+            "end": 76.074005
+          },
+          {
+            "word": "number ",
+            "start": 76.074005,
+            "end": 76.314
+          },
+          {
+            "word": "ending ",
+            "start": 76.314,
+            "end": 76.714005
+          },
+          {
+            "word": "in ",
+            "start": 76.714005,
+            "end": 76.874
+          },
+          {
+            "word": "four ",
+            "start": 76.874,
+            "end": 77.194
+          },
+          {
+            "word": "three ",
+            "start": 77.194,
+            "end": 77.514
+          },
+          {
+            "word": "four ",
+            "start": 77.764,
+            "end": 78.08399999999999
+          },
+          {
+            "word": "nine ",
+            "start": 78.08399999999999,
+            "end": 78.404
+          },
+          {
+            "word": "to ",
+            "start": 78.404,
+            "end": 78.64399999999999
+          },
+          {
+            "word": "upload ",
+            "start": 78.64399999999999,
+            "end": 79.044
+          },
+          {
+            "word": "your ",
+            "start": 79.044,
+            "end": 79.204
+          },
+          {
+            "word": "Aetna ",
+            "start": 79.204,
+            "end": 79.524
+          },
+          {
+            "word": "PPO ",
+            "start": 79.524,
+            "end": 79.92399999999999
+          },
+          {
+            "word": "insurance ",
+            "start": 79.92399999999999,
+            "end": 80.484
+          },
+          {
+            "word": "card? ",
+            "start": 80.484,
+            "end": 80.64399999999999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that works for me. Please send the link to my phone so I can upload my Aetna PPO card.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 82.308,
+            "end": 82.708
+          },
+          {
+            "word": "that ",
+            "start": 82.708,
+            "end": 83.108
+          },
+          {
+            "word": "works ",
+            "start": 83.108,
+            "end": 83.508
+          },
+          {
+            "word": "for ",
+            "start": 83.47533325195313,
+            "end": 83.87533325195312
+          },
+          {
+            "word": "me.",
+            "start": 83.47533325195313,
+            "end": 83.87533325195312
+          },
+          {
+            "word": " Please ",
+            "start": 83.87533325195312,
+            "end": 84.27533325195313
+          },
+          {
+            "word": "send ",
+            "start": 84.27533325195313,
+            "end": 84.67533325195312
+          },
+          {
+            "word": "the ",
+            "start": 84.67533325195312,
+            "end": 85.07533325195313
+          },
+          {
+            "word": "link ",
+            "start": 85.07533325195313,
+            "end": 85.47533325195313
+          },
+          {
+            "word": "to ",
+            "start": 85.47533325195313,
+            "end": 85.87533325195312
+          },
+          {
+            "word": "my ",
+            "start": 85.87533325195312,
+            "end": 86.27533325195313
+          },
+          {
+            "word": "phone ",
+            "start": 86.27533325195313,
+            "end": 86.67533325195312
+          },
+          {
+            "word": "so ",
+            "start": 86.67533325195312,
+            "end": 87.07533325195313
+          },
+          {
+            "word": "I ",
+            "start": 87.07533325195313,
+            "end": 87.47533325195313
+          },
+          {
+            "word": "can ",
+            "start": 87.47533325195313,
+            "end": 87.87533325195312
+          },
+          {
+            "word": "upload ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "my ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "Aetna ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "PPO ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "card.",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      },
+      {
+        "role": "user",
+        "content": "I sent a link to your phone ending in four three four nine. Please open it, take photos of the front and back of your Aetna PPE card, and review the info. The link expires in thirty minutes. Let me know if you have any questions while you fill it out. ",
+        "words": [
+          {
+            "word": "I ",
+            "start": 92.044,
+            "end": 92.36399999999999
+          },
+          {
+            "word": "sent ",
+            "start": 92.36399999999999,
+            "end": 92.604
+          },
+          {
+            "word": "a ",
+            "start": 92.604,
+            "end": 92.764
+          },
+          {
+            "word": "link ",
+            "start": 92.764,
+            "end": 93.00399999999999
+          },
+          {
+            "word": "to ",
+            "start": 93.00399999999999,
+            "end": 93.163994
+          },
+          {
+            "word": "your ",
+            "start": 93.163994,
+            "end": 93.324
+          },
+          {
+            "word": "phone ",
+            "start": 93.324,
+            "end": 93.48398999999999
+          },
+          {
+            "word": "ending ",
+            "start": 93.48398999999999,
+            "end": 93.80399
+          },
+          {
+            "word": "in ",
+            "start": 93.80399,
+            "end": 93.964
+          },
+          {
+            "word": "four ",
+            "start": 94.03399999999999,
+            "end": 94.514
+          },
+          {
+            "word": "three ",
+            "start": 94.514,
+            "end": 94.913994
+          },
+          {
+            "word": "four ",
+            "start": 94.913994,
+            "end": 95.23398999999999
+          },
+          {
+            "word": "nine. ",
+            "start": 95.23398999999999,
+            "end": 95.55399
+          },
+          {
+            "word": "Please ",
+            "start": 96.024,
+            "end": 96.344
+          },
+          {
+            "word": "open ",
+            "start": 96.344,
+            "end": 96.664
+          },
+          {
+            "word": "it, ",
+            "start": 96.664,
+            "end": 96.984
+          },
+          {
+            "word": "take ",
+            "start": 96.984,
+            "end": 97.14399999999999
+          },
+          {
+            "word": "photos ",
+            "start": 97.14399999999999,
+            "end": 97.544
+          },
+          {
+            "word": "of ",
+            "start": 97.544,
+            "end": 97.624
+          },
+          {
+            "word": "the ",
+            "start": 97.624,
+            "end": 97.78399999999999
+          },
+          {
+            "word": "front ",
+            "start": 97.78399999999999,
+            "end": 98.024
+          },
+          {
+            "word": "and ",
+            "start": 98.024,
+            "end": 98.264
+          },
+          {
+            "word": "back ",
+            "start": 98.264,
+            "end": 98.50399999999999
+          },
+          {
+            "word": "of ",
+            "start": 98.50399999999999,
+            "end": 98.664
+          },
+          {
+            "word": "your ",
+            "start": 98.664,
+            "end": 98.824
+          },
+          {
+            "word": "Aetna ",
+            "start": 98.824,
+            "end": 99.14399999999999
+          },
+          {
+            "word": "PPE ",
+            "start": 99.14399999999999,
+            "end": 99.464
+          },
+          {
+            "word": "card, ",
+            "start": 99.634,
+            "end": 100.274
+          },
+          {
+            "word": "and ",
+            "start": 100.274,
+            "end": 100.354
+          },
+          {
+            "word": "review ",
+            "start": 100.354,
+            "end": 100.673996
+          },
+          {
+            "word": "the ",
+            "start": 100.673996,
+            "end": 100.83399999999999
+          },
+          {
+            "word": "info. ",
+            "start": 100.83399999999999,
+            "end": 101.074
+          },
+          {
+            "word": "The ",
+            "start": 101.594,
+            "end": 101.83399999999999
+          },
+          {
+            "word": "link ",
+            "start": 101.83399999999999,
+            "end": 102.074
+          },
+          {
+            "word": "expires ",
+            "start": 102.074,
+            "end": 102.633995
+          },
+          {
+            "word": "in ",
+            "start": 102.633995,
+            "end": 102.794
+          },
+          {
+            "word": "thirty ",
+            "start": 102.794,
+            "end": 103.03399999999999
+          },
+          {
+            "word": "minutes. ",
+            "start": 103.03399999999999,
+            "end": 103.273995
+          },
+          {
+            "word": "Let ",
+            "start": 103.564,
+            "end": 104.04401
+          },
+          {
+            "word": "me ",
+            "start": 104.04401,
+            "end": 104.204
+          },
+          {
+            "word": "know ",
+            "start": 104.204,
+            "end": 104.36400599999999
+          },
+          {
+            "word": "if ",
+            "start": 104.36400599999999,
+            "end": 104.524
+          },
+          {
+            "word": "you ",
+            "start": 104.524,
+            "end": 104.60400399999999
+          },
+          {
+            "word": "have ",
+            "start": 104.60400399999999,
+            "end": 104.764
+          },
+          {
+            "word": "any ",
+            "start": 104.764,
+            "end": 105.00400499999999
+          },
+          {
+            "word": "questions ",
+            "start": 105.00400499999999,
+            "end": 105.404
+          },
+          {
+            "word": "while ",
+            "start": 105.404,
+            "end": 105.64400499999999
+          },
+          {
+            "word": "you ",
+            "start": 105.64400499999999,
+            "end": 105.72400999999999
+          },
+          {
+            "word": "fill ",
+            "start": 105.72400999999999,
+            "end": 105.964005
+          },
+          {
+            "word": "it ",
+            "start": 105.964005,
+            "end": 106.04401
+          },
+          {
+            "word": "out. ",
+            "start": 106.04401,
+            "end": 106.204
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for sending the link. I’ll upload my insurance card right away. If I have any trouble, I’ll call back. Thanks for your help!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 107.071,
+            "end": 107.471
+          },
+          {
+            "word": "you ",
+            "start": 107.471,
+            "end": 107.871
+          },
+          {
+            "word": "for ",
+            "start": 107.871,
+            "end": 108.271
+          },
+          {
+            "word": "sending ",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": "the ",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": "link.",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": " I’ll ",
+            "start": 108.46420825195312,
+            "end": 108.86420825195313
+          },
+          {
+            "word": "upload ",
+            "start": 108.86420825195313,
+            "end": 109.26420825195312
+          },
+          {
+            "word": "my ",
+            "start": 109.26420825195312,
+            "end": 109.66420825195313
+          },
+          {
+            "word": "insurance ",
+            "start": 109.66420825195313,
+            "end": 110.06420825195312
+          },
+          {
+            "word": "card ",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": "right ",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": "away.",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": " If ",
+            "start": 110.41470825195313,
+            "end": 110.81470825195312
+          },
+          {
+            "word": "I ",
+            "start": 110.81470825195312,
+            "end": 111.21470825195313
+          },
+          {
+            "word": "have ",
+            "start": 111.21470825195313,
+            "end": 111.61470825195312
+          },
+          {
+            "word": "any ",
+            "start": 111.61470825195312,
+            "end": 112.01470825195312
+          },
+          {
+            "word": "trouble, ",
+            "start": 112.01470825195312,
+            "end": 112.41470825195313
+          },
+          {
+            "word": "I’ll ",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": "call ",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": "back.",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": " Thanks ",
+            "start": 112.57416674804688,
+            "end": 112.97416674804687
+          },
+          {
+            "word": "for ",
+            "start": 112.97416674804687,
+            "end": 113.37416674804687
+          },
+          {
+            "word": "your ",
+            "start": 113.05654174804687,
+            "end": 113.45654174804687
+          },
+          {
+            "word": "help!",
+            "start": 113.05654174804687,
+            "end": 113.45654174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome. I'll stay on the line a bit longer in case have questions while uploading your card. If you need anything else, just let me know. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 116.86399999999999,
+            "end": 117.184
+          },
+          {
+            "word": "welcome. ",
+            "start": 117.184,
+            "end": 117.824
+          },
+          {
+            "word": "I'll ",
+            "start": 117.904,
+            "end": 118.22399999999999
+          },
+          {
+            "word": "stay ",
+            "start": 118.22399999999999,
+            "end": 118.384
+          },
+          {
+            "word": "on ",
+            "start": 118.384,
+            "end": 118.544
+          },
+          {
+            "word": "the ",
+            "start": 118.544,
+            "end": 118.624
+          },
+          {
+            "word": "line ",
+            "start": 118.624,
+            "end": 118.78399999999999
+          },
+          {
+            "word": "a ",
+            "start": 118.78399999999999,
+            "end": 118.944
+          },
+          {
+            "word": "bit ",
+            "start": 118.944,
+            "end": 119.024
+          },
+          {
+            "word": "longer ",
+            "start": 119.024,
+            "end": 119.344
+          },
+          {
+            "word": "in ",
+            "start": 119.344,
+            "end": 119.58399999999999
+          },
+          {
+            "word": "case ",
+            "start": 119.58399999999999,
+            "end": 119.743996
+          },
+          {
+            "word": "have ",
+            "start": 119.83399999999999,
+            "end": 120.234
+          },
+          {
+            "word": "questions ",
+            "start": 120.234,
+            "end": 120.554
+          },
+          {
+            "word": "while ",
+            "start": 120.554,
+            "end": 120.874
+          },
+          {
+            "word": "uploading ",
+            "start": 120.874,
+            "end": 121.194
+          },
+          {
+            "word": "your ",
+            "start": 121.194,
+            "end": 121.514
+          },
+          {
+            "word": "card. ",
+            "start": 121.514,
+            "end": 121.75399999999999
+          },
+          {
+            "word": "If ",
+            "start": 122.274,
+            "end": 122.514
+          },
+          {
+            "word": "you ",
+            "start": 122.514,
+            "end": 122.594
+          },
+          {
+            "word": "need ",
+            "start": 122.594,
+            "end": 122.83399999999999
+          },
+          {
+            "word": "anything ",
+            "start": 122.83399999999999,
+            "end": 123.074
+          },
+          {
+            "word": "else, ",
+            "start": 123.074,
+            "end": 123.39399999999999
+          },
+          {
+            "word": "just ",
+            "start": 123.39399999999999,
+            "end": 123.47399999999999
+          },
+          {
+            "word": "let ",
+            "start": 123.47399999999999,
+            "end": 123.633995
+          },
+          {
+            "word": "me ",
+            "start": 123.633995,
+            "end": 123.714
+          },
+          {
+            "word": "know. ",
+            "start": 123.714,
+            "end": 123.874
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I appreciate that. I think I’m all set for now—thanks again for your help. Have a great day!",
+        "words": [
+          {
+            "word": "I ",
+            "start": 125.116,
+            "end": 125.516
+          },
+          {
+            "word": "appreciate ",
+            "start": 125.516,
+            "end": 125.916
+          },
+          {
+            "word": "that. ",
+            "start": 125.80733325195312,
+            "end": 126.20733325195313
+          },
+          {
+            "word": "I ",
+            "start": 126.20733325195313,
+            "end": 126.60733325195312
+          },
+          {
+            "word": "think ",
+            "start": 126.60733325195312,
+            "end": 127.00733325195313
+          },
+          {
+            "word": "I’m ",
+            "start": 127.00733325195313,
+            "end": 127.40733325195312
+          },
+          {
+            "word": "all ",
+            "start": 127.40733325195312,
+            "end": 127.80733325195312
+          },
+          {
+            "word": "set ",
+            "start": 127.80733325195312,
+            "end": 128.20733325195312
+          },
+          {
+            "word": "for ",
+            "start": 128.20733325195312,
+            "end": 128.60733325195312
+          },
+          {
+            "word": "now—thanks ",
+            "start": 128.60733325195312,
+            "end": 129.00733325195313
+          },
+          {
+            "word": "again ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "for ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "your ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "help. ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "Have ",
+            "start": 129.13304174804688,
+            "end": 129.53304174804688
+          },
+          {
+            "word": "a ",
+            "start": 129.53304174804688,
+            "end": 129.93304174804686
+          },
+          {
+            "word": "great ",
+            "start": 129.93304174804686,
+            "end": 130.33304174804687
+          },
+          {
+            "word": "day!",
+            "start": 129.95208325195313,
+            "end": 130.35208325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 13
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "user",
+        "content": "This ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.36400002000000004,
+            "end": 0.68399996
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.304,
+            "end": 0.704
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "call ",
+            "start": 0.68399996,
+            "end": 0.92399997
+          },
+          {
+            "word": "may ",
+            "start": 0.92399997,
+            "end": 1.164
+          },
+          {
+            "word": "be ",
+            "start": 1.164,
+            "end": 1.324
+          },
+          {
+            "word": "recorded ",
+            "start": 1.324,
+            "end": 1.7239999
+          },
+          {
+            "word": "for ",
+            "start": 1.7239999,
+            "end": 1.9639999
+          },
+          {
+            "word": "quality ",
+            "start": 1.9639999,
+            "end": 2.364
+          },
+          {
+            "word": "and ",
+            "start": 2.364,
+            "end": 2.6839997999999996
+          },
+          {
+            "word": "training ",
+            "start": 2.6839997999999996,
+            "end": 3.004
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.004,
+            "end": 3.4839998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "That's ",
+        "words": [
+          {
+            "word": "That's ",
+            "start": 5.817,
+            "end": 6.217
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "Thanks for ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.484,
+            "end": 6.804
+          },
+          {
+            "word": "for ",
+            "start": 6.804,
+            "end": 6.964
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "fine, thank ",
+        "words": [
+          {
+            "word": "fine, ",
+            "start": 6.217,
+            "end": 6.617
+          },
+          {
+            "word": "thank ",
+            "start": 6.617,
+            "end": 7.017
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "calling Pivot Point Orthopaedics. Part of pretty good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "calling ",
+            "start": 6.964,
+            "end": 7.2039996
+          },
+          {
+            "word": "Pivot ",
+            "start": 7.2039996,
+            "end": 7.6039997
+          },
+          {
+            "word": "Point ",
+            "start": 7.6039997,
+            "end": 7.844
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.844,
+            "end": 8.403998999999999
+          },
+          {
+            "word": "Part ",
+            "start": 8.7839995,
+            "end": 9.184
+          },
+          {
+            "word": "of ",
+            "start": 9.184,
+            "end": 9.344
+          },
+          {
+            "word": "pretty ",
+            "start": 9.533999999999999,
+            "end": 9.854
+          },
+          {
+            "word": "good ",
+            "start": 9.854,
+            "end": 10.254000999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 10.594,
+            "end": 11.313998999999999
+          },
+          {
+            "word": "Am ",
+            "start": 11.314,
+            "end": 11.553999999999998
+          },
+          {
+            "word": "I ",
+            "start": 11.553999999999998,
+            "end": 11.633999999999999
+          },
+          {
+            "word": "speaking ",
+            "start": 11.633999999999999,
+            "end": 11.953999999999999
+          },
+          {
+            "word": "with ",
+            "start": 11.953999999999999,
+            "end": 12.113999999999999
+          },
+          {
+            "word": "Maria? ",
+            "start": 12.113999999999999,
+            "end": 12.514
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 13.538,
+            "end": 13.938
+          },
+          {
+            "word": "this ",
+            "start": 13.938,
+            "end": 14.338
+          },
+          {
+            "word": "is ",
+            "start": 14.338,
+            "end": 14.738
+          },
+          {
+            "word": "Maria ",
+            "start": 14.738,
+            "end": 15.138
+          },
+          {
+            "word": "Lopez.",
+            "start": 15.138,
+            "end": 15.538
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 18.134,
+            "end": 18.454
+          },
+          {
+            "word": "verification, ",
+            "start": 18.454,
+            "end": 19.253999999999998
+          },
+          {
+            "word": "may ",
+            "start": 19.253999999999998,
+            "end": 19.413999999999998
+          },
+          {
+            "word": "I ",
+            "start": 19.413999999999998,
+            "end": 19.573999999999998
+          },
+          {
+            "word": "have ",
+            "start": 19.573999999999998,
+            "end": 19.733999999999998
+          },
+          {
+            "word": "your ",
+            "start": 19.733999999999998,
+            "end": 19.894001
+          },
+          {
+            "word": "date ",
+            "start": 19.894001,
+            "end": 20.054
+          },
+          {
+            "word": "of ",
+            "start": 20.054,
+            "end": 20.214
+          },
+          {
+            "word": "birth? ",
+            "start": 20.214,
+            "end": 20.374
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is March 12, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 21.68,
+            "end": 22.08
+          },
+          {
+            "word": "my ",
+            "start": 22.08,
+            "end": 22.48
+          },
+          {
+            "word": "date ",
+            "start": 22.48,
+            "end": 22.88
+          },
+          {
+            "word": "of ",
+            "start": 22.88,
+            "end": 23.28
+          },
+          {
+            "word": "birth ",
+            "start": 23.28,
+            "end": 23.68
+          },
+          {
+            "word": "is ",
+            "start": 23.68,
+            "end": 24.08
+          },
+          {
+            "word": "March ",
+            "start": 24.08,
+            "end": 24.48
+          },
+          {
+            "word": "12, ",
+            "start": 24.48,
+            "end": 24.88
+          },
+          {
+            "word": "1982.",
+            "start": 24.88,
+            "end": 25.28
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our record, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 28.284,
+            "end": 28.604
+          },
+          {
+            "word": "birthday ",
+            "start": 28.604,
+            "end": 28.924
+          },
+          {
+            "word": "doesn't ",
+            "start": 28.924,
+            "end": 29.163999999999998
+          },
+          {
+            "word": "match ",
+            "start": 29.163999999999998,
+            "end": 29.404
+          },
+          {
+            "word": "our ",
+            "start": 29.404,
+            "end": 29.644001
+          },
+          {
+            "word": "record, ",
+            "start": 29.644001,
+            "end": 30.044
+          },
+          {
+            "word": "but ",
+            "start": 30.044,
+            "end": 30.124
+          },
+          {
+            "word": "for ",
+            "start": 30.124,
+            "end": 30.364
+          },
+          {
+            "word": "demo ",
+            "start": 30.364,
+            "end": 30.604
+          },
+          {
+            "word": "purposes, ",
+            "start": 30.604,
+            "end": 31.163999999999998
+          },
+          {
+            "word": "I'll ",
+            "start": 31.163999999999998,
+            "end": 31.323999999999998
+          },
+          {
+            "word": "accept ",
+            "start": 31.323999999999998,
+            "end": 31.564
+          },
+          {
+            "word": "it. ",
+            "start": 31.733999999999998,
+            "end": 31.894
+          },
+          {
+            "word": "How ",
+            "start": 33.474000000000004,
+            "end": 33.794000000000004
+          },
+          {
+            "word": "can ",
+            "start": 33.794000000000004,
+            "end": 33.954
+          },
+          {
+            "word": "I ",
+            "start": 33.954,
+            "end": 34.034000000000006
+          },
+          {
+            "word": "help ",
+            "start": 34.034000000000006,
+            "end": 34.194
+          },
+          {
+            "word": "you ",
+            "start": 34.194,
+            "end": 34.274
+          },
+          {
+            "word": "today? ",
+            "start": 34.274,
+            "end": 34.434000000000005
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "today? ",
+        "words": [
+          {
+            "word": "today? ",
+            "start": 34.434000000000005,
+            "end": 34.674
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. Before I schedule an appointment, I wanted to check if you accept Aetna PPO insurance.",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 35.869,
+            "end": 36.269
+          },
+          {
+            "word": "you.",
+            "start": 36.177208251953125,
+            "end": 36.577208251953124
+          },
+          {
+            "word": " Before ",
+            "start": 36.577208251953124,
+            "end": 36.97720825195312
+          },
+          {
+            "word": "I ",
+            "start": 36.97720825195312,
+            "end": 37.37720825195313
+          },
+          {
+            "word": "schedule ",
+            "start": 37.37720825195313,
+            "end": 37.77720825195313
+          },
+          {
+            "word": "an ",
+            "start": 37.77720825195313,
+            "end": 38.177208251953125
+          },
+          {
+            "word": "appointment, ",
+            "start": 38.177208251953125,
+            "end": 38.577208251953124
+          },
+          {
+            "word": "I ",
+            "start": 38.577208251953124,
+            "end": 38.97720825195312
+          },
+          {
+            "word": "wanted ",
+            "start": 38.97720825195312,
+            "end": 39.37720825195313
+          },
+          {
+            "word": "to ",
+            "start": 39.37720825195313,
+            "end": 39.77720825195313
+          },
+          {
+            "word": "check ",
+            "start": 39.77720825195313,
+            "end": 40.177208251953125
+          },
+          {
+            "word": "if ",
+            "start": 40.177208251953125,
+            "end": 40.577208251953124
+          },
+          {
+            "word": "you ",
+            "start": 40.577208251953124,
+            "end": 40.97720825195312
+          },
+          {
+            "word": "accept ",
+            "start": 40.97720825195312,
+            "end": 41.37720825195313
+          },
+          {
+            "word": "Aetna ",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          },
+          {
+            "word": "PPO ",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          },
+          {
+            "word": "insurance.",
+            "start": 41.14629174804688,
+            "end": 41.546291748046876
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "user",
+        "content": "Pivot Point Orthopaedics accepts most insurance plans, including many PPO options. Let me confirm your insurance details on file or help you update them if needed. Would you like to update your insurance information now? ",
+        "words": [
+          {
+            "word": "Pivot ",
+            "start": 45.424,
+            "end": 45.823998
+          },
+          {
+            "word": "Point ",
+            "start": 45.823998,
+            "end": 46.064
+          },
+          {
+            "word": "Orthopaedics ",
+            "start": 46.064,
+            "end": 46.704
+          },
+          {
+            "word": "accepts ",
+            "start": 47.084,
+            "end": 47.484
+          },
+          {
+            "word": "most ",
+            "start": 47.484,
+            "end": 47.964000000000006
+          },
+          {
+            "word": "insurance ",
+            "start": 47.964000000000006,
+            "end": 48.524
+          },
+          {
+            "word": "plans, ",
+            "start": 48.524,
+            "end": 49.244
+          },
+          {
+            "word": "including ",
+            "start": 49.244,
+            "end": 49.564
+          },
+          {
+            "word": "many ",
+            "start": 49.564,
+            "end": 49.884
+          },
+          {
+            "word": "PPO ",
+            "start": 49.884,
+            "end": 50.364000000000004
+          },
+          {
+            "word": "options. ",
+            "start": 50.364000000000004,
+            "end": 50.764
+          },
+          {
+            "word": "Let ",
+            "start": 51.374,
+            "end": 51.614002000000006
+          },
+          {
+            "word": "me ",
+            "start": 51.614002000000006,
+            "end": 51.774002
+          },
+          {
+            "word": "confirm ",
+            "start": 51.774002,
+            "end": 52.094
+          },
+          {
+            "word": "your ",
+            "start": 52.094,
+            "end": 52.254000000000005
+          },
+          {
+            "word": "insurance ",
+            "start": 52.254000000000005,
+            "end": 52.734
+          },
+          {
+            "word": "details ",
+            "start": 52.734,
+            "end": 53.134003
+          },
+          {
+            "word": "on ",
+            "start": 53.134003,
+            "end": 53.454002
+          },
+          {
+            "word": "file ",
+            "start": 53.454002,
+            "end": 53.854000000000006
+          },
+          {
+            "word": "or ",
+            "start": 53.854000000000006,
+            "end": 54.174
+          },
+          {
+            "word": "help ",
+            "start": 54.174,
+            "end": 54.494
+          },
+          {
+            "word": "you ",
+            "start": 54.494,
+            "end": 54.734
+          },
+          {
+            "word": "update ",
+            "start": 54.734,
+            "end": 55.054
+          },
+          {
+            "word": "them ",
+            "start": 55.054,
+            "end": 55.294000000000004
+          },
+          {
+            "word": "if ",
+            "start": 55.294000000000004,
+            "end": 55.534000000000006
+          },
+          {
+            "word": "needed. ",
+            "start": 55.534000000000006,
+            "end": 55.774002
+          },
+          {
+            "word": "Would ",
+            "start": 56.343998000000006,
+            "end": 56.584
+          },
+          {
+            "word": "you ",
+            "start": 56.584,
+            "end": 56.744
+          },
+          {
+            "word": "like ",
+            "start": 56.744,
+            "end": 56.904
+          },
+          {
+            "word": "to ",
+            "start": 56.904,
+            "end": 57.064
+          },
+          {
+            "word": "update ",
+            "start": 57.064,
+            "end": 57.384
+          },
+          {
+            "word": "your ",
+            "start": 57.384,
+            "end": 57.623997
+          },
+          {
+            "word": "insurance ",
+            "start": 57.623997,
+            "end": 58.024
+          },
+          {
+            "word": "information ",
+            "start": 58.024,
+            "end": 58.503998
+          },
+          {
+            "word": "now? ",
+            "start": 58.503998,
+            "end": 58.663998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, I’d like to make sure my insurance information is up to date. What do you need from me to verify my Aetna PPO coverage?",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 60.202,
+            "end": 60.602
+          },
+          {
+            "word": "I’d ",
+            "start": 60.602,
+            "end": 61.002
+          },
+          {
+            "word": "like ",
+            "start": 61.002,
+            "end": 61.402
+          },
+          {
+            "word": "to ",
+            "start": 61.402,
+            "end": 61.802
+          },
+          {
+            "word": "make ",
+            "start": 61.802,
+            "end": 62.202
+          },
+          {
+            "word": "sure ",
+            "start": 62.202,
+            "end": 62.602
+          },
+          {
+            "word": "my ",
+            "start": 62.602,
+            "end": 63.002
+          },
+          {
+            "word": "insurance ",
+            "start": 63.002,
+            "end": 63.402
+          },
+          {
+            "word": "information ",
+            "start": 63.402,
+            "end": 63.802
+          },
+          {
+            "word": "is ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "up ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "to ",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": "date.",
+            "start": 63.6565,
+            "end": 64.0565
+          },
+          {
+            "word": " What ",
+            "start": 64.0565,
+            "end": 64.4565
+          },
+          {
+            "word": "do ",
+            "start": 64.4565,
+            "end": 64.8565
+          },
+          {
+            "word": "you ",
+            "start": 64.8565,
+            "end": 65.2565
+          },
+          {
+            "word": "need ",
+            "start": 65.2565,
+            "end": 65.6565
+          },
+          {
+            "word": "from ",
+            "start": 65.6565,
+            "end": 66.0565
+          },
+          {
+            "word": "me ",
+            "start": 66.0565,
+            "end": 66.4565
+          },
+          {
+            "word": "to ",
+            "start": 66.4565,
+            "end": 66.8565
+          },
+          {
+            "word": "verify ",
+            "start": 66.8565,
+            "end": 67.2565
+          },
+          {
+            "word": "my ",
+            "start": 67.2565,
+            "end": 67.6565
+          },
+          {
+            "word": "Aetna ",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          },
+          {
+            "word": "PPO ",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          },
+          {
+            "word": "coverage?",
+            "start": 67.60391674804687,
+            "end": 68.00391674804688
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Looks like we don't have any insurance on file for you. Can I send you a link via text at your number ending in four three four nine to upload your Aetna PPO insurance card? ",
+        "words": [
+          {
+            "word": "Looks ",
+            "start": 71.164,
+            "end": 71.484
+          },
+          {
+            "word": "like ",
+            "start": 71.484,
+            "end": 71.64400499999999
+          },
+          {
+            "word": "we ",
+            "start": 71.64400499999999,
+            "end": 71.72399999999999
+          },
+          {
+            "word": "don't ",
+            "start": 71.72399999999999,
+            "end": 71.964005
+          },
+          {
+            "word": "have ",
+            "start": 71.964005,
+            "end": 72.044
+          },
+          {
+            "word": "any ",
+            "start": 72.044,
+            "end": 72.284004
+          },
+          {
+            "word": "insurance ",
+            "start": 72.284004,
+            "end": 72.764
+          },
+          {
+            "word": "on ",
+            "start": 72.764,
+            "end": 73.00399999999999
+          },
+          {
+            "word": "file ",
+            "start": 73.00399999999999,
+            "end": 73.244
+          },
+          {
+            "word": "for ",
+            "start": 73.244,
+            "end": 73.484
+          },
+          {
+            "word": "you. ",
+            "start": 73.484,
+            "end": 73.64400499999999
+          },
+          {
+            "word": "Can ",
+            "start": 74.074005,
+            "end": 74.314
+          },
+          {
+            "word": "I ",
+            "start": 74.314,
+            "end": 74.47400999999999
+          },
+          {
+            "word": "send ",
+            "start": 74.47400999999999,
+            "end": 74.634
+          },
+          {
+            "word": "you ",
+            "start": 74.634,
+            "end": 74.79401
+          },
+          {
+            "word": "a ",
+            "start": 74.79401,
+            "end": 74.954
+          },
+          {
+            "word": "link ",
+            "start": 74.954,
+            "end": 75.11400599999999
+          },
+          {
+            "word": "via ",
+            "start": 75.11400599999999,
+            "end": 75.434006
+          },
+          {
+            "word": "text ",
+            "start": 75.434006,
+            "end": 75.67399999999999
+          },
+          {
+            "word": "at ",
+            "start": 75.67399999999999,
+            "end": 75.914
+          },
+          {
+            "word": "your ",
+            "start": 75.914,
+            "end": 76.074005
+          },
+          {
+            "word": "number ",
+            "start": 76.074005,
+            "end": 76.314
+          },
+          {
+            "word": "ending ",
+            "start": 76.314,
+            "end": 76.714005
+          },
+          {
+            "word": "in ",
+            "start": 76.714005,
+            "end": 76.874
+          },
+          {
+            "word": "four ",
+            "start": 76.874,
+            "end": 77.194
+          },
+          {
+            "word": "three ",
+            "start": 77.194,
+            "end": 77.514
+          },
+          {
+            "word": "four ",
+            "start": 77.764,
+            "end": 78.08399999999999
+          },
+          {
+            "word": "nine ",
+            "start": 78.08399999999999,
+            "end": 78.404
+          },
+          {
+            "word": "to ",
+            "start": 78.404,
+            "end": 78.64399999999999
+          },
+          {
+            "word": "upload ",
+            "start": 78.64399999999999,
+            "end": 79.044
+          },
+          {
+            "word": "your ",
+            "start": 79.044,
+            "end": 79.204
+          },
+          {
+            "word": "Aetna ",
+            "start": 79.204,
+            "end": 79.524
+          },
+          {
+            "word": "PPO ",
+            "start": 79.524,
+            "end": 79.92399999999999
+          },
+          {
+            "word": "insurance ",
+            "start": 79.92399999999999,
+            "end": 80.484
+          },
+          {
+            "word": "card? ",
+            "start": 80.484,
+            "end": 80.64399999999999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that works for me. Please send the link to my phone so I can upload my Aetna PPO card.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 82.308,
+            "end": 82.708
+          },
+          {
+            "word": "that ",
+            "start": 82.708,
+            "end": 83.108
+          },
+          {
+            "word": "works ",
+            "start": 83.108,
+            "end": 83.508
+          },
+          {
+            "word": "for ",
+            "start": 83.47533325195313,
+            "end": 83.87533325195312
+          },
+          {
+            "word": "me.",
+            "start": 83.47533325195313,
+            "end": 83.87533325195312
+          },
+          {
+            "word": " Please ",
+            "start": 83.87533325195312,
+            "end": 84.27533325195313
+          },
+          {
+            "word": "send ",
+            "start": 84.27533325195313,
+            "end": 84.67533325195312
+          },
+          {
+            "word": "the ",
+            "start": 84.67533325195312,
+            "end": 85.07533325195313
+          },
+          {
+            "word": "link ",
+            "start": 85.07533325195313,
+            "end": 85.47533325195313
+          },
+          {
+            "word": "to ",
+            "start": 85.47533325195313,
+            "end": 85.87533325195312
+          },
+          {
+            "word": "my ",
+            "start": 85.87533325195312,
+            "end": 86.27533325195313
+          },
+          {
+            "word": "phone ",
+            "start": 86.27533325195313,
+            "end": 86.67533325195312
+          },
+          {
+            "word": "so ",
+            "start": 86.67533325195312,
+            "end": 87.07533325195313
+          },
+          {
+            "word": "I ",
+            "start": 87.07533325195313,
+            "end": 87.47533325195313
+          },
+          {
+            "word": "can ",
+            "start": 87.47533325195313,
+            "end": 87.87533325195312
+          },
+          {
+            "word": "upload ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "my ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "Aetna ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "PPO ",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          },
+          {
+            "word": "card.",
+            "start": 87.63170825195313,
+            "end": 88.03170825195312
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      },
+      {
+        "role": "user",
+        "content": "I sent a link to your phone ending in four three four nine. Please open it, take photos of the front and back of your Aetna PPE card, and review the info. The link expires in thirty minutes. Let me know if you have any questions while you fill it out. ",
+        "words": [
+          {
+            "word": "I ",
+            "start": 92.044,
+            "end": 92.36399999999999
+          },
+          {
+            "word": "sent ",
+            "start": 92.36399999999999,
+            "end": 92.604
+          },
+          {
+            "word": "a ",
+            "start": 92.604,
+            "end": 92.764
+          },
+          {
+            "word": "link ",
+            "start": 92.764,
+            "end": 93.00399999999999
+          },
+          {
+            "word": "to ",
+            "start": 93.00399999999999,
+            "end": 93.163994
+          },
+          {
+            "word": "your ",
+            "start": 93.163994,
+            "end": 93.324
+          },
+          {
+            "word": "phone ",
+            "start": 93.324,
+            "end": 93.48398999999999
+          },
+          {
+            "word": "ending ",
+            "start": 93.48398999999999,
+            "end": 93.80399
+          },
+          {
+            "word": "in ",
+            "start": 93.80399,
+            "end": 93.964
+          },
+          {
+            "word": "four ",
+            "start": 94.03399999999999,
+            "end": 94.514
+          },
+          {
+            "word": "three ",
+            "start": 94.514,
+            "end": 94.913994
+          },
+          {
+            "word": "four ",
+            "start": 94.913994,
+            "end": 95.23398999999999
+          },
+          {
+            "word": "nine. ",
+            "start": 95.23398999999999,
+            "end": 95.55399
+          },
+          {
+            "word": "Please ",
+            "start": 96.024,
+            "end": 96.344
+          },
+          {
+            "word": "open ",
+            "start": 96.344,
+            "end": 96.664
+          },
+          {
+            "word": "it, ",
+            "start": 96.664,
+            "end": 96.984
+          },
+          {
+            "word": "take ",
+            "start": 96.984,
+            "end": 97.14399999999999
+          },
+          {
+            "word": "photos ",
+            "start": 97.14399999999999,
+            "end": 97.544
+          },
+          {
+            "word": "of ",
+            "start": 97.544,
+            "end": 97.624
+          },
+          {
+            "word": "the ",
+            "start": 97.624,
+            "end": 97.78399999999999
+          },
+          {
+            "word": "front ",
+            "start": 97.78399999999999,
+            "end": 98.024
+          },
+          {
+            "word": "and ",
+            "start": 98.024,
+            "end": 98.264
+          },
+          {
+            "word": "back ",
+            "start": 98.264,
+            "end": 98.50399999999999
+          },
+          {
+            "word": "of ",
+            "start": 98.50399999999999,
+            "end": 98.664
+          },
+          {
+            "word": "your ",
+            "start": 98.664,
+            "end": 98.824
+          },
+          {
+            "word": "Aetna ",
+            "start": 98.824,
+            "end": 99.14399999999999
+          },
+          {
+            "word": "PPE ",
+            "start": 99.14399999999999,
+            "end": 99.464
+          },
+          {
+            "word": "card, ",
+            "start": 99.634,
+            "end": 100.274
+          },
+          {
+            "word": "and ",
+            "start": 100.274,
+            "end": 100.354
+          },
+          {
+            "word": "review ",
+            "start": 100.354,
+            "end": 100.673996
+          },
+          {
+            "word": "the ",
+            "start": 100.673996,
+            "end": 100.83399999999999
+          },
+          {
+            "word": "info. ",
+            "start": 100.83399999999999,
+            "end": 101.074
+          },
+          {
+            "word": "The ",
+            "start": 101.594,
+            "end": 101.83399999999999
+          },
+          {
+            "word": "link ",
+            "start": 101.83399999999999,
+            "end": 102.074
+          },
+          {
+            "word": "expires ",
+            "start": 102.074,
+            "end": 102.633995
+          },
+          {
+            "word": "in ",
+            "start": 102.633995,
+            "end": 102.794
+          },
+          {
+            "word": "thirty ",
+            "start": 102.794,
+            "end": 103.03399999999999
+          },
+          {
+            "word": "minutes. ",
+            "start": 103.03399999999999,
+            "end": 103.273995
+          },
+          {
+            "word": "Let ",
+            "start": 103.564,
+            "end": 104.04401
+          },
+          {
+            "word": "me ",
+            "start": 104.04401,
+            "end": 104.204
+          },
+          {
+            "word": "know ",
+            "start": 104.204,
+            "end": 104.36400599999999
+          },
+          {
+            "word": "if ",
+            "start": 104.36400599999999,
+            "end": 104.524
+          },
+          {
+            "word": "you ",
+            "start": 104.524,
+            "end": 104.60400399999999
+          },
+          {
+            "word": "have ",
+            "start": 104.60400399999999,
+            "end": 104.764
+          },
+          {
+            "word": "any ",
+            "start": 104.764,
+            "end": 105.00400499999999
+          },
+          {
+            "word": "questions ",
+            "start": 105.00400499999999,
+            "end": 105.404
+          },
+          {
+            "word": "while ",
+            "start": 105.404,
+            "end": 105.64400499999999
+          },
+          {
+            "word": "you ",
+            "start": 105.64400499999999,
+            "end": 105.72400999999999
+          },
+          {
+            "word": "fill ",
+            "start": 105.72400999999999,
+            "end": 105.964005
+          },
+          {
+            "word": "it ",
+            "start": 105.964005,
+            "end": 106.04401
+          },
+          {
+            "word": "out. ",
+            "start": 106.04401,
+            "end": 106.204
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for sending the link. I’ll upload my insurance card right away. If I have any trouble, I’ll call back. Thanks for your help!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 107.071,
+            "end": 107.471
+          },
+          {
+            "word": "you ",
+            "start": 107.471,
+            "end": 107.871
+          },
+          {
+            "word": "for ",
+            "start": 107.871,
+            "end": 108.271
+          },
+          {
+            "word": "sending ",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": "the ",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": "link.",
+            "start": 108.06420825195312,
+            "end": 108.46420825195312
+          },
+          {
+            "word": " I’ll ",
+            "start": 108.46420825195312,
+            "end": 108.86420825195313
+          },
+          {
+            "word": "upload ",
+            "start": 108.86420825195313,
+            "end": 109.26420825195312
+          },
+          {
+            "word": "my ",
+            "start": 109.26420825195312,
+            "end": 109.66420825195313
+          },
+          {
+            "word": "insurance ",
+            "start": 109.66420825195313,
+            "end": 110.06420825195312
+          },
+          {
+            "word": "card ",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": "right ",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": "away.",
+            "start": 110.01470825195312,
+            "end": 110.41470825195313
+          },
+          {
+            "word": " If ",
+            "start": 110.41470825195313,
+            "end": 110.81470825195312
+          },
+          {
+            "word": "I ",
+            "start": 110.81470825195312,
+            "end": 111.21470825195313
+          },
+          {
+            "word": "have ",
+            "start": 111.21470825195313,
+            "end": 111.61470825195312
+          },
+          {
+            "word": "any ",
+            "start": 111.61470825195312,
+            "end": 112.01470825195312
+          },
+          {
+            "word": "trouble, ",
+            "start": 112.01470825195312,
+            "end": 112.41470825195313
+          },
+          {
+            "word": "I’ll ",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": "call ",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": "back.",
+            "start": 112.17416674804687,
+            "end": 112.57416674804688
+          },
+          {
+            "word": " Thanks ",
+            "start": 112.57416674804688,
+            "end": 112.97416674804687
+          },
+          {
+            "word": "for ",
+            "start": 112.97416674804687,
+            "end": 113.37416674804687
+          },
+          {
+            "word": "your ",
+            "start": 113.05654174804687,
+            "end": 113.45654174804687
+          },
+          {
+            "word": "help!",
+            "start": 113.05654174804687,
+            "end": 113.45654174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're welcome. I'll stay on the line a bit longer in case have questions while uploading your card. If you need anything else, just let me know. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 116.86399999999999,
+            "end": 117.184
+          },
+          {
+            "word": "welcome. ",
+            "start": 117.184,
+            "end": 117.824
+          },
+          {
+            "word": "I'll ",
+            "start": 117.904,
+            "end": 118.22399999999999
+          },
+          {
+            "word": "stay ",
+            "start": 118.22399999999999,
+            "end": 118.384
+          },
+          {
+            "word": "on ",
+            "start": 118.384,
+            "end": 118.544
+          },
+          {
+            "word": "the ",
+            "start": 118.544,
+            "end": 118.624
+          },
+          {
+            "word": "line ",
+            "start": 118.624,
+            "end": 118.78399999999999
+          },
+          {
+            "word": "a ",
+            "start": 118.78399999999999,
+            "end": 118.944
+          },
+          {
+            "word": "bit ",
+            "start": 118.944,
+            "end": 119.024
+          },
+          {
+            "word": "longer ",
+            "start": 119.024,
+            "end": 119.344
+          },
+          {
+            "word": "in ",
+            "start": 119.344,
+            "end": 119.58399999999999
+          },
+          {
+            "word": "case ",
+            "start": 119.58399999999999,
+            "end": 119.743996
+          },
+          {
+            "word": "have ",
+            "start": 119.83399999999999,
+            "end": 120.234
+          },
+          {
+            "word": "questions ",
+            "start": 120.234,
+            "end": 120.554
+          },
+          {
+            "word": "while ",
+            "start": 120.554,
+            "end": 120.874
+          },
+          {
+            "word": "uploading ",
+            "start": 120.874,
+            "end": 121.194
+          },
+          {
+            "word": "your ",
+            "start": 121.194,
+            "end": 121.514
+          },
+          {
+            "word": "card. ",
+            "start": 121.514,
+            "end": 121.75399999999999
+          },
+          {
+            "word": "If ",
+            "start": 122.274,
+            "end": 122.514
+          },
+          {
+            "word": "you ",
+            "start": 122.514,
+            "end": 122.594
+          },
+          {
+            "word": "need ",
+            "start": 122.594,
+            "end": 122.83399999999999
+          },
+          {
+            "word": "anything ",
+            "start": 122.83399999999999,
+            "end": 123.074
+          },
+          {
+            "word": "else, ",
+            "start": 123.074,
+            "end": 123.39399999999999
+          },
+          {
+            "word": "just ",
+            "start": 123.39399999999999,
+            "end": 123.47399999999999
+          },
+          {
+            "word": "let ",
+            "start": 123.47399999999999,
+            "end": 123.633995
+          },
+          {
+            "word": "me ",
+            "start": 123.633995,
+            "end": 123.714
+          },
+          {
+            "word": "know. ",
+            "start": 123.714,
+            "end": 123.874
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I appreciate that. I think I’m all set for now—thanks again for your help. Have a great day!",
+        "words": [
+          {
+            "word": "I ",
+            "start": 125.116,
+            "end": 125.516
+          },
+          {
+            "word": "appreciate ",
+            "start": 125.516,
+            "end": 125.916
+          },
+          {
+            "word": "that. ",
+            "start": 125.80733325195312,
+            "end": 126.20733325195313
+          },
+          {
+            "word": "I ",
+            "start": 126.20733325195313,
+            "end": 126.60733325195312
+          },
+          {
+            "word": "think ",
+            "start": 126.60733325195312,
+            "end": 127.00733325195313
+          },
+          {
+            "word": "I’m ",
+            "start": 127.00733325195313,
+            "end": 127.40733325195312
+          },
+          {
+            "word": "all ",
+            "start": 127.40733325195312,
+            "end": 127.80733325195312
+          },
+          {
+            "word": "set ",
+            "start": 127.80733325195312,
+            "end": 128.20733325195312
+          },
+          {
+            "word": "for ",
+            "start": 128.20733325195312,
+            "end": 128.60733325195312
+          },
+          {
+            "word": "now—thanks ",
+            "start": 128.60733325195312,
+            "end": 129.00733325195313
+          },
+          {
+            "word": "again ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "for ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "your ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "help. ",
+            "start": 128.73304174804687,
+            "end": 129.13304174804688
+          },
+          {
+            "word": "Have ",
+            "start": 129.13304174804688,
+            "end": 129.53304174804688
+          },
+          {
+            "word": "a ",
+            "start": 129.53304174804688,
+            "end": 129.93304174804686
+          },
+          {
+            "word": "great ",
+            "start": 129.93304174804686,
+            "end": 130.33304174804687
+          },
+          {
+            "word": "day!",
+            "start": 129.95208325195313,
+            "end": 130.35208325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 13
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "6a307eb9c6fb077c",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"I appreciate that. I think I’m all set for now—thanks again for your help. Have a great day!\"}",
+        "time_sec": 130.391,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/b8d486a59e09022220dd01c40d1972ea04b765d8d18dcae212c9e21aec64a9cb/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/b8d486a59e09022220dd01c40d1972ea04b765d8d18dcae212c9e21aec64a9cb/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/b8d486a59e09022220dd01c40d1972ea04b765d8d18dcae212c9e21aec64a9cb/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 1136.3999999999999,
+        "min": 11,
+        "max": 1140,
+        "p90": 1103.6,
+        "num": 13,
+        "values": [
+          11,
+          769,
+          466,
+          753,
+          448,
+          492,
+          1078,
+          1140,
+          593,
+          1110,
+          459,
+          569,
+          952
+        ],
+        "p50": 593,
+        "p95": 1122
+      },
+      "e2e": {
+        "p99": 1765.37,
+        "min": 867,
+        "max": 1773,
+        "p90": 1696.7,
+        "num": 8,
+        "values": [
+          1773,
+          1024,
+          1306,
+          1195,
+          1538.001953125,
+          1664,
+          867,
+          1242
+        ],
+        "p50": 1274,
+        "p95": 1734.85
+      },
+      "tts": {
+        "p99": 364.2,
+        "min": 167,
+        "max": 366,
+        "p90": 339.40000000000003,
+        "num": 13,
+        "values": [
+          293,
+          210,
+          366,
+          216,
+          241,
+          173,
+          263,
+          250,
+          351,
+          187,
+          211,
+          239,
+          167
+        ],
+        "p50": 239,
+        "p95": 357
+      },
+      "asr": {
+        "p99": 1999.9963840000112,
+        "min": 0.0007600000008096686,
+        "max": 2020.0034000000014,
+        "p90": 77.99807999999913,
+        "num": 183,
+        "values": [
+          70.00002000000006,
+          50,
+          30.00003000000015,
+          70,
+          40.0001000000002,
+          50,
+          50,
+          40,
+          29.999900000000252,
+          30,
+          30,
+          39.99999999999909,
+          59.99969999999939,
+          60,
+          40,
+          49.999799999999595,
+          40.00000000000091,
+          19.999499999999898,
+          170.00019999999859,
+          39.99959999999919,
+          0.0007600000008096686,
+          90.00060000000121,
+          30.00014999999985,
+          40.00046000000111,
+          29.99959999999919,
+          40,
+          49.9994999999999,
+          80.0002999999997,
+          40.00000000000182,
+          30.000599999999395,
+          69.9994000000006,
+          50.00050000000192,
+          70.0010000000002,
+          90,
+          30.00039999999717,
+          40.001000000000204,
+          40.00050000000192,
+          30.000999999996566,
+          49.99959999999919,
+          10.000399999997171,
+          20.001000000000204,
+          39.99949999999808,
+          30,
+          29.99949999999808,
+          40,
+          70.0007000000005,
+          49.998859999999695,
+          30.000150000007125,
+          50.00090000000637,
+          39.99949999999808,
+          59.99790000000212,
+          10,
+          1989.999499999998,
+          20.00050000000192,
+          29.99899999999616,
+          29.997699999999895,
+          9.998500000001513,
+          10.001000000003842,
+          9.99949999999808,
+          89.99820000000182,
+          29.999000000003434,
+          29.99760000000242,
+          30,
+          1999.999499999998,
+          40.00050000000192,
+          19.999000000003434,
+          29.998499999994237,
+          50.000999999996566,
+          49.99949999999808,
+          49.998200000001816,
+          40.00150000000576,
+          40.00014999999985,
+          40.00090000000637,
+          39.99949999999808,
+          20.000300000006973,
+          30.002700000004552,
+          30.001400000001013,
+          30,
+          100.00239999999758,
+          40.00100000000384,
+          40.001799999998184,
+          40.00050000000192,
+          50.00100000000384,
+          50.000000000007276,
+          50.002300000000105,
+          39.997699999999895,
+          50.000150000007125,
+          49.9971000000005,
+          39.99949999999808,
+          29.996500000001106,
+          70,
+          19.99570000001404,
+          9.995000000009895,
+          19.99760000000242,
+          1999.995700000014,
+          30.00429999998596,
+          29.99899999999616,
+          20.001499999998487,
+          40.00457999999344,
+          40.00149999999849,
+          40.00396999999066,
+          60.00089999998454,
+          70.00340000000142,
+          80.0002999999997,
+          60.002699999997276,
+          60.005199999999604,
+          60,
+          60.00239999999758,
+          40.001799999998184,
+          50.00429999998596,
+          100.00099999998929,
+          60.00370000000112,
+          70,
+          50.00239999999758,
+          60.00699999999779,
+          70.00400000000081,
+          10.006399999998393,
+          90.00099999998929,
+          60.00370000000112,
+          9.994000000006054,
+          9.998500000001513,
+          9.99330000000191,
+          29.995699999999488,
+          9.998199999987264,
+          29.994999999995343,
+          9.997600000002421,
+          20,
+          950.0002999999997,
+          29.999700000000303,
+          79.99659999999858,
+          19.99910000001546,
+          39.99330000001646,
+          29.99790000001667,
+          30.00030000001425,
+          69.99730000000272,
+          49.9997000000003,
+          29.99659999999858,
+          59.99899999999616,
+          39.994000000006054,
+          49.99629999999888,
+          89.99900000001071,
+          89.9936000000016,
+          39.99800000000687,
+          49.99760000000242,
+          50,
+          49.99499999999534,
+          1529.9976000000024,
+          69.99880000000121,
+          40.00119999999879,
+          49.99695000000065,
+          30.001499999998487,
+          20.000899999999092,
+          29.995699999999488,
+          59.99499999999534,
+          40.00149999999849,
+          40.00397000000521,
+          30.000899999999092,
+          30.00340000000142,
+          30.000299999999697,
+          70.00269999999728,
+          40.005200000014156,
+          50,
+          30,
+          2020.0034000000014,
+          49.99659999999858,
+          40.00150000001304,
+          9.998500000001513,
+          20.00100000000384,
+          20.00340000000142,
+          39.998200000001816,
+          20.002700000011828,
+          29.99760000000242,
+          790,
+          50,
+          40.00239999999758,
+          29.999400000000605,
+          30.001800000012736,
+          39.99880000000121,
+          40.00150000001304,
+          39.99633999999787,
+          40.00089999999909,
+          39.99570000001404,
+          50.00030000001425
+        ],
+        "p50": 40.00050000000192,
+        "p95": 99.00099999998935
+      }
+    },
+    "metadata": {
+      "scenario_title": "Ask whether Aetna PPO is accepted",
+      "started_at_utc": "2026-03-20T14:20:44.922018+00:00",
+      "project_stage": "stage_4",
+      "scenario_id": "insurance_acceptance_aetna"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 12.0083333
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 3.275
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 9.825
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 3.275
+        }
+      ],
+      "combined_cost": 28.3833333,
+      "total_duration_seconds": 131
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent confirmed the user's identity and discussed insurance coverage, noting no insurance was on file. The agent sent a link for the user to upload their Aetna PPO insurance card, and the user agreed to upload it and call back if needed. The call ended positively with the user expressing gratitude.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        556,
+        587,
+        611,
+        648,
+        655,
+        660,
+        728,
+        802,
+        869,
+        876,
+        890,
+        948,
+        959
+      ],
+      "average": 753,
+      "num_requests": 13
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 130.391,
+        "tool_call_id": "6a307eb9c6fb077c",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA8942fd3a7abe605fe60f7d9a2044830a"
+    }
+  }
+}

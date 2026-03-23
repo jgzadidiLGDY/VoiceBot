@@ -1,0 +1,21 @@
+User: This 
+Agent: Hi, 
+User: call may be recorded for quality and training purposes. 
+Agent: That's fine, 
+User: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? 
+Agent: Yes, this is Maria Lopez. I’d like to schedule a routine primary care appointment for next week, preferably on a weekday morning.
+User: For verification, may I have your date of birth? 
+Agent: Sure, my date of birth is May 14, 1987.
+User: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? 
+Agent: Thank you. I’d like to schedule a routine primary care appointment for next week, ideally on a weekday morning. Could you let me know what’s available?
+User: Just to clarify, at Pivot Point Orthopaedics, we offer new patient consultations follow-up consultations, procedure appointments, and physical therapy sessions. Are you looking to book a follow-up consultation or a different type of visit? 
+Agent: I’m a new patient, so I’d like to book a new patient consultation for next week, preferably in the morning.
+User: We can book a new patient consultation for you next week in the morning. Let me check which providers have morning openings for new patient consultations next week. One moment. We have morning openings for new patient consultations next week with Doctor. Adam Bricker. The soonest is Monday, March twenty third at nine forty five AM. Would you like to book that or hear about other options? 
+Agent: Monday, March twenty-third at 9:45 AM sounds good. Can you please book that for me?
+User: Just to confirm, you'd like like to book a new patient consultation with doctor Adam Bricker on Monday, March twenty third at nine forty five AM. Is that correct? 
+User: And could you briefly share the reason for your visit? 
+Agent: Yes, that’s correct. The reason for my visit is just a routine primary care check-up.
+User: Your new patient consultation with doctor Adam Bricker is set for Monday, March twenty third at nine forty five AM. Please bring a government issued photo ID and your insurance card to the appointment. Would you like a text reminder sent to your phone? 
+Agent: Yes, a text reminder would be great. Thank you for your help!
+User: You're all set, Maria. If you need anything else, just let us know. Have a great day. 
+Agent: Thank you so much! Have a great day as well.

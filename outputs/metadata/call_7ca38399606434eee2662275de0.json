@@ -1,0 +1,3386 @@
+{
+  "call_id": "call_7ca38399606434eee2662275de0",
+  "scenario": {
+    "scenario_id": "cancel_existing_appointment",
+    "title": "Cancel an existing appointment",
+    "category": "cancel",
+    "scenario_type": "normal",
+    "patient_profile": {
+      "name": "Maria Lopez",
+      "age_band": "adult",
+      "tone": "brief"
+    },
+    "goal": "Cancel an upcoming appointment and confirm whether it has been canceled.",
+    "known_facts": {
+      "has_existing_appointment": "yes",
+      "current_appointment_time": "next Tuesday at 10:30 AM"
+    },
+    "behavior_style": [
+      "brief",
+      "polite"
+    ],
+    "stress_target": "confirmation_logic",
+    "must_try": [
+      "Say you need to cancel an upcoming appointment.",
+      "Ask for confirmation that the cancellation is complete."
+    ],
+    "success_condition": "The cancellation request is handled clearly and the call ends naturally.",
+    "good_bug_signals": [
+      "The agent fails to confirm the cancellation outcome.",
+      "The agent redirects into scheduling without handling cancellation first.",
+      "The agent becomes unclear about whether the appointment still exists."
+    ]
+  },
+  "call_data": {
+    "call_id": "call_7ca38399606434eee2662275de0",
+    "call_type": "phone_call",
+    "agent_id": "agent_f994076de22f2ada2b622e741e",
+    "agent_version": 0,
+    "agent_name": "Voice Patient Bot",
+    "retell_llm_dynamic_variables": {
+      "success_condition": "The cancellation request is handled clearly and the call ends naturally.",
+      "age_band": "adult",
+      "goal": "Cancel an upcoming appointment and confirm whether it has been canceled.",
+      "behavior_style": "brief, polite",
+      "stress_target": "confirmation_logic",
+      "must_try": "Say you need to cancel an upcoming appointment. | Ask for confirmation that the cancellation is complete.",
+      "tone": "brief",
+      "title": "Cancel an existing appointment",
+      "scenario_id": "cancel_existing_appointment",
+      "patient_name": "Maria Lopez",
+      "known_facts": "has_existing_appointment=yes; current_appointment_time=next Tuesday at 10:30 AM",
+      "category": "cancel",
+      "scenario_type": "normal"
+    },
+    "custom_sip_headers": {
+      "X-RetellAI-Direction": "Outbound",
+      "X-RetellAI-OrgId": "org_3dbR8OcSZPMlTZY6",
+      "X-RetellAI-CallId": "call_7ca38399606434eee2662275de0",
+      "X-RetellAI-SipTraceId": "call_7ca38399606434eee2662275de0",
+      "Route": "<sip:18.98.16.122;lr>"
+    },
+    "call_status": "ended",
+    "start_timestamp": 1773593137992,
+    "end_timestamp": 1773593264799,
+    "duration_ms": 126807,
+    "transcript": "Agent: Hi, \nUser: This call may be recorded for quality and training purposes. \nUser: Thanks for calling Tibbett Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? \nAgent: Yes, this is Maria Lopez.\nUser: For verification, may I have your date of birth? \nAgent: Sure, my date of birth is May 14, 1982.\nUser: The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? \nAgent: Thank you. I need to cancel my upcoming appointment that’s scheduled for next Tuesday at 10:30 AM. Could you please confirm once it’s canceled?\nUser: Let me check your upcoming appointments and start the cancellation process for the one Tuesday at ten thirty AM. You have two upcoming appointments. One on Thursday, March nineteenth, at ten thirty AM and another on Friday, March twentieth at nine. Forty five AM. Both are new patient visits. Just to confirm, do you want to cancel the appointment on Thursday, March nineteenth at ten thirty AM? \nAgent: Yes, that’s correct—I’d like to cancel the appointment on Thursday, March nineteenth at 10:30 AM. Please let me know once it’s canceled.\nUser: Can you share the reason for canceling your appointment? \nUser: For example, illness work conflict, transportation, insurance, or another reason. \nAgent: I have a work conflict and won’t be able to make it.\nUser: Your appointment on Thursday, March nineteenth at ten thirty AM with Abeker has been canceled due to a work conflict. Let me know if you need to reschedule or need help with anything else. \nAgent: Thank you for confirming the cancellation. That’s all I needed for now. Have a great day!\nUser: You're all set. Have a great day. \nAgent: Thanks again. Goodbye!\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.252,
+            "end": 0.652
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.398,
+            "end": 0.718
+          },
+          {
+            "word": "call ",
+            "start": 0.718,
+            "end": 0.958
+          },
+          {
+            "word": "may ",
+            "start": 0.958,
+            "end": 1.1979999000000001
+          },
+          {
+            "word": "be ",
+            "start": 1.1979999000000001,
+            "end": 1.358
+          },
+          {
+            "word": "recorded ",
+            "start": 1.358,
+            "end": 1.758
+          },
+          {
+            "word": "for ",
+            "start": 1.758,
+            "end": 1.998
+          },
+          {
+            "word": "quality ",
+            "start": 1.998,
+            "end": 2.3979999
+          },
+          {
+            "word": "and ",
+            "start": 2.3979999,
+            "end": 2.718
+          },
+          {
+            "word": "training ",
+            "start": 2.718,
+            "end": 3.038
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.038,
+            "end": 3.518
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Tibbett Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.5379997,
+            "end": 6.938
+          },
+          {
+            "word": "for ",
+            "start": 6.938,
+            "end": 7.0979997
+          },
+          {
+            "word": "calling ",
+            "start": 7.0979997,
+            "end": 7.258
+          },
+          {
+            "word": "Tibbett ",
+            "start": 7.258,
+            "end": 7.6579996
+          },
+          {
+            "word": "Point ",
+            "start": 7.6579996,
+            "end": 7.898
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.898,
+            "end": 8.537999999999998
+          },
+          {
+            "word": "Part ",
+            "start": 8.898,
+            "end": 9.297999999999998
+          },
+          {
+            "word": "of ",
+            "start": 9.297999999999998,
+            "end": 9.458001
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.458001,
+            "end": 9.618001
+          },
+          {
+            "word": "Good ",
+            "start": 9.618001,
+            "end": 9.777999999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 9.777999999999999,
+            "end": 10.097999999999999
+          },
+          {
+            "word": "Am ",
+            "start": 10.718,
+            "end": 10.958001
+          },
+          {
+            "word": "I ",
+            "start": 10.958001,
+            "end": 11.118001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.118001,
+            "end": 11.357999999999999
+          },
+          {
+            "word": "with ",
+            "start": 11.357999999999999,
+            "end": 11.517999999999999
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.517999999999999,
+            "end": 11.838
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 12.786,
+            "end": 13.186
+          },
+          {
+            "word": "this ",
+            "start": 13.186,
+            "end": 13.586
+          },
+          {
+            "word": "is ",
+            "start": 13.586,
+            "end": 13.986
+          },
+          {
+            "word": "Maria ",
+            "start": 13.986,
+            "end": 14.386
+          },
+          {
+            "word": "Lopez.",
+            "start": 14.3365,
+            "end": 14.7365
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 16.028,
+            "end": 16.348
+          },
+          {
+            "word": "verification, ",
+            "start": 16.348,
+            "end": 17.148
+          },
+          {
+            "word": "may ",
+            "start": 17.148,
+            "end": 17.308001
+          },
+          {
+            "word": "I ",
+            "start": 17.308001,
+            "end": 17.388001
+          },
+          {
+            "word": "have ",
+            "start": 17.388001,
+            "end": 17.548
+          },
+          {
+            "word": "your ",
+            "start": 17.548,
+            "end": 17.708
+          },
+          {
+            "word": "date ",
+            "start": 17.708,
+            "end": 17.868
+          },
+          {
+            "word": "of ",
+            "start": 17.868,
+            "end": 17.948
+          },
+          {
+            "word": "birth? ",
+            "start": 17.948,
+            "end": 18.108
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 19.291,
+            "end": 19.691
+          },
+          {
+            "word": "my ",
+            "start": 19.691,
+            "end": 20.091
+          },
+          {
+            "word": "date ",
+            "start": 20.091,
+            "end": 20.491
+          },
+          {
+            "word": "of ",
+            "start": 20.491,
+            "end": 20.891
+          },
+          {
+            "word": "birth ",
+            "start": 20.891,
+            "end": 21.291
+          },
+          {
+            "word": "is ",
+            "start": 21.291,
+            "end": 21.691
+          },
+          {
+            "word": "May ",
+            "start": 21.691,
+            "end": 22.091
+          },
+          {
+            "word": "14, ",
+            "start": 22.091,
+            "end": 22.491
+          },
+          {
+            "word": "1982.",
+            "start": 22.491,
+            "end": 22.891
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 25.997999999999998,
+            "end": 26.238
+          },
+          {
+            "word": "birthday ",
+            "start": 26.238,
+            "end": 26.558001
+          },
+          {
+            "word": "doesn't ",
+            "start": 26.558001,
+            "end": 26.878
+          },
+          {
+            "word": "match ",
+            "start": 26.878,
+            "end": 27.038
+          },
+          {
+            "word": "our ",
+            "start": 27.038,
+            "end": 27.198
+          },
+          {
+            "word": "records, ",
+            "start": 27.198,
+            "end": 27.678
+          },
+          {
+            "word": "but ",
+            "start": 27.678,
+            "end": 27.758
+          },
+          {
+            "word": "for ",
+            "start": 27.758,
+            "end": 27.918
+          },
+          {
+            "word": "demo ",
+            "start": 27.918,
+            "end": 28.238
+          },
+          {
+            "word": "purposes, ",
+            "start": 28.238,
+            "end": 28.798
+          },
+          {
+            "word": "I'll ",
+            "start": 28.798,
+            "end": 29.038
+          },
+          {
+            "word": "accept ",
+            "start": 29.038,
+            "end": 29.278
+          },
+          {
+            "word": "it. ",
+            "start": 29.278,
+            "end": 29.438
+          },
+          {
+            "word": "How ",
+            "start": 30.918,
+            "end": 31.157999999999998
+          },
+          {
+            "word": "can ",
+            "start": 31.157999999999998,
+            "end": 31.317999999999998
+          },
+          {
+            "word": "I ",
+            "start": 31.317999999999998,
+            "end": 31.398
+          },
+          {
+            "word": "help ",
+            "start": 31.398,
+            "end": 31.558
+          },
+          {
+            "word": "you ",
+            "start": 31.558,
+            "end": 31.638001
+          },
+          {
+            "word": "today? ",
+            "start": 31.638001,
+            "end": 31.878
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I need to cancel my upcoming appointment that’s scheduled for next Tuesday at 10:30 AM. Could you please confirm once it’s canceled?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 32.87,
+            "end": 33.27
+          },
+          {
+            "word": "you.",
+            "start": 33.27,
+            "end": 33.67
+          },
+          {
+            "word": " I ",
+            "start": 33.9265,
+            "end": 34.3265
+          },
+          {
+            "word": "need ",
+            "start": 34.3265,
+            "end": 34.7265
+          },
+          {
+            "word": "to ",
+            "start": 34.7265,
+            "end": 35.1265
+          },
+          {
+            "word": "cancel ",
+            "start": 35.1265,
+            "end": 35.5265
+          },
+          {
+            "word": "my ",
+            "start": 35.5265,
+            "end": 35.9265
+          },
+          {
+            "word": "upcoming ",
+            "start": 35.9265,
+            "end": 36.3265
+          },
+          {
+            "word": "appointment ",
+            "start": 36.3265,
+            "end": 36.7265
+          },
+          {
+            "word": "that’s ",
+            "start": 36.7265,
+            "end": 37.1265
+          },
+          {
+            "word": "scheduled ",
+            "start": 37.1265,
+            "end": 37.5265
+          },
+          {
+            "word": "for ",
+            "start": 37.5265,
+            "end": 37.9265
+          },
+          {
+            "word": "next ",
+            "start": 37.9265,
+            "end": 38.3265
+          },
+          {
+            "word": "Tuesday ",
+            "start": 38.3265,
+            "end": 38.7265
+          },
+          {
+            "word": "at ",
+            "start": 38.7265,
+            "end": 39.1265
+          },
+          {
+            "word": "10:30 ",
+            "start": 39.1265,
+            "end": 39.5265
+          },
+          {
+            "word": "AM.",
+            "start": 39.26183325195313,
+            "end": 39.66183325195313
+          },
+          {
+            "word": " Could ",
+            "start": 39.66183325195313,
+            "end": 40.061833251953125
+          },
+          {
+            "word": "you ",
+            "start": 40.061833251953125,
+            "end": 40.461833251953124
+          },
+          {
+            "word": "please ",
+            "start": 40.461833251953124,
+            "end": 40.86183325195312
+          },
+          {
+            "word": "confirm ",
+            "start": 40.86183325195312,
+            "end": 41.26183325195313
+          },
+          {
+            "word": "once ",
+            "start": 41.26183325195313,
+            "end": 41.66183325195313
+          },
+          {
+            "word": "it’s ",
+            "start": 41.421291748046876,
+            "end": 41.821291748046875
+          },
+          {
+            "word": "canceled?",
+            "start": 41.421291748046876,
+            "end": 41.821291748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Let me check your upcoming appointments and start the cancellation process for the one Tuesday at ten thirty AM. You have two upcoming appointments. One on Thursday, March nineteenth, at ten thirty AM and another on Friday, March twentieth at nine. Forty five AM. Both are new patient visits. Just to confirm, do you want to cancel the appointment on Thursday, March nineteenth at ten thirty AM? ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 45.848000000000006,
+            "end": 46.088
+          },
+          {
+            "word": "me ",
+            "start": 46.088,
+            "end": 46.248000000000005
+          },
+          {
+            "word": "check ",
+            "start": 46.248000000000005,
+            "end": 46.408
+          },
+          {
+            "word": "your ",
+            "start": 46.408,
+            "end": 46.648
+          },
+          {
+            "word": "upcoming ",
+            "start": 46.648,
+            "end": 47.048
+          },
+          {
+            "word": "appointments ",
+            "start": 47.048,
+            "end": 47.448002
+          },
+          {
+            "word": "and ",
+            "start": 47.448002,
+            "end": 47.768002
+          },
+          {
+            "word": "start ",
+            "start": 47.768002,
+            "end": 48.008
+          },
+          {
+            "word": "the ",
+            "start": 48.008,
+            "end": 48.168
+          },
+          {
+            "word": "cancellation ",
+            "start": 48.168,
+            "end": 48.728
+          },
+          {
+            "word": "process ",
+            "start": 48.728,
+            "end": 49.128003
+          },
+          {
+            "word": "for ",
+            "start": 49.128003,
+            "end": 49.368
+          },
+          {
+            "word": "the ",
+            "start": 49.368,
+            "end": 49.448002
+          },
+          {
+            "word": "one ",
+            "start": 49.448002,
+            "end": 49.608002000000006
+          },
+          {
+            "word": "Tuesday ",
+            "start": 49.808,
+            "end": 50.288000000000004
+          },
+          {
+            "word": "at ",
+            "start": 50.288000000000004,
+            "end": 50.528000000000006
+          },
+          {
+            "word": "ten ",
+            "start": 50.528000000000006,
+            "end": 50.688
+          },
+          {
+            "word": "thirty ",
+            "start": 50.688,
+            "end": 51.008
+          },
+          {
+            "word": "AM. ",
+            "start": 51.008,
+            "end": 51.247998
+          },
+          {
+            "word": "You ",
+            "start": 53.148,
+            "end": 53.468
+          },
+          {
+            "word": "have ",
+            "start": 53.468,
+            "end": 53.708000000000006
+          },
+          {
+            "word": "two ",
+            "start": 53.708000000000006,
+            "end": 53.948
+          },
+          {
+            "word": "upcoming ",
+            "start": 53.948,
+            "end": 54.508
+          },
+          {
+            "word": "appointments. ",
+            "start": 54.508,
+            "end": 54.908
+          },
+          {
+            "word": "One ",
+            "start": 55.578,
+            "end": 55.818000000000005
+          },
+          {
+            "word": "on ",
+            "start": 55.818000000000005,
+            "end": 56.058
+          },
+          {
+            "word": "Thursday, ",
+            "start": 56.058,
+            "end": 56.618
+          },
+          {
+            "word": "March ",
+            "start": 56.618,
+            "end": 56.858000000000004
+          },
+          {
+            "word": "nineteenth, ",
+            "start": 56.858000000000004,
+            "end": 57.337998000000006
+          },
+          {
+            "word": "at ",
+            "start": 57.958000000000006,
+            "end": 58.358002000000006
+          },
+          {
+            "word": "ten ",
+            "start": 58.358002000000006,
+            "end": 58.678002
+          },
+          {
+            "word": "thirty ",
+            "start": 58.678002,
+            "end": 59.078
+          },
+          {
+            "word": "AM ",
+            "start": 59.078,
+            "end": 59.398
+          },
+          {
+            "word": "and ",
+            "start": 60.128003,
+            "end": 60.368
+          },
+          {
+            "word": "another ",
+            "start": 60.368,
+            "end": 60.768002
+          },
+          {
+            "word": "on ",
+            "start": 60.768002,
+            "end": 60.928002
+          },
+          {
+            "word": "Friday, ",
+            "start": 60.928002,
+            "end": 61.488
+          },
+          {
+            "word": "March ",
+            "start": 61.488,
+            "end": 61.728
+          },
+          {
+            "word": "twentieth ",
+            "start": 61.728,
+            "end": 62.128003
+          },
+          {
+            "word": "at ",
+            "start": 62.128003,
+            "end": 62.368
+          },
+          {
+            "word": "nine. ",
+            "start": 62.368,
+            "end": 62.528000000000006
+          },
+          {
+            "word": "Forty ",
+            "start": 63.247998,
+            "end": 63.727997
+          },
+          {
+            "word": "five ",
+            "start": 63.727997,
+            "end": 63.887997000000006
+          },
+          {
+            "word": "AM. ",
+            "start": 63.887997000000006,
+            "end": 64.288
+          },
+          {
+            "word": "Both ",
+            "start": 64.598,
+            "end": 64.917996
+          },
+          {
+            "word": "are ",
+            "start": 64.917996,
+            "end": 65.157994
+          },
+          {
+            "word": "new ",
+            "start": 65.157994,
+            "end": 65.318
+          },
+          {
+            "word": "patient ",
+            "start": 65.318,
+            "end": 65.63799999999999
+          },
+          {
+            "word": "visits. ",
+            "start": 65.63799999999999,
+            "end": 65.958
+          },
+          {
+            "word": "Just ",
+            "start": 66.517995,
+            "end": 66.758
+          },
+          {
+            "word": "to ",
+            "start": 66.758,
+            "end": 66.99799999999999
+          },
+          {
+            "word": "confirm, ",
+            "start": 66.99799999999999,
+            "end": 67.55799499999999
+          },
+          {
+            "word": "do ",
+            "start": 67.55799499999999,
+            "end": 67.71799999999999
+          },
+          {
+            "word": "you ",
+            "start": 67.71799999999999,
+            "end": 67.877995
+          },
+          {
+            "word": "want ",
+            "start": 67.877995,
+            "end": 68.038
+          },
+          {
+            "word": "to ",
+            "start": 68.038,
+            "end": 68.11798999999999
+          },
+          {
+            "word": "cancel ",
+            "start": 68.11798999999999,
+            "end": 68.43799
+          },
+          {
+            "word": "the ",
+            "start": 68.43799,
+            "end": 68.598
+          },
+          {
+            "word": "appointment ",
+            "start": 68.598,
+            "end": 68.99799999999999
+          },
+          {
+            "word": "on ",
+            "start": 68.99799999999999,
+            "end": 69.157994
+          },
+          {
+            "word": "Thursday, ",
+            "start": 69.378,
+            "end": 69.938
+          },
+          {
+            "word": "March ",
+            "start": 69.938,
+            "end": 70.178
+          },
+          {
+            "word": "nineteenth ",
+            "start": 70.178,
+            "end": 70.57799999999999
+          },
+          {
+            "word": "at ",
+            "start": 70.57799999999999,
+            "end": 70.898
+          },
+          {
+            "word": "ten ",
+            "start": 70.898,
+            "end": 71.13799999999999
+          },
+          {
+            "word": "thirty ",
+            "start": 71.13799999999999,
+            "end": 71.378
+          },
+          {
+            "word": "AM? ",
+            "start": 71.378,
+            "end": 71.698
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that’s correct—I’d like to cancel the appointment on Thursday, March nineteenth at 10:30 AM. Please let me know once it’s canceled.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 73.07,
+            "end": 73.47
+          },
+          {
+            "word": "that’s ",
+            "start": 73.47,
+            "end": 73.87
+          },
+          {
+            "word": "correct—I’d ",
+            "start": 73.87,
+            "end": 74.27
+          },
+          {
+            "word": "like ",
+            "start": 74.27,
+            "end": 74.67
+          },
+          {
+            "word": "to ",
+            "start": 74.67,
+            "end": 75.07
+          },
+          {
+            "word": "cancel ",
+            "start": 75.07,
+            "end": 75.47
+          },
+          {
+            "word": "the ",
+            "start": 75.47,
+            "end": 75.87
+          },
+          {
+            "word": "appointment ",
+            "start": 75.87,
+            "end": 76.27
+          },
+          {
+            "word": "on ",
+            "start": 76.27,
+            "end": 76.67
+          },
+          {
+            "word": "Thursday, ",
+            "start": 76.67,
+            "end": 77.07
+          },
+          {
+            "word": "March ",
+            "start": 77.07,
+            "end": 77.47
+          },
+          {
+            "word": "nineteenth ",
+            "start": 77.47,
+            "end": 77.87
+          },
+          {
+            "word": "at ",
+            "start": 77.87,
+            "end": 78.27
+          },
+          {
+            "word": "10:30 ",
+            "start": 78.27,
+            "end": 78.67
+          },
+          {
+            "word": "AM.",
+            "start": 78.67,
+            "end": 79.07
+          },
+          {
+            "word": " Please ",
+            "start": 80.29141674804687,
+            "end": 80.69141674804688
+          },
+          {
+            "word": "let ",
+            "start": 80.69141674804688,
+            "end": 81.09141674804688
+          },
+          {
+            "word": "me ",
+            "start": 81.09141674804688,
+            "end": 81.49141674804687
+          },
+          {
+            "word": "know ",
+            "start": 81.49141674804687,
+            "end": 81.89141674804688
+          },
+          {
+            "word": "once ",
+            "start": 81.87675,
+            "end": 82.27675
+          },
+          {
+            "word": "it’s ",
+            "start": 81.87675,
+            "end": 82.27675
+          },
+          {
+            "word": "canceled.",
+            "start": 81.87675,
+            "end": 82.27675
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Can you share the reason for canceling your appointment? ",
+        "words": [
+          {
+            "word": "Can ",
+            "start": 86.07799999999999,
+            "end": 86.398
+          },
+          {
+            "word": "you ",
+            "start": 86.398,
+            "end": 86.478
+          },
+          {
+            "word": "share ",
+            "start": 86.478,
+            "end": 86.71799999999999
+          },
+          {
+            "word": "the ",
+            "start": 86.71799999999999,
+            "end": 86.878
+          },
+          {
+            "word": "reason ",
+            "start": 86.878,
+            "end": 87.118
+          },
+          {
+            "word": "for ",
+            "start": 87.118,
+            "end": 87.35799999999999
+          },
+          {
+            "word": "canceling ",
+            "start": 87.35799999999999,
+            "end": 87.758
+          },
+          {
+            "word": "your ",
+            "start": 87.758,
+            "end": 87.99799999999999
+          },
+          {
+            "word": "appointment? ",
+            "start": 87.99799999999999,
+            "end": 88.237996
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "For example, illness work conflict, transportation, insurance, or another reason. ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 88.96800999999999,
+            "end": 89.208005
+          },
+          {
+            "word": "example, ",
+            "start": 89.208005,
+            "end": 89.528004
+          },
+          {
+            "word": "illness ",
+            "start": 90.048,
+            "end": 90.528004
+          },
+          {
+            "word": "work ",
+            "start": 91.148,
+            "end": 91.38800499999999
+          },
+          {
+            "word": "conflict, ",
+            "start": 91.38800499999999,
+            "end": 91.788
+          },
+          {
+            "word": "transportation, ",
+            "start": 92.49799999999999,
+            "end": 93.21799999999999
+          },
+          {
+            "word": "insurance, ",
+            "start": 93.978,
+            "end": 94.53801
+          },
+          {
+            "word": "or ",
+            "start": 95.018,
+            "end": 95.338
+          },
+          {
+            "word": "another ",
+            "start": 95.338,
+            "end": 95.658
+          },
+          {
+            "word": "reason. ",
+            "start": 95.658,
+            "end": 95.818005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I have a work conflict and won’t be able to make it.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 96.821,
+            "end": 97.221
+          },
+          {
+            "word": "have ",
+            "start": 97.221,
+            "end": 97.621
+          },
+          {
+            "word": "a ",
+            "start": 97.621,
+            "end": 98.021
+          },
+          {
+            "word": "work ",
+            "start": 98.021,
+            "end": 98.421
+          },
+          {
+            "word": "conflict ",
+            "start": 98.421,
+            "end": 98.821
+          },
+          {
+            "word": "and ",
+            "start": 98.821,
+            "end": 99.221
+          },
+          {
+            "word": "won’t ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "be ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "able ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "to ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "make ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "it.",
+            "start": 99.126125,
+            "end": 99.526125
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your appointment on Thursday, March nineteenth at ten thirty AM with Abeker has been canceled due to a work conflict. Let me know if you need to reschedule or need help with anything else. ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 105.21799999999999,
+            "end": 105.458
+          },
+          {
+            "word": "appointment ",
+            "start": 105.458,
+            "end": 105.77799999999999
+          },
+          {
+            "word": "on ",
+            "start": 105.77799999999999,
+            "end": 106.098
+          },
+          {
+            "word": "Thursday, ",
+            "start": 106.098,
+            "end": 106.658
+          },
+          {
+            "word": "March ",
+            "start": 106.658,
+            "end": 106.898
+          },
+          {
+            "word": "nineteenth ",
+            "start": 106.898,
+            "end": 107.298
+          },
+          {
+            "word": "at ",
+            "start": 107.298,
+            "end": 107.618
+          },
+          {
+            "word": "ten ",
+            "start": 107.618,
+            "end": 107.77799999999999
+          },
+          {
+            "word": "thirty ",
+            "start": 107.77799999999999,
+            "end": 108.098
+          },
+          {
+            "word": "AM ",
+            "start": 108.098,
+            "end": 108.417996
+          },
+          {
+            "word": "with ",
+            "start": 108.417996,
+            "end": 108.658
+          },
+          {
+            "word": "Abeker ",
+            "start": 108.658,
+            "end": 109.13799999999999
+          },
+          {
+            "word": "has ",
+            "start": 109.13799999999999,
+            "end": 109.377995
+          },
+          {
+            "word": "been ",
+            "start": 109.377995,
+            "end": 109.538
+          },
+          {
+            "word": "canceled ",
+            "start": 109.538,
+            "end": 109.85799999999999
+          },
+          {
+            "word": "due ",
+            "start": 109.85799999999999,
+            "end": 110.018
+          },
+          {
+            "word": "to ",
+            "start": 110.158,
+            "end": 110.318005
+          },
+          {
+            "word": "a ",
+            "start": 110.318005,
+            "end": 110.398
+          },
+          {
+            "word": "work ",
+            "start": 110.398,
+            "end": 110.71799999999999
+          },
+          {
+            "word": "conflict. ",
+            "start": 110.71799999999999,
+            "end": 111.038
+          },
+          {
+            "word": "Let ",
+            "start": 111.57799999999999,
+            "end": 111.898
+          },
+          {
+            "word": "me ",
+            "start": 111.898,
+            "end": 111.978
+          },
+          {
+            "word": "know ",
+            "start": 111.978,
+            "end": 112.13799999999999
+          },
+          {
+            "word": "if ",
+            "start": 112.13799999999999,
+            "end": 112.21799999999999
+          },
+          {
+            "word": "you ",
+            "start": 112.21799999999999,
+            "end": 112.377995
+          },
+          {
+            "word": "need ",
+            "start": 112.377995,
+            "end": 112.458
+          },
+          {
+            "word": "to ",
+            "start": 112.458,
+            "end": 112.618
+          },
+          {
+            "word": "reschedule ",
+            "start": 112.618,
+            "end": 113.098
+          },
+          {
+            "word": "or ",
+            "start": 113.098,
+            "end": 113.337994
+          },
+          {
+            "word": "need ",
+            "start": 113.337994,
+            "end": 113.57799999999999
+          },
+          {
+            "word": "help ",
+            "start": 113.57799999999999,
+            "end": 113.737996
+          },
+          {
+            "word": "with ",
+            "start": 113.737996,
+            "end": 113.978
+          },
+          {
+            "word": "anything ",
+            "start": 113.978,
+            "end": 114.21799999999999
+          },
+          {
+            "word": "else. ",
+            "start": 114.21799999999999,
+            "end": 114.377995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for confirming the cancellation. That’s all I needed for now. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 115.339,
+            "end": 115.739
+          },
+          {
+            "word": "you ",
+            "start": 115.739,
+            "end": 116.139
+          },
+          {
+            "word": "for ",
+            "start": 116.139,
+            "end": 116.539
+          },
+          {
+            "word": "confirming ",
+            "start": 116.539,
+            "end": 116.939
+          },
+          {
+            "word": "the ",
+            "start": 116.939,
+            "end": 117.339
+          },
+          {
+            "word": "cancellation.",
+            "start": 117.13329174804687,
+            "end": 117.53329174804688
+          },
+          {
+            "word": " That’s ",
+            "start": 117.53329174804688,
+            "end": 117.93329174804687
+          },
+          {
+            "word": "all ",
+            "start": 117.93329174804687,
+            "end": 118.33329174804688
+          },
+          {
+            "word": "I ",
+            "start": 118.33329174804688,
+            "end": 118.73329174804688
+          },
+          {
+            "word": "needed ",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": "for ",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": "now.",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": " Have ",
+            "start": 119.05420825195313,
+            "end": 119.45420825195312
+          },
+          {
+            "word": "a ",
+            "start": 119.45420825195312,
+            "end": 119.85420825195312
+          },
+          {
+            "word": "great ",
+            "start": 119.66429174804688,
+            "end": 120.06429174804687
+          },
+          {
+            "word": "day!",
+            "start": 119.66429174804688,
+            "end": 120.06429174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 10
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're all set. Have a great day. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 122.57799999999999,
+            "end": 122.898
+          },
+          {
+            "word": "all ",
+            "start": 122.898,
+            "end": 123.05799499999999
+          },
+          {
+            "word": "set. ",
+            "start": 123.05799499999999,
+            "end": 123.538
+          },
+          {
+            "word": "Have ",
+            "start": 123.538,
+            "end": 123.85799999999999
+          },
+          {
+            "word": "a ",
+            "start": 123.85799999999999,
+            "end": 123.938
+          },
+          {
+            "word": "great ",
+            "start": 123.938,
+            "end": 124.098
+          },
+          {
+            "word": "day. ",
+            "start": 124.098,
+            "end": 124.178
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks again. Goodbye!",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 125.213,
+            "end": 125.613
+          },
+          {
+            "word": "again. ",
+            "start": 125.613,
+            "end": 126.013
+          },
+          {
+            "word": "Goodbye!",
+            "start": 126.01408325195312,
+            "end": 126.41408325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hi, ",
+        "words": [
+          {
+            "word": "Hi, ",
+            "start": 0.252,
+            "end": 0.652
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "This call may be recorded for quality and training purposes. ",
+        "words": [
+          {
+            "word": "This ",
+            "start": 0.398,
+            "end": 0.718
+          },
+          {
+            "word": "call ",
+            "start": 0.718,
+            "end": 0.958
+          },
+          {
+            "word": "may ",
+            "start": 0.958,
+            "end": 1.1979999000000001
+          },
+          {
+            "word": "be ",
+            "start": 1.1979999000000001,
+            "end": 1.358
+          },
+          {
+            "word": "recorded ",
+            "start": 1.358,
+            "end": 1.758
+          },
+          {
+            "word": "for ",
+            "start": 1.758,
+            "end": 1.998
+          },
+          {
+            "word": "quality ",
+            "start": 1.998,
+            "end": 2.3979999
+          },
+          {
+            "word": "and ",
+            "start": 2.3979999,
+            "end": 2.718
+          },
+          {
+            "word": "training ",
+            "start": 2.718,
+            "end": 3.038
+          },
+          {
+            "word": "purposes. ",
+            "start": 3.038,
+            "end": 3.518
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Thanks for calling Tibbett Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Maria? ",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 6.5379997,
+            "end": 6.938
+          },
+          {
+            "word": "for ",
+            "start": 6.938,
+            "end": 7.0979997
+          },
+          {
+            "word": "calling ",
+            "start": 7.0979997,
+            "end": 7.258
+          },
+          {
+            "word": "Tibbett ",
+            "start": 7.258,
+            "end": 7.6579996
+          },
+          {
+            "word": "Point ",
+            "start": 7.6579996,
+            "end": 7.898
+          },
+          {
+            "word": "Orthopaedics. ",
+            "start": 7.898,
+            "end": 8.537999999999998
+          },
+          {
+            "word": "Part ",
+            "start": 8.898,
+            "end": 9.297999999999998
+          },
+          {
+            "word": "of ",
+            "start": 9.297999999999998,
+            "end": 9.458001
+          },
+          {
+            "word": "Pretty ",
+            "start": 9.458001,
+            "end": 9.618001
+          },
+          {
+            "word": "Good ",
+            "start": 9.618001,
+            "end": 9.777999999999999
+          },
+          {
+            "word": "AI. ",
+            "start": 9.777999999999999,
+            "end": 10.097999999999999
+          },
+          {
+            "word": "Am ",
+            "start": 10.718,
+            "end": 10.958001
+          },
+          {
+            "word": "I ",
+            "start": 10.958001,
+            "end": 11.118001
+          },
+          {
+            "word": "speaking ",
+            "start": 11.118001,
+            "end": 11.357999999999999
+          },
+          {
+            "word": "with ",
+            "start": 11.357999999999999,
+            "end": 11.517999999999999
+          },
+          {
+            "word": "Maria? ",
+            "start": 11.517999999999999,
+            "end": 11.838
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, this is Maria Lopez.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 12.786,
+            "end": 13.186
+          },
+          {
+            "word": "this ",
+            "start": 13.186,
+            "end": 13.586
+          },
+          {
+            "word": "is ",
+            "start": 13.586,
+            "end": 13.986
+          },
+          {
+            "word": "Maria ",
+            "start": 13.986,
+            "end": 14.386
+          },
+          {
+            "word": "Lopez.",
+            "start": 14.3365,
+            "end": 14.7365
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "For verification, may I have your date of birth? ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 16.028,
+            "end": 16.348
+          },
+          {
+            "word": "verification, ",
+            "start": 16.348,
+            "end": 17.148
+          },
+          {
+            "word": "may ",
+            "start": 17.148,
+            "end": 17.308001
+          },
+          {
+            "word": "I ",
+            "start": 17.308001,
+            "end": 17.388001
+          },
+          {
+            "word": "have ",
+            "start": 17.388001,
+            "end": 17.548
+          },
+          {
+            "word": "your ",
+            "start": 17.548,
+            "end": 17.708
+          },
+          {
+            "word": "date ",
+            "start": 17.708,
+            "end": 17.868
+          },
+          {
+            "word": "of ",
+            "start": 17.868,
+            "end": 17.948
+          },
+          {
+            "word": "birth? ",
+            "start": 17.948,
+            "end": 18.108
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sure, my date of birth is May 14, 1982.",
+        "words": [
+          {
+            "word": "Sure, ",
+            "start": 19.291,
+            "end": 19.691
+          },
+          {
+            "word": "my ",
+            "start": 19.691,
+            "end": 20.091
+          },
+          {
+            "word": "date ",
+            "start": 20.091,
+            "end": 20.491
+          },
+          {
+            "word": "of ",
+            "start": 20.491,
+            "end": 20.891
+          },
+          {
+            "word": "birth ",
+            "start": 20.891,
+            "end": 21.291
+          },
+          {
+            "word": "is ",
+            "start": 21.291,
+            "end": 21.691
+          },
+          {
+            "word": "May ",
+            "start": 21.691,
+            "end": 22.091
+          },
+          {
+            "word": "14, ",
+            "start": 22.091,
+            "end": 22.491
+          },
+          {
+            "word": "1982.",
+            "start": 22.491,
+            "end": 22.891
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The birthday doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? ",
+        "words": [
+          {
+            "word": "The ",
+            "start": 25.997999999999998,
+            "end": 26.238
+          },
+          {
+            "word": "birthday ",
+            "start": 26.238,
+            "end": 26.558001
+          },
+          {
+            "word": "doesn't ",
+            "start": 26.558001,
+            "end": 26.878
+          },
+          {
+            "word": "match ",
+            "start": 26.878,
+            "end": 27.038
+          },
+          {
+            "word": "our ",
+            "start": 27.038,
+            "end": 27.198
+          },
+          {
+            "word": "records, ",
+            "start": 27.198,
+            "end": 27.678
+          },
+          {
+            "word": "but ",
+            "start": 27.678,
+            "end": 27.758
+          },
+          {
+            "word": "for ",
+            "start": 27.758,
+            "end": 27.918
+          },
+          {
+            "word": "demo ",
+            "start": 27.918,
+            "end": 28.238
+          },
+          {
+            "word": "purposes, ",
+            "start": 28.238,
+            "end": 28.798
+          },
+          {
+            "word": "I'll ",
+            "start": 28.798,
+            "end": 29.038
+          },
+          {
+            "word": "accept ",
+            "start": 29.038,
+            "end": 29.278
+          },
+          {
+            "word": "it. ",
+            "start": 29.278,
+            "end": 29.438
+          },
+          {
+            "word": "How ",
+            "start": 30.918,
+            "end": 31.157999999999998
+          },
+          {
+            "word": "can ",
+            "start": 31.157999999999998,
+            "end": 31.317999999999998
+          },
+          {
+            "word": "I ",
+            "start": 31.317999999999998,
+            "end": 31.398
+          },
+          {
+            "word": "help ",
+            "start": 31.398,
+            "end": 31.558
+          },
+          {
+            "word": "you ",
+            "start": 31.558,
+            "end": 31.638001
+          },
+          {
+            "word": "today? ",
+            "start": 31.638001,
+            "end": 31.878
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you. I need to cancel my upcoming appointment that’s scheduled for next Tuesday at 10:30 AM. Could you please confirm once it’s canceled?",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 32.87,
+            "end": 33.27
+          },
+          {
+            "word": "you.",
+            "start": 33.27,
+            "end": 33.67
+          },
+          {
+            "word": " I ",
+            "start": 33.9265,
+            "end": 34.3265
+          },
+          {
+            "word": "need ",
+            "start": 34.3265,
+            "end": 34.7265
+          },
+          {
+            "word": "to ",
+            "start": 34.7265,
+            "end": 35.1265
+          },
+          {
+            "word": "cancel ",
+            "start": 35.1265,
+            "end": 35.5265
+          },
+          {
+            "word": "my ",
+            "start": 35.5265,
+            "end": 35.9265
+          },
+          {
+            "word": "upcoming ",
+            "start": 35.9265,
+            "end": 36.3265
+          },
+          {
+            "word": "appointment ",
+            "start": 36.3265,
+            "end": 36.7265
+          },
+          {
+            "word": "that’s ",
+            "start": 36.7265,
+            "end": 37.1265
+          },
+          {
+            "word": "scheduled ",
+            "start": 37.1265,
+            "end": 37.5265
+          },
+          {
+            "word": "for ",
+            "start": 37.5265,
+            "end": 37.9265
+          },
+          {
+            "word": "next ",
+            "start": 37.9265,
+            "end": 38.3265
+          },
+          {
+            "word": "Tuesday ",
+            "start": 38.3265,
+            "end": 38.7265
+          },
+          {
+            "word": "at ",
+            "start": 38.7265,
+            "end": 39.1265
+          },
+          {
+            "word": "10:30 ",
+            "start": 39.1265,
+            "end": 39.5265
+          },
+          {
+            "word": "AM.",
+            "start": 39.26183325195313,
+            "end": 39.66183325195313
+          },
+          {
+            "word": " Could ",
+            "start": 39.66183325195313,
+            "end": 40.061833251953125
+          },
+          {
+            "word": "you ",
+            "start": 40.061833251953125,
+            "end": 40.461833251953124
+          },
+          {
+            "word": "please ",
+            "start": 40.461833251953124,
+            "end": 40.86183325195312
+          },
+          {
+            "word": "confirm ",
+            "start": 40.86183325195312,
+            "end": 41.26183325195313
+          },
+          {
+            "word": "once ",
+            "start": 41.26183325195313,
+            "end": 41.66183325195313
+          },
+          {
+            "word": "it’s ",
+            "start": 41.421291748046876,
+            "end": 41.821291748046875
+          },
+          {
+            "word": "canceled?",
+            "start": 41.421291748046876,
+            "end": 41.821291748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "Let me check your upcoming appointments and start the cancellation process for the one Tuesday at ten thirty AM. You have two upcoming appointments. One on Thursday, March nineteenth, at ten thirty AM and another on Friday, March twentieth at nine. Forty five AM. Both are new patient visits. Just to confirm, do you want to cancel the appointment on Thursday, March nineteenth at ten thirty AM? ",
+        "words": [
+          {
+            "word": "Let ",
+            "start": 45.848000000000006,
+            "end": 46.088
+          },
+          {
+            "word": "me ",
+            "start": 46.088,
+            "end": 46.248000000000005
+          },
+          {
+            "word": "check ",
+            "start": 46.248000000000005,
+            "end": 46.408
+          },
+          {
+            "word": "your ",
+            "start": 46.408,
+            "end": 46.648
+          },
+          {
+            "word": "upcoming ",
+            "start": 46.648,
+            "end": 47.048
+          },
+          {
+            "word": "appointments ",
+            "start": 47.048,
+            "end": 47.448002
+          },
+          {
+            "word": "and ",
+            "start": 47.448002,
+            "end": 47.768002
+          },
+          {
+            "word": "start ",
+            "start": 47.768002,
+            "end": 48.008
+          },
+          {
+            "word": "the ",
+            "start": 48.008,
+            "end": 48.168
+          },
+          {
+            "word": "cancellation ",
+            "start": 48.168,
+            "end": 48.728
+          },
+          {
+            "word": "process ",
+            "start": 48.728,
+            "end": 49.128003
+          },
+          {
+            "word": "for ",
+            "start": 49.128003,
+            "end": 49.368
+          },
+          {
+            "word": "the ",
+            "start": 49.368,
+            "end": 49.448002
+          },
+          {
+            "word": "one ",
+            "start": 49.448002,
+            "end": 49.608002000000006
+          },
+          {
+            "word": "Tuesday ",
+            "start": 49.808,
+            "end": 50.288000000000004
+          },
+          {
+            "word": "at ",
+            "start": 50.288000000000004,
+            "end": 50.528000000000006
+          },
+          {
+            "word": "ten ",
+            "start": 50.528000000000006,
+            "end": 50.688
+          },
+          {
+            "word": "thirty ",
+            "start": 50.688,
+            "end": 51.008
+          },
+          {
+            "word": "AM. ",
+            "start": 51.008,
+            "end": 51.247998
+          },
+          {
+            "word": "You ",
+            "start": 53.148,
+            "end": 53.468
+          },
+          {
+            "word": "have ",
+            "start": 53.468,
+            "end": 53.708000000000006
+          },
+          {
+            "word": "two ",
+            "start": 53.708000000000006,
+            "end": 53.948
+          },
+          {
+            "word": "upcoming ",
+            "start": 53.948,
+            "end": 54.508
+          },
+          {
+            "word": "appointments. ",
+            "start": 54.508,
+            "end": 54.908
+          },
+          {
+            "word": "One ",
+            "start": 55.578,
+            "end": 55.818000000000005
+          },
+          {
+            "word": "on ",
+            "start": 55.818000000000005,
+            "end": 56.058
+          },
+          {
+            "word": "Thursday, ",
+            "start": 56.058,
+            "end": 56.618
+          },
+          {
+            "word": "March ",
+            "start": 56.618,
+            "end": 56.858000000000004
+          },
+          {
+            "word": "nineteenth, ",
+            "start": 56.858000000000004,
+            "end": 57.337998000000006
+          },
+          {
+            "word": "at ",
+            "start": 57.958000000000006,
+            "end": 58.358002000000006
+          },
+          {
+            "word": "ten ",
+            "start": 58.358002000000006,
+            "end": 58.678002
+          },
+          {
+            "word": "thirty ",
+            "start": 58.678002,
+            "end": 59.078
+          },
+          {
+            "word": "AM ",
+            "start": 59.078,
+            "end": 59.398
+          },
+          {
+            "word": "and ",
+            "start": 60.128003,
+            "end": 60.368
+          },
+          {
+            "word": "another ",
+            "start": 60.368,
+            "end": 60.768002
+          },
+          {
+            "word": "on ",
+            "start": 60.768002,
+            "end": 60.928002
+          },
+          {
+            "word": "Friday, ",
+            "start": 60.928002,
+            "end": 61.488
+          },
+          {
+            "word": "March ",
+            "start": 61.488,
+            "end": 61.728
+          },
+          {
+            "word": "twentieth ",
+            "start": 61.728,
+            "end": 62.128003
+          },
+          {
+            "word": "at ",
+            "start": 62.128003,
+            "end": 62.368
+          },
+          {
+            "word": "nine. ",
+            "start": 62.368,
+            "end": 62.528000000000006
+          },
+          {
+            "word": "Forty ",
+            "start": 63.247998,
+            "end": 63.727997
+          },
+          {
+            "word": "five ",
+            "start": 63.727997,
+            "end": 63.887997000000006
+          },
+          {
+            "word": "AM. ",
+            "start": 63.887997000000006,
+            "end": 64.288
+          },
+          {
+            "word": "Both ",
+            "start": 64.598,
+            "end": 64.917996
+          },
+          {
+            "word": "are ",
+            "start": 64.917996,
+            "end": 65.157994
+          },
+          {
+            "word": "new ",
+            "start": 65.157994,
+            "end": 65.318
+          },
+          {
+            "word": "patient ",
+            "start": 65.318,
+            "end": 65.63799999999999
+          },
+          {
+            "word": "visits. ",
+            "start": 65.63799999999999,
+            "end": 65.958
+          },
+          {
+            "word": "Just ",
+            "start": 66.517995,
+            "end": 66.758
+          },
+          {
+            "word": "to ",
+            "start": 66.758,
+            "end": 66.99799999999999
+          },
+          {
+            "word": "confirm, ",
+            "start": 66.99799999999999,
+            "end": 67.55799499999999
+          },
+          {
+            "word": "do ",
+            "start": 67.55799499999999,
+            "end": 67.71799999999999
+          },
+          {
+            "word": "you ",
+            "start": 67.71799999999999,
+            "end": 67.877995
+          },
+          {
+            "word": "want ",
+            "start": 67.877995,
+            "end": 68.038
+          },
+          {
+            "word": "to ",
+            "start": 68.038,
+            "end": 68.11798999999999
+          },
+          {
+            "word": "cancel ",
+            "start": 68.11798999999999,
+            "end": 68.43799
+          },
+          {
+            "word": "the ",
+            "start": 68.43799,
+            "end": 68.598
+          },
+          {
+            "word": "appointment ",
+            "start": 68.598,
+            "end": 68.99799999999999
+          },
+          {
+            "word": "on ",
+            "start": 68.99799999999999,
+            "end": 69.157994
+          },
+          {
+            "word": "Thursday, ",
+            "start": 69.378,
+            "end": 69.938
+          },
+          {
+            "word": "March ",
+            "start": 69.938,
+            "end": 70.178
+          },
+          {
+            "word": "nineteenth ",
+            "start": 70.178,
+            "end": 70.57799999999999
+          },
+          {
+            "word": "at ",
+            "start": 70.57799999999999,
+            "end": 70.898
+          },
+          {
+            "word": "ten ",
+            "start": 70.898,
+            "end": 71.13799999999999
+          },
+          {
+            "word": "thirty ",
+            "start": 71.13799999999999,
+            "end": 71.378
+          },
+          {
+            "word": "AM? ",
+            "start": 71.378,
+            "end": 71.698
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Yes, that’s correct—I’d like to cancel the appointment on Thursday, March nineteenth at 10:30 AM. Please let me know once it’s canceled.",
+        "words": [
+          {
+            "word": "Yes, ",
+            "start": 73.07,
+            "end": 73.47
+          },
+          {
+            "word": "that’s ",
+            "start": 73.47,
+            "end": 73.87
+          },
+          {
+            "word": "correct—I’d ",
+            "start": 73.87,
+            "end": 74.27
+          },
+          {
+            "word": "like ",
+            "start": 74.27,
+            "end": 74.67
+          },
+          {
+            "word": "to ",
+            "start": 74.67,
+            "end": 75.07
+          },
+          {
+            "word": "cancel ",
+            "start": 75.07,
+            "end": 75.47
+          },
+          {
+            "word": "the ",
+            "start": 75.47,
+            "end": 75.87
+          },
+          {
+            "word": "appointment ",
+            "start": 75.87,
+            "end": 76.27
+          },
+          {
+            "word": "on ",
+            "start": 76.27,
+            "end": 76.67
+          },
+          {
+            "word": "Thursday, ",
+            "start": 76.67,
+            "end": 77.07
+          },
+          {
+            "word": "March ",
+            "start": 77.07,
+            "end": 77.47
+          },
+          {
+            "word": "nineteenth ",
+            "start": 77.47,
+            "end": 77.87
+          },
+          {
+            "word": "at ",
+            "start": 77.87,
+            "end": 78.27
+          },
+          {
+            "word": "10:30 ",
+            "start": 78.27,
+            "end": 78.67
+          },
+          {
+            "word": "AM.",
+            "start": 78.67,
+            "end": 79.07
+          },
+          {
+            "word": " Please ",
+            "start": 80.29141674804687,
+            "end": 80.69141674804688
+          },
+          {
+            "word": "let ",
+            "start": 80.69141674804688,
+            "end": 81.09141674804688
+          },
+          {
+            "word": "me ",
+            "start": 81.09141674804688,
+            "end": 81.49141674804687
+          },
+          {
+            "word": "know ",
+            "start": 81.49141674804687,
+            "end": 81.89141674804688
+          },
+          {
+            "word": "once ",
+            "start": 81.87675,
+            "end": 82.27675
+          },
+          {
+            "word": "it’s ",
+            "start": 81.87675,
+            "end": 82.27675
+          },
+          {
+            "word": "canceled.",
+            "start": 81.87675,
+            "end": 82.27675
+          }
+        ],
+        "metadata": {
+          "response_id": 7
+        }
+      },
+      {
+        "role": "user",
+        "content": "Can you share the reason for canceling your appointment? ",
+        "words": [
+          {
+            "word": "Can ",
+            "start": 86.07799999999999,
+            "end": 86.398
+          },
+          {
+            "word": "you ",
+            "start": 86.398,
+            "end": 86.478
+          },
+          {
+            "word": "share ",
+            "start": 86.478,
+            "end": 86.71799999999999
+          },
+          {
+            "word": "the ",
+            "start": 86.71799999999999,
+            "end": 86.878
+          },
+          {
+            "word": "reason ",
+            "start": 86.878,
+            "end": 87.118
+          },
+          {
+            "word": "for ",
+            "start": 87.118,
+            "end": 87.35799999999999
+          },
+          {
+            "word": "canceling ",
+            "start": 87.35799999999999,
+            "end": 87.758
+          },
+          {
+            "word": "your ",
+            "start": 87.758,
+            "end": 87.99799999999999
+          },
+          {
+            "word": "appointment? ",
+            "start": 87.99799999999999,
+            "end": 88.237996
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "For example, illness work conflict, transportation, insurance, or another reason. ",
+        "words": [
+          {
+            "word": "For ",
+            "start": 88.96800999999999,
+            "end": 89.208005
+          },
+          {
+            "word": "example, ",
+            "start": 89.208005,
+            "end": 89.528004
+          },
+          {
+            "word": "illness ",
+            "start": 90.048,
+            "end": 90.528004
+          },
+          {
+            "word": "work ",
+            "start": 91.148,
+            "end": 91.38800499999999
+          },
+          {
+            "word": "conflict, ",
+            "start": 91.38800499999999,
+            "end": 91.788
+          },
+          {
+            "word": "transportation, ",
+            "start": 92.49799999999999,
+            "end": 93.21799999999999
+          },
+          {
+            "word": "insurance, ",
+            "start": 93.978,
+            "end": 94.53801
+          },
+          {
+            "word": "or ",
+            "start": 95.018,
+            "end": 95.338
+          },
+          {
+            "word": "another ",
+            "start": 95.338,
+            "end": 95.658
+          },
+          {
+            "word": "reason. ",
+            "start": 95.658,
+            "end": 95.818005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "I have a work conflict and won’t be able to make it.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 96.821,
+            "end": 97.221
+          },
+          {
+            "word": "have ",
+            "start": 97.221,
+            "end": 97.621
+          },
+          {
+            "word": "a ",
+            "start": 97.621,
+            "end": 98.021
+          },
+          {
+            "word": "work ",
+            "start": 98.021,
+            "end": 98.421
+          },
+          {
+            "word": "conflict ",
+            "start": 98.421,
+            "end": 98.821
+          },
+          {
+            "word": "and ",
+            "start": 98.821,
+            "end": 99.221
+          },
+          {
+            "word": "won’t ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "be ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "able ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "to ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "make ",
+            "start": 99.126125,
+            "end": 99.526125
+          },
+          {
+            "word": "it.",
+            "start": 99.126125,
+            "end": 99.526125
+          }
+        ],
+        "metadata": {
+          "response_id": 9
+        }
+      },
+      {
+        "role": "user",
+        "content": "Your appointment on Thursday, March nineteenth at ten thirty AM with Abeker has been canceled due to a work conflict. Let me know if you need to reschedule or need help with anything else. ",
+        "words": [
+          {
+            "word": "Your ",
+            "start": 105.21799999999999,
+            "end": 105.458
+          },
+          {
+            "word": "appointment ",
+            "start": 105.458,
+            "end": 105.77799999999999
+          },
+          {
+            "word": "on ",
+            "start": 105.77799999999999,
+            "end": 106.098
+          },
+          {
+            "word": "Thursday, ",
+            "start": 106.098,
+            "end": 106.658
+          },
+          {
+            "word": "March ",
+            "start": 106.658,
+            "end": 106.898
+          },
+          {
+            "word": "nineteenth ",
+            "start": 106.898,
+            "end": 107.298
+          },
+          {
+            "word": "at ",
+            "start": 107.298,
+            "end": 107.618
+          },
+          {
+            "word": "ten ",
+            "start": 107.618,
+            "end": 107.77799999999999
+          },
+          {
+            "word": "thirty ",
+            "start": 107.77799999999999,
+            "end": 108.098
+          },
+          {
+            "word": "AM ",
+            "start": 108.098,
+            "end": 108.417996
+          },
+          {
+            "word": "with ",
+            "start": 108.417996,
+            "end": 108.658
+          },
+          {
+            "word": "Abeker ",
+            "start": 108.658,
+            "end": 109.13799999999999
+          },
+          {
+            "word": "has ",
+            "start": 109.13799999999999,
+            "end": 109.377995
+          },
+          {
+            "word": "been ",
+            "start": 109.377995,
+            "end": 109.538
+          },
+          {
+            "word": "canceled ",
+            "start": 109.538,
+            "end": 109.85799999999999
+          },
+          {
+            "word": "due ",
+            "start": 109.85799999999999,
+            "end": 110.018
+          },
+          {
+            "word": "to ",
+            "start": 110.158,
+            "end": 110.318005
+          },
+          {
+            "word": "a ",
+            "start": 110.318005,
+            "end": 110.398
+          },
+          {
+            "word": "work ",
+            "start": 110.398,
+            "end": 110.71799999999999
+          },
+          {
+            "word": "conflict. ",
+            "start": 110.71799999999999,
+            "end": 111.038
+          },
+          {
+            "word": "Let ",
+            "start": 111.57799999999999,
+            "end": 111.898
+          },
+          {
+            "word": "me ",
+            "start": 111.898,
+            "end": 111.978
+          },
+          {
+            "word": "know ",
+            "start": 111.978,
+            "end": 112.13799999999999
+          },
+          {
+            "word": "if ",
+            "start": 112.13799999999999,
+            "end": 112.21799999999999
+          },
+          {
+            "word": "you ",
+            "start": 112.21799999999999,
+            "end": 112.377995
+          },
+          {
+            "word": "need ",
+            "start": 112.377995,
+            "end": 112.458
+          },
+          {
+            "word": "to ",
+            "start": 112.458,
+            "end": 112.618
+          },
+          {
+            "word": "reschedule ",
+            "start": 112.618,
+            "end": 113.098
+          },
+          {
+            "word": "or ",
+            "start": 113.098,
+            "end": 113.337994
+          },
+          {
+            "word": "need ",
+            "start": 113.337994,
+            "end": 113.57799999999999
+          },
+          {
+            "word": "help ",
+            "start": 113.57799999999999,
+            "end": 113.737996
+          },
+          {
+            "word": "with ",
+            "start": 113.737996,
+            "end": 113.978
+          },
+          {
+            "word": "anything ",
+            "start": 113.978,
+            "end": 114.21799999999999
+          },
+          {
+            "word": "else. ",
+            "start": 114.21799999999999,
+            "end": 114.377995
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for confirming the cancellation. That’s all I needed for now. Have a great day!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 115.339,
+            "end": 115.739
+          },
+          {
+            "word": "you ",
+            "start": 115.739,
+            "end": 116.139
+          },
+          {
+            "word": "for ",
+            "start": 116.139,
+            "end": 116.539
+          },
+          {
+            "word": "confirming ",
+            "start": 116.539,
+            "end": 116.939
+          },
+          {
+            "word": "the ",
+            "start": 116.939,
+            "end": 117.339
+          },
+          {
+            "word": "cancellation.",
+            "start": 117.13329174804687,
+            "end": 117.53329174804688
+          },
+          {
+            "word": " That’s ",
+            "start": 117.53329174804688,
+            "end": 117.93329174804687
+          },
+          {
+            "word": "all ",
+            "start": 117.93329174804687,
+            "end": 118.33329174804688
+          },
+          {
+            "word": "I ",
+            "start": 118.33329174804688,
+            "end": 118.73329174804688
+          },
+          {
+            "word": "needed ",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": "for ",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": "now.",
+            "start": 118.65420825195312,
+            "end": 119.05420825195313
+          },
+          {
+            "word": " Have ",
+            "start": 119.05420825195313,
+            "end": 119.45420825195312
+          },
+          {
+            "word": "a ",
+            "start": 119.45420825195312,
+            "end": 119.85420825195312
+          },
+          {
+            "word": "great ",
+            "start": 119.66429174804688,
+            "end": 120.06429174804687
+          },
+          {
+            "word": "day!",
+            "start": 119.66429174804688,
+            "end": 120.06429174804687
+          }
+        ],
+        "metadata": {
+          "response_id": 10
+        }
+      },
+      {
+        "role": "user",
+        "content": "You're all set. Have a great day. ",
+        "words": [
+          {
+            "word": "You're ",
+            "start": 122.57799999999999,
+            "end": 122.898
+          },
+          {
+            "word": "all ",
+            "start": 122.898,
+            "end": 123.05799499999999
+          },
+          {
+            "word": "set. ",
+            "start": 123.05799499999999,
+            "end": 123.538
+          },
+          {
+            "word": "Have ",
+            "start": 123.538,
+            "end": 123.85799999999999
+          },
+          {
+            "word": "a ",
+            "start": 123.85799999999999,
+            "end": 123.938
+          },
+          {
+            "word": "great ",
+            "start": 123.938,
+            "end": 124.098
+          },
+          {
+            "word": "day. ",
+            "start": 124.098,
+            "end": 124.178
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thanks again. Goodbye!",
+        "words": [
+          {
+            "word": "Thanks ",
+            "start": 125.213,
+            "end": 125.613
+          },
+          {
+            "word": "again. ",
+            "start": 125.613,
+            "end": 126.013
+          },
+          {
+            "word": "Goodbye!",
+            "start": 126.01408325195312,
+            "end": 126.41408325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 11
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "cb3d968322ffa742",
+        "name": "end_call",
+        "arguments": "{\"execution_message\":\"Thanks again. Goodbye!\"}",
+        "time_sec": 126.801,
+        "type": "end_call"
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/6e5b17caa724edaafae3b4e09d8566fa4f4b2410fb4d86d1c6f383650716be19/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/6e5b17caa724edaafae3b4e09d8566fa4f4b2410fb4d86d1c6f383650716be19/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/6e5b17caa724edaafae3b4e09d8566fa4f4b2410fb4d86d1c6f383650716be19/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 757.96,
+        "min": 4,
+        "max": 776,
+        "p90": 611.6,
+        "num": 12,
+        "values": [
+          4,
+          612,
+          408,
+          608,
+          384,
+          411,
+          513,
+          776,
+          480,
+          506,
+          398,
+          484
+        ],
+        "p50": 482,
+        "p95": 685.7999999999998
+      },
+      "e2e": {
+        "p99": 2327.880224609375,
+        "min": -405,
+        "max": 2411.000244140625,
+        "p90": 1579.8000488281243,
+        "num": 9,
+        "values": [
+          2411.000244140625,
+          948,
+          1183,
+          992,
+          1372,
+          1081.00390625,
+          1002.9951171875,
+          961.0048828125,
+          -405
+        ],
+        "p50": 1002.9951171875,
+        "p95": 1995.4001464843745
+      },
+      "tts": {
+        "p99": 340.24,
+        "min": 239,
+        "max": 342,
+        "p90": 325.7,
+        "num": 12,
+        "values": [
+          247,
+          268,
+          239,
+          323,
+          290,
+          280,
+          253,
+          326,
+          285,
+          276,
+          285,
+          342
+        ],
+        "p50": 282.5,
+        "p95": 333.2
+      },
+      "asr": {
+        "p99": 2029.9969160000096,
+        "min": 0,
+        "max": 2070.0034000000014,
+        "p90": 60.00092000000004,
+        "num": 169,
+        "values": [
+          10.000040000000013,
+          10.000029999999924,
+          30,
+          30,
+          10.000100000000202,
+          10.000099999999748,
+          20,
+          30,
+          20,
+          30,
+          50,
+          169.9999999999991,
+          29.999700000000303,
+          30,
+          50,
+          49.999800000000505,
+          49.999400000000605,
+          100,
+          49.9994999999999,
+          50.000599999999395,
+          50.00014999999985,
+          49.99999999999818,
+          40.000599999999395,
+          40.00014999999985,
+          0,
+          40.0005000000001,
+          60.0005000000001,
+          30.00100000000384,
+          2029.9995,
+          59.99949999999808,
+          10,
+          20.000599999999395,
+          40.0012999999999,
+          40,
+          20.001000000000204,
+          39.99949999999808,
+          30,
+          2009.999499999998,
+          40.00049999999828,
+          20.001000000000204,
+          19.99959999999919,
+          30.00039999999717,
+          20.001399999997375,
+          29.999999999996362,
+          30.000999999996566,
+          70.00129999999626,
+          40.00015000000349,
+          30.000899999999092,
+          40.00169999999707,
+          9.998999999996158,
+          10.001399999993737,
+          10,
+          1999.999499999998,
+          30.00050000000192,
+          20.001500000005763,
+          20.002300000000105,
+          20.000999999996566,
+          19.99949999999808,
+          30.002700000004552,
+          30.001400000001013,
+          30,
+          70.00239999999758,
+          29.999400000000605,
+          40.00200000000041,
+          60.00260000000708,
+          60.00100000000384,
+          20.00014999999985,
+          60.00089999999909,
+          19.99949999999808,
+          30.000299999999697,
+          30.001399999993737,
+          30,
+          50.00076000000263,
+          30.001499999998487,
+          60.00014999999985,
+          20.000899999999092,
+          19.99949999999808,
+          20.000299999999697,
+          30.001499999998487,
+          20.00014999999985,
+          29.99949999999808,
+          20.000299999999697,
+          30.001500000005763,
+          30.00014999999985,
+          40.00090000000637,
+          29.99949999999808,
+          40.00270000000455,
+          30.001400000001013,
+          30,
+          30.00239999999758,
+          20.000800000001618,
+          19.999400000000605,
+          29.999000000003434,
+          29.996949999993376,
+          29.993899999994028,
+          29.996339999997872,
+          29.995699999999488,
+          29.993900000001304,
+          39.99633999999787,
+          39.99330000001646,
+          39.99570000001404,
+          40.00030000001425,
+          59.995000000009895,
+          49.99760000000242,
+          40,
+          49.994800000000396,
+          59.994200000001,
+          49.99659999999858,
+          49.99360000000161,
+          39.995999999999185,
+          39.99850000000151,
+          2029.995700000014,
+          50.00429999998596,
+          39.99899999999616,
+          50.00149999999849,
+          19.99899999999616,
+          20.00150000001304,
+          19.998500000001513,
+          20.00100000000384,
+          30.00340000000142,
+          9.998200000001816,
+          30.002700000011828,
+          29.996299999998882,
+          20.00396999999066,
+          30.00089999998454,
+          20.00457999999344,
+          30.001499999998487,
+          30.001499999998487,
+          30.00396999999066,
+          20.001499999998487,
+          29.996339999997872,
+          30.000899999999092,
+          20.001499999998487,
+          20.00396999999066,
+          30.00457999999344,
+          20.001499999998487,
+          20.00396999999066,
+          20.00100000000384,
+          50.00340000000142,
+          40.005799999999,
+          10.005000000004657,
+          70,
+          2070.0034000000014,
+          99.99659999999858,
+          29.99899999999616,
+          30.00150000001304,
+          29.998500000001513,
+          50.00100000000384,
+          29.99570000001404,
+          49.998200000001816,
+          50.00270000001183,
+          59.99760000000242,
+          30,
+          99.99760000000242,
+          40.00457999999344,
+          50.00149999999849,
+          60.00396999999066,
+          40.00150000001304,
+          49.99633999999787,
+          30.000899999999092,
+          29.99570000001404,
+          59.995000000009895,
+          59.99760000000242,
+          50,
+          49.994800000000396,
+          79.99659999999858,
+          29.99899999999616,
+          70.00100000000384,
+          29.995699999999488
+        ],
+        "p50": 30.001400000001013,
+        "p95": 91.99659999999847
+      }
+    },
+    "metadata": {
+      "scenario_title": "Cancel an existing appointment",
+      "started_at_utc": "2026-03-15T16:45:32.092838+00:00",
+      "project_stage": "stage_3",
+      "scenario_id": "cancel_existing_appointment"
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.2166667,
+      "product_costs": [
+        {
+          "unit_price": 0.0916667,
+          "product": "retell_voice_engine",
+          "cost": 11.6416667
+        },
+        {
+          "unit_price": 0.025,
+          "product": "platform_tts",
+          "cost": 3.175
+        },
+        {
+          "unit_price": 0.075,
+          "product": "gpt_4_1",
+          "cost": 9.525
+        },
+        {
+          "unit_price": 0.025,
+          "product": "us_twilio_telephony",
+          "cost": 3.175
+        }
+      ],
+      "combined_cost": 27.5166667,
+      "total_duration_seconds": 127
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent called to cancel an upcoming appointment scheduled for Thursday, March 19th at 10:30 AM due to a work conflict. The cancellation was confirmed by the user, and the call ended with both parties exchanging pleasantries.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": {},
+      "call_successful": true
+    },
+    "data_storage_setting": "everything",
+    "llm_token_usage": {
+      "values": [
+        510,
+        536,
+        560,
+        597,
+        604,
+        662,
+        720,
+        770,
+        788,
+        847,
+        882
+      ],
+      "average": 679.6363636363636,
+      "num_requests": 11
+    },
+    "tool_calls": [
+      {
+        "name": "end_call",
+        "start_time_sec": 126.801,
+        "tool_call_id": "cb3d968322ffa742",
+        "type": "end_call"
+      }
+    ],
+    "from_number": "+17712514349",
+    "to_number": "+18054398008",
+    "direction": "outbound",
+    "telephony_identifier": {
+      "twilio_call_sid": "CA1cbdb02721cba14fc055975bf3504d3e"
+    }
+  }
+}
